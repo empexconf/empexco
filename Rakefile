@@ -40,7 +40,7 @@ task :prepare_git_remote_in_build_dir => GH_PAGES_REF
 task :sync do
   cd BUILD_DIR do
     sh "git fetch origin"
-    sh "git reset --hard origin/#{GH_PAGES_REF}"
+    sh "git reset --hard origin/#{GH_PAGES_BRANCH}"
   end
 end
 
