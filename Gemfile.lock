@@ -161,6 +161,3 @@ DEPENDENCIES
   middleman-meta-tags!
   pry-byebug
   rake
-
-BUNDLED WITH
-   1.11.2
