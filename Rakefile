@@ -70,10 +70,6 @@ task :deploy do |t, args|
   end
 
   Dir.chdir "dist" do
-    File.open("CNAME", 'w') do |f|
-      f.write cname
-    end
-
     system "git add -A"
     system "git commit -m '#{message.gsub("'", "\\'")}'"
     system "git push origin #{branch}"
