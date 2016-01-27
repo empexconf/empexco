@@ -21,16 +21,19 @@ def origin_url
 end
 
 def git_initialize
-  unless File.exist?(".git")
-    system "git init"
-    system "git remote add origin #{origin_url}"
-    system "git fetch origin"
-    system "git checkout --orphan #{branch}"
-    system "touch index.html"
-    system "git add ."
-    system "git commit -m 'initial #{branch} commit'"
-    system "git push origin #{branch}"
-  end
+  # local git initialized?
+  return if File.exist?(".git")
+  system "git init"
+  system "git remote add origin #{origin_url}"
+  system "git fetch origin"
+  system "git checkout --orphan #{branch}"
+
+  # remote gh-pages branch exists?
+  return if `git branch -r`.strip.split(/\s+/).include?("origin/#{branch}")
+  system "touch index.html"
+  system "git add ."
+  system "git commit -m 'initial #{branch} commit'"
+  system "git push origin #{branch}"
 end
 
 def git_update
