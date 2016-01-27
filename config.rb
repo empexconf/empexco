@@ -39,11 +39,13 @@ end
 
 # Build-specific configuration
 configure :build do
-  # Minify CSS on build
-  # activate :minify_css
+  activate :minify_css
+  activate :minify_javascript
+  activate :asset_hash
+  activate :gzip, exts: %w(.js .css .html .htm .svg .ttf .otf .woff .eot)
 
-  # Minify Javascript on build
-  # activate :minify_javascript
+  # so assets work on gh-pages
+  activate :relative_assets
 end
 
 activate :deploy do |deploy|
