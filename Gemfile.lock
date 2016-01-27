@@ -1,4 +1,13 @@
 GIT
+  remote: git://github.com/middleman-contrib/middleman-deploy.git
+  revision: 243ab38b08896cd5a37d6845a01a5761b934a898
+  specs:
+    middleman-deploy (2.0.0.pre.alpha)
+      middleman-core (>= 3.2)
+      net-sftp
+      ptools
+
+GIT
   remote: git://github.com/tiste/middleman-meta-tags.git
   revision: 67b368f45861cb614b3402ed6d2371b18a59dc75
   specs:
@@ -100,10 +109,6 @@ GEM
       sass (>= 3.4)
       tilt (~> 1.4.1)
       uglifier (~> 2.6)
-    middleman-deploy (1.0.0)
-      middleman-core (>= 3.2)
-      net-sftp
-      ptools
     middleman-livereload (3.4.6)
       em-websocket (~> 0.5.1)
       middleman-core (>= 3.3)
@@ -154,7 +159,7 @@ DEPENDENCIES
   middleman (>= 4.0.0)
   middleman-autoprefixer
   middleman-compass
-  middleman-deploy
+  middleman-deploy!
   middleman-livereload
   middleman-meta-tags!
   rake
