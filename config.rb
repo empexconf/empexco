@@ -24,6 +24,8 @@ page '/*.txt', layout: false
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
+
+  set :segment_id, "wjgcEjr9l62PIrXXgtJapxrLYFYTsF40"
 end
 
 ###
@@ -46,4 +48,6 @@ configure :build do
 
   # so assets work on gh-pages
   activate :relative_assets
+
+  set :segment_id, "zjDir8SGfEhikBBIlTqmXCwJxgjUICxk"
 end
