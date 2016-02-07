@@ -155,6 +155,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  addressable
   middleman (>= 4.0.0)
   middleman-autoprefixer
   middleman-compass

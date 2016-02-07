@@ -1,3 +1,5 @@
+require "addressable/uri"
+
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -53,4 +55,12 @@ configure :build do
   activate :relative_assets
 
   set :segment_id, "zjDir8SGfEhikBBIlTqmXCwJxgjUICxk"
+end
+
+helpers do
+  def tweet_link_to(text, params = {})
+    uri = Addressable::URI.parse("https://twitter.com/intent/tweet")
+    uri.query_values = params
+    link_to text, uri, target: "_blank"
+  end
 end
