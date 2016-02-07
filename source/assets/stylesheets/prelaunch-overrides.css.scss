@@ -1,0 +1,48 @@
+$subtleColor: #666;
+#header {
+  a {
+    color: #1cb495;
+
+    &.subtle {
+      color: $subtleColor;
+    }
+  }
+}
+
+.code-of-conduct, .call-for-speakers {
+  padding-top: 3.5em;
+  display: block;
+  color: black;
+  background: white;
+
+  p, ul {
+    margin: 0 0 1em 0;
+  }
+
+  strong, b {
+    color: black;
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+    color: black;
+    margin: 1em 0 0.5em;
+  }
+
+  p { color: black; }
+
+  #header {
+    h1,h2,h3,h4,h5,h6 { color: black; }
+    p { color: $subtleColor; }
+  }
+
+  #footer {
+    margin-top: 2em;
+    color: $subtleColor;
+    display: block;
+    position: static;
+    a {
+      color: $subtleColor;
+    }
+  }
+}
+

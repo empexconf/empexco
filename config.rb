@@ -5,6 +5,8 @@ set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
 
+set :markdown_engine, :redcarpet
+
 # Per-page layout changes:
 #
 # With no layout
@@ -20,6 +22,7 @@ page '/*.txt', layout: false
 #  which_fake_page: "Rendering a fake page with a local variable" }
 
 # General configuration
+activate :directory_indexes
 
 # Reload the browser automatically whenever files change
 configure :development do
