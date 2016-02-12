@@ -51,9 +51,6 @@ configure :build do
   activate :asset_hash
   activate :gzip, exts: %w(.js .css .html .htm .svg .ttf .otf .woff .eot)
 
-  # so assets work on gh-pages
-  activate :relative_assets
-
   set :segment_id, "zjDir8SGfEhikBBIlTqmXCwJxgjUICxk"
 end
 
