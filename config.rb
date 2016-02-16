@@ -52,6 +52,7 @@ configure :build do
   activate :gzip, exts: %w(.js .css .html .htm .svg .ttf .otf .woff .eot)
 
   set :segment_id, "zjDir8SGfEhikBBIlTqmXCwJxgjUICxk"
+  set :host, "http://empex.co"
 end
 
 helpers do
@@ -59,5 +60,13 @@ helpers do
     uri = Addressable::URI.parse("https://twitter.com/intent/tweet")
     uri.query_values = params
     link_to text, uri, target: "_blank"
+  end
+
+  def asset_url(kind, source, opts = {})
+    host + asset_path(kind, source, opts)
+  end
+
+  def host
+    config[:host] || ""
   end
 end

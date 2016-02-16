@@ -2,6 +2,17 @@
 @import "compass/css3/transition";
 @import "compass/css3/animation";
 
+@mixin font-smoothing($value: antialiased) {
+  @if $value == antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+
 @include font-face('GT-Walsheim-Regular', font-files(
   '/assets/fonts/GT-Walsheim-Regular.eot',
   '/assets/fonts/GT-Walsheim-Regular.eot',
@@ -18,6 +29,7 @@ body, input, select, textarea {
 body {
   display: block;
   padding: 4em;
+  @include font-smoothing(antialiased);
 }
 
 .logo {
@@ -60,6 +72,12 @@ body {
   left: 0;
   top: 0;
   z-index: 3;
+  color: rgba(255, 255, 255, 0.7);
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.9);
+    opacity: 1;
+  }
 }
 
 .code-of-conduct, .call-for-speakers {
@@ -113,7 +131,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
-    left: 25%;
+    left: 0;
     position: absolute;
     top: 0;
     width: 100%;
@@ -122,7 +140,6 @@ body {
 
     &.visible {
       @include transition(opacity 3s ease);
-      @include animation(bg 90s linear infinite);
       opacity: 1;
     }
   }
