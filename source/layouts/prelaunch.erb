@@ -8,10 +8,7 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Empire City Elixir Conf 2016" %></title>
 
-    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-
     <%= stylesheet_link_tag :all %>
-    <%= javascript_include_tag :all %>
     <%= partial 'meta' %>
   </head>
 
@@ -33,6 +30,9 @@
         <li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
       </ul>
     </footer>
+
+    <div id="moon"><div></div></div>
+    <%= javascript_include_tag "polyfills", "slideshow" %>
     <%= partial "analytics" %>
   </body>
 </html>

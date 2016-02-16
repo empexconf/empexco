@@ -1,4 +1,36 @@
+@import "compass/css3/font-face";
+@import "compass/css3/transition";
+@import "compass/css3/animation";
+
+@include font-face('GT-Walsheim-Regular', font-files(
+  '/assets/fonts/GT-Walsheim-Regular.eot',
+  '/assets/fonts/GT-Walsheim-Regular.eot',
+  '/assets/fonts/GT-Walsheim-Regular.ttf',
+  '/assets/fonts/GT-Walsheim-Regular.woff'
+));
+
 $subtleColor: #666;
+
+body, input, select, textarea {
+  font-family: "GT-Walsheim-Regular";
+}
+
+body {
+  display: block;
+  padding: 4em;
+}
+
+.logo {
+  background-size: 260%;
+  background-position: center;
+  width: 100px;
+  height: 100px;
+
+  &.white {
+    background-image: url('/assets/images/empex-logo-official-white.svg');
+  }
+}
+
 #header {
   a {
     color: #1cb495;
@@ -7,6 +39,27 @@ $subtleColor: #666;
       color: $subtleColor;
     }
   }
+
+  h1 {
+    font-size: 2.75em;
+  }
+
+  .logo {
+    width: 150px;
+    height: 150px;
+    background-image: url('/assets/images/empex-logo-official-white.svg');
+    margin-bottom: 2em;
+  }
+}
+
+#footer {
+  margin-top: 2em;
+  color: $subtleColor;
+  display: block;
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 3;
 }
 
 .code-of-conduct, .call-for-speakers {
@@ -46,3 +99,31 @@ $subtleColor: #666;
   }
 }
 
+#moon {
+  left: 0;
+  opacity: 0.50;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  div {
+    background-image: url('/assets/images/empex-moon.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    left: 25%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    z-index: 2;
+
+    &.visible {
+      @include transition(opacity 3s ease);
+      @include animation(bg 90s linear infinite);
+      opacity: 1;
+    }
+  }
+}
