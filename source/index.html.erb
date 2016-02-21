@@ -3,9 +3,11 @@ title: Empire City Elixir Conf
 layout: prelaunch
 ---
 
+<% content_for(:bottom_of_page) { partial "partials/moon" } %>
+
 <!-- Header -->
 <header id="header">
-  <div class="logo"></div>
+  <%= partial "partials/logo" %>
   <small>Crevalle proudly presents</small></br>
   <h1>Empire City Elixir Conference <span class="year">2016</span></h1>
   <p>A one-day conference for passionate programmers<br />

@@ -31,8 +31,8 @@
       </ul>
     </footer>
 
-    <div id="moon"><div></div></div>
-    <%= javascript_include_tag "polyfills", "slideshow" %>
+    <%= javascript_include_tag "polyfills" %>
     <%= partial "analytics" %>
+    <%= yield_content :bottom_of_page %>
   </body>
 </html>
