@@ -9,7 +9,8 @@
     <title><%= current_page.data.title || "Empire City Elixir Conf 2016" %></title>
 
     <%= stylesheet_link_tag :all %>
-    <%= partial 'meta' %>
+    <%= partial "meta" %>
+    <%= favicon_tag "favicon.ico" %>
   </head>
 
   <body class="<%= page_classes %>">
