@@ -1,0 +1,293 @@
+@font-face {
+  font-family: "GT-Walsheim-Regular";
+  src: url("/assets/fonts/GT-Walsheim-Regular-6545043a.eot") format('embedded-opentype'), url("/assets/fonts/GT-Walsheim-Regular-6545043a.eot") format('embedded-opentype'), url("/assets/fonts/GT-Walsheim-Regular-3fc5c20d.ttf") format('truetype'), url("/assets/fonts/GT-Walsheim-Regular-b0f70042.woff") format('woff'); }
+/* line 11, launch.scss */
+body {
+  background-color: #000;
+  display: block;
+  padding: 4em 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 18, launch.scss */
+body, input, select, textarea {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "GT-Walsheim-Regular";
+  font-size: 16pt;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.65em; }
+
+@media (min-width: 1200px) {
+  /* line 28, launch.scss */
+  body, input, select, textarea {
+    font-size: 12pt; } }
+@media (min-width: 1000px) {
+  /* line 34, launch.scss */
+  body, input, select, textarea {
+    font-size: 11pt; } }
+@media (min-width: 750px) {
+  /* line 40, launch.scss */
+  body, input, select, textarea {
+    font-size: 12pt; } }
+@media (min-width: 550px) {
+  /* line 46, launch.scss */
+  body, input, select, textarea {
+    font-size: 12pt; } }
+@media (min-width: 400px) {
+  /* line 52, launch.scss */
+  body, input, select, textarea {
+    font-size: 12pt; } }
+/* line 57, launch.scss */
+a {
+  color: #1cb495;
+  text-decoration: none; }
+  /* line 61, launch.scss */
+  a:hover {
+    border-bottom: dotted 1px rgba(255, 255, 255, 0.25);
+    color: #1cb495;
+    text-decoration: none; }
+
+/* line 68, launch.scss */
+strong, b {
+  color: #fff;
+  font-weight: 700; }
+
+/* line 73, launch.scss */
+em, i {
+  font-style: italic; }
+
+/* line 77, launch.scss */
+p {
+  margin: 0 0 2em 0; }
+
+/* line 81, launch.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+  font-weight: 700;
+  line-height: 1em;
+  margin: 0 0 1em 0; }
+
+/* line 88, launch.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: inherit;
+  text-decoration: none; }
+
+/* line 93, launch.scss */
+h1 {
+  font-size: 2.5em;
+  line-height: 1.25em; }
+
+/* line 98, launch.scss */
+h2 {
+  font-size: 1.75em;
+  line-height: 1.5em; }
+
+/* line 103, launch.scss */
+h3 {
+  font-size: 1.35em;
+  line-height: 1.5em; }
+
+/* line 108, launch.scss */
+h4 {
+  font-size: 1.1em;
+  line-height: 1.5em; }
+
+/* line 113, launch.scss */
+h5 {
+  font-size: 0.9em;
+  line-height: 1.5em; }
+
+/* line 118, launch.scss */
+h6 {
+  font-size: 0.7em;
+  line-height: 1.5em; }
+
+/* line 123, launch.scss */
+sub {
+  font-size: 0.8em;
+  position: relative;
+  top: 0.5em; }
+
+/* line 129, launch.scss */
+sup {
+  font-size: 0.8em;
+  position: relative;
+  top: -0.5em; }
+
+/* line 135, launch.scss */
+blockquote {
+  border-left: solid 8px rgba(255, 255, 255, 0.35);
+  font-style: italic;
+  margin: 0 0 2em 0;
+  padding: 0.5em 0 0.5em 2em; }
+
+/* line 142, launch.scss */
+code {
+  background: rgba(255, 255, 255, 0.125);
+  border-radius: 6px;
+  border: solid 2px rgba(255, 255, 255, 0.35);
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
+  margin: 0 0.25em;
+  padding: 0.25em 0.65em; }
+
+/* line 152, launch.scss */
+pre {
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
+  margin: 0 0 2em 0; }
+
+/* line 158, launch.scss */
+pre code {
+  display: block;
+  line-height: 1.75em;
+  padding: 1em 1.5em;
+  overflow-x: auto; }
+
+/* line 165, launch.scss */
+hr {
+  border: 0;
+  border-bottom: solid 2px rgba(255, 255, 255, 0.35);
+  margin: 2em 0; }
+
+/* line 171, launch.scss */
+hr.major {
+  margin: 3em 0; }
+
+/* line 175, launch.scss */
+.icon {
+  text-decoration: none;
+  border-bottom: none;
+  position: relative; }
+  /* line 180, launch.scss */
+  .icon:before {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important; }
+  /* line 188, launch.scss */
+  .icon > .label {
+    display: none; }
+
+/* List */
+/* line 195, launch.scss */
+ol {
+  list-style: decimal;
+  margin: 0 0 2em 0;
+  padding-left: 1.25em; }
+
+/* line 201, launch.scss */
+ol li {
+  padding-left: 0.25em; }
+
+/* line 205, launch.scss */
+ul {
+  list-style: disc;
+  margin: 0 0 2em 0;
+  padding-left: 1em; }
+
+/* line 212, launch.scss */
+ul.icons {
+  cursor: default;
+  list-style: none;
+  padding-left: 0; }
+  /* line 217, launch.scss */
+  ul.icons li {
+    display: inline-block;
+    padding: 0 1em 0 0; }
+  /* line 222, launch.scss */
+  ul.icons li:last-child {
+    padding-right: 0; }
+  /* line 226, launch.scss */
+  ul.icons li .icon:before {
+    font-size: 1.5em; }
+  /* line 230, launch.scss */
+  ul.icons li a {
+    color: inherit; }
+    /* line 232, launch.scss */
+    ul.icons li a:hover {
+      color: #1cb495;
+      text-decoration: none; }
+
+/* line 241, launch.scss */
+header h1 {
+  font-size: 3.25em;
+  margin: 0 0 0.55em 0; }
+/* line 246, launch.scss */
+header p {
+  font-size: 1.35em;
+  line-height: 1.65em;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  margin: 0 0 1.5em 0; }
+/* line 254, launch.scss */
+header h2 + p {
+  font-size: 1.25em;
+  margin-top: -1em;
+  line-height: 1.5em; }
+/* line 260, launch.scss */
+header h3 + p {
+  font-size: 1.1em;
+  margin-top: -0.8em;
+  line-height: 1.5em; }
+/* line 266, launch.scss */
+header h4 + p,
+header h5 + p,
+header h6 + p {
+  font-size: 0.9em;
+  margin-top: -0.6em;
+  line-height: 1.5em; }
+/* line 273, launch.scss */
+header small {
+  font-size: 1em; }
+
+@media screen and (max-width: 980px) {
+  /* line 279, launch.scss */
+  header br {
+    display: none; } }
+@media screen and (max-width: 736px) {
+  /* line 286, launch.scss */
+  header br {
+    display: inline; } }
+@media screen and (max-width: 480px) {
+  /* line 292, launch.scss */
+  header br {
+    display: none; } }
+@media screen and (max-width: 736px) {
+  /* line 298, launch.scss */
+  header h1 {
+    font-size: 2em; }
+
+  /* line 302, launch.scss */
+  header p {
+    font-size: 1em; } }
+@media screen and (max-width: 480px) {
+  /* line 308, launch.scss */
+  header {
+    margin: 0 0 1em 0; } }
+/* line 313, launch.scss */
+.logo {
+  display: block;
+  background-size: 260%;
+  background-position: center;
+  width: 150px;
+  height: 150px;
+  background-image: url("/assets/images/empex-logo-official.svg");
+  margin-bottom: 2em; }
+  /* line 322, launch.scss */
+  .logo.white {
+    background-image: url("/assets/images/empex-logo-official-white.svg"); }
+
+/* line 327, launch.scss */
+.replace-text {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
