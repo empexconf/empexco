@@ -9,7 +9,7 @@
     <title><%= current_page.data.title || "Empire City Elixir Conf 2016" %></title>
 
     <%= stylesheet_link_tag :all %>
-    <%= partial "meta" %>
+    <%= partial "partials/meta" %>
     <%= favicon_tag "favicon.ico" %>
   </head>
 
@@ -33,7 +33,7 @@
     </footer>
 
     <%= javascript_include_tag "polyfills" %>
-    <%= partial "analytics" %>
+    <%= partial "partials/analytics" %>
     <%= yield_content :bottom_of_page %>
   </body>
 </html>
