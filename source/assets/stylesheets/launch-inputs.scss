@@ -79,4 +79,14 @@ button,
       opacity: 0.9;
     }
   }
+
+  &.button-large {
+    height: 54px;
+    line-height: 54px;
+    padding: 0 48px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    border-radius: 4px;
+  }
 }
