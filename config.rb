@@ -44,7 +44,7 @@ activate :blog do |blog|
   blog.permalink = '{year}/{title}'
   blog.taglink = "tags/{tag}"
   blog.default_extension = ".md"
-  blog.layout   = "post"
+  blog.layout   = "layout"
   blog.paginate = true
   blog.per_page = 10
   blog.publish_future_dated = true
