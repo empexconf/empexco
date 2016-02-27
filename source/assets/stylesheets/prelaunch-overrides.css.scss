@@ -33,6 +33,7 @@ body {
 }
 
 .logo {
+  display: block;
   background-size: 260%;
   background-position: center;
   width: 150px;
@@ -43,6 +44,17 @@ body {
   &.white {
     background-image: url('/assets/images/empex-logo-official-white.svg');
   }
+}
+
+.replace-text {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 body {
