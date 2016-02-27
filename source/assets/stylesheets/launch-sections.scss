@@ -80,7 +80,7 @@
 }
 
 #speakers {
-  @include bg-gray;
+  @include bg-white;
   @include content-section;
 }
 
@@ -95,6 +95,7 @@
 }
 
 #organizers {
+  @include bg-gray;
   @include content-section;
 
   .organizer-list {
