@@ -8,30 +8,15 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Empire City Elixir Conf 2016" %></title>
 
-    <%= stylesheet_link_tag "prelaunch-all" %>
+    <%= stylesheet_link_tag "all" %>
     <%= partial "partials/meta" %>
     <%= favicon_tag "favicon.ico" %>
   </head>
 
   <body class="<%= page_classes %>">
-    <%= yield %>
-
-    <!-- Footer -->
-    <footer id="footer">
-      <ul class="icons">
-        <li><a href="https://twitter.com/empexco" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-        <li><a href="https://instagram.com/empirecityelixir" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-        <li><a href="https://github.com/empirecityelixir" class="icon fa-github"><span class="label">GitHub</span></a></li>
-        <li><a href="mailto:info@empex.co" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-      </ul>
-      <ul class="copyright">
-        <li>&copy; <%= link_to "Crevalle Technologies", "https://crevalle.io", target: '_blank' %></li>
-        <li><%= link_to "Call for Speakers", '/call-for-speakers.html', relative: true %></li>
-        <li><%= link_to "Code of Conduct", '/code-of-conduct.html', relative: true %></li>
-        <li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
-      </ul>
-    </footer>
-
+    <div class="container">
+      <%= yield %>
+    </div>
     <%= partial "partials/analytics" %>
     <%= yield_content :bottom_of_page %>
   </body>

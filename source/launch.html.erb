@@ -6,24 +6,21 @@ layout: layout
 <% content_for(:bottom_of_page) { partial "partials/moon" } %>
 
 <!-- Header -->
-<header id="header">
-  <%= partial "partials/logo" %>
-  <small>Crevalle proudly presents</small></br>
-  <h1>Empire City Elixir Conference <span class="year">2016</span></h1>
-  <p>A one-day conference for passionate programmers<br />
-     Saturday, May 21st<br />
-     New York City<br />
-    <%= link_to "Call for Speakers now open", "/call-for-speakers.html" %> &middot;
-    <%= tweet_link_to "#empex",
-      url: "http://empex.co",
-      text: "Empire City Elixir Conf is coming to New York City on May 21, 2016 #empex #elixirlang" %>
-  </p>
-</header>
+<section id="hero">
+  <header id="header" class="header">
+    <%= partial "partials/logo" %>
+    <small>Crevalle proudly presents</small></br>
+    <h1>Empire City Elixir Conference <span class="year">2016</span></h1>
+    <p>A one-day conference for passionate programmers<br />
+       Saturday, May 21st<br />
+       New York City<br />
+      <%= link_to "Call for Speakers now open", "/call-for-speakers.html" %> &middot;
+      <%= tweet_link_to "#empex",
+        url: "http://empex.co",
+        text: "Empire City Elixir Conf is coming to New York City on May 21, 2016 #empex #elixirlang" %>
+    </p>
+  </header>
+</section>
 
-<!-- Signup Form -->
-<form id="signup-form" accept-charset="UTF-8" action="https://formkeep.com/f/f87b168aeb37" method="POST">
-  <input type="email" name="email" id="email" placeholder="Email Address" />
-  <input type="submit" value="Send Me Updates" />
-</form>
-
-<p>Tickets on sale <strong>March 1, 2016</strong></p>
+<%= partial "partials/signup" %>
+<%= partial "partials/footer" %>
