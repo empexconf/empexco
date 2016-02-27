@@ -81,8 +81,12 @@
     width: 80%; } }
 /* line 82, launch-sections.scss */
 #speakers {
-  background-color: #1f1f1f;
+  background-color: #fff;
+  color: #000;
   padding: 4em 0; }
+  /* line 83, launch-settings.scss */
+  #speakers h1, #speakers h2, #speakers h3, #speakers h4, #speakers h5, #speakers h6, #speakers strong {
+    color: #000; }
   /* line 91, launch-settings.scss */
   #speakers p {
     font-size: 1.25em;
@@ -103,7 +107,7 @@
   color: #000;
   padding: 4em 0; }
   /* line 83, launch-settings.scss */
-  #sponsors h1, #sponsors h2, #sponsors h3, #sponsors h4, #sponsors h5, #sponsors h6 {
+  #sponsors h1, #sponsors h2, #sponsors h3, #sponsors h4, #sponsors h5, #sponsors h6, #sponsors strong {
     color: #000; }
   /* line 91, launch-settings.scss */
   #sponsors p {
@@ -112,12 +116,13 @@
 
 /* line 97, launch-sections.scss */
 #organizers {
+  background-color: #1f1f1f;
   padding: 4em 0; }
   /* line 91, launch-settings.scss */
   #organizers p {
     font-size: 1.25em;
     line-height: 1.5em; }
-  /* line 100, launch-sections.scss */
+  /* line 101, launch-sections.scss */
   #organizers .organizer-list {
     display: -webkit-flex;
     display: flex;
@@ -126,7 +131,7 @@
     list-style: none;
     -webkit-flex-flow: row wrap;
     justify-content: flex-start; }
-  /* line 104, launch-sections.scss */
+  /* line 105, launch-sections.scss */
   #organizers .organizer {
     overflow: hidden;
     _overflow: visible;
@@ -145,42 +150,42 @@
       margin-right: 10px;
       display: block;
       border-radius: 4px; }
-    /* line 108, launch-sections.scss */
+    /* line 109, launch-sections.scss */
     #organizers .organizer h3 {
       margin: 0;
       font-size: 1.2em;
       letter-spacing: .05rem; }
   @media (min-width: 400px) {
-    /* line 116, launch-sections.scss */
+    /* line 117, launch-sections.scss */
     #organizers .organizer {
       width: 100%; } }
   @media (min-width: 750px) {
-    /* line 122, launch-sections.scss */
+    /* line 123, launch-sections.scss */
     #organizers .organizer {
       width: 200px; } }
   @media (min-width: 1000px) {
-    /* line 128, launch-sections.scss */
+    /* line 129, launch-sections.scss */
     #organizers .organizer {
       width: 300px; } }
 
-/* line 134, launch-sections.scss */
+/* line 135, launch-sections.scss */
 #signup-form {
   display: -webkit-flex;
   display: flex;
   position: relative; }
-  /* line 138, launch-sections.scss */
+  /* line 139, launch-sections.scss */
   #signup-form input[type="text"],
   #signup-form input[type="password"],
   #signup-form input[type="email"] {
     width: 18em; }
-  /* line 144, launch-sections.scss */
+  /* line 145, launch-sections.scss */
   #signup-form > * {
     margin: 0 0 0 1em; }
-  /* line 148, launch-sections.scss */
+  /* line 149, launch-sections.scss */
   #signup-form > :first-child {
     margin: 0 0 0 0; }
 
-/* line 153, launch-sections.scss */
+/* line 154, launch-sections.scss */
 #bottom {
   padding: 4em 0; }
   /* line 91, launch-settings.scss */
@@ -188,7 +193,7 @@
     font-size: 1.25em;
     line-height: 1.5em; }
 
-/* line 157, launch-sections.scss */
+/* line 158, launch-sections.scss */
 #footer {
   -moz-transition: opacity 0.2s ease-in-out;
   -o-transition: opacity 0.2s ease-in-out;
@@ -200,41 +205,41 @@
   opacity: 0.5;
   margin-top: 2em;
   color: rgba(255, 255, 255, 0.7); }
-  /* line 166, launch-sections.scss */
+  /* line 167, launch-sections.scss */
   #footer a {
     color: inherit; }
-    /* line 168, launch-sections.scss */
+    /* line 169, launch-sections.scss */
     #footer a:hover {
       color: #1cb495;
       text-decoration: none; }
-  /* line 174, launch-sections.scss */
+  /* line 175, launch-sections.scss */
   #footer .icons {
     margin: 0 0 0.5em 0; }
-  /* line 178, launch-sections.scss */
+  /* line 179, launch-sections.scss */
   #footer .links {
     list-style: none;
     padding: 0; }
-    /* line 182, launch-sections.scss */
+    /* line 183, launch-sections.scss */
     #footer .links li {
       border-left: solid 1px rgba(255, 255, 255, 0.25);
       display: inline-block;
       line-height: 1em;
       margin: 0 0 0 0.75em;
       padding: 0 0 0 0.75em; }
-    /* line 190, launch-sections.scss */
+    /* line 191, launch-sections.scss */
     #footer .links li:first-child {
       border-left: 0;
       margin-left: 0;
       padding-left: 0; }
-  /* line 197, launch-sections.scss */
+  /* line 198, launch-sections.scss */
   #footer:hover {
     color: rgba(255, 255, 255, 0.9);
     opacity: 1; }
-  /* line 202, launch-sections.scss */
+  /* line 203, launch-sections.scss */
   #footer > :last-child {
     margin-bottom: 0; }
 
-/* line 207, launch-sections.scss */
+/* line 208, launch-sections.scss */
 #moon {
   left: 0;
   opacity: 0.50;
@@ -243,7 +248,7 @@
   width: 100%;
   height: 100%;
   z-index: -1; }
-  /* line 216, launch-sections.scss */
+  /* line 217, launch-sections.scss */
   #moon div {
     background-image: url("/assets/images/empex-moon.jpg");
     background-size: cover;
@@ -254,7 +259,7 @@
     top: 0;
     width: 100%;
     opacity: 0; }
-    /* line 227, launch-sections.scss */
+    /* line 228, launch-sections.scss */
     #moon div.visible {
       -moz-transition: opacity 3s ease;
       -o-transition: opacity 3s ease;
@@ -263,14 +268,14 @@
       opacity: 1; }
 
 @media (min-width: 400px) {
-  /* line 235, launch-sections.scss */
+  /* line 236, launch-sections.scss */
   #moon {
     top: 200px; } }
 @media (min-width: 750px) {
-  /* line 239, launch-sections.scss */
+  /* line 240, launch-sections.scss */
   #moon {
     top: 100px; } }
 @media (min-width: 1000px) {
-  /* line 243, launch-sections.scss */
+  /* line 244, launch-sections.scss */
   #moon {
     top: 0px; } }
