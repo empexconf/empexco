@@ -111,23 +111,76 @@
     line-height: 1.5em; }
 
 /* line 97, launch-sections.scss */
+#organizers {
+  padding: 4em 0; }
+  /* line 91, launch-settings.scss */
+  #organizers p {
+    font-size: 1.25em;
+    line-height: 1.5em; }
+  /* line 100, launch-sections.scss */
+  #organizers .organizer-list {
+    display: -webkit-flex;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-start; }
+  /* line 104, launch-sections.scss */
+  #organizers .organizer {
+    overflow: hidden;
+    _overflow: visible;
+    zoom: 1;
+    margin: 1em 1em 1em 0; }
+    /* line 112, launch-settings.scss */
+    #organizers .organizer .bd {
+      overflow: hidden;
+      _overflow: visible;
+      zoom: 1; }
+    /* line 117, launch-settings.scss */
+    #organizers .organizer img {
+      width: 75px;
+      height: 75px;
+      float: left;
+      margin-right: 10px;
+      display: block;
+      border-radius: 4px; }
+    /* line 108, launch-sections.scss */
+    #organizers .organizer h3 {
+      margin: 0;
+      font-size: 1.2em;
+      letter-spacing: .05rem; }
+  @media (min-width: 400px) {
+    /* line 116, launch-sections.scss */
+    #organizers .organizer {
+      width: 100%; } }
+  @media (min-width: 750px) {
+    /* line 122, launch-sections.scss */
+    #organizers .organizer {
+      width: 200px; } }
+  @media (min-width: 1000px) {
+    /* line 128, launch-sections.scss */
+    #organizers .organizer {
+      width: 300px; } }
+
+/* line 134, launch-sections.scss */
 #signup-form {
   display: -webkit-flex;
   display: flex;
   position: relative; }
-  /* line 101, launch-sections.scss */
+  /* line 138, launch-sections.scss */
   #signup-form input[type="text"],
   #signup-form input[type="password"],
   #signup-form input[type="email"] {
     width: 18em; }
-  /* line 107, launch-sections.scss */
+  /* line 144, launch-sections.scss */
   #signup-form > * {
     margin: 0 0 0 1em; }
-  /* line 111, launch-sections.scss */
+  /* line 148, launch-sections.scss */
   #signup-form > :first-child {
     margin: 0 0 0 0; }
 
-/* line 116, launch-sections.scss */
+/* line 153, launch-sections.scss */
 #bottom {
   padding: 4em 0; }
   /* line 91, launch-settings.scss */
@@ -135,7 +188,7 @@
     font-size: 1.25em;
     line-height: 1.5em; }
 
-/* line 120, launch-sections.scss */
+/* line 157, launch-sections.scss */
 #footer {
   -moz-transition: opacity 0.2s ease-in-out;
   -o-transition: opacity 0.2s ease-in-out;
@@ -147,41 +200,41 @@
   opacity: 0.5;
   margin-top: 2em;
   color: rgba(255, 255, 255, 0.7); }
-  /* line 129, launch-sections.scss */
+  /* line 166, launch-sections.scss */
   #footer a {
     color: inherit; }
-    /* line 131, launch-sections.scss */
+    /* line 168, launch-sections.scss */
     #footer a:hover {
       color: #1cb495;
       text-decoration: none; }
-  /* line 137, launch-sections.scss */
+  /* line 174, launch-sections.scss */
   #footer .icons {
     margin: 0 0 0.5em 0; }
-  /* line 141, launch-sections.scss */
+  /* line 178, launch-sections.scss */
   #footer .links {
     list-style: none;
     padding: 0; }
-    /* line 145, launch-sections.scss */
+    /* line 182, launch-sections.scss */
     #footer .links li {
       border-left: solid 1px rgba(255, 255, 255, 0.25);
       display: inline-block;
       line-height: 1em;
       margin: 0 0 0 0.75em;
       padding: 0 0 0 0.75em; }
-    /* line 153, launch-sections.scss */
+    /* line 190, launch-sections.scss */
     #footer .links li:first-child {
       border-left: 0;
       margin-left: 0;
       padding-left: 0; }
-  /* line 160, launch-sections.scss */
+  /* line 197, launch-sections.scss */
   #footer:hover {
     color: rgba(255, 255, 255, 0.9);
     opacity: 1; }
-  /* line 165, launch-sections.scss */
+  /* line 202, launch-sections.scss */
   #footer > :last-child {
     margin-bottom: 0; }
 
-/* line 170, launch-sections.scss */
+/* line 207, launch-sections.scss */
 #moon {
   left: 0;
   opacity: 0.50;
@@ -190,7 +243,7 @@
   width: 100%;
   height: 100%;
   z-index: -1; }
-  /* line 179, launch-sections.scss */
+  /* line 216, launch-sections.scss */
   #moon div {
     background-image: url("/assets/images/empex-moon.jpg");
     background-size: cover;
@@ -201,7 +254,7 @@
     top: 0;
     width: 100%;
     opacity: 0; }
-    /* line 190, launch-sections.scss */
+    /* line 227, launch-sections.scss */
     #moon div.visible {
       -moz-transition: opacity 3s ease;
       -o-transition: opacity 3s ease;
@@ -210,14 +263,14 @@
       opacity: 1; }
 
 @media (min-width: 400px) {
-  /* line 198, launch-sections.scss */
+  /* line 235, launch-sections.scss */
   #moon {
     top: 200px; } }
 @media (min-width: 750px) {
-  /* line 202, launch-sections.scss */
+  /* line 239, launch-sections.scss */
   #moon {
     top: 100px; } }
 @media (min-width: 1000px) {
-  /* line 206, launch-sections.scss */
+  /* line 243, launch-sections.scss */
   #moon {
     top: 0px; } }
