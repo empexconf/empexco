@@ -91,4 +91,8 @@ helpers do
   def link_to_twitter(handle)
     link_to "@#{handle}", "https://twitter.com/#{handle}"
   end
+
+  def google_api_key
+    'AIzaSyDavTubUc7sQx7cvY-NA--jLhQgOrEpgic'
+  end
 end
