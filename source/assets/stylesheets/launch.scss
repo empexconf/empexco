@@ -24,31 +24,31 @@ body, input, select, textarea {
   line-height: 1.65em;
 }
 
-@media screen and (max-width: 1680px) {
+@include hd {
   body, input, select, textarea {
     font-size: 12pt;
   }
 }
 
-@media screen and (max-width: 1280px) {
+@include desktop {
   body, input, select, textarea {
     font-size: 11pt;
   }
 }
 
-@media screen and (max-width: 980px) {
+@include tablet {
   body, input, select, textarea {
     font-size: 12pt;
   }
 }
 
-@media screen and (max-width: 736px) {
+@include phablet {
   body, input, select, textarea {
     font-size: 12pt;
   }
 }
 
-@media screen and (max-width: 480px) {
+@include mobile {
   body, input, select, textarea {
     font-size: 12pt;
   }
