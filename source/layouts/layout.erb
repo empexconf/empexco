@@ -14,9 +14,7 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <div class="container">
-      <%= yield %>
-    </div>
+    <%= yield %>
     <%= partial "partials/analytics" %>
     <%= yield_content :bottom_of_page %>
   </body>

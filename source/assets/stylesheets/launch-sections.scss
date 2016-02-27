@@ -1,9 +1,23 @@
 @import "launch-settings";
 
 #hero {
+  padding: 4em 0 8em;
+  text-align: center;
+  position: relative;
+
   .logo {
+    margin: 0 auto;
     background-image: url('/assets/images/empex-logo-official-white.svg');
+    margin-bottom: 1em;
   }
+}
+
+#main {
+  background-color: $color0;
+}
+
+#speakers {
+
 }
 
 #signup-form {
@@ -26,48 +40,78 @@
 }
 
 #footer {
-  @include transition(opacity 0.5s ease-in-out);
+  @include transition(opacity 0.2s ease-in-out);
   bottom: 4em;
   color: rgba(255, 255, 255, 0.5);
   left: 4em;
   opacity: 0.5;
   margin-top: 2em;
-  color: $subtleColor;
+  color: rgba(255, 255, 255, 0.7);
 
   a {
-    color: $subtleColor;
+    color: inherit;
+    &:hover {
+      color: $primaryColor;
+      text-decoration: none;
+    }
   }
 
   .icons {
     margin: 0 0 0.5em 0;
   }
 
-  .copyright {
-    font-size: 0.8em;
+  .links {
     list-style: none;
     padding: 0;
+
+    li {
+      border-left: solid 1px rgba(255, 255, 255, 0.25);
+      display: inline-block;
+      line-height: 1em;
+      margin: 0 0 0 0.75em;
+      padding: 0 0 0 0.75em;
+    }
+
+    li:first-child {
+      border-left: 0;
+      margin-left: 0;
+      padding-left: 0;
+    }
   }
 
-  .copyright li {
-    border-left: solid 1px rgba(255, 255, 255, 0.25);
-    display: inline-block;
-    line-height: 1em;
-    margin: 0 0 0 0.75em;
-    padding: 0 0 0 0.75em;
-  }
-  .copyright li:first-child {
-    border-left: 0;
-    margin-left: 0;
-    padding-left: 0;
-  }
-  .copyright a {
-    color: inherit;
-  }
   &:hover {
+    color: rgba(255, 255, 255, 0.9);
     opacity: 1;
   }
+
   > :last-child {
     margin-bottom: 0;
   }
 }
 
+#moon {
+  left: 0;
+  opacity: 0.50;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  div {
+    background-image: url('/assets/images/empex-moon.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    z-index: -1;
+
+    &.visible {
+      @include transition(opacity 3s ease);
+      opacity: 1;
+    }
+  }
+}

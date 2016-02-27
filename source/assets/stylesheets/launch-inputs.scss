@@ -69,4 +69,14 @@ button,
       border-color: $primaryHoverColor;
     }
   }
+
+  &.button-secondary{
+    color: black;
+    background-color: $color4;
+    border-color: $color4;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
 }

@@ -3,6 +3,13 @@ $primaryColor: #1cb495;
 $linkColor: $primaryColor;
 $primaryHoverColor: #1fcaa7;
 
+$color0: #1f1f1f;
+$color1: #594f4f;
+$color2: #547980;
+$color3: #45ada8;
+$color4: #9de0ad;
+$color5: #e5fcc2;
+
 @import "compass/css3/animation";
 @import "compass/css3/appearance";
 @import "compass/css3/flexbox";
@@ -19,3 +26,18 @@ $primaryHoverColor: #1fcaa7;
     -moz-osx-font-smoothing: auto;
   }
 }
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}

@@ -2,16 +2,16 @@
 @import "launch-settings";
 
 @include font-face('GT-Walsheim-Regular', font-files(
-'/assets/fonts/GT-Walsheim-Regular.eot',
-'/assets/fonts/GT-Walsheim-Regular.eot',
-'/assets/fonts/GT-Walsheim-Regular.ttf',
-'/assets/fonts/GT-Walsheim-Regular.woff'
+  '/assets/fonts/GT-Walsheim-Regular.eot',
+  '/assets/fonts/GT-Walsheim-Regular.eot',
+  '/assets/fonts/GT-Walsheim-Regular.ttf',
+  '/assets/fonts/GT-Walsheim-Regular.woff'
 ));
 
 body {
   background-color: #000;
   display: block;
-  padding: 4em;
+  padding: 4em 0;
   @include font-smoothing(antialiased);
 }
 
@@ -228,11 +228,15 @@ ul {
     }
 
     li .icon:before {
-      font-size: 1.25em;
+      font-size: 1.5em;
     }
 
     li a {
       color: inherit;
+      &:hover {
+        color: $primaryColor;
+        text-decoration: none;
+      }
     }
   }
 }
@@ -311,6 +315,7 @@ header {
 }
 
 .logo {
+  display: block;
   background-size: 260%;
   background-position: center;
   width: 150px;
@@ -321,4 +326,24 @@ header {
   &.white {
     background-image: url('/assets/images/empex-logo-official-white.svg');
   }
+}
+
+.content-section {
+  padding: 4em 0;
+
+  p {
+    font-size: 1.25em;
+    line-height: 1.5em;
+  }
+}
+
+.replace-text {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }

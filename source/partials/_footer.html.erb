@@ -6,8 +6,13 @@
     <li><a href="https://github.com/empirecityelixir" class="icon fa-github"><span class="label">GitHub</span></a></li>
     <li><a href="mailto:info@empex.co" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
   </ul>
-  <ul class="copyright">
+  <ul class="links">
     <li>&copy; <%= link_to "Crevalle Technologies", "https://crevalle.io", target: '_blank' %></li>
+    <li>
+      <%= tweet_link_to "Tweet at #empex",
+        url: "http://empex.co",
+        text: "Empire City Elixir Conf is coming to New York City on May 21, 2016 #empex #elixirlang" %>
+    </li>
     <li><%= link_to "Call for Speakers", '/call-for-speakers.html', relative: true %></li>
     <li><%= link_to "Code of Conduct", '/code-of-conduct.html', relative: true %></li>
   </ul>
