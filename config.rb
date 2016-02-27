@@ -47,6 +47,7 @@ activate :blog do |blog|
   blog.layout   = "post"
   blog.paginate = true
   blog.per_page = 10
+  blog.publish_future_dated = true
 end
 
 #######
