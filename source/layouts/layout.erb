@@ -15,6 +15,8 @@
 
   <body class="<%= page_classes %>">
     <%= yield %>
+    <%= javascript_include_tag "vendor/jquery-2.2.1.min.js" %>
+    <%= javascript_include_tag "nav.js" %>
     <%= partial "partials/analytics" %>
     <%= yield_content :bottom_of_page %>
   </body>

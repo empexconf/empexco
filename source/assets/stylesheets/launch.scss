@@ -208,10 +208,6 @@ ul {
   padding-left: 1em;
 }
 
-ul li {
-  padding-left: 0.5em;
-}
-
 ul {
   &.icons {
     cursor: default;
@@ -325,15 +321,6 @@ header {
 
   &.white {
     background-image: url('/assets/images/empex-logo-official-white.svg');
-  }
-}
-
-.content-section {
-  padding: 4em 0;
-
-  p {
-    font-size: 1.25em;
-    line-height: 1.5em;
   }
 }
 
