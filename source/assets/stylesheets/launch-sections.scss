@@ -94,6 +94,43 @@
   @include content-section;
 }
 
+#organizers {
+  @include content-section;
+
+  .organizer-list {
+    @include media-container;
+  }
+
+  .organizer {
+    @include media-item(75px);
+    margin: 1em 1em 1em 0;
+
+    h3 {
+      margin: 0;
+      font-size: 1.2em;
+      letter-spacing: .05rem;
+    }
+  }
+
+  @include mobile {
+    .organizer {
+      width: 100%;
+    }
+  }
+
+  @include tablet {
+    .organizer {
+      width: 200px;
+    }
+  }
+
+  @include desktop {
+    .organizer {
+      width: 300px;
+    }
+  }
+}
+
 #signup-form {
   @include display-flex;
   position: relative;

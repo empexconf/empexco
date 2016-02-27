@@ -93,3 +93,33 @@ $breakpoints: (mobile: 400px,
     line-height: 1.5em;
   }
 }
+
+@mixin media-container {
+  @include display-flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+@mixin media-item($size: 70px) {
+  overflow:hidden;
+
+  _overflow:visible;
+  zoom:1;
+
+  .bd {
+    overflow:hidden;
+    _overflow:visible;
+    zoom:1;
+  }
+  img {
+    width: $size;
+    height: $size;
+    float:left;
+    margin-right: 10px;
+    display:block;
+    border-radius: 4px;
+  }
+}

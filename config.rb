@@ -34,18 +34,25 @@ configure :development do
   set :segment_id, "wjgcEjr9l62PIrXXgtJapxrLYFYTsF40"
 end
 
-###
-# Helpers
-###
+###########################
+## Organizers
+###########################
 
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+activate :blog do |blog|
+  blog.name = "organizers"
+  blog.prefix = 'organizers'
+  blog.permalink = '{year}/{title}'
+  blog.taglink = "tags/{tag}"
+  blog.default_extension = ".md"
+  blog.layout   = "post"
+  blog.paginate = true
+  blog.per_page = 10
+end
 
-# Build-specific configuration
+#######
+# Build
+#######
+
 configure :build do
   activate :minify_css
   activate :minify_javascript
@@ -55,6 +62,10 @@ configure :build do
   set :segment_id, "zjDir8SGfEhikBBIlTqmXCwJxgjUICxk"
   set :host, "http://empex.co"
 end
+
+#########
+# Helpers
+#########
 
 helpers do
   def tweet_link_to(text, params = {})
@@ -69,5 +80,14 @@ helpers do
 
   def host
     config[:host] || ""
+  end
+
+  def link_to_link(url)
+    uri = Addressable::URI.parse(url)
+    link_to uri.host, uri, target: "_blank"
+  end
+
+  def link_to_twitter(handle)
+    link_to "@#{handle}", "https://twitter.com/#{handle}"
   end
 end

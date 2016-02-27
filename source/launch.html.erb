@@ -5,6 +5,8 @@ layout: layout
 
 <% content_for(:bottom_of_page) { javascript_include_tag "moon" } %>
 
+<% page_nav = %w[speakers location sponsors organizers] %>
+
 <!-- Header -->
 <section id="hero">
   <div id="moon"><div></div></div>
@@ -24,9 +26,11 @@ layout: layout
 <nav id="navbar" class="navbar">
   <div class="container">
     <ul class="navbar-list">
-      <li class="navbar-item"><a class="navbar-link" href="#speakers">Speakers</a></li>
-      <li class="navbar-item"><a class="navbar-link" href="#location">Location</a></li>
-      <li class="navbar-item"><a class="navbar-link" href="#sponsors">Sponsors</a></li>
+      <% page_nav.each do |nav| %>
+        <li class="navbar-item">
+          <%= link_to nav.titleize, "##{nav}", class: "navbar-link" %>
+        </li>
+      <% end %>
     </ul>
   </div>
 </nav>
@@ -52,6 +56,13 @@ layout: layout
   <div class="content-section container">
     <h2>Sponsors</h2>
     <p>Coming soon</p>
+  </div>
+</section>
+
+<section id="organizers">
+  <div class="content-section container">
+    <h2>Organizers</h2>
+    <%= partial "partials/organizers" %>
   </div>
 </section>
 
