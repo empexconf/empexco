@@ -8,7 +8,7 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Empire City Elixir Conf 2016" %></title>
 
-    <%= stylesheet_link_tag :all %>
+    <%= stylesheet_link_tag "prelaunch-all" %>
     <%= partial "partials/meta" %>
     <%= favicon_tag "favicon.ico" %>
   </head>
@@ -32,7 +32,6 @@
       </ul>
     </footer>
 
-    <%= javascript_include_tag "polyfills" %>
     <%= partial "partials/analytics" %>
     <%= yield_content :bottom_of_page %>
   </body>
