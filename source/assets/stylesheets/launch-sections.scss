@@ -1,5 +1,30 @@
 @import "launch-settings";
 
+#hero {
+  .logo {
+    background-image: url('/assets/images/empex-logo-official-white.svg');
+  }
+}
+
+#signup-form {
+  @include display-flex;
+  position: relative;
+
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    width: 18em;
+  }
+
+  > * {
+    margin: 0 0 0 1em;
+  }
+
+  > :first-child {
+    margin: 0 0 0 0;
+  }
+}
+
 #footer {
   @include transition(opacity 0.5s ease-in-out);
   bottom: 4em;
@@ -45,3 +70,4 @@
     margin-bottom: 0;
   }
 }
+

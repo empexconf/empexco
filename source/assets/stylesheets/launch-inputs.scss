@@ -1,0 +1,72 @@
+@import "launch-settings";
+
+@include keyframes(focus) {
+  0% {
+    @include transform(scale(1));
+  }
+
+  50% {
+    @include transform(scale(1.025));
+  }
+
+  100% {
+    @include transform(scale(1));
+  }
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+textarea {
+  @include appearance(none);
+  @include transform(scale(1));
+  @include transition(border-color 0.2s ease, background-color 0.2s ease);
+  background-color: transparent;
+  border-radius: 6px;
+  border: none;
+  border: solid 2px rgba(255, 255, 255, 0.35);
+  color: inherit;
+  display: block;
+  outline: 0;
+  padding: 0 1em;
+  text-decoration: none;
+  width: 100%;
+  &:invalid {
+    box-shadow: none;
+  }
+
+  &:focus {
+    @include animation(focus 0.1s);
+    background-color: rgba(255, 255, 255, 0.125);
+    border-color: $primaryColor;
+  }
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+  &:hover {
+    background-color: $primaryHoverColor;
+  }
+  &:active {
+    background-color: #199e83;
+  }
+
+  &.disabled,
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  &.button-primary{
+    background-color: $primaryColor;
+    border-color: $primaryColor;
+
+    &:hover {
+      background-color: $primaryHoverColor;
+      border-color: $primaryHoverColor;
+    }
+  }
+}

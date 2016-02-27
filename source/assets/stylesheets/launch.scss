@@ -24,13 +24,43 @@ body, input, select, textarea {
   line-height: 1.65em;
 }
 
+@media screen and (max-width: 1680px) {
+  body, input, select, textarea {
+    font-size: 12pt;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  body, input, select, textarea {
+    font-size: 11pt;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  body, input, select, textarea {
+    font-size: 12pt;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  body, input, select, textarea {
+    font-size: 12pt;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body, input, select, textarea {
+    font-size: 12pt;
+  }
+}
+
 a {
-  color: #1cb495;
+  color: $linkColor;
   text-decoration: none;
 
   &:hover {
     border-bottom: dotted 1px rgba(255, 255, 255, 0.25);
-    color: #1cb495;
+    color: $linkColor;
     text-decoration: none;
   }
 }
@@ -204,5 +234,91 @@ ul {
     li a {
       color: inherit;
     }
+  }
+}
+
+header {
+  h1 {
+    font-size: 3.25em;
+    margin: 0 0 0.55em 0;
+  }
+
+  p {
+    font-size: 1.35em;
+    line-height: 1.65em;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    margin: 0 0 1.5em 0;
+  }
+
+  h2 + p {
+    font-size: 1.25em;
+    margin-top: -1em;
+    line-height: 1.5em;
+  }
+
+  h3 + p {
+    font-size: 1.1em;
+    margin-top: -0.8em;
+    line-height: 1.5em;
+  }
+
+  h4 + p,
+  h5 + p,
+  h6 + p {
+    font-size: 0.9em;
+    margin-top: -0.6em;
+    line-height: 1.5em;
+  }
+  small {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  header br {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 736px) {
+  header br {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header br {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    margin: 0 0 1em 0;
+  }
+}
+
+.logo {
+  background-size: 260%;
+  background-position: center;
+  width: 150px;
+  height: 150px;
+  background-image: url('/assets/images/empex-logo-official.svg');
+  margin-bottom: 2em;
+
+  &.white {
+    background-image: url('/assets/images/empex-logo-official-white.svg');
   }
 }
