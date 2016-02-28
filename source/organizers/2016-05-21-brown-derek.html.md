@@ -1,6 +1,6 @@
 ---
 title: "Derek Brown"
-image: /assets/images/empex-logo-optimized.jpg
+image: /assets/images/people/derek.jpg
 link:
-twitter: tbd
+twitter: dbrown_11
 ---
