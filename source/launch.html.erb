@@ -26,10 +26,9 @@ layout: layout
 <nav id="navbar" class="navbar">
   <div class="container">
     <ul class="navbar-list">
+      <li class="navbar-item"><%= link_to "Emp.ex", "#hero", class: "navbar-link" %></li>
       <% page_nav.each do |nav| %>
-        <li class="navbar-item">
-          <%= link_to nav.titleize, "##{nav}", class: "navbar-link" %>
-        </li>
+        <li class="navbar-item"><%= link_to nav.titleize, "##{nav}", class: "navbar-link" %></li>
       <% end %>
     </ul>
   </div>
