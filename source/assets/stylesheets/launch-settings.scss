@@ -74,6 +74,14 @@ $breakpoints: (mobile: 400px,
   }
 }
 
+@mixin bg-cloudy {
+  background-color: #f5f3f6;
+  color: #000;
+  h1, h2, h3, h4, h5, h6, strong {
+    color: #000;
+  }
+}
+
 @mixin bg-gray {
   background-color: $color0;
 }
