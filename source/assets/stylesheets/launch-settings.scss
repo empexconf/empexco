@@ -15,6 +15,7 @@ $color5: #e5fcc2;
 @import "compass/css3/flexbox";
 @import "compass/css3/transform";
 @import "compass/css3/transition";
+@import "compass/utilities/general/clearfix";
 
 @mixin font-smoothing($value: antialiased) {
   @if $value == antialiased {
@@ -95,25 +96,23 @@ $breakpoints: (mobile: 400px,
 }
 
 @mixin media-container {
-  @include display-flex;
   padding: 0;
   margin: 0;
   list-style: none;
-  -webkit-flex-flow: row wrap;
-  justify-content: flex-start;
+  @include clearfix;
 }
 
 @mixin media-item($size: 70px) {
+  float: left;
   overflow:hidden;
 
-  _overflow:visible;
   zoom:1;
 
   .bd {
     overflow:hidden;
-    _overflow:visible;
     zoom:1;
   }
+
   img {
     width: $size;
     height: $size;
