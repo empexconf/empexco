@@ -3,22 +3,23 @@
 #hero {
   text-align: center;
   position: relative;
+  padding: 2em 0;
 
   .logo {
     margin: 0 auto;
     background-image: url('/assets/images/empex-logo-official-white.svg');
     margin-bottom: 1em;
   }
-}
 
-@include mobile {
-  #hero {
+  @include tablet {
     padding: 4em 0;
   }
-}
 
-@include tablet {
-  #hero {
+  @include tablet {
+    padding: 4em 0;
+  }
+
+  @include desktop {
     padding: 8em 0;
   }
 }
@@ -116,35 +117,28 @@
   .organizer {
     @include media-item(75px);
     margin: 1em 1em 1em 0;
-    height: 80px;
+    line-height: 1.2em;
 
     h3 {
       margin: 0;
       font-size: 1.2em;
       letter-spacing: .05rem;
     }
-  }
 
-  @include mobile {
-    .organizer {
+    @include mobile {
       width: 100%;
     }
-  }
 
-  @include phablet {
-    .organizer {
+    @include phablet {
       width: 275px;
     }
-  }
 
-  @include tablet {
-    .organizer {
+    @include tablet {
       width: 250px;
+      line-height: 1.5em;
     }
-  }
 
-  @include hd {
-    .organizer {
+    @include hd {
       width: 300px;
     }
   }
