@@ -1,29 +1,75 @@
 ---
 title: Empire City Elixir Conf
-layout: prelaunch
+layout: layout
 ---
 
-<% content_for(:bottom_of_page) { partial "partials/moon" } %>
+<% content_for(:bottom_of_page) { javascript_include_tag "moon" } %>
+
+<% page_nav = %w[speakers location sponsors organizers] %>
 
 <!-- Header -->
-<header id="header">
-  <%= partial "partials/logo" %>
-  <small>Crevalle proudly presents</small></br>
-  <h1>Empire City Elixir Conference <span class="year">2016</span></h1>
-  <p>A one-day conference for passionate programmers<br />
-     Saturday, May 21st<br />
-     New York City<br />
-    <%= link_to "Call for Speakers now open", "/call-for-speakers.html" %> &middot;
-    <%= tweet_link_to "#empex",
-      url: "http://empex.co",
-      text: "Empire City Elixir Conf is coming to New York City on May 21, 2016 #empex #elixirlang" %>
-  </p>
-</header>
+<section id="hero">
+  <div id="moon"><div></div></div>
+  <header id="header" class="header container">
+    <%= partial "partials/logo" %>
+    <small>Crevalle proudly presents</small></br>
+    <h1>Empire City Elixir Conference <span class="year">2016</span></h1>
+    <p>A one-day conference for curious programmers<br />
+      Saturday, May 21st<br />
+      New York City<br />
+    </p>
+    <%= link_to "Buy Tickets", "https://ti.to/crevalle/empex-2016", class: "button button-primary button-large", target: "_blank" %>
+  </header>
+</section>
 
-<!-- Signup Form -->
-<form id="signup-form" accept-charset="UTF-8" action="https://formkeep.com/f/f87b168aeb37" method="POST">
-  <input type="email" name="email" id="email" placeholder="Email Address" />
-  <input type="submit" value="Send Me Updates" />
-</form>
+<div class="navbar-spacer"></div>
+<nav id="navbar" class="navbar">
+  <div class="container">
+    <ul class="navbar-list">
+      <li class="navbar-item"><%= link_to "Emp.ex", "#hero", class: "navbar-link" %></li>
+      <% page_nav.each do |nav| %>
+        <li class="navbar-item"><%= link_to nav.titleize, "##{nav}", class: "navbar-link" %></li>
+      <% end %>
+    </ul>
+  </div>
+</nav>
 
-<p>Tickets on sale <strong>March 1, 2016</strong></p>
+<section id="speakers">
+  <div class="content-section container">
+    <h2>Speakers</h2>
+    <p>
+      EmpEx is looking for speakers! The <%= link_to "Call for Speakers", "/call-for-speakers.html" %> is open until <strong>Tuesday, March 15, 2016</strong> and selections will be made by <strong>Friday, April 1st, 2016</strong>. Submit your talk!
+    </p>
+    <%= link_to "Learn more", "/call-for-speakers.html", class: "button button-secondary" %>
+  </div>
+</section>
+
+<section id="location">
+  <div class="content-section container">
+    <h2>Location</h2>
+    <p>EmpEx will be held at <%= link_to "Subculture", "http://subculturenewyork.com", target: "_blank" %>, 45 Bleecker St, New York City, 10012</p>
+    <iframe frameborder=0 src="https://www.google.com/maps/embed/v1/place?q=45+Bleecker+St,+New+York,+NY&key=<%= google_api_key %>" ></iframe>
+  </div>
+</section>
+
+<section id="sponsors">
+  <div class="content-section container">
+    <h2>Sponsors</h2>
+    <p>If you're interested in sponsoring EmpEx please email us at <a href="mailto:info@empex.co">info@empex.co</a>.</p>
+  </div>
+</section>
+
+<section id="organizers">
+  <div class="content-section container">
+    <h2>Organizers</h2>
+    <%= partial "partials/organizers" %>
+  </div>
+</section>
+
+<section id="bottom">
+  <section class="container content-section">
+    <h2>Updates</h2>
+    <%= partial "partials/signup" %>
+    <%= partial "partials/footer" %>
+  </section>
+</section>
