@@ -118,15 +118,12 @@
     @include media-item(75px);
     margin: 1em 1em 1em 0;
     line-height: 1.2em;
+    width: 100%;
 
     h3 {
       margin: 0;
       font-size: 1.2em;
       letter-spacing: .05rem;
-    }
-
-    @include mobile {
-      width: 100%;
     }
 
     @include phablet {
