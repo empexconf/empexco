@@ -92,36 +92,13 @@
   .has-docked-nav .navbar > .container {
     width: 80%; } }
 /* line 94, launch-sections.scss */
-#speakers {
+#location {
   background-color: #f5f3f6;
   color: #000;
   padding: 1.5em 0; }
   /* line 80, launch-settings.scss */
-  #speakers h1, #speakers h2, #speakers h3, #speakers h4, #speakers h5, #speakers h6, #speakers strong {
+  #location h1, #location h2, #location h3, #location h4, #location h5, #location h6, #location strong {
     color: #000; }
-  /* line 99, launch-settings.scss */
-  #speakers h1, #speakers h2, #speakers h3, #speakers h4, #speakers h5, #speakers h6 {
-    margin-bottom: 0.75em; }
-  /* line 103, launch-settings.scss */
-  #speakers p {
-    font-size: 1.25em;
-    line-height: 1.5em; }
-  @media (min-width: 750px) {
-    /* line 94, launch-sections.scss */
-    #speakers {
-      padding: 3em 0; } }
-  @media (min-width: 1000px) {
-    /* line 94, launch-sections.scss */
-    #speakers {
-      padding: 4em 0; }
-      /* line 114, launch-settings.scss */
-      #speakers h1, #speakers h2, #speakers h3, #speakers h4, #speakers h5, #speakers h6 {
-        margin-bottom: 1em; } }
-
-/* line 99, launch-sections.scss */
-#location {
-  background-color: #1f1f1f;
-  padding: 1.5em 0; }
   /* line 99, launch-settings.scss */
   #location h1, #location h2, #location h3, #location h4, #location h5, #location h6 {
     margin-bottom: 0.75em; }
@@ -130,15 +107,38 @@
     font-size: 1.25em;
     line-height: 1.5em; }
   @media (min-width: 750px) {
-    /* line 99, launch-sections.scss */
+    /* line 94, launch-sections.scss */
     #location {
       padding: 3em 0; } }
   @media (min-width: 1000px) {
-    /* line 99, launch-sections.scss */
+    /* line 94, launch-sections.scss */
     #location {
       padding: 4em 0; }
       /* line 114, launch-settings.scss */
       #location h1, #location h2, #location h3, #location h4, #location h5, #location h6 {
+        margin-bottom: 1em; } }
+
+/* line 99, launch-sections.scss */
+#speakers {
+  background-color: #1f1f1f;
+  padding: 1.5em 0; }
+  /* line 99, launch-settings.scss */
+  #speakers h1, #speakers h2, #speakers h3, #speakers h4, #speakers h5, #speakers h6 {
+    margin-bottom: 0.75em; }
+  /* line 103, launch-settings.scss */
+  #speakers p {
+    font-size: 1.25em;
+    line-height: 1.5em; }
+  @media (min-width: 750px) {
+    /* line 99, launch-sections.scss */
+    #speakers {
+      padding: 3em 0; } }
+  @media (min-width: 1000px) {
+    /* line 99, launch-sections.scss */
+    #speakers {
+      padding: 4em 0; }
+      /* line 114, launch-settings.scss */
+      #speakers h1, #speakers h2, #speakers h3, #speakers h4, #speakers h5, #speakers h6 {
         margin-bottom: 1em; } }
 
 /* line 104, launch-sections.scss */

@@ -8,7 +8,9 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Empire City Elixir Conf</title>
 
-    <link href="/assets/stylesheets/all-0f5aabe0.css" rel="stylesheet" />
+    <link href="/assets/stylesheets/all-a027a1b7.css" rel="stylesheet" />
+    <link href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css" rel="stylesheet" />
+
     <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@empexco" />
 <meta name="twitter:title" content="Empire City Elixir Conference 2016" />
@@ -47,13 +49,23 @@
   <div class="container">
     <ul class="navbar-list">
       <li class="navbar-item"><a class="navbar-link" href="#hero">Emp.ex</a></li>
-        <li class="navbar-item"><a class="navbar-link" href="#speakers">Speakers</a></li>
         <li class="navbar-item"><a class="navbar-link" href="#location">Location</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#speakers">Speakers</a></li>
         <li class="navbar-item"><a class="navbar-link" href="#sponsors">Sponsors</a></li>
         <li class="navbar-item"><a class="navbar-link" href="#organizers">Organizers</a></li>
     </ul>
   </div>
 </nav>
+
+<section id="location">
+  <div class="content-section container">
+    <h2>Location</h2>
+    <p>EmpEx will be held at <a target="_blank" href="http://subculturenewyork.com">Subculture</a>, 45 Bleecker St, New York City, 10012</p>
+    <div class="col-md-6">
+      <iframe frameborder=0 src="https://www.google.com/maps/embed/v1/place?q=45+Bleecker+St,+New+York,+NY&key=AIzaSyDavTubUc7sQx7cvY-NA--jLhQgOrEpgic" ></iframe>
+    </div>
+  </div>
+</section>
 
 <section id="speakers">
   <div class="content-section container">
@@ -62,14 +74,6 @@
       EmpEx is looking for speakers! The <a href="/call-for-speakers/">Call for Speakers</a> is open until <strong>Tuesday, March 15, 2016</strong> and selections will be made by <strong>Friday, April 1st, 2016</strong>. Submit your talk!
     </p>
     <a class="button button-secondary" href="/call-for-speakers/">Learn more</a>
-  </div>
-</section>
-
-<section id="location">
-  <div class="content-section container">
-    <h2>Location</h2>
-    <p>EmpEx will be held at <a target="_blank" href="http://subculturenewyork.com">Subculture</a>, 45 Bleecker St, New York City, 10012</p>
-    <iframe frameborder=0 src="https://www.google.com/maps/embed/v1/place?q=45+Bleecker+St,+New+York,+NY&key=AIzaSyDavTubUc7sQx7cvY-NA--jLhQgOrEpgic" ></iframe>
   </div>
 </section>
 
@@ -213,6 +217,7 @@
 </section>
 
     <script src="/assets/javascripts/vendor/jquery-2.2.1.min-7cb05e3d.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
     <script src="/assets/javascripts/nav-e89d8ad7.js"></script>
     <script type="text/javascript">
 !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
