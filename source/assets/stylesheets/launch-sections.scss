@@ -91,12 +91,12 @@
   }
 }
 
-#speakers {
+#location {
   @include bg-cloudy;
   @include content-section;
 }
 
-#location {
+#speakers {
   @include bg-gray;
   @include content-section;
 }
