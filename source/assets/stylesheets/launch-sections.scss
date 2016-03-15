@@ -91,23 +91,46 @@
   }
 }
 
+// remove blue highlight on carousel slide select
+.slick-slide {
+  outline: none;
+}
+
 #location {
-  @include bg-cloudy;
+  @include bg-gray;
   @include content-section;
+
+  .content {
+    height: 640px;
+
+    background-image: url('/assets/images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .subculture-carousel {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+  }
+
+  img.carousel-image {
+    width: 90%;
+  }
 }
 
 #speakers {
-  @include bg-gray;
+  @include bg-cloudy;
   @include content-section;
 }
 
 #sponsors {
-  @include bg-cloudy;
+  @include bg-gray;
   @include content-section;
 }
 
 #organizers {
-  @include bg-gray;
+  @include bg-cloudy;
   @include content-section;
 
   .organizer-list {
