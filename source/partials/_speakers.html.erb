@@ -1,0 +1,22 @@
+<section class="speaker-list">
+  <% blog('speakers').articles.sort_by { |a| a.data.title.split(" ").last }.each do |article| %>
+    <section class="speaker">
+      <% if article.data.image.present? %>
+        <img src="<%= article.data.image %>" alt="<%= article.data.title %>" />
+      <% end %>
+      <div class="bd">
+        <h3><%= article.data.title %></h3>
+        <% if article.data.twitter.present? %>
+          <div>
+            <%= link_to_twitter article.data.twitter %>
+          </div>
+        <% end %>
+        <% if article.data.bio.present? %>
+          <p class="bio">
+            <%= autolink article.data.bio %>
+          </p>
+        <% end %>
+      </div>
+    </section>
+  <% end %>
+</section>

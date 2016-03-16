@@ -28,7 +28,7 @@ $color5: #e5fcc2;
   }
 }
 
-$breakpoints: (mobile: 400px,
+$breakpoints: (mobile: 350px,
                phablet: 550px,
                tablet: 750px,
                desktop: 1000px,
@@ -139,8 +139,17 @@ $breakpoints: (mobile: 400px,
     width: $size;
     height: $size;
     float:left;
-    margin-right: 10px;
+    margin-right: $size/5.5;
     display:block;
     border-radius: $size/2;
+  }
+}
+
+@mixin speaker-item($size: 70px) {
+  @include media-item($size);
+
+  img {
+    float:none;
+    margin-right: 0;
   }
 }

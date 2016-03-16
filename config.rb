@@ -8,6 +8,7 @@ set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
 set :partials_dir, 'partials'
 
+set :markdown, autolink: true, tables: true
 set :markdown_engine, :redcarpet
 
 # Per-page layout changes:
@@ -35,13 +36,29 @@ configure :development do
 end
 
 ###########################
-## Organizers
+## organizers
 ###########################
 
 activate :blog do |blog|
   blog.name = "organizers"
-  blog.prefix = 'organizers'
-  blog.permalink = '{year}/{title}'
+  blog.prefix = "organizers"
+  blog.permalink = "{year}/{title}"
+  blog.taglink = "tags/{tag}"
+  blog.default_extension = ".md"
+  blog.layout   = "layout"
+  blog.paginate = true
+  blog.per_page = 10
+  blog.publish_future_dated = true
+end
+
+###########################
+## speakers
+###########################
+
+activate :blog do |blog|
+  blog.name = "speakers"
+  blog.prefix = "speakers"
+  blog.permalink = "{year}/{title}"
   blog.taglink = "tags/{tag}"
   blog.default_extension = ".md"
   blog.layout   = "layout"
@@ -67,6 +84,13 @@ end
 #########
 # Helpers
 #########
+
+class RenderWithoutProtocol < Redcarpet::Render::HTML
+  def autolink(url, link_type)
+    uri = Addressable::URI.parse(url)
+    "<a href=\"#{url}\" target=\"_blank\">#{uri.host}<a>"
+  end
+end
 
 helpers do
   def tweet_link_to(text, params = {})
@@ -94,5 +118,11 @@ helpers do
 
   def google_api_key
     'AIzaSyDavTubUc7sQx7cvY-NA--jLhQgOrEpgic'
+  end
+
+  def autolink(text)
+    renderer = RenderWithoutProtocol.new
+    markdown = Redcarpet::Markdown.new(renderer, autolink: true)
+    markdown.render(text)
   end
 end
