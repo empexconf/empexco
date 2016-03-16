@@ -35,7 +35,7 @@ body, input, select, textarea {
   /* line 47, launch.scss */
   body, input, select, textarea {
     font-size: 12pt; } }
-@media (min-width: 400px) {
+@media (min-width: 350px) {
   /* line 53, launch.scss */
   body, input, select, textarea {
     font-size: 12pt; } }
