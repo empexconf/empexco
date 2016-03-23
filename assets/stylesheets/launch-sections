@@ -225,9 +225,10 @@
     @media (min-width: 1200px) {
       /* line 135, launch-sections.scss */
       #organizers .organizer {
-        width: 300px; } }
+        width: 300px;
+        height: 100px; } }
 
-/* line 162, launch-sections.scss */
+/* line 163, launch-sections.scss */
 #speakers {
   background-color: #f5f3f6;
   color: #000;
@@ -243,24 +244,24 @@
     font-size: 1.25em;
     line-height: 1.5em; }
   @media (min-width: 750px) {
-    /* line 162, launch-sections.scss */
+    /* line 163, launch-sections.scss */
     #speakers {
       padding: 3em 0; } }
   @media (min-width: 1000px) {
-    /* line 162, launch-sections.scss */
+    /* line 163, launch-sections.scss */
     #speakers {
       padding: 4em 0; }
       /* line 114, launch-settings.scss */
       #speakers h1, #speakers h2, #speakers h3, #speakers h4, #speakers h5, #speakers h6 {
         margin-bottom: 1em; } }
-  /* line 166, launch-sections.scss */
+  /* line 167, launch-sections.scss */
   #speakers .speaker-list {
     padding: 0;
     margin: 0;
     list-style: none;
     overflow: hidden;
     *zoom: 1; }
-  /* line 170, launch-sections.scss */
+  /* line 171, launch-sections.scss */
   #speakers .speaker {
     float: left;
     overflow: hidden;
@@ -284,50 +285,50 @@
     #speakers .speaker img {
       float: none;
       margin-right: 0; }
-    /* line 176, launch-sections.scss */
+    /* line 177, launch-sections.scss */
     #speakers .speaker h3 {
       margin: 0;
       font-size: 1.5em;
       letter-spacing: .05rem; }
-    /* line 182, launch-sections.scss */
+    /* line 183, launch-sections.scss */
     #speakers .speaker .bd {
       margin: 2em 0; }
-    /* line 186, launch-sections.scss */
+    /* line 187, launch-sections.scss */
     #speakers .speaker .bio {
       margin-top: 1em; }
     @media (min-width: 550px) {
-      /* line 170, launch-sections.scss */
+      /* line 171, launch-sections.scss */
       #speakers .speaker {
         width: 275px; } }
     @media (min-width: 750px) {
-      /* line 170, launch-sections.scss */
+      /* line 171, launch-sections.scss */
       #speakers .speaker {
         line-height: 1.5em;
         width: 250px; } }
     @media (min-width: 1200px) {
-      /* line 170, launch-sections.scss */
+      /* line 171, launch-sections.scss */
       #speakers .speaker {
         padding-right: 30px;
         width: 420px; } }
 
-/* line 209, launch-sections.scss */
+/* line 210, launch-sections.scss */
 #signup-form {
   display: -webkit-flex;
   display: flex;
   position: relative; }
-  /* line 213, launch-sections.scss */
+  /* line 214, launch-sections.scss */
   #signup-form input[type="text"],
   #signup-form input[type="password"],
   #signup-form input[type="email"] {
     width: 18em; }
-  /* line 219, launch-sections.scss */
+  /* line 220, launch-sections.scss */
   #signup-form > * {
     margin: 0 0 0 1em; }
-  /* line 223, launch-sections.scss */
+  /* line 224, launch-sections.scss */
   #signup-form > :first-child {
     margin: 0 0 0 0; }
 
-/* line 228, launch-sections.scss */
+/* line 229, launch-sections.scss */
 #bottom {
   padding: 1.5em 0; }
   /* line 99, launch-settings.scss */
@@ -338,18 +339,18 @@
     font-size: 1.25em;
     line-height: 1.5em; }
   @media (min-width: 750px) {
-    /* line 228, launch-sections.scss */
+    /* line 229, launch-sections.scss */
     #bottom {
       padding: 3em 0; } }
   @media (min-width: 1000px) {
-    /* line 228, launch-sections.scss */
+    /* line 229, launch-sections.scss */
     #bottom {
       padding: 4em 0; }
       /* line 114, launch-settings.scss */
       #bottom h1, #bottom h2, #bottom h3, #bottom h4, #bottom h5, #bottom h6 {
         margin-bottom: 1em; } }
 
-/* line 232, launch-sections.scss */
+/* line 233, launch-sections.scss */
 #footer {
   -moz-transition: opacity 0.2s ease-in-out;
   -o-transition: opacity 0.2s ease-in-out;
@@ -361,41 +362,41 @@
   opacity: 0.5;
   margin-top: 2em;
   color: rgba(255, 255, 255, 0.7); }
-  /* line 241, launch-sections.scss */
+  /* line 242, launch-sections.scss */
   #footer a {
     color: inherit; }
-    /* line 243, launch-sections.scss */
+    /* line 244, launch-sections.scss */
     #footer a:hover {
       color: #1cb495;
       text-decoration: none; }
-  /* line 249, launch-sections.scss */
+  /* line 250, launch-sections.scss */
   #footer .icons {
     margin: 0 0 0.5em 0; }
-  /* line 253, launch-sections.scss */
+  /* line 254, launch-sections.scss */
   #footer .links {
     list-style: none;
     padding: 0; }
-    /* line 257, launch-sections.scss */
+    /* line 258, launch-sections.scss */
     #footer .links li {
       border-left: solid 1px rgba(255, 255, 255, 0.25);
       display: inline-block;
       line-height: 1em;
       margin: 0 0 0 0.75em;
       padding: 0 0 0 0.75em; }
-    /* line 265, launch-sections.scss */
+    /* line 266, launch-sections.scss */
     #footer .links li:first-child {
       border-left: 0;
       margin-left: 0;
       padding-left: 0; }
-  /* line 272, launch-sections.scss */
+  /* line 273, launch-sections.scss */
   #footer:hover {
     color: rgba(255, 255, 255, 0.9);
     opacity: 1; }
-  /* line 277, launch-sections.scss */
+  /* line 278, launch-sections.scss */
   #footer > :last-child {
     margin-bottom: 0; }
 
-/* line 282, launch-sections.scss */
+/* line 283, launch-sections.scss */
 #moon {
   left: 0;
   opacity: 0.50;
@@ -404,7 +405,7 @@
   width: 100%;
   height: 100%;
   z-index: -1; }
-  /* line 291, launch-sections.scss */
+  /* line 292, launch-sections.scss */
   #moon div {
     background-image: url("/assets/images/empex-moon.jpg");
     background-size: cover;
@@ -415,7 +416,7 @@
     top: 0;
     width: 100%;
     opacity: 0; }
-    /* line 302, launch-sections.scss */
+    /* line 303, launch-sections.scss */
     #moon div.visible {
       -moz-transition: opacity 3s ease;
       -o-transition: opacity 3s ease;
@@ -424,14 +425,14 @@
       opacity: 1; }
 
 @media (min-width: 350px) {
-  /* line 310, launch-sections.scss */
+  /* line 311, launch-sections.scss */
   #moon {
     top: 200px; } }
 @media (min-width: 750px) {
-  /* line 314, launch-sections.scss */
+  /* line 315, launch-sections.scss */
   #moon {
     top: 100px; } }
 @media (min-width: 1000px) {
-  /* line 318, launch-sections.scss */
+  /* line 319, launch-sections.scss */
   #moon {
     top: 0px; } }
