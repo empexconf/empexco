@@ -216,19 +216,20 @@
     @media (min-width: 550px) {
       /* line 135, launch-sections.scss */
       #organizers .organizer {
-        width: 275px; } }
+        width: 45%;
+        font-size: 0.9em;
+        min-height: 90px; } }
     @media (min-width: 750px) {
       /* line 135, launch-sections.scss */
       #organizers .organizer {
-        width: 250px;
-        line-height: 1.5em; } }
+        width: 30%; } }
     @media (min-width: 1200px) {
       /* line 135, launch-sections.scss */
       #organizers .organizer {
-        width: 300px;
-        height: 100px; } }
+        font-size: 1em;
+        line-height: 1.25em; } }
 
-/* line 163, launch-sections.scss */
+/* line 164, launch-sections.scss */
 #speakers {
   background-color: #f5f3f6;
   color: #000;
@@ -244,24 +245,24 @@
     font-size: 1.25em;
     line-height: 1.5em; }
   @media (min-width: 750px) {
-    /* line 163, launch-sections.scss */
+    /* line 164, launch-sections.scss */
     #speakers {
       padding: 3em 0; } }
   @media (min-width: 1000px) {
-    /* line 163, launch-sections.scss */
+    /* line 164, launch-sections.scss */
     #speakers {
       padding: 4em 0; }
       /* line 114, launch-settings.scss */
       #speakers h1, #speakers h2, #speakers h3, #speakers h4, #speakers h5, #speakers h6 {
         margin-bottom: 1em; } }
-  /* line 167, launch-sections.scss */
+  /* line 168, launch-sections.scss */
   #speakers .speaker-list {
     padding: 0;
     margin: 0;
     list-style: none;
     overflow: hidden;
     *zoom: 1; }
-  /* line 171, launch-sections.scss */
+  /* line 172, launch-sections.scss */
   #speakers .speaker {
     float: left;
     overflow: hidden;
@@ -285,31 +286,30 @@
     #speakers .speaker img {
       float: none;
       margin-right: 0; }
-    /* line 177, launch-sections.scss */
+    /* line 178, launch-sections.scss */
     #speakers .speaker h3 {
       margin: 0;
       font-size: 1.5em;
       letter-spacing: .05rem; }
-    /* line 183, launch-sections.scss */
+    /* line 184, launch-sections.scss */
     #speakers .speaker .bd {
       margin: 2em 0; }
-    /* line 187, launch-sections.scss */
+    /* line 188, launch-sections.scss */
     #speakers .speaker .bio {
       margin-top: 1em; }
-    @media (min-width: 550px) {
-      /* line 171, launch-sections.scss */
+    @media (min-width: 350px) {
+      /* line 172, launch-sections.scss */
       #speakers .speaker {
-        width: 275px; } }
+        width: 100%; } }
     @media (min-width: 750px) {
-      /* line 171, launch-sections.scss */
+      /* line 172, launch-sections.scss */
       #speakers .speaker {
-        line-height: 1.5em;
-        width: 250px; } }
+        width: 45%;
+        line-height: 1.5em; } }
     @media (min-width: 1200px) {
-      /* line 171, launch-sections.scss */
+      /* line 172, launch-sections.scss */
       #speakers .speaker {
-        padding-right: 30px;
-        width: 420px; } }
+        padding-right: 30px; } }
 
 /* line 210, launch-sections.scss */
 #signup-form {
