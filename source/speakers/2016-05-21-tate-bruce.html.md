@@ -1,5 +1,6 @@
 ---
 title: "Bruce Tate"
+topic: "TBD"
 image: /assets/images/people/bruce-tate.jpg
 link:
 twitter: redrapids
