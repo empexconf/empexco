@@ -1,5 +1,5 @@
 <section class="speaker-list">
-  <% blog('speakers').articles.sort_by { |a| a.data.title.split(" ").last }.each do |article| %>
+  <% speakers.sort_by { |a| a.data.title.split(" ").last }.each do |article| %>
     <section class="speaker">
       <% if article.data.image.present? %>
         <img src="<%= article.data.image %>" alt="<%= article.data.title %>" />
@@ -13,7 +13,7 @@
         <% end %>
         <% if article.data.bio.present? %>
           <p class="bio">
-            <%= autolink article.data.bio %>
+            <%= article.data.bio %>
           </p>
         <% end %>
       </div>

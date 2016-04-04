@@ -67,6 +67,22 @@ activate :blog do |blog|
   blog.publish_future_dated = true
 end
 
+###########################
+## sponsors
+###########################
+
+activate :blog do |blog|
+  blog.name = "sponsors"
+  blog.prefix = "sponsors"
+  blog.permalink = "{year}/{title}"
+  blog.taglink = "tags/{tag}"
+  blog.default_extension = ".md"
+  blog.layout   = "layout"
+  blog.paginate = true
+  blog.per_page = 10
+  blog.publish_future_dated = true
+end
+
 #######
 # Build
 #######
@@ -124,5 +140,17 @@ helpers do
     renderer = RenderWithoutProtocol.new
     markdown = Redcarpet::Markdown.new(renderer, autolink: true)
     markdown.render(text)
+  end
+
+  def speakers
+    blog("speakers").articles
+  end
+
+  def sponsors
+    blog("sponsors").articles
+  end
+
+  def organizers
+    blog("organizers").articles
   end
 end

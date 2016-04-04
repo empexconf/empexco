@@ -120,8 +120,52 @@
 }
 
 #sponsors {
-  @include bg-gray;
+  @include bg-cloudy;
   @include content-section;
+
+  .bg-wrapper {
+    @include bg-gray;
+    margin: -30px -40px;
+    padding: 30px 40px;
+  }
+
+  a.image-link {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .sponsor-list {
+    @include media-container;
+  }
+
+  .sponsor {
+    margin: 1em 1em 1em 0;
+    line-height: 1.2em;
+    float: left;
+    width: 100%;
+
+    h3 {
+      margin: 0;
+      font-size: 1.2em;
+      letter-spacing: .05rem;
+    }
+
+    @include phablet {
+      width: 45%;
+      font-size: 0.9em;
+      min-height: 90px;
+    }
+
+    @include tablet {
+      width: 30%;
+    }
+
+    @include hd {
+      font-size: 1em;
+      line-height: 1.25em;
+    }
+  }
 }
 
 #organizers {

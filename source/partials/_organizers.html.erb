@@ -1,5 +1,5 @@
 <section class="organizer-list">
-  <% blog('organizers').articles.sort_by { |a| a.data.title.split(" ").last }.each do |article| %>
+  <% organizers.sort_by { |a| a.data.title.split(" ").last }.each do |article| %>
     <section class="organizer">
       <% if article.data.image.present? %>
         <img src="<%= article.data.image %>" alt="<%= article.data.title %>" />

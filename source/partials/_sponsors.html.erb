@@ -1,0 +1,15 @@
+<section class="sponsor-list">
+  <% (sponsors*6).sort_by { |a| a.data.title }.each do |article| %>
+    <section class="sponsor">
+      <% if article.data.image.present? %>
+        <a href="<%= article.data.link %>" class="image-link">
+          <img src="<%= article.data.image %>" alt="<%= article.data.title %>" />
+        </a>
+      <% else %>
+        <div class="bd">
+          <h3><%= link_to article.data.title, article.data.link %></h3>
+        </div>
+      <% end %>
+    </section>
+  <% end %>
+</section>

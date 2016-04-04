@@ -84,6 +84,10 @@ $breakpoints: (mobile: 350px,
 
 @mixin bg-gray {
   background-color: $color0;
+  color: #FFF;
+  h1, h2, h3, h4, h5, h6, strong {
+    color: #FFF;
+  }
 }
 
 @mixin bg-white {
