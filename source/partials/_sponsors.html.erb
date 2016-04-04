@@ -4,12 +4,12 @@
       <% sponsors.select {|s| s.data.level == level}.each do |sponsor| %>
         <div class="sponsor">
           <% if sponsor.data.image.present? %>
-            <a href="<%= sponsor.data.link %>" class="image-link">
+            <a href="<%= sponsor.data.link %>" class="image-link" target="_blank">
               <img src="<%= sponsor.data.image %>" alt="<%= sponsor.data.title %>" />
             </a>
           <% else %>
             <div class="bd">
-              <h3><%= link_to sponsor.data.title, sponsor.data.link %></h3>
+              <h3><%= link_to sponsor.data.title, sponsor.data.link, target: "_blank" %></h3>
             </div>
           <% end %>
         </div>
