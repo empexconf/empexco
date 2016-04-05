@@ -128,8 +128,14 @@ helpers do
     link_to uri.host, uri, target: "_blank"
   end
 
-  def link_to_twitter(handle)
-    link_to "@#{handle}", "https://twitter.com/#{handle}"
+  def link_to_speaker(name, handle = nil)
+    return name unless handle.present?
+
+    link_to_twitter(handle, name)
+  end
+
+  def link_to_twitter(handle, text = "@#{handle}")
+    link_to text, "https://twitter.com/#{handle}"
   end
 
   def google_api_key

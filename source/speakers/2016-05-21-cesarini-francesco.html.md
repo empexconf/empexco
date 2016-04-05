@@ -1,5 +1,6 @@
 ---
 title: "Francesco Cesarini"
+topic: "TBD"
 image: /assets/images/people/francesco-cesarini.jpg
 link:
 twitter: FrancescoC

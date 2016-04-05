@@ -263,6 +263,7 @@
       margin: 0;
       font-size: 1.5em;
       letter-spacing: .05rem;
+      color: $primaryColor;
     }
 
     .bd {
@@ -271,6 +272,10 @@
 
     .bio {
       margin-top: 1em;
+    }
+
+    &:nth-child(odd) {
+      clear: left;
     }
 
     @include mobile {

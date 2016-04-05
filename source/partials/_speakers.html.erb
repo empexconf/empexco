@@ -1,20 +1,19 @@
+<% speakers = blog('speakers').articles.sort_by { |a| a.data.title.split(" ").last } %>
 <section class="speaker-list">
-  <% speakers.sort_by { |a| a.data.title.split(" ").last }.each do |article| %>
+  <% (speakers*3).each do |article| %>
     <section class="speaker">
       <% if article.data.image.present? %>
         <img src="<%= article.data.image %>" alt="<%= article.data.title %>" />
       <% end %>
       <div class="bd">
-        <h3><%= article.data.title %></h3>
-        <% if article.data.twitter.present? %>
-          <div>
-            <%= link_to_twitter article.data.twitter %>
-          </div>
+        <h3 class="name"><%= link_to_speaker article.data.title, article.data.twitter %></h3>
+        <% if article.data.topic.present? %>
+          <h4><%= article.data.topic %></h4>
         <% end %>
         <% if article.data.bio.present? %>
-          <p class="bio">
+          <div class="bio">
             <%= article.data.bio %>
-          </p>
+          </div>
         <% end %>
       </div>
     </section>
