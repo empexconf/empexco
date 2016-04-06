@@ -1,15 +1,11 @@
 <section class="speaker-list">
-  <% blog('speakers').articles.sort_by { |a| a.data.title.split(" ").last }.each do |speaker| %>
-    <section class="speaker">
-      <% if speaker.data.image.present? %>
-        <img src="<%= speaker.data.image %>" alt="<%= speaker.data.title %>" />
-      <% end %>
-      <div class="bd">
-        <h3 class="name"><%= link_to_speaker speaker.data.title, speaker.data.twitter %></h3>
-        <h4><%= speaker.data.topic %></h4>
-        <div class="summary"><%= speaker.body %></div>
-        <div class="bio"><%= speaker.data.bio %></div>
-      </div>
-    </section>
+  <% headline, regular = blog('speakers').articles.partition {|s| s.data.try :headline } %>
+
+  <% alphabetize(headline).each do |speaker| %>
+    <%= partial "partials/speaker", locals: { speaker: speaker } %>
+  <% end %>
+
+  <% alphabetize(regular).each do |speaker| %>
+    <%= partial "partials/speaker", locals: { speaker: speaker } %>
   <% end %>
 </section>

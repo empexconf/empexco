@@ -159,4 +159,8 @@ helpers do
   def organizers
     blog("organizers").articles
   end
+
+  def alphabetize speakers
+    speakers.sort_by { |s| s.data.title.split(" ").last }
+  end
 end

@@ -5,6 +5,7 @@ image: /assets/images/people/george-guimaraes.jpg
 link:
 twitter: georgeguimaraes
 bio: "George is co-founder at Plataformatec, a software consultancy in Elixir and Ruby. His favorite topics are Discrete Integration, monoliths, and picoservices with Elixir."
+headline: true
 ---
 It's inevitable: you'll need to do some tasks in background. Maybe it's an email you need to send. Maybe it's an image resizing. Maybe it's a business rule that doesn't need to run in the web request.
 

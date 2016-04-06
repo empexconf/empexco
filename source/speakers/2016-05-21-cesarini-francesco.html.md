@@ -5,6 +5,7 @@ image: /assets/images/people/francesco-cesarini.jpg
 link:
 twitter: FrancescoC
 bio: "Francesco founded Erlang Solutions and has written Erlang Programming and Designing for Scalability with Erlang/OTP."
+headline: true
 ---
 Erlang/OTP has for years been described as your secret sauce to writing scalable and available systems. Erlang alone, however, will not do any magic. It is merely an enabler that, thanks to its semantics, programming model and predictable virtual machine makes the end results easier to achieve.
 
