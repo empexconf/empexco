@@ -1,6 +1,6 @@
 ---
 title: "Bryan Weber"
-topic: "Giving back, building your first package"
+topic: "Code Generation in Elixir"
 image: /assets/images/people/bryan-weber.jpg
 link:
 twitter: brweber2
