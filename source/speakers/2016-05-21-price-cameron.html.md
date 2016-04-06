@@ -4,7 +4,7 @@ topic: "Micropatterns: Learning to reach quickly for the right tool"
 image: /assets/images/speakers/cameron-price.jpeg
 link:
 twitter: cameronp 
-bio: "Cameron has been developing software since the 90's, using many different languages and platforms, but especially C, C++, Java, and Ruby.  In 2015 he discovered Elixir and the immutable paradigm.  Since then, he's been joyfully unlearning his imperative object-oriented instincts, and embracing the world of functional programming.  Cameron is currently the CTO of TRX.tv, and a director of Mint Digital and Boomf.com."
+bio: "Cameron has been developing software since the 90's using many different languages and platforms, but especially C, C++, Java, and Ruby.  In 2015 he discovered Elixir and the immutable paradigm.  Since then, he's been joyfully unlearning his imperative object-oriented instincts, and embracing the world of functional programming.  Cameron is currently the CTO of TRX.tv, and a director of Mint Digital and Boomf.com."
 ---
 A lot of experienced programmers from non-functional backgrounds struggle when switching to languages like Elixir because the tools that have served them well for years have suddenly become useless in a world without object hierarchies or mutable state. This is expected. Musicians practice their scales, athletes drill basic movements, and chefs practice their knifework.  We programmers are not exempt from the need to hone our fundamentals.
 

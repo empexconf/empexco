@@ -4,7 +4,7 @@ topic: "The Journey to Elixir In Production At Scale"
 image: /assets/images/speakers/brandon-richey.png
 link:
 twitter: diamondgfx
-bio: "Brandon Richey is Director of Engineering at Teladoc and a long-time software engineer/architect in New York. He is a frequent writer on topics in web development such as Elixir/Phoenix, Elm, and various Javascript frameworks on his blog!"
+bio: "Brandon is Director of Engineering at Teladoc and a long-time software engineer/architect in New York. He is a frequent writer on topics in web development such as Elixir/Phoenix, Elm, and various Javascript frameworks on his blog!"
 ---
 Elixir allowed us to deploy an incredibly high-throughput, low-footprint Phoenix API that experience no issues from the second it entered production. With no prior Erlang/Elixir experience, our team jumped in and we couldn't be more excited by the results.
 
