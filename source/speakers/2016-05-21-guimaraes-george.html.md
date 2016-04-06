@@ -6,10 +6,8 @@ link:
 twitter: georgeguimaraes
 bio: "George is co-founder at Plataformatec, a software consultancy in Elixir and Ruby. His favorites topics are Discrete Integration, monoliths, and picoservices with Elixir."
 ---
-It is inevitable. You'll end up needing to do some tasks in background. Maybe it's an email you need to send. Maybe it's a image resizing. Maybe it's a business rule that doesn't need to run in the web request.
+It's inevitable: you'll need to do some tasks in background. Maybe it's an email you need to send. Maybe it's an image resizing. Maybe it's a business rule that doesn't need to run in the web request.
 
-In this talk, we're gonna see some options to accomplish that. Ranging from how you can use `Task.async` or `Task.Supervisor` to fire-and-forget tasks, to using an "external" queue and workers like `exq`. 
+In this talk, we'll code and test implementations for these patterns in Elixir/Phoenix, ranging from how you can use `Task.async` or `Task.Supervisor` for fire-and-forget tasks, to using an "external" queue and workers like `exq`. 
 
-We'll see code and test examples in Elixir/Phoenix.
-
-More importantly than the tools, I'll show what kind of questions you need to ask to decide on what tool will fit your needs.
+More importantly than the tools, we'll examine the kinds of questions you need to ask to decide which tool will fit your needs.
