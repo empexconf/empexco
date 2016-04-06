@@ -1,6 +1,6 @@
 ---
 title: "Francesco Cesarini"
-topic: "TBD"
+topic: "Concurrency + Distribution = Scalability + Availability, a journey architecting Systems on BEAM"
 image: /assets/images/people/francesco-cesarini.jpg
 link:
 twitter: FrancescoC
