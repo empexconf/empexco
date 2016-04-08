@@ -1,19 +1,22 @@
 <section class="sponsor-list">
   <% %w(platinum silver).each do |level| %><%#- TODO: add gold.  doesnt' play nice with :empty due to whitespace %>
-    <div class="sponsors <%= level %>">
-      <% sponsors.select {|s| s.data.level == level}.each do |sponsor| %>
-        <div class="sponsor">
+    <div class="row">
+      <div class="sponsors <%= level %> 12 columns">
+        <h3><%= level.capitalize %></h3>
+        <% sponsors.select {|s| s.data.level == level}.each do |sponsor| %>
+          <div class="sponsor">
           <% if sponsor.data.image.present? %>
             <a href="<%= sponsor.data.link %>" class="image-link" target="_blank">
-              <img src="<%= sponsor.data.image %>" alt="<%= sponsor.data.title %>" />
-            </a>
-          <% else %>
+            <img src="<%= sponsor.data.image %>" alt="<%= sponsor.data.title %>" />
+          </a>
+        <% else %>
             <div class="bd">
-              <h3><%= link_to sponsor.data.title, sponsor.data.link, target: "_blank" %></h3>
-            </div>
-          <% end %>
+            <h3><%= link_to sponsor.data.title, sponsor.data.link, target: "_blank" %></h3>
+          </div>
+        <% end %>
         </div>
       <% end %>
+      </div>
     </div>
   <% end %>
 </section>

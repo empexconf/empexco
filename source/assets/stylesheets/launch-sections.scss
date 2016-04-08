@@ -136,38 +136,50 @@
     }
   }
 
+  .crevalle-sponsor {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+
+    img.crevalle-logo {
+      height: 125px;
+      width: 125px;
+    }
+  }
+
   .sponsor-list {
     @include media-container;
     text-align: center;
   }
 
-  p.footer {
+  .footer {
     text-align: center;
     margin-top: 4em;
     margin-bottom: 0em;
   }
 
   .sponsors {
+    display: inline-block;
 
     &.platinum {
       .sponsor {
         height: 250px;
-        width: 100%;
+        width: 250px;
       }
     }
     &.gold {
       .sponsor {
         height: 110px;
-        width: 50%;
+        width: 200px;
       }
     }
     &.silver {
+      width: 100%;
       .sponsor {
         &:first-child {
-          margin-left: 16%;
+          margin-left: 33%;
         }
         height: 75px;
-        width: 33%;
+        width: 150px;
       }
     }
   }
