@@ -72,8 +72,22 @@ layout: layout
   <div class="content-section container">
     <div class="bg-wrapper">
       <h2>Sponsors</h2>
+      <div class="row">
+        <div class="crevalle-sponsor 6 columns">
+          The Empire City Elixir Conference is a production of <br />
+          <a href="<%= crevalle.data.link %>" class="image-link" target="_blank">
+            <img src="<%= crevalle.data.image %>" alt="<%= crevalle.data.title %>" class="crevalle-logo"/>
+          </a>
+        </div>
+      </div>
+      <div class="3 columns"></div>
       <%= partial "partials/sponsors" %>
-      <p class="footer">If you're interested in sponsoring EmpEx please view our <%= link_to "prospectus", "https://docs.google.com/document/d/1HISa91dRgBsYBg7FLpE621GLftP4iGAt_UGk7oWVjr4/edit", target: "_blank" %>.  </br>All inquiries should be directed to <a href="mailto:sponsors@empex.co">sponsors@empex.co</a>.</p>
+      <div class="footer">
+        <p>
+          If you're interested in sponsoring EmpEx please view our <%= link_to "prospectus", "https://docs.google.com/document/d/1HISa91dRgBsYBg7FLpE621GLftP4iGAt_UGk7oWVjr4/edit", target: "_blank" %>.  </br>All inquiries should be directed to <a href="mailto:sponsors@empex.co">sponsors@empex.co</a>.<br />
+        </p>
+      </div>
+
     </div>
   </div>
 </section>

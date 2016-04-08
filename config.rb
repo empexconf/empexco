@@ -163,4 +163,8 @@ helpers do
   def alphabetize speakers
     speakers.sort_by { |s| s.data.title.split(" ").last }
   end
+
+  def crevalle
+    sponsors.detect { |s| s.title == 'Crevalle' }
+  end
 end
