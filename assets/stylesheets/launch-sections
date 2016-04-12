@@ -184,58 +184,51 @@
     *zoom: 1;
     text-align: center; }
   /* line 144, launch-sections.scss */
-  #sponsors p.footer {
+  #sponsors .footer {
     text-align: center;
     margin-top: 4em;
     margin-bottom: 0em; }
-  /* line 153, launch-sections.scss */
-  #sponsors .sponsors.platinum .sponsor {
-    height: 250px;
-    width: 100%; }
-  /* line 159, launch-sections.scss */
-  #sponsors .sponsors.gold .sponsor {
-    height: 110px;
-    width: 50%; }
-  /* line 165, launch-sections.scss */
-  #sponsors .sponsors.silver .sponsor {
-    height: 75px;
-    width: 33%; }
-    /* line 166, launch-sections.scss */
-    #sponsors .sponsors.silver .sponsor:first-child {
-      margin-left: 16%; }
-  /* line 175, launch-sections.scss */
-  #sponsors .sponsor {
-    margin: 1em 1em 1em 0;
-    line-height: 1.2em;
-    float: left; }
-    /* line 180, launch-sections.scss */
-    #sponsors .sponsor h3 {
-      margin: 0;
-      font-size: 1.2em;
-      letter-spacing: .05rem; }
-    @media (min-width: 550px) {
-      /* line 175, launch-sections.scss */
-      #sponsors .sponsor {
-        width: 45%;
-        font-size: 0.9em;
-        min-height: 90px; } }
+  /* line 150, launch-sections.scss */
+  #sponsors .sponsors {
+    padding-bottom: 30px;
+    display: inline-block; }
+    /* line 154, launch-sections.scss */
+    #sponsors .sponsors.crevalle {
+      padding-bottom: 0px; }
+      /* line 156, launch-sections.scss */
+      #sponsors .sponsors.crevalle img.crevalle-logo {
+        height: 250px;
+        width: 250px; }
+    /* line 163, launch-sections.scss */
+    #sponsors .sponsors.platinum h3 {
+      color: #afafaf; }
+    @media (min-width: 350px) {
+      /* line 166, launch-sections.scss */
+      #sponsors .sponsors.platinum img {
+        height: 43px;
+        width: 300px; } }
     @media (min-width: 750px) {
-      /* line 175, launch-sections.scss */
-      #sponsors .sponsor {
-        width: 30%; } }
-    @media (min-width: 1200px) {
-      /* line 175, launch-sections.scss */
-      #sponsors .sponsor {
-        font-size: 1em;
-        line-height: 1.25em; } }
-    /* line 201, launch-sections.scss */
-    #sponsors .sponsor img {
-      max-width: 100%;
-      max-height: 100%;
-      vertical-align: middle;
-      height: 100%; }
+      /* line 166, launch-sections.scss */
+      #sponsors .sponsors.platinum img {
+        height: 71px;
+        width: 500px; } }
+    /* line 179, launch-sections.scss */
+    #sponsors .sponsors.gold h3 {
+      color: #e5b848; }
+    /* line 183, launch-sections.scss */
+    #sponsors .sponsors.gold img {
+      height: 110px;
+      width: 200px; }
+    /* line 189, launch-sections.scss */
+    #sponsors .sponsors.silver h3 {
+      color: rgba(175, 175, 175, 0.5); }
+    /* line 193, launch-sections.scss */
+    #sponsors .sponsors.silver img {
+      height: 75px;
+      width: 150px;
+      padding: 0 15px; }
 
-/* line 211, launch-sections.scss */
+/* line 202, launch-sections.scss */
 #organizers {
   background-color: #f5f3f6;
   color: #000;
@@ -251,24 +244,24 @@
     font-size: 1.25em;
     line-height: 1.5em; }
   @media (min-width: 750px) {
-    /* line 211, launch-sections.scss */
+    /* line 202, launch-sections.scss */
     #organizers {
       padding: 3em 0; } }
   @media (min-width: 1000px) {
-    /* line 211, launch-sections.scss */
+    /* line 202, launch-sections.scss */
     #organizers {
       padding: 4em 0; }
       /* line 118, launch-settings.scss */
       #organizers h1, #organizers h2, #organizers h3, #organizers h4, #organizers h5, #organizers h6 {
         margin-bottom: 1em; } }
-  /* line 215, launch-sections.scss */
+  /* line 206, launch-sections.scss */
   #organizers .organizer-list {
     padding: 0;
     margin: 0;
     list-style: none;
     overflow: hidden;
     *zoom: 1; }
-  /* line 219, launch-sections.scss */
+  /* line 210, launch-sections.scss */
   #organizers .organizer {
     float: left;
     overflow: hidden;
@@ -288,28 +281,28 @@
       margin-right: 13.63636px;
       display: block;
       border-radius: 37.5px; }
-    /* line 225, launch-sections.scss */
+    /* line 216, launch-sections.scss */
     #organizers .organizer h3 {
       margin: 0;
       font-size: 1.2em;
       letter-spacing: .05rem; }
     @media (min-width: 550px) {
-      /* line 219, launch-sections.scss */
+      /* line 210, launch-sections.scss */
       #organizers .organizer {
         width: 45%;
         font-size: 0.9em;
         min-height: 90px; } }
     @media (min-width: 750px) {
-      /* line 219, launch-sections.scss */
+      /* line 210, launch-sections.scss */
       #organizers .organizer {
         width: 30%; } }
     @media (min-width: 1200px) {
-      /* line 219, launch-sections.scss */
+      /* line 210, launch-sections.scss */
       #organizers .organizer {
         font-size: 1em;
         line-height: 1.25em; } }
 
-/* line 248, launch-sections.scss */
+/* line 239, launch-sections.scss */
 #speakers {
   background-color: #f5f3f6;
   color: #000;
@@ -325,24 +318,24 @@
     font-size: 1.25em;
     line-height: 1.5em; }
   @media (min-width: 750px) {
-    /* line 248, launch-sections.scss */
+    /* line 239, launch-sections.scss */
     #speakers {
       padding: 3em 0; } }
   @media (min-width: 1000px) {
-    /* line 248, launch-sections.scss */
+    /* line 239, launch-sections.scss */
     #speakers {
       padding: 4em 0; }
       /* line 118, launch-settings.scss */
       #speakers h1, #speakers h2, #speakers h3, #speakers h4, #speakers h5, #speakers h6 {
         margin-bottom: 1em; } }
-  /* line 252, launch-sections.scss */
+  /* line 243, launch-sections.scss */
   #speakers .speaker-list {
     padding: 0;
     margin: 0;
     list-style: none;
     overflow: hidden;
     *zoom: 1; }
-  /* line 256, launch-sections.scss */
+  /* line 247, launch-sections.scss */
   #speakers .speaker {
     float: left;
     overflow: hidden;
@@ -366,53 +359,53 @@
     #speakers .speaker img {
       float: none;
       margin-right: 0; }
-    /* line 262, launch-sections.scss */
+    /* line 253, launch-sections.scss */
     #speakers .speaker h3 {
       margin: 0;
       font-size: 1.5em;
       letter-spacing: .05rem;
       color: #1cb495; }
-    /* line 269, launch-sections.scss */
+    /* line 260, launch-sections.scss */
     #speakers .speaker .bd {
       margin: 2em 0; }
-    /* line 273, launch-sections.scss */
+    /* line 264, launch-sections.scss */
     #speakers .speaker .bio {
       margin-top: 1em;
       font-size: 10pt; }
-    /* line 278, launch-sections.scss */
+    /* line 269, launch-sections.scss */
     #speakers .speaker:nth-child(odd) {
       clear: left; }
     @media (min-width: 350px) {
-      /* line 256, launch-sections.scss */
+      /* line 247, launch-sections.scss */
       #speakers .speaker {
         width: 100%; } }
     @media (min-width: 750px) {
-      /* line 256, launch-sections.scss */
+      /* line 247, launch-sections.scss */
       #speakers .speaker {
         line-height: 1.5em; } }
     @media (min-width: 1200px) {
-      /* line 256, launch-sections.scss */
+      /* line 247, launch-sections.scss */
       #speakers .speaker {
         padding-right: 30px; } }
 
-/* line 299, launch-sections.scss */
+/* line 290, launch-sections.scss */
 #signup-form {
   display: -webkit-flex;
   display: flex;
   position: relative; }
-  /* line 303, launch-sections.scss */
+  /* line 294, launch-sections.scss */
   #signup-form input[type="text"],
   #signup-form input[type="password"],
   #signup-form input[type="email"] {
     width: 18em; }
-  /* line 309, launch-sections.scss */
+  /* line 300, launch-sections.scss */
   #signup-form > * {
     margin: 0 0 0 1em; }
-  /* line 313, launch-sections.scss */
+  /* line 304, launch-sections.scss */
   #signup-form > :first-child {
     margin: 0 0 0 0; }
 
-/* line 318, launch-sections.scss */
+/* line 309, launch-sections.scss */
 #bottom {
   padding: 1.5em 0; }
   /* line 103, launch-settings.scss */
@@ -423,18 +416,18 @@
     font-size: 1.25em;
     line-height: 1.5em; }
   @media (min-width: 750px) {
-    /* line 318, launch-sections.scss */
+    /* line 309, launch-sections.scss */
     #bottom {
       padding: 3em 0; } }
   @media (min-width: 1000px) {
-    /* line 318, launch-sections.scss */
+    /* line 309, launch-sections.scss */
     #bottom {
       padding: 4em 0; }
       /* line 118, launch-settings.scss */
       #bottom h1, #bottom h2, #bottom h3, #bottom h4, #bottom h5, #bottom h6 {
         margin-bottom: 1em; } }
 
-/* line 322, launch-sections.scss */
+/* line 313, launch-sections.scss */
 #footer {
   -moz-transition: opacity 0.2s ease-in-out;
   -o-transition: opacity 0.2s ease-in-out;
@@ -446,41 +439,45 @@
   opacity: 0.5;
   margin-top: 2em;
   color: rgba(255, 255, 255, 0.7); }
-  /* line 331, launch-sections.scss */
+  /* line 322, launch-sections.scss */
   #footer a {
     color: inherit; }
-    /* line 333, launch-sections.scss */
+    /* line 324, launch-sections.scss */
     #footer a:hover {
       color: #1cb495;
       text-decoration: none; }
-  /* line 339, launch-sections.scss */
+  /* line 330, launch-sections.scss */
   #footer .icons {
     margin: 0 0 0.5em 0; }
-  /* line 343, launch-sections.scss */
+  /* line 334, launch-sections.scss */
   #footer .links {
     list-style: none;
     padding: 0; }
-    /* line 347, launch-sections.scss */
+    /* line 338, launch-sections.scss */
     #footer .links li {
       border-left: solid 1px rgba(255, 255, 255, 0.25);
       display: inline-block;
       line-height: 1em;
       margin: 0 0 0 0.75em;
       padding: 0 0 0 0.75em; }
-    /* line 355, launch-sections.scss */
+    /* line 346, launch-sections.scss */
     #footer .links li:first-child {
       border-left: 0;
       margin-left: 0;
       padding-left: 0; }
-  /* line 362, launch-sections.scss */
+  /* line 353, launch-sections.scss */
   #footer:hover {
     color: rgba(255, 255, 255, 0.9);
     opacity: 1; }
-  /* line 367, launch-sections.scss */
+  /* line 358, launch-sections.scss */
   #footer > :last-child {
     margin-bottom: 0; }
+  /* line 361, launch-sections.scss */
+  #footer .crevalle-name {
+    height: 16px;
+    width: 92px; }
 
-/* line 372, launch-sections.scss */
+/* line 369, launch-sections.scss */
 #moon {
   left: 0;
   opacity: 0.50;
@@ -489,7 +486,7 @@
   width: 100%;
   height: 100%;
   z-index: -1; }
-  /* line 381, launch-sections.scss */
+  /* line 378, launch-sections.scss */
   #moon div {
     background-image: url("/assets/images/empex-moon.jpg");
     background-size: cover;
@@ -500,7 +497,7 @@
     top: 0;
     width: 100%;
     opacity: 0; }
-    /* line 392, launch-sections.scss */
+    /* line 389, launch-sections.scss */
     #moon div.visible {
       -moz-transition: opacity 3s ease;
       -o-transition: opacity 3s ease;
@@ -509,14 +506,14 @@
       opacity: 1; }
 
 @media (min-width: 350px) {
-  /* line 400, launch-sections.scss */
+  /* line 397, launch-sections.scss */
   #moon {
     top: 200px; } }
 @media (min-width: 750px) {
-  /* line 404, launch-sections.scss */
+  /* line 401, launch-sections.scss */
   #moon {
     top: 100px; } }
 @media (min-width: 1000px) {
-  /* line 408, launch-sections.scss */
+  /* line 405, launch-sections.scss */
   #moon {
     top: 0px; } }
