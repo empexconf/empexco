@@ -1,14 +1,14 @@
 <section class="sponsor-list">
   <div class="row">
     <div class="sponsors crevalle">
-
-    The Empire City Elixir Conference is a production of <br />
-    <a href="<%= crevalle.data.link %>" class="image-link" target="_blank">
-      <img src="<%= crevalle.data.image %>" alt="<%= crevalle.data.title %>" class="crevalle-logo"/>
-    </a>
+      The Empire City Elixir Conference is a production of <br />
+      <% link_to crevalle.data.link, class: 'image-link', target: '_blank' do %>
+        <%= image_tag crevalle.data.image, alt: crevalle.data.title, class: 'crevalle-logo' %>
+      <% end %>
+      </a>
   </div>
   </div>
-  <% %w(platinum gold silver).each do |level| %><%#- TODO: add gold.  doesnt' play nice with :empty due to whitespace %>
+  <% %w(platinum gold silver).each do |level| %>
     <div class="row">
       <div class="sponsors <%= level %>">
         <h3><%= level.capitalize %></h3>
@@ -17,7 +17,7 @@
         <% else %>
           <% sponsors_for(level).each do |sponsor| %>
             <% link_to sponsor.data.link, class: 'image-link', target: '_blank' do %>
-              <img src="<%= sponsor.data.image %>" alt="<%= sponsor.data.title %>" />
+              <%= image_tag sponsor.data.image, alt: sponsor.data.title %>
             <% end %>
           <% end %>
         <% end %>
