@@ -159,7 +159,11 @@ helpers do
     speakers.sort_by { |s| s.data.title.split(" ").last }
   end
 
+  def sponsors_for level
+    sponsors.select {|s| s.data.level == level}
+  end
+
   def crevalle
-    sponsors.detect { |s| s.title == 'Crevalle' }
+    sponsors.detect { |s| s.data.level == 'crevalle' }
   end
 end

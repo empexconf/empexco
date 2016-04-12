@@ -1,21 +1,26 @@
 <section class="sponsor-list">
-  <% %w(platinum silver).each do |level| %><%#- TODO: add gold.  doesnt' play nice with :empty due to whitespace %>
+  <div class="row">
+    <div class="sponsors crevalle">
+
+    The Empire City Elixir Conference is a production of <br />
+    <a href="<%= crevalle.data.link %>" class="image-link" target="_blank">
+      <img src="<%= crevalle.data.image %>" alt="<%= crevalle.data.title %>" class="crevalle-logo"/>
+    </a>
+  </div>
+  </div>
+  <% %w(platinum gold silver).each do |level| %><%#- TODO: add gold.  doesnt' play nice with :empty due to whitespace %>
     <div class="row">
-      <div class="sponsors <%= level %> 12 columns">
+      <div class="sponsors <%= level %>">
         <h3><%= level.capitalize %></h3>
-        <% sponsors.select {|s| s.data.level == level}.each do |sponsor| %>
-          <div class="sponsor">
-          <% if sponsor.data.image.present? %>
-            <a href="<%= sponsor.data.link %>" class="image-link" target="_blank">
-            <img src="<%= sponsor.data.image %>" alt="<%= sponsor.data.title %>" />
-          </a>
+        <% if sponsors_for(level).empty? %>
+          Do you want to be the first?
         <% else %>
-            <div class="bd">
-            <h3><%= link_to sponsor.data.title, sponsor.data.link, target: "_blank" %></h3>
-          </div>
+          <% sponsors_for(level).each do |sponsor| %>
+            <% link_to sponsor.data.link, class: 'image-link', target: '_blank' do %>
+              <img src="<%= sponsor.data.image %>" alt="<%= sponsor.data.title %>" />
+            <% end %>
+          <% end %>
         <% end %>
-        </div>
-      <% end %>
       </div>
     </div>
   <% end %>
