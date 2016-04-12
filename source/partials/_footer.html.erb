@@ -7,7 +7,10 @@
     <li><a href="mailto:info@empex.co" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
   </ul>
   <ul class="links">
-    <li>&copy; <%= link_to "Crevalle Technologies", "https://crevalle.io", target: '_blank' %></li>
+    <li>&copy; <% link_to "http://crevalle.io", target: '_blank' do %>
+              <%= image_tag crevalle.data.name_logo, alt: crevalle.data.title, class: 'crevalle-name' %>
+    <% end %>
+    </li>
     <li>
       <%= tweet_link_to "Tweet at #empex",
         url: "http://empex.co",
