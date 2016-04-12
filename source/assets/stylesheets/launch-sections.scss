@@ -96,6 +96,15 @@
   outline: none;
 }
 
+#about {
+  @include bg-cloudy;
+  @include content-section;
+
+  p {
+    margin: 10px 0
+  }
+}
+
 #location {
   @include bg-gray;
   @include content-section;
