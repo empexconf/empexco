@@ -3,7 +3,7 @@ title: "Brian Mitchell"
 topic: "A Journey To The Center Of The BEAM"
 image: /assets/images/speakers/brian-mitchell.jpeg
 link:
-twitter: 
+twitter: cddddr
 bio: Bio coming soon!
 ---
 It's often hard to understand what actually happens when we run our code. There are many layers like macros, AST to AST translations, intermediate languages, instruction codes, virtual machine models, and finally interpreters and compilers.
