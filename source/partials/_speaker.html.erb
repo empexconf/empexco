@@ -1,4 +1,4 @@
-<section class="speaker" id="<%= speaker.data.twitter.downcase %>">
+<section class="speaker" id="<%= speaker.data.twitter.try :downcase %>">
   <% if speaker.data.image.present? %>
     <img src="<%= speaker.data.image %>" alt="<%= speaker.title %>" />
   <% end %>
