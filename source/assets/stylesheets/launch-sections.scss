@@ -264,6 +264,11 @@
       font-size: 1.5em;
       letter-spacing: .05rem;
       color: $primaryColor;
+
+      small {
+        color: #666;
+        font-size: 60%;
+      }
     }
 
     .bd {

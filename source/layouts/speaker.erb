@@ -1,0 +1,11 @@
+<% wrap_layout :layout do %>
+  <%= partial "partials/navbar" %>
+  <section id="speakers">
+    <div class="content-section container">
+      <section class="speaker-list">
+        <%= partial "partials/speaker", locals: { speaker: current_article } %>
+      </section>
+    </div>
+  </section>
+  <%= partial "partials/bottom" %>
+<% end %>

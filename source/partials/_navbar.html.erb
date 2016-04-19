@@ -1,0 +1,11 @@
+<% page_nav = %w[location speakers sponsors organizers] %>
+<nav id="navbar" class="navbar">
+  <div class="container">
+    <ul class="navbar-list">
+      <li class="navbar-item"><%= link_to "EmpEx", "/#hero", class: "navbar-link" %></li>
+      <% page_nav.each do |nav| %>
+        <li class="navbar-item"><%= link_to nav.titleize, "/##{nav}", class: "navbar-link" %></li>
+      <% end %>
+    </ul>
+  </div>
+</nav>

@@ -58,10 +58,11 @@ end
 activate :blog do |blog|
   blog.name = "speakers"
   blog.prefix = "speakers"
+  blog.sources = "{year}-{month}-{day}-{title}.html"
   blog.permalink = "{year}/{title}"
   blog.taglink = "tags/{tag}"
   blog.default_extension = ".md"
-  blog.layout   = "layout"
+  blog.layout   = "speaker"
   blog.paginate = true
   blog.per_page = 10
   blog.publish_future_dated = true
@@ -128,14 +129,8 @@ helpers do
     link_to uri.host, uri, target: "_blank"
   end
 
-  def link_to_speaker(name, handle = nil)
-    return name unless handle.present?
-
-    link_to_twitter(handle, name)
-  end
-
-  def link_to_twitter(handle, text = "@#{handle}")
-    link_to text, "https://twitter.com/#{handle}"
+  def link_to_twitter(handle = nil, text = "@#{handle}")
+    link_to text, "https://twitter.com/#{handle}" if handle
   end
 
   def google_api_key

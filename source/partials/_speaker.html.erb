@@ -1,9 +1,9 @@
 <section class="speaker">
   <% if speaker.data.image.present? %>
-    <img src="<%= speaker.data.image %>" alt="<%= speaker.data.title %>" />
+    <img src="<%= speaker.data.image %>" alt="<%= speaker.title %>" />
   <% end %>
   <div class="bd">
-    <h3 class="name"><%= link_to_speaker speaker.data.title, speaker.data.twitter %></h3>
+    <h3 class="name"><%= link_to speaker.title, speaker %> <small><%= link_to_twitter speaker.data.twitter %></small></h3>
     <h4><%= speaker.data.topic %></h4>
     <div class="summary"><%= speaker.body %></div>
     <div class="bio"><%= speaker.data.bio %></div>
