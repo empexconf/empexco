@@ -7,7 +7,7 @@
     <h4><%= speaker.data.topic %></h4>
     <div class="summary"><%= speaker.body %></div>
     <% if speaker.data.interview %>
-      <div class="interview"><%= link_to "Read our interview with #{speaker.data.title.split(' ').first} on Medium!", speaker.data.interview, target: '_blank' %></div>
+      <div class="interview"><%= link_to "Read our interview with #{speaker.data.title.split(' ').first}!", speaker.data.interview, target: '_blank' %></div>
     <% end %>
     <div class="bio"><%= speaker.data.bio %></div>
   </div>
