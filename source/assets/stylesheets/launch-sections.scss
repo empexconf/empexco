@@ -106,7 +106,7 @@
 }
 
 #location {
-  @include bg-gray;
+  @include bg-cloudy;
   @include content-section;
 
   .content {
@@ -131,12 +131,6 @@
 #sponsors {
   @include bg-cloudy;
   @include content-section;
-
-  .bg-wrapper {
-    @include bg-gray;
-    margin: -30px -40px;
-    padding: 30px 40px;
-  }
 
   a.image-link {
     &:hover {
@@ -287,7 +281,6 @@
     ul {
       margin-left: 5px;
     }
-
 
     @include mobile {
       width: 100%;
