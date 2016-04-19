@@ -96,36 +96,6 @@
   outline: none; }
 
 /* line 99, launch-sections.scss */
-#about {
-  background-color: #f5f3f6;
-  color: #000;
-  padding: 1.5em 0; }
-  /* line 80, launch-settings.scss */
-  #about h1, #about h2, #about h3, #about h4, #about h5, #about h6, #about strong {
-    color: #000; }
-  /* line 103, launch-settings.scss */
-  #about h1, #about h2, #about h3, #about h4, #about h5, #about h6 {
-    margin-bottom: 0.75em; }
-  /* line 107, launch-settings.scss */
-  #about p {
-    font-size: 1.25em;
-    line-height: 1.5em; }
-  @media (min-width: 750px) {
-    /* line 99, launch-sections.scss */
-    #about {
-      padding: 3em 0; } }
-  @media (min-width: 1000px) {
-    /* line 99, launch-sections.scss */
-    #about {
-      padding: 4em 0; }
-      /* line 118, launch-settings.scss */
-      #about h1, #about h2, #about h3, #about h4, #about h5, #about h6 {
-        margin-bottom: 1em; } }
-  /* line 103, launch-sections.scss */
-  #about p {
-    margin: 10px 0; }
-
-/* line 108, launch-sections.scss */
 #location {
   background-color: #1f1f1f;
   color: #FFF;
@@ -141,32 +111,32 @@
     font-size: 1.25em;
     line-height: 1.5em; }
   @media (min-width: 750px) {
-    /* line 108, launch-sections.scss */
+    /* line 99, launch-sections.scss */
     #location {
       padding: 3em 0; } }
   @media (min-width: 1000px) {
-    /* line 108, launch-sections.scss */
+    /* line 99, launch-sections.scss */
     #location {
       padding: 4em 0; }
       /* line 118, launch-settings.scss */
       #location h1, #location h2, #location h3, #location h4, #location h5, #location h6 {
         margin-bottom: 1em; } }
-  /* line 112, launch-sections.scss */
+  /* line 103, launch-sections.scss */
   #location .content {
     height: 640px;
     background-image: url("/assets/images/background.jpg");
     background-size: cover;
     background-repeat: no-repeat; }
-  /* line 120, launch-sections.scss */
+  /* line 111, launch-sections.scss */
   #location .subculture-carousel {
     position: absolute;
     width: 100%;
     bottom: 10px; }
-  /* line 126, launch-sections.scss */
+  /* line 117, launch-sections.scss */
   #location img.carousel-image {
     width: 90%; }
 
-/* line 131, launch-sections.scss */
+/* line 122, launch-sections.scss */
 #sponsors {
   background-color: #f5f3f6;
   color: #000;
@@ -182,17 +152,17 @@
     font-size: 1.25em;
     line-height: 1.5em; }
   @media (min-width: 750px) {
-    /* line 131, launch-sections.scss */
+    /* line 122, launch-sections.scss */
     #sponsors {
       padding: 3em 0; } }
   @media (min-width: 1000px) {
-    /* line 131, launch-sections.scss */
+    /* line 122, launch-sections.scss */
     #sponsors {
       padding: 4em 0; }
       /* line 118, launch-settings.scss */
       #sponsors h1, #sponsors h2, #sponsors h3, #sponsors h4, #sponsors h5, #sponsors h6 {
         margin-bottom: 1em; } }
-  /* line 135, launch-sections.scss */
+  /* line 126, launch-sections.scss */
   #sponsors .bg-wrapper {
     background-color: #1f1f1f;
     color: #FFF;
@@ -201,11 +171,11 @@
     /* line 88, launch-settings.scss */
     #sponsors .bg-wrapper h1, #sponsors .bg-wrapper h2, #sponsors .bg-wrapper h3, #sponsors .bg-wrapper h4, #sponsors .bg-wrapper h5, #sponsors .bg-wrapper h6, #sponsors .bg-wrapper strong {
       color: #FFF; }
-  /* line 142, launch-sections.scss */
+  /* line 133, launch-sections.scss */
   #sponsors a.image-link:hover {
     border-bottom: none;
     text-decoration: none; }
-  /* line 148, launch-sections.scss */
+  /* line 139, launch-sections.scss */
   #sponsors .sponsor-list {
     padding: 0;
     margin: 0;
@@ -213,50 +183,57 @@
     overflow: hidden;
     *zoom: 1;
     text-align: center; }
-  /* line 153, launch-sections.scss */
-  #sponsors .footer {
+  /* line 144, launch-sections.scss */
+  #sponsors p.footer {
     text-align: center;
     margin-top: 4em;
     margin-bottom: 0em; }
+  /* line 153, launch-sections.scss */
+  #sponsors .sponsors.platinum .sponsor {
+    height: 250px;
+    width: 100%; }
   /* line 159, launch-sections.scss */
-  #sponsors .sponsors {
-    padding-bottom: 30px;
-    display: inline-block; }
-    /* line 163, launch-sections.scss */
-    #sponsors .sponsors.crevalle {
-      padding-bottom: 0px; }
-      /* line 165, launch-sections.scss */
-      #sponsors .sponsors.crevalle img.crevalle-logo {
-        height: 250px;
-        width: 250px; }
-    /* line 172, launch-sections.scss */
-    #sponsors .sponsors.platinum h3 {
-      color: #afafaf; }
-    @media (min-width: 350px) {
+  #sponsors .sponsors.gold .sponsor {
+    height: 110px;
+    width: 50%; }
+  /* line 165, launch-sections.scss */
+  #sponsors .sponsors.silver .sponsor {
+    height: 75px;
+    width: 33%; }
+    /* line 166, launch-sections.scss */
+    #sponsors .sponsors.silver .sponsor:first-child {
+      margin-left: 16%; }
+  /* line 175, launch-sections.scss */
+  #sponsors .sponsor {
+    margin: 1em 1em 1em 0;
+    line-height: 1.2em;
+    float: left; }
+    /* line 180, launch-sections.scss */
+    #sponsors .sponsor h3 {
+      margin: 0;
+      font-size: 1.2em;
+      letter-spacing: .05rem; }
+    @media (min-width: 550px) {
       /* line 175, launch-sections.scss */
-      #sponsors .sponsors.platinum img {
-        height: 43px;
-        width: 300px; } }
+      #sponsors .sponsor {
+        width: 45%;
+        font-size: 0.9em;
+        min-height: 90px; } }
     @media (min-width: 750px) {
       /* line 175, launch-sections.scss */
-      #sponsors .sponsors.platinum img {
-        height: 71px;
-        width: 500px; } }
-    /* line 188, launch-sections.scss */
-    #sponsors .sponsors.gold h3 {
-      color: #e5b848; }
-    /* line 192, launch-sections.scss */
-    #sponsors .sponsors.gold img {
-      height: 110px;
-      width: 200px; }
-    /* line 198, launch-sections.scss */
-    #sponsors .sponsors.silver h3 {
-      color: rgba(175, 175, 175, 0.5); }
-    /* line 202, launch-sections.scss */
-    #sponsors .sponsors.silver img {
-      height: 75px;
-      width: 150px;
-      padding: 0 15px; }
+      #sponsors .sponsor {
+        width: 30%; } }
+    @media (min-width: 1200px) {
+      /* line 175, launch-sections.scss */
+      #sponsors .sponsor {
+        font-size: 1em;
+        line-height: 1.25em; } }
+    /* line 201, launch-sections.scss */
+    #sponsors .sponsor img {
+      max-width: 100%;
+      max-height: 100%;
+      vertical-align: middle;
+      height: 100%; }
 
 /* line 211, launch-sections.scss */
 #organizers {
@@ -395,14 +372,18 @@
       font-size: 1.5em;
       letter-spacing: .05rem;
       color: #1cb495; }
-    /* line 269, launch-sections.scss */
+      /* line 268, launch-sections.scss */
+      #speakers .speaker h3 small {
+        color: #666;
+        font-size: 60%; }
+    /* line 274, launch-sections.scss */
     #speakers .speaker .bd {
       margin: 2em 0; }
-    /* line 273, launch-sections.scss */
+    /* line 278, launch-sections.scss */
     #speakers .speaker .bio {
       margin-top: 1em;
       font-size: 10pt; }
-    /* line 278, launch-sections.scss */
+    /* line 283, launch-sections.scss */
     #speakers .speaker:nth-child(odd) {
       clear: left; }
     @media (min-width: 350px) {
@@ -418,24 +399,24 @@
       #speakers .speaker {
         padding-right: 30px; } }
 
-/* line 299, launch-sections.scss */
+/* line 304, launch-sections.scss */
 #signup-form {
   display: -webkit-flex;
   display: flex;
   position: relative; }
-  /* line 303, launch-sections.scss */
+  /* line 308, launch-sections.scss */
   #signup-form input[type="text"],
   #signup-form input[type="password"],
   #signup-form input[type="email"] {
     width: 18em; }
-  /* line 309, launch-sections.scss */
+  /* line 314, launch-sections.scss */
   #signup-form > * {
     margin: 0 0 0 1em; }
-  /* line 313, launch-sections.scss */
+  /* line 318, launch-sections.scss */
   #signup-form > :first-child {
     margin: 0 0 0 0; }
 
-/* line 318, launch-sections.scss */
+/* line 323, launch-sections.scss */
 #bottom {
   padding: 1.5em 0; }
   /* line 103, launch-settings.scss */
@@ -446,18 +427,18 @@
     font-size: 1.25em;
     line-height: 1.5em; }
   @media (min-width: 750px) {
-    /* line 318, launch-sections.scss */
+    /* line 323, launch-sections.scss */
     #bottom {
       padding: 3em 0; } }
   @media (min-width: 1000px) {
-    /* line 318, launch-sections.scss */
+    /* line 323, launch-sections.scss */
     #bottom {
       padding: 4em 0; }
       /* line 118, launch-settings.scss */
       #bottom h1, #bottom h2, #bottom h3, #bottom h4, #bottom h5, #bottom h6 {
         margin-bottom: 1em; } }
 
-/* line 322, launch-sections.scss */
+/* line 327, launch-sections.scss */
 #footer {
   -moz-transition: opacity 0.2s ease-in-out;
   -o-transition: opacity 0.2s ease-in-out;
@@ -469,45 +450,41 @@
   opacity: 0.5;
   margin-top: 2em;
   color: rgba(255, 255, 255, 0.7); }
-  /* line 331, launch-sections.scss */
+  /* line 336, launch-sections.scss */
   #footer a {
     color: inherit; }
-    /* line 333, launch-sections.scss */
+    /* line 338, launch-sections.scss */
     #footer a:hover {
       color: #1cb495;
       text-decoration: none; }
-  /* line 339, launch-sections.scss */
+  /* line 344, launch-sections.scss */
   #footer .icons {
     margin: 0 0 0.5em 0; }
-  /* line 343, launch-sections.scss */
+  /* line 348, launch-sections.scss */
   #footer .links {
     list-style: none;
     padding: 0; }
-    /* line 347, launch-sections.scss */
+    /* line 352, launch-sections.scss */
     #footer .links li {
       border-left: solid 1px rgba(255, 255, 255, 0.25);
       display: inline-block;
       line-height: 1em;
       margin: 0 0 0 0.75em;
       padding: 0 0 0 0.75em; }
-    /* line 355, launch-sections.scss */
+    /* line 360, launch-sections.scss */
     #footer .links li:first-child {
       border-left: 0;
       margin-left: 0;
       padding-left: 0; }
-  /* line 362, launch-sections.scss */
+  /* line 367, launch-sections.scss */
   #footer:hover {
     color: rgba(255, 255, 255, 0.9);
     opacity: 1; }
-  /* line 367, launch-sections.scss */
+  /* line 372, launch-sections.scss */
   #footer > :last-child {
     margin-bottom: 0; }
-  /* line 370, launch-sections.scss */
-  #footer .crevalle-name {
-    height: 16px;
-    width: 92px; }
 
-/* line 378, launch-sections.scss */
+/* line 377, launch-sections.scss */
 #moon {
   left: 0;
   opacity: 0.50;
@@ -516,7 +493,7 @@
   width: 100%;
   height: 100%;
   z-index: -1; }
-  /* line 387, launch-sections.scss */
+  /* line 386, launch-sections.scss */
   #moon div {
     background-image: url("/assets/images/empex-moon.jpg");
     background-size: cover;
@@ -527,7 +504,7 @@
     top: 0;
     width: 100%;
     opacity: 0; }
-    /* line 398, launch-sections.scss */
+    /* line 397, launch-sections.scss */
     #moon div.visible {
       -moz-transition: opacity 3s ease;
       -o-transition: opacity 3s ease;
@@ -536,14 +513,14 @@
       opacity: 1; }
 
 @media (min-width: 350px) {
-  /* line 406, launch-sections.scss */
+  /* line 405, launch-sections.scss */
   #moon {
     top: 200px; } }
 @media (min-width: 750px) {
-  /* line 410, launch-sections.scss */
+  /* line 409, launch-sections.scss */
   #moon {
     top: 100px; } }
 @media (min-width: 1000px) {
-  /* line 414, launch-sections.scss */
+  /* line 413, launch-sections.scss */
   #moon {
     top: 0px; } }
