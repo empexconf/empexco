@@ -284,6 +284,11 @@
       clear: left;
     }
 
+    ul {
+      margin-left: 5px;
+    }
+
+
     @include mobile {
       width: 100%;
     }
