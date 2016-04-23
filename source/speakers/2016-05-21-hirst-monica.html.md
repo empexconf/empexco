@@ -3,8 +3,8 @@ title: "Monica Hirst"
 topic: "Letting the Phoenix Fly in Production"
 image: /assets/images/speakers/monica-hirst.jpg
 link:
-twitter: 
-bio: Bio coming soon!
+twitter: monix88 
+bio: "Monica loves the combination of finance, software architecture, and accessible education. Previously at Goldman Sachs, Monica now spends her days leading an engineering team at Society of Grownups, volunteering at ChickTech, and overcoming the OOP mindset."
 ---
 Phoenix already does a lot of work to make your life easier as an Elixir developer. But how do you take your Phoenix application to the next level?
 
