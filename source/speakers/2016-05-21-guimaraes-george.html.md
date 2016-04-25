@@ -4,6 +4,7 @@ topic: "Async Jobs in Phoenix"
 image: /assets/images/people/george-guimaraes.jpg
 link:
 twitter: georgeguimaraes
+interview: "https://medium.com/@EmpEx/jinterview-with-empex-speaker-george-guimar%C3%A3es-a0e870bf9a20#.2gjdunuup"
 bio: "George is co-founder at Plataformatec, a software consultancy in Elixir and Ruby. His favorite topics are Discrete Integration, monoliths, and picoservices with Elixir."
 headline: true
 ---

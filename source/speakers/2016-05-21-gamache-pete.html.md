@@ -4,6 +4,7 @@ topic: "Real World Elixir Deployment"
 image: /assets/images/speakers/pete-gamache.jpg
 link:
 twitter: gamache
+interview: "https://medium.com/@EmpEx/interview-with-empex-speaker-pete-gamache-3bca06d8cefa#.3ck9xt6xu"
 bio: "Pete is head of engineering at Appcues, and brings over a decade of LabVIEW, FORTRAN 77, and Perl experience to the Elixir community. He's written literally dozens of codes, and his favorite language so far is this one. Follow him on Twitter."
 ---
 The Elixir community commonly remarks that deploying Elixir is easy, with noticeably few details about how it's actually done.
