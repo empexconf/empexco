@@ -1,0 +1,17 @@
+<section class="schedule-table">
+  <% entries = blog('schedule').articles.sort_by { |a| a.data.order } %>
+
+  <table>
+    <% entries.each do |entry| %>
+      <tr>
+        <td class="time"><%= entry.data.time %></td>
+        <td class="event">
+          <div class="title"><%= entry.title %></div>
+          <% if entry.data.description.present? %>
+            <div class="desc"><%= entry.data.description %></div>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+</section>

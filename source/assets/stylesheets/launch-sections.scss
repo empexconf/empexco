@@ -299,6 +299,40 @@
   }
 }
 
+#schedule {
+  @include bg-cloudy;
+  @include content-section;
+
+  .schedule-table {
+    .time, .title {
+      font-size: 2rem;
+    }
+    .time {
+      text-align: right;
+    }
+    .title {
+      font-weight: bold;
+    }
+  }
+
+  @include mobile {
+  }
+
+  @include phablet {
+  }
+
+  @include tablet {
+  }
+
+  @include hd {
+    .container {
+      margin-top: -4em;
+      padding-top: 4em;
+      border-top: 1px #E1E1E1 solid;
+    }
+  }
+}
+
 #signup-form {
   @include display-flex;
   position: relative;

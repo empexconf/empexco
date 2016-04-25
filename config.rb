@@ -84,6 +84,22 @@ activate :blog do |blog|
   blog.publish_future_dated = true
 end
 
+###########################
+## schedule
+###########################
+
+activate :blog do |blog|
+  blog.name = "schedule"
+  blog.prefix = "schedule"
+  blog.sources = "{year}-{month}-{day}-{title}.html"
+  blog.taglink = "tags/{tag}"
+  blog.default_extension = ".md"
+  blog.layout   = "layout"
+  blog.paginate = true
+  blog.per_page = 20
+  blog.publish_future_dated = true
+end
+
 #######
 # Build
 #######
