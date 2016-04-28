@@ -109,18 +109,24 @@
   @include bg-cloudy;
   @include content-section;
 
-  .content {
+  .gallery {
     height: 640px;
 
     background-image: url('/assets/images/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
   }
 
   .subculture-carousel {
     position: absolute;
     width: 100%;
     bottom: 10px;
+  }
+
+  .hotel {
+    margin-top: 2em;
+    p:last-child { margin: 0; }
   }
 
   img.carousel-image {

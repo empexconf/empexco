@@ -48,7 +48,7 @@ layout: layout
         45 Bleecker St, New York City, 10012<br />
         <%= link_to "Find it on Google Maps", "https://www.google.com/maps/place/45+Bleecker+St,+New+York,+NY+10012/@40.7259994,-73.9963642,17z/data=!3m1!4b1!4m2!3m1!1s0x89c259855d92fe97:0xf52b5c50ff1c04c", target: "_blank" %>
       </p>
-      <div class="content">
+      <div class="gallery">
         <div class="subculture-carousel">
           <div><%= image_tag 'subculture8.jpg', class: 'carousel-image' %></div>
           <div><%= image_tag 'subculture1.jpg', class: 'carousel-image' %></div>
@@ -59,6 +59,20 @@ layout: layout
           <div><%= image_tag 'subculture5.jpg', class: 'carousel-image' %></div>
           <div><%= image_tag 'subculture2.jpg', class: 'carousel-image' %></div>
         </div>
+      </div>
+
+      <div id="hotel" class="hotel">
+        <h3>Hotel</h3>
+        <p>
+          Looking for a place to stay? We have reserved a block rooms at the
+          <strong><%= link_to '70 Park Avenue Hotel', "https://gc.synxis.com/rez.aspx?Hotel=26762&Chain=10179&group=91320103104" %></strong>.
+          <br />
+          <strong>
+            <%= link_to "Reserve your room for a discounted rate now", hotel_url %>
+          </strong>
+          <br />
+          <%= link_to 'Map', hotel_map_url %> &middot; <%= link_to "Directions to Subculture", hotel_directions_url %>
+        </p>
       </div>
     </div>
   </div>
