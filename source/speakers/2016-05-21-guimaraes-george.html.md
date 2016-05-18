@@ -1,5 +1,5 @@
 ---
-title: "George Guimaräes"
+title: "George Guimarães"
 topic: "Async Jobs in Phoenix"
 image: /assets/images/people/george-guimaraes.jpg
 link:
