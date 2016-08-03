@@ -25,7 +25,12 @@ layout: layout
       Thursday, October 27<br />
       New York City<br />
     </p>
+    <p>
     <%= link_to "Tickets on Sale September 15", "#", class: "button button-primary button-large halloween no-hover", target: "_blank" %>
+    </p>
+    <p>
+    <%= link_to 'Call for Proposals is now open!', cfp_url, target: '_blank' %>
+    </p>
   </header>
 </section>
 
@@ -36,9 +41,8 @@ layout: layout
   <div class="content-section container">
     <h2>About</h2>
     <div class="content">
-      <p>EmpEx, the Empire City Elixir Conference, is a new conference for the Elixir programming language and ecosystem held in New York City.</p>
-      <p>We will present a single track of technical talks in a memorable, sophisticated environment.</p>
-      <p>Our goal is to bring a sense of aesthetic and fun to the growing Elixir community.  We'd love for you to join us.</p>
+      <p>EmpEx, the Empire City Elixir Conference, is a new conference for the Elixir programming language and ecosystem held in New York City.  Our goal is to bring a sense of aesthetic and fun to the growing Elixir community.</p>
+      <p>The Halloween Lightning Talks are a party consisting of several 10 minute talks.  Costumes strongly encouraged.</p>
     </div>
   </div>
 </section>
@@ -48,7 +52,7 @@ layout: layout
     <div class="bg-wrapper">
       <h2>Location</h2>
       <p>
-        EmpEx will be held at <%= link_to "Subculture", "http://subculturenewyork.com", target: "_blank" %>, an intimate jazz club in Soho.<br />
+        EmpEx Halloween Lightning Talks will be held at <%= link_to "Subculture", "http://subculturenewyork.com", target: "_blank" %>, an intimate jazz club in Soho.<br />
         45 Bleecker St, New York City, 10012<br />
         <%= link_to "Find it on Google Maps", "https://www.google.com/maps/place/45+Bleecker+St,+New+York,+NY+10012/@40.7259994,-73.9963642,17z/data=!3m1!4b1!4m2!3m1!1s0x89c259855d92fe97:0xf52b5c50ff1c04c", target: "_blank" %>
       </p>
@@ -64,20 +68,6 @@ layout: layout
           <div><%= image_tag 'subculture2.jpg', class: 'carousel-image' %></div>
         </div>
       </div>
-
-      <div class="hotel">
-        <h3 id="hotel">Hotel</h3>
-        <p>
-          Looking for a place to stay? We have reserved a block rooms at the
-          <strong><%= link_to '70 Park Avenue Hotel', "https://gc.synxis.com/rez.aspx?Hotel=26762&Chain=10179&group=91320103104" %></strong>.
-          <br />
-          <strong>
-            <%= link_to "Reserve your room for a discounted rate now", hotel_url %>
-          </strong>
-          <br />
-          <%= link_to 'Map', hotel_map_url %> &middot; <%= link_to "Directions to Subculture", hotel_directions_url %>
-        </p>
-      </div>
     </div>
   </div>
 </section>
@@ -86,19 +76,16 @@ layout: layout
   <div class="content-section container">
     <h2>Speakers</h2>
     <p>
-      We're proud to announce the following speakers for the first annual EmpEx!
+    Call for Proposals is now open!  Please <%= link_to 'submit your talk here', cfp_url, target: '_blank' %> by September 15.
     </p>
-    <%= partial "partials/speakers" %>
   </div>
 </section>
 
 <section id="schedule">
   <div class="content-section container">
     <h2>Schedule</h2>
-    <p>
-      We'll be opening the doors for the conference at 9AM, providing breakfast, coffee, lunch, and refreshments throughout the day, and hosting an after-party at a nearby location.
-    </p>
-    <%= partial "partials/schedule" %>
+    <p>Doors will open at 6pm.  The party will run until 9pm, with afterparty to follow.</p>
+    <p>Detailed schedule to follow once speakers are selected!</p>
   </div>
 </section>
 
@@ -109,7 +96,9 @@ layout: layout
       <%= partial "partials/sponsors" %>
       <div class="footer">
         <p>
-          If you're interested in sponsoring EmpEx please view our <%= link_to "prospectus", "https://docs.google.com/document/d/1HISa91dRgBsYBg7FLpE621GLftP4iGAt_UGk7oWVjr4/edit", target: "_blank" %>.  </br>All inquiries should be directed to <a href="mailto:sponsors@empex.co">sponsors@empex.co</a>.<br />
+        <%# If you're interested in sponsoring EmpEx please view our <%= link_to "prospectus", "https://docs.google.com/document/d/1HISa91dRgBsYBg7FLpE621GLftP4iGAt_UGk7oWVjr4/edit", target: "_blank" %>
+        We are finalizing the sponsor prospectus for our Halloween Lightning talks.  Please stay tuned.
+        </br>All inquiries should be directed to <a href="mailto:sponsors@empex.co">sponsors@empex.co</a><br />
         </p>
       </div>
 

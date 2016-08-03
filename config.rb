@@ -194,4 +194,8 @@ helpers do
   def hotel_directions_url
     "https://www.google.com/maps/dir/SubCulture,+Bleecker+Street,+New+York,+NY/70+Park+Ave,+New+York,+NY+10016/@40.734499,-73.9989327,14z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x89c259855d92e7a7:0x24cb3f782848bc74!2m2!1d-73.994291!2d40.7258626!1m5!1m1!1s0x89c259012c91221d:0x601c534f32c7a691!2m2!1d-73.9797524!2d40.7498316"
   end
+
+  def cfp_url
+   'https://goo.gl/forms/NtT1TcTAD7GrhW0q1'
+  end
 end

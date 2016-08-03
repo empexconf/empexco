@@ -6,22 +6,6 @@
         <%= image_tag crevalle.data.image, alt: crevalle.data.title, class: 'crevalle-logo' %>
       <% end %>
       </a>
-  </div>
-  </div>
-  <% %w(platinum gold silver).each do |level| %>
-    <div class="row">
-      <div class="sponsors <%= level %>">
-        <h3><%= level.capitalize %></h3>
-        <% if sponsors_for(level).empty? %>
-          Do you want to be the first?
-        <% else %>
-          <% sponsors_for(level).each do |sponsor| %>
-            <% link_to sponsor.data.link, class: 'image-link', target: '_blank' do %>
-              <%= image_tag sponsor.data.image, alt: sponsor.data.title %>
-            <% end %>
-          <% end %>
-        <% end %>
-      </div>
     </div>
-  <% end %>
+  </div>
 </section>

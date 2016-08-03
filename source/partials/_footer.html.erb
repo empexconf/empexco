@@ -7,7 +7,7 @@
     <li><a href="mailto:info@empex.co" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
   </ul>
   <ul class="links">
-    <li>&copy; <% link_to "http://crevalle.io", target: '_blank' do %>
+    <li>&copy; <% link_to "http://crevalle.io", target: '_blank', class: 'no-hover' do %>
               <%= image_tag crevalle.data.name_logo, alt: crevalle.data.title, class: 'crevalle-name' %>
     <% end %>
     </li>
@@ -16,7 +16,7 @@
         url: "http://empex.co",
         text: "Empire City Elixir Conf is coming to New York City on May 21, 2016 #empex #elixirlang" %>
     </li>
-    <li><%= link_to "Call for Speakers", '/call-for-speakers.html', relative: true %></li>
+    <li><%= link_to "Call for Speakers", cfp_url %></li>
     <li><%= link_to "Code of Conduct", '/code-of-conduct.html', relative: true %></li>
     <li>Design by <%= link_to "Thought Merchants", 'http://thoughtmerchants.com' %></li>
   </ul>
