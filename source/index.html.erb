@@ -14,14 +14,18 @@ layout: layout
 <section id="hero">
   <div id="moon"><div></div></div>
   <header id="header" class="header container">
+    <% link_to "http://crevalle.io", target: '_blank', class: 'no-hover' do %>
+      <%= image_tag crevalle.data.name_logo, alt: crevalle.data.title, class: 'crevalle-name' %>
+    <% end %>
+    </br><small>presents</small></br>
     <%= partial "partials/logo" %>
-    <small>Crevalle proudly presents</small></br>
+    <h3 class="halloween-text">Halloween Lightning Talks</h3>
     <h1>Empire City Elixir Conference <span class="year">2016</span></h1>
-    <p>A one-day conference for curious programmers<br />
-      Saturday, May 21st<br />
+    <p>An evening costume party of style and technology<br />
+      Thursday, October 27<br />
       New York City<br />
     </p>
-    <%= link_to "Buy Tickets", "https://ti.to/crevalle/empex-2016", class: "button button-primary button-large", target: "_blank" %>
+    <%= link_to "Tickets on Sale September 15", "#", class: "button button-primary button-large halloween no-hover", target: "_blank" %>
   </header>
 </section>
 

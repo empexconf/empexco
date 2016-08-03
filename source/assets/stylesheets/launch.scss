@@ -8,6 +8,8 @@
   '/assets/fonts/GT-Walsheim-Regular.woff'
 ));
 
+$halloweenOrange: rgba(221,137,35,1);
+
 body {
   background-color: #000;
   display: block;
@@ -56,13 +58,23 @@ body, input, select, textarea {
 }
 
 a {
-  color: $linkColor;
+  color: $halloweenOrange;
   text-decoration: none;
 
   &:hover {
     border-bottom: dotted 1px rgba(255, 255, 255, 0.25);
-    color: $linkColor;
+    color: $halloweenOrange;
     text-decoration: none;
+  }
+}
+
+.no-hover {
+  &.button:hover {
+    border: solid 1px;
+  }
+
+  &:hover {
+    border: inherit;
   }
 }
 
@@ -231,7 +243,7 @@ ul {
     li a {
       color: inherit;
       &:hover {
-        color: $primaryColor;
+        color: $halloweenOrange;
         text-decoration: none;
       }
     }
@@ -273,6 +285,10 @@ header {
   }
   small {
     font-size: 1em;
+  }
+
+  .crevalle-name {
+    width: 100px;
   }
 }
 
@@ -335,3 +351,13 @@ header {
   position: absolute;
   width: 1px;
 }
+
+.halloween {
+  background-color: rgba(0,0,0,1) !important;
+  border-color: $halloweenOrange !important;
+}
+
+.halloween-text {
+  color: $halloweenOrange;
+}
+
