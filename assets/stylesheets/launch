@@ -41,89 +41,96 @@ body, input, select, textarea {
     font-size: 12pt; } }
 /* line 58, launch.scss */
 a {
-  color: #1cb495;
+  color: #dd8923;
   text-decoration: none; }
   /* line 62, launch.scss */
   a:hover {
     border-bottom: dotted 1px rgba(255, 255, 255, 0.25);
-    color: #1cb495;
+    color: #dd8923;
     text-decoration: none; }
 
-/* line 69, launch.scss */
+/* line 70, launch.scss */
+.no-hover.button:hover {
+  border: solid 1px; }
+/* line 74, launch.scss */
+.no-hover:hover {
+  border: inherit; }
+
+/* line 79, launch.scss */
 strong, b {
   color: #fff;
   font-weight: 700; }
 
-/* line 74, launch.scss */
+/* line 84, launch.scss */
 em, i {
   font-style: italic; }
 
-/* line 78, launch.scss */
+/* line 88, launch.scss */
 p {
   margin: 0 0 2em 0; }
 
-/* line 82, launch.scss */
+/* line 92, launch.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #fff;
   font-weight: 700;
   line-height: 1em;
   margin: 0 0 1em 0; }
 
-/* line 89, launch.scss */
+/* line 99, launch.scss */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: inherit;
   text-decoration: none; }
 
-/* line 94, launch.scss */
+/* line 104, launch.scss */
 h1 {
   font-size: 2.5em;
   line-height: 1.25em; }
 
-/* line 99, launch.scss */
+/* line 109, launch.scss */
 h2 {
   font-size: 1.75em;
   line-height: 1.5em; }
 
-/* line 104, launch.scss */
+/* line 114, launch.scss */
 h3 {
   font-size: 1.35em;
   line-height: 1.5em; }
 
-/* line 109, launch.scss */
+/* line 119, launch.scss */
 h4 {
   font-size: 1.1em;
   line-height: 1.5em; }
 
-/* line 114, launch.scss */
+/* line 124, launch.scss */
 h5 {
   font-size: 0.9em;
   line-height: 1.5em; }
 
-/* line 119, launch.scss */
+/* line 129, launch.scss */
 h6 {
   font-size: 0.7em;
   line-height: 1.5em; }
 
-/* line 124, launch.scss */
+/* line 134, launch.scss */
 sub {
   font-size: 0.8em;
   position: relative;
   top: 0.5em; }
 
-/* line 130, launch.scss */
+/* line 140, launch.scss */
 sup {
   font-size: 0.8em;
   position: relative;
   top: -0.5em; }
 
-/* line 136, launch.scss */
+/* line 146, launch.scss */
 blockquote {
   border-left: solid 8px rgba(255, 255, 255, 0.35);
   font-style: italic;
   margin: 0 0 2em 0;
   padding: 0.5em 0 0.5em 2em; }
 
-/* line 143, launch.scss */
+/* line 153, launch.scss */
 code {
   background: rgba(255, 255, 255, 0.125);
   border-radius: 6px;
@@ -133,35 +140,35 @@ code {
   margin: 0 0.25em;
   padding: 0.25em 0.65em; }
 
-/* line 153, launch.scss */
+/* line 163, launch.scss */
 pre {
   font-family: "Courier New", monospace;
   font-size: 0.9em;
   margin: 0 0 2em 0; }
 
-/* line 159, launch.scss */
+/* line 169, launch.scss */
 pre code {
   display: block;
   line-height: 1.75em;
   padding: 1em 1.5em;
   overflow-x: auto; }
 
-/* line 166, launch.scss */
+/* line 176, launch.scss */
 hr {
   border: 0;
   border-bottom: solid 2px rgba(255, 255, 255, 0.35);
   margin: 2em 0; }
 
-/* line 172, launch.scss */
+/* line 182, launch.scss */
 hr.major {
   margin: 3em 0; }
 
-/* line 176, launch.scss */
+/* line 186, launch.scss */
 .icon {
   text-decoration: none;
   border-bottom: none;
   position: relative; }
-  /* line 181, launch.scss */
+  /* line 191, launch.scss */
   .icon:before {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -169,107 +176,110 @@ hr.major {
     font-style: normal;
     font-weight: normal;
     text-transform: none !important; }
-  /* line 189, launch.scss */
+  /* line 199, launch.scss */
   .icon > .label {
     display: none; }
 
 /* List */
-/* line 196, launch.scss */
+/* line 206, launch.scss */
 ol {
   list-style: decimal;
   margin: 0 0 2em 0;
   padding-left: 1.25em; }
 
-/* line 202, launch.scss */
+/* line 212, launch.scss */
 ol li {
   padding-left: 0.25em; }
 
-/* line 206, launch.scss */
+/* line 216, launch.scss */
 ul {
   list-style: disc;
   margin: 0 0 2em 0;
   padding-left: 1em; }
 
-/* line 213, launch.scss */
+/* line 223, launch.scss */
 ul.icons {
   cursor: default;
   list-style: none;
   padding-left: 0; }
-  /* line 218, launch.scss */
+  /* line 228, launch.scss */
   ul.icons li {
     display: inline-block;
     padding: 0 1em 0 0; }
-  /* line 223, launch.scss */
+  /* line 233, launch.scss */
   ul.icons li:last-child {
     padding-right: 0; }
-  /* line 227, launch.scss */
+  /* line 237, launch.scss */
   ul.icons li .icon:before {
     font-size: 1.5em; }
-  /* line 231, launch.scss */
+  /* line 241, launch.scss */
   ul.icons li a {
     color: inherit; }
-    /* line 233, launch.scss */
+    /* line 243, launch.scss */
     ul.icons li a:hover {
-      color: #1cb495;
+      color: #dd8923;
       text-decoration: none; }
 
-/* line 242, launch.scss */
+/* line 252, launch.scss */
 header h1 {
   font-size: 3.25em;
   margin: 0 0 0.55em 0; }
-/* line 247, launch.scss */
+/* line 257, launch.scss */
 header p {
   font-size: 1.35em;
   line-height: 1.65em;
   color: rgba(255, 255, 255, 0.5);
   position: relative;
   margin: 0 0 1.5em 0; }
-/* line 255, launch.scss */
+/* line 265, launch.scss */
 header h2 + p {
   font-size: 1.25em;
   margin-top: -1em;
   line-height: 1.5em; }
-/* line 261, launch.scss */
+/* line 271, launch.scss */
 header h3 + p {
   font-size: 1.1em;
   margin-top: -0.8em;
   line-height: 1.5em; }
-/* line 267, launch.scss */
+/* line 277, launch.scss */
 header h4 + p,
 header h5 + p,
 header h6 + p {
   font-size: 0.9em;
   margin-top: -0.6em;
   line-height: 1.5em; }
-/* line 274, launch.scss */
+/* line 284, launch.scss */
 header small {
   font-size: 1em; }
+/* line 288, launch.scss */
+header .crevalle-name {
+  width: 100px; }
 
 @media screen and (max-width: 980px) {
-  /* line 280, launch.scss */
+  /* line 294, launch.scss */
   header br {
     display: none; } }
 @media screen and (max-width: 736px) {
-  /* line 287, launch.scss */
+  /* line 301, launch.scss */
   header br {
     display: inline; } }
 @media screen and (max-width: 480px) {
-  /* line 293, launch.scss */
+  /* line 307, launch.scss */
   header br {
     display: none; } }
 @media screen and (max-width: 736px) {
-  /* line 299, launch.scss */
+  /* line 313, launch.scss */
   header h1 {
     font-size: 2em; }
 
-  /* line 303, launch.scss */
+  /* line 317, launch.scss */
   header p {
     font-size: 1em; } }
 @media screen and (max-width: 480px) {
-  /* line 309, launch.scss */
+  /* line 323, launch.scss */
   header {
     margin: 0 0 1em 0; } }
-/* line 314, launch.scss */
+/* line 328, launch.scss */
 .logo {
   display: block;
   background-size: 260%;
@@ -278,11 +288,11 @@ header small {
   height: 150px;
   background-image: url("/assets/images/empex-logo-official.svg");
   margin-bottom: 2em; }
-  /* line 323, launch.scss */
+  /* line 337, launch.scss */
   .logo.white {
     background-image: url("/assets/images/empex-logo-official-white.svg"); }
 
-/* line 328, launch.scss */
+/* line 342, launch.scss */
 .replace-text {
   border: 0;
   clip: rect(0 0 0 0);
@@ -292,3 +302,12 @@ header small {
   padding: 0;
   position: absolute;
   width: 1px; }
+
+/* line 353, launch.scss */
+.halloween {
+  background-color: black !important;
+  border-color: #dd8923 !important; }
+
+/* line 358, launch.scss */
+.halloween-text {
+  color: #dd8923; }

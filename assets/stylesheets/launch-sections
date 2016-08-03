@@ -75,7 +75,7 @@
     color: white; }
     /* line 76, launch-sections.scss */
     .navbar-link:hover {
-      color: #1cb495; }
+      color: #dd8923; }
 
   /* line 80, launch-sections.scss */
   .has-docked-nav .navbar {
@@ -101,23 +101,23 @@
   color: #000;
   padding: 1.5em 0;
   overflow: hidden; }
-  /* line 80, launch-settings.scss */
+  /* line 81, launch-settings.scss */
   #about h1, #about h2, #about h3, #about h4, #about h5, #about h6, #about strong {
     color: #000; }
-  /* line 105, launch-settings.scss */
+  /* line 106, launch-settings.scss */
   #about h1, #about h2, #about h3, #about h4, #about h5, #about h6 {
     margin-bottom: 0.75em; }
-  /* line 109, launch-settings.scss */
+  /* line 110, launch-settings.scss */
   #about p {
     font-size: 1.25em;
     line-height: 1.5em; }
-  /* line 114, launch-settings.scss */
+  /* line 115, launch-settings.scss */
   #about .bg-wrapper {
     background-color: #1f1f1f;
     color: #FFF;
     margin: -30px -40px;
     padding: 30px 40px; }
-    /* line 88, launch-settings.scss */
+    /* line 89, launch-settings.scss */
     #about .bg-wrapper h1, #about .bg-wrapper h2, #about .bg-wrapper h3, #about .bg-wrapper h4, #about .bg-wrapper h5, #about .bg-wrapper h6, #about .bg-wrapper strong {
       color: #FFF; }
   @media (min-width: 750px) {
@@ -128,7 +128,7 @@
     /* line 99, launch-sections.scss */
     #about {
       padding: 4em 0; }
-      /* line 126, launch-settings.scss */
+      /* line 127, launch-settings.scss */
       #about h1, #about h2, #about h3, #about h4, #about h5, #about h6 {
         margin-bottom: 1em; } }
   /* line 103, launch-sections.scss */
@@ -141,23 +141,23 @@
   color: #000;
   padding: 1.5em 0;
   overflow: hidden; }
-  /* line 80, launch-settings.scss */
+  /* line 81, launch-settings.scss */
   #location h1, #location h2, #location h3, #location h4, #location h5, #location h6, #location strong {
     color: #000; }
-  /* line 105, launch-settings.scss */
+  /* line 106, launch-settings.scss */
   #location h1, #location h2, #location h3, #location h4, #location h5, #location h6 {
     margin-bottom: 0.75em; }
-  /* line 109, launch-settings.scss */
+  /* line 110, launch-settings.scss */
   #location p {
     font-size: 1.25em;
     line-height: 1.5em; }
-  /* line 114, launch-settings.scss */
+  /* line 115, launch-settings.scss */
   #location .bg-wrapper {
     background-color: #1f1f1f;
     color: #FFF;
     margin: -30px -40px;
     padding: 30px 40px; }
-    /* line 88, launch-settings.scss */
+    /* line 89, launch-settings.scss */
     #location .bg-wrapper h1, #location .bg-wrapper h2, #location .bg-wrapper h3, #location .bg-wrapper h4, #location .bg-wrapper h5, #location .bg-wrapper h6, #location .bg-wrapper strong {
       color: #FFF; }
   @media (min-width: 750px) {
@@ -168,7 +168,7 @@
     /* line 108, launch-sections.scss */
     #location {
       padding: 4em 0; }
-      /* line 126, launch-settings.scss */
+      /* line 127, launch-settings.scss */
       #location h1, #location h2, #location h3, #location h4, #location h5, #location h6 {
         margin-bottom: 1em; } }
   /* line 112, launch-sections.scss */
@@ -199,23 +199,23 @@
   color: #000;
   padding: 1.5em 0;
   overflow: hidden; }
-  /* line 80, launch-settings.scss */
+  /* line 81, launch-settings.scss */
   #sponsors h1, #sponsors h2, #sponsors h3, #sponsors h4, #sponsors h5, #sponsors h6, #sponsors strong {
     color: #000; }
-  /* line 105, launch-settings.scss */
+  /* line 106, launch-settings.scss */
   #sponsors h1, #sponsors h2, #sponsors h3, #sponsors h4, #sponsors h5, #sponsors h6 {
     margin-bottom: 0.75em; }
-  /* line 109, launch-settings.scss */
+  /* line 110, launch-settings.scss */
   #sponsors p {
     font-size: 1.25em;
     line-height: 1.5em; }
-  /* line 114, launch-settings.scss */
+  /* line 115, launch-settings.scss */
   #sponsors .bg-wrapper {
     background-color: #1f1f1f;
     color: #FFF;
     margin: -30px -40px;
     padding: 30px 40px; }
-    /* line 88, launch-settings.scss */
+    /* line 89, launch-settings.scss */
     #sponsors .bg-wrapper h1, #sponsors .bg-wrapper h2, #sponsors .bg-wrapper h3, #sponsors .bg-wrapper h4, #sponsors .bg-wrapper h5, #sponsors .bg-wrapper h6, #sponsors .bg-wrapper strong {
       color: #FFF; }
   @media (min-width: 750px) {
@@ -226,7 +226,7 @@
     /* line 137, launch-sections.scss */
     #sponsors {
       padding: 4em 0; }
-      /* line 126, launch-settings.scss */
+      /* line 127, launch-settings.scss */
       #sponsors h1, #sponsors h2, #sponsors h3, #sponsors h4, #sponsors h5, #sponsors h6 {
         margin-bottom: 1em; } }
   /* line 142, launch-sections.scss */
@@ -292,23 +292,23 @@
   color: #000;
   padding: 1.5em 0;
   overflow: hidden; }
-  /* line 80, launch-settings.scss */
+  /* line 81, launch-settings.scss */
   #organizers h1, #organizers h2, #organizers h3, #organizers h4, #organizers h5, #organizers h6, #organizers strong {
     color: #000; }
-  /* line 105, launch-settings.scss */
+  /* line 106, launch-settings.scss */
   #organizers h1, #organizers h2, #organizers h3, #organizers h4, #organizers h5, #organizers h6 {
     margin-bottom: 0.75em; }
-  /* line 109, launch-settings.scss */
+  /* line 110, launch-settings.scss */
   #organizers p {
     font-size: 1.25em;
     line-height: 1.5em; }
-  /* line 114, launch-settings.scss */
+  /* line 115, launch-settings.scss */
   #organizers .bg-wrapper {
     background-color: #1f1f1f;
     color: #FFF;
     margin: -30px -40px;
     padding: 30px 40px; }
-    /* line 88, launch-settings.scss */
+    /* line 89, launch-settings.scss */
     #organizers .bg-wrapper h1, #organizers .bg-wrapper h2, #organizers .bg-wrapper h3, #organizers .bg-wrapper h4, #organizers .bg-wrapper h5, #organizers .bg-wrapper h6, #organizers .bg-wrapper strong {
       color: #FFF; }
   @media (min-width: 750px) {
@@ -319,7 +319,7 @@
     /* line 211, launch-sections.scss */
     #organizers {
       padding: 4em 0; }
-      /* line 126, launch-settings.scss */
+      /* line 127, launch-settings.scss */
       #organizers h1, #organizers h2, #organizers h3, #organizers h4, #organizers h5, #organizers h6 {
         margin-bottom: 1em; } }
   /* line 215, launch-sections.scss */
@@ -337,11 +337,11 @@
     margin: 1em 1em 1em 0;
     line-height: 1.2em;
     width: 100%; }
-    /* line 145, launch-settings.scss */
+    /* line 146, launch-settings.scss */
     #organizers .organizer .bd {
       overflow: hidden;
       zoom: 1; }
-    /* line 150, launch-settings.scss */
+    /* line 151, launch-settings.scss */
     #organizers .organizer img {
       width: 75px;
       height: 75px;
@@ -376,23 +376,23 @@
   color: #000;
   padding: 1.5em 0;
   overflow: hidden; }
-  /* line 80, launch-settings.scss */
+  /* line 81, launch-settings.scss */
   #speakers h1, #speakers h2, #speakers h3, #speakers h4, #speakers h5, #speakers h6, #speakers strong {
     color: #000; }
-  /* line 105, launch-settings.scss */
+  /* line 106, launch-settings.scss */
   #speakers h1, #speakers h2, #speakers h3, #speakers h4, #speakers h5, #speakers h6 {
     margin-bottom: 0.75em; }
-  /* line 109, launch-settings.scss */
+  /* line 110, launch-settings.scss */
   #speakers p {
     font-size: 1.25em;
     line-height: 1.5em; }
-  /* line 114, launch-settings.scss */
+  /* line 115, launch-settings.scss */
   #speakers .bg-wrapper {
     background-color: #1f1f1f;
     color: #FFF;
     margin: -30px -40px;
     padding: 30px 40px; }
-    /* line 88, launch-settings.scss */
+    /* line 89, launch-settings.scss */
     #speakers .bg-wrapper h1, #speakers .bg-wrapper h2, #speakers .bg-wrapper h3, #speakers .bg-wrapper h4, #speakers .bg-wrapper h5, #speakers .bg-wrapper h6, #speakers .bg-wrapper strong {
       color: #FFF; }
   @media (min-width: 750px) {
@@ -403,7 +403,7 @@
     /* line 248, launch-sections.scss */
     #speakers {
       padding: 4em 0; }
-      /* line 126, launch-settings.scss */
+      /* line 127, launch-settings.scss */
       #speakers h1, #speakers h2, #speakers h3, #speakers h4, #speakers h5, #speakers h6 {
         margin-bottom: 1em; } }
   /* line 252, launch-sections.scss */
@@ -421,11 +421,11 @@
     margin: 1em 1em 1em 0;
     line-height: 1.2em;
     width: 100%; }
-    /* line 145, launch-settings.scss */
+    /* line 146, launch-settings.scss */
     #speakers .speaker .bd {
       overflow: hidden;
       zoom: 1; }
-    /* line 150, launch-settings.scss */
+    /* line 151, launch-settings.scss */
     #speakers .speaker img {
       width: 250px;
       height: 250px;
@@ -433,7 +433,7 @@
       margin-right: 45.45455px;
       display: block;
       border-radius: 125px; }
-    /* line 163, launch-settings.scss */
+    /* line 164, launch-settings.scss */
     #speakers .speaker img {
       float: none;
       margin-right: 0; }
@@ -479,23 +479,23 @@
   color: #000;
   padding: 1.5em 0;
   overflow: hidden; }
-  /* line 80, launch-settings.scss */
+  /* line 81, launch-settings.scss */
   #schedule h1, #schedule h2, #schedule h3, #schedule h4, #schedule h5, #schedule h6, #schedule strong {
     color: #000; }
-  /* line 105, launch-settings.scss */
+  /* line 106, launch-settings.scss */
   #schedule h1, #schedule h2, #schedule h3, #schedule h4, #schedule h5, #schedule h6 {
     margin-bottom: 0.75em; }
-  /* line 109, launch-settings.scss */
+  /* line 110, launch-settings.scss */
   #schedule p {
     font-size: 1.25em;
     line-height: 1.5em; }
-  /* line 114, launch-settings.scss */
+  /* line 115, launch-settings.scss */
   #schedule .bg-wrapper {
     background-color: #1f1f1f;
     color: #FFF;
     margin: -30px -40px;
     padding: 30px 40px; }
-    /* line 88, launch-settings.scss */
+    /* line 89, launch-settings.scss */
     #schedule .bg-wrapper h1, #schedule .bg-wrapper h2, #schedule .bg-wrapper h3, #schedule .bg-wrapper h4, #schedule .bg-wrapper h5, #schedule .bg-wrapper h6, #schedule .bg-wrapper strong {
       color: #FFF; }
   @media (min-width: 750px) {
@@ -506,7 +506,7 @@
     /* line 308, launch-sections.scss */
     #schedule {
       padding: 4em 0; }
-      /* line 126, launch-settings.scss */
+      /* line 127, launch-settings.scss */
       #schedule h1, #schedule h2, #schedule h3, #schedule h4, #schedule h5, #schedule h6 {
         margin-bottom: 1em; } }
   /* line 313, launch-sections.scss */
@@ -546,20 +546,20 @@
 #bottom {
   padding: 1.5em 0;
   overflow: hidden; }
-  /* line 105, launch-settings.scss */
+  /* line 106, launch-settings.scss */
   #bottom h1, #bottom h2, #bottom h3, #bottom h4, #bottom h5, #bottom h6 {
     margin-bottom: 0.75em; }
-  /* line 109, launch-settings.scss */
+  /* line 110, launch-settings.scss */
   #bottom p {
     font-size: 1.25em;
     line-height: 1.5em; }
-  /* line 114, launch-settings.scss */
+  /* line 115, launch-settings.scss */
   #bottom .bg-wrapper {
     background-color: #1f1f1f;
     color: #FFF;
     margin: -30px -40px;
     padding: 30px 40px; }
-    /* line 88, launch-settings.scss */
+    /* line 89, launch-settings.scss */
     #bottom .bg-wrapper h1, #bottom .bg-wrapper h2, #bottom .bg-wrapper h3, #bottom .bg-wrapper h4, #bottom .bg-wrapper h5, #bottom .bg-wrapper h6, #bottom .bg-wrapper strong {
       color: #FFF; }
   @media (min-width: 750px) {
@@ -570,7 +570,7 @@
     /* line 361, launch-sections.scss */
     #bottom {
       padding: 4em 0; }
-      /* line 126, launch-settings.scss */
+      /* line 127, launch-settings.scss */
       #bottom h1, #bottom h2, #bottom h3, #bottom h4, #bottom h5, #bottom h6 {
         margin-bottom: 1em; } }
 
@@ -591,7 +591,7 @@
     color: inherit; }
     /* line 376, launch-sections.scss */
     #footer a:hover {
-      color: #1cb495;
+      color: #dd8923;
       text-decoration: none; }
   /* line 382, launch-sections.scss */
   #footer .icons {
