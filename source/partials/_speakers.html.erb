@@ -1,5 +1,5 @@
 <section class="speaker-list">
-  <% headline, regular = blog('speakers').articles.partition {|s| s.data.try :headline } %>
+  <% headline, regular = speakers.select {|s| s.date.month == 10 && s.date.day == 27}.partition {|s| s.data.try :headline } %>
 
   <% alphabetize(headline).each do |speaker| %>
     <%= partial "partials/speaker", locals: { speaker: speaker } %>

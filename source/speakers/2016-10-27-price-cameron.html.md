@@ -1,0 +1,9 @@
+---
+title: "Cameron Price"
+topic: "Hey Little Twelve Toes: Extending Elixir to support base-12 numbering"
+image: /assets/images/people/cameron.jpg
+link:
+twitter: "cameronp"
+bio: "Cameron has been developing software since the 90's using many different languages and platforms, but especially C, C++, Java, and Ruby. In 2015 he discovered Elixir and the immutable paradigm. Since then, he's been joyfully unlearning his imperative object-oriented instincts, and embracing the world of functional programming. Cameron is currently the CTO of TRX.tv, and a director of Mint Digital and Boomf.com."
+---
+
