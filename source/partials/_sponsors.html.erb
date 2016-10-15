@@ -7,5 +7,19 @@
       <% end %>
       </a>
     </div>
+    <div class="row">
+      ⚡️ The Halloween Lightning Talks are brought to you by our Lightning Sponsors ⚡️
+    </div>
+    <div class="row">
+      <div class="sponsors lightning">
+        <% sponsors.select{|s| s.date.month == 10 && s.date.day == 27}.each do |sponsor| %>
+
+          <% link_to sponsor.data.link, class: 'image-link', target: '_blank' do %>
+            <%= image_tag sponsor.data.image, alt: sponsor.data.title %>
+
+          <% end %>
+        <% end %>
+      </div>
+    </div>
   </div>
 </section>
