@@ -1,0 +1,58 @@
+title: Halloween Lightning Talks 2016
+current: true
+date: 2016-10-27
+short_description: |
+  An evening costume party of style and technology
+description: |
+  EMPEX, the Empire City Elixir Conference, is a sophisticated conference series for the Elixir programming language and ecosystem held in New York City. We bring a sense of aesthetic and fun to the growing Elixir community.
+
+  The Halloween Lightning Talks are an evening costume party featuring fun and several short technical talks. Costumes strongly encouraged.
+registration:
+  url: https://ti.to/crevalle/empex-halloween-lightning-talks-2016/
+  open: true
+location:
+  id: subculture
+  description: |
+    EMPEX Halloween Lightning Talks will be held at
+    [Subculture](http://subculturenewyork.com/), an initimate jazz club
+    in Soho.
+presentations:
+  - title: "A Link to the Past: Messages from the Dead"
+    id: antaramian-a-link-to-the-past
+    speakers:
+      - antaramian-david
+    description:
+      In this talk, we will overview the principles of process messaging and how process monitors allow us to respond to failures elsewhere. In particular, we will be looking at the message a process broadcasts to monitors when it fails and how this can be used strategically for failure patterning instead of linking the processes together.
+
+  - title: "Railway Programing With With"
+    id: bell-railway-programming-with-with
+    speakers:
+      - bell-chris
+
+  - title: "Elixir Through other Eyes: A Non-Rubyist's Take"
+    id: difrancesco-elixir-through-other-eyes
+    speakers:
+      - difrancesco-ben
+
+  - title: "Realtime Music Collaboration"
+    id: hoglund-realtime-music-collaboration
+    speakers:
+      - hoglund-andrew
+
+  - title: "Using GraphQL for Your Elixir APIS"
+    id: newell-using-graphql-for-your-elixir-apis
+    speakers:
+      - newell-david
+
+  - title: "Hey Little Twelve Toes: Extending Elixir to support base-12 numbering"
+    id: price-hey-little-twelve-toes
+    speakers:
+      - price-cameron
+
+  - title: "Characterizing Intelligence with Elixir"
+    id: smith-chracterizing-intelligence-with-elixir
+    speakers:
+      - smith-jeff
+
+schedule: |
+  Doors will open at 6:30pm with talks beginning around 7:15. The party will run until 10pm with light food, beer, and wine served throughout.

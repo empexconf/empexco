@@ -35,6 +35,13 @@ configure :development do
   set :segment_id, "wjgcEjr9l62PIrXXgtJapxrLYFYTsF40"
 end
 
+data.events.each do |event_slug, event|
+  p event
+  if event.current
+    proxy "index.html", "current_event.html", locals: { event: event }
+  end
+end
+
 ###########################
 ## organizers
 ###########################
