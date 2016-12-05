@@ -1,0 +1,63 @@
+---
+layout: layout
+---
+
+<% content_for(:bottom_of_page) do %>
+  <%= javascript_include_tag "carousel" %>
+  <%= javascript_include_tag "moon"%>
+<% end %>
+
+<section id="about">
+  <div class="content-section container">
+    <h2>About</h2>
+    <%= render_markdown(event.description) %>
+  </div>
+</section>
+
+<section id="location">
+  <div class="content-section container">
+    <div class="bg-wrapper">
+      <h2>Location</h2>
+      <%= partial "partials/location", locals: {location: fetch_location(event.location.id), description: event.location.description } %>
+    </div>
+  </div>
+</section>
+
+<section id="presentations">
+  <div class="content-section container">
+    <%=
+      partial "partials/presentations", locals: {
+        keynotes_intro: event.keynotes_intro,
+        presentations_intro: event.presentations_intro,
+        presentations: event.presentations
+      }
+    %>
+  </div>
+</section>
+
+<section id="schedule">
+  <div class="content-section container">
+    <h2>Schedule</h2>
+    <% if event.schedule.kind_of?(Array) %>
+      <%= partial "partials/schedule", locals: {schedule: event.schedule, event: event} %>
+    <% else %>
+      <%= render_markdown(event.schedule) %>
+    <% end %>
+  </div>
+</section>
+
+<section id="sponsors">
+  <div class="content-section container">
+    <div class="bg-wrapper">
+      <h2>Sponsors</h2>
+      <%= partial "partials/sponsors", locals: {sponsorship_levels: event.sponsorship_levels, introduction: event.sponsor_intro} %>
+    </div>
+  </div>
+</section>
+
+<section id="organizers">
+  <div class="content-section container">
+    <h2>Organizers</h2>
+    <%= partial "partials/organizers" %>
+  </div>
+</section>

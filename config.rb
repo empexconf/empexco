@@ -26,7 +26,7 @@ page '/*.txt', layout: false
 #  which_fake_page: "Rendering a fake page with a local variable" }
 
 # General configuration
-activate :directory_indexes
+#activate :directory_indexes
 
 # Reload the browser automatically whenever files change
 configure :development do
@@ -36,11 +36,13 @@ configure :development do
 end
 
 data.events.each do |event_slug, event|
-  p event
+  proxy "events/#{event_slug}.html", "event.html", locals: { event: event }, ignore: true
   if event.current
-    proxy "index.html", "current_event.html", locals: { event: event }
+    proxy "index.html", "current_event.html", locals: { event: event }, ignore: true
   end
 end
+
+ignore "current_event.html"
 
 ###########################
 ## organizers
@@ -58,55 +60,6 @@ activate :blog do |blog|
   blog.publish_future_dated = true
 end
 
-###########################
-## speakers
-###########################
-
-activate :blog do |blog|
-  blog.name = "speakers"
-  blog.prefix = "speakers"
-  blog.sources = "{year}-{month}-{day}-{title}.html"
-  blog.permalink = "{year}/{title}"
-  blog.taglink = "tags/{tag}"
-  blog.default_extension = ".md"
-  blog.layout   = "speaker"
-  blog.paginate = true
-  blog.per_page = 10
-  blog.publish_future_dated = true
-end
-
-###########################
-## sponsors
-###########################
-
-activate :blog do |blog|
-  blog.name = "sponsors"
-  blog.prefix = "sponsors"
-  blog.permalink = "{year}/{title}"
-  blog.taglink = "tags/{tag}"
-  blog.default_extension = ".md"
-  blog.layout   = "layout"
-  blog.paginate = true
-  blog.per_page = 10
-  blog.publish_future_dated = true
-end
-
-###########################
-## schedule
-###########################
-
-activate :blog do |blog|
-  blog.name = "schedule"
-  blog.prefix = "schedule"
-  blog.sources = "{year}-{month}-{day}-{title}.html"
-  blog.taglink = "tags/{tag}"
-  blog.default_extension = ".md"
-  blog.layout   = "layout"
-  blog.paginate = true
-  blog.per_page = 20
-  blog.publish_future_dated = true
-end
-
 #######
 # Build
 #######
@@ -115,7 +68,7 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :asset_hash
-  activate :gzip, exts: %w(.js .css .html .htm .svg .ttf .otf .woff .eot)
+  #activate :gzip, exts: %w(.js .css .html .htm .svg .ttf .otf .woff .eot)
 
   set :segment_id, "zjDir8SGfEhikBBIlTqmXCwJxgjUICxk"
   set :host, "http://empex.co"
@@ -132,7 +85,13 @@ class RenderWithoutProtocol < Redcarpet::Render::HTML
   end
 end
 
+MarkdownRenderer = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
+
 helpers do
+  def format_date(date)
+    date.strftime("%A, %B %-d")
+  end
+
   def tweet_link_to(text, params = {})
     uri = Addressable::URI.parse("https://twitter.com/intent/tweet")
     uri.query_values = params
@@ -166,16 +125,8 @@ helpers do
     markdown.render(text)
   end
 
-  def speakers
-    blog("speakers").articles
-  end
-
-  def sponsors
-    blog("sponsors").articles
-  end
-
-  def organizers
-    blog("organizers").articles
+  def render_markdown text
+    MarkdownRenderer.render(text)
   end
 
   def alphabetize speakers
@@ -186,8 +137,33 @@ helpers do
     sponsors.select {|s| s.data.level == level}
   end
 
-  def crevalle
-    sponsors.detect { |s| s.data.level == 'crevalle' }
+  def get_sponsor_by_id id
+    data.sponsors.detect {|slug, data| data.id == id}.last
+  end
+
+  def producer
+    data.sponsors.detect { |slug, data| data.producer }.last
+  end
+
+  def find_presenter presenter_id
+    data.presenters.detect { |slug, data| slug == presenter_id }
+  end
+
+  def fetch_location location_id
+    data.locations.detect { |slug, data| slug == location_id }.last
+  end
+
+  def extract_presenters presentations
+    presenters = presentations.flat_map do |presentation|
+      presentation.presenters.map{ |p| find_presenter(p) }
+    end
+    .uniq { |p| p.first }.sort_by { |p| p.first }
+
+    presenters
+  end
+
+  def fetch_presentation_by_id presentation_id, event
+    event.presentations.detect { |presentation| presentation.id == presentation_id }
   end
 
   def hotel_url

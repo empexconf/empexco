@@ -1,0 +1,18 @@
+<section class="organizer">
+  <% if organizer.image.present? %>
+    <%= image_tag "people/organizers/#{organizer.image}" %>
+  <% end %>
+  <div class="bd">
+    <h3><%= organizer.name %></h3>
+    <% if organizer.twitter.present? %>
+      <div>
+        <%= link_to_twitter organizer.twitter %>
+      </div>
+    <% end %>
+    <% if organizer.website.present? %>
+      <div>
+        <%= link_to_link organizer.website %>
+      </div>
+    <% end %>
+  </div>
+</section>

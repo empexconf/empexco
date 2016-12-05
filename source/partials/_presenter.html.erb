@@ -1,0 +1,8 @@
+<section class="speaker" id="<%= presenter.twitter.try :downcase %>">
+  <% if presenter.image.present? %>
+    <%= image_tag "people/presenters/#{presenter.image}" %>
+  <% end %>
+  <div class="bd">
+    <h3 class="name"><%= presenter.name %><small><% link_to_twitter presenter.twitter %></small></h3>
+  </div>
+</section>

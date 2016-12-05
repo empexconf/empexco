@@ -2,11 +2,11 @@ name: Subculture
 address: 45 Bleecker St, New York City, 10012
 mapurl: https://www.google.com/maps/place/45+Bleecker+St,+New+York,+NY+10012/@40.7259994,-73.9963642,17z/data=!3m1!4b1!4m2!3m1!1s0x89c259855d92fe97:0xf52b5c50ff1c04c
 images:
-  - subculture8
-  - subculture1
-  - subculture10
-  - subculture3
-  - subculture6
-  - subculture9
-  - subculture5
-  - subculture2
+  - subculture/8.jpg
+  - subculture/1.jpg
+  - subculture/10.jpg
+  - subculture/3.jpg
+  - subculture/6.jpg
+  - subculture/9.jpg
+  - subculture/5.jpg
+  - subculture/2.jpg

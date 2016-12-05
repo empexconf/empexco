@@ -1,8 +1,25 @@
 title: Empire City Elixir 2016
 current: false
 date: 2016-05-21
+short_description:
+  A one-day conference for curious programmers
+description:
+  EmpEx, the Empire City Elixir Conference, is a new conference for the Elixir programming language and ecosystem held in New York City.
+  We will present a single track of technical talks in a memorable, sophisticated environment.
+  Our goal is to bring a sense of aesthetic and fun to the growing Elixir community.  We'd love for you to join us.
 location:
   id: subculture
+  description: |
+    EMPEX will be held at
+    [Subculture](http://subculturenewyork.com/), an initimate jazz club
+    in Soho.
+registration:
+  url: https://ti.to/crevalle/empex-2016
+  open: false
+keynotes_intro:
+  We're proud to announce the following keynotes for the first annual EMPEX!
+presentations_intro:
+  We're proud to announce the following presentations for the first annual EMPEX!
 presentations:
   - title: "Giving back, building your first package"
     id: cardarella-giving-back
@@ -15,7 +32,7 @@ presentations:
   - title: "Concurrency + Distribution = Scalability + Availability, a journey architecting Systems on BEAM"
     id: cesarini-concurrency-distribution-scalability-availability
     presenters:
-      - francesco-cesarini
+      - cesarini-francesco
     keynote: true
     description: |
       Erlang/OTP has for years been described as your secret sauce to writing scalable and available systems. Erlang alone, however, will not do any magic. It is merely an enabler that, thanks to its semantics, programming model and predictable virtual machine makes the end results easier to achieve.
@@ -25,7 +42,7 @@ presentations:
   - title: "Real World Elixir Deployment"
     id: gamache-real-world-elixir-deployment
     presenters:
-      - pete-gamache
+      - gamache-pete
     keynote: false
     description: |
       The Elixir community commonly remarks that deploying Elixir is easy, with noticeably few details about how it's actually done.
@@ -42,7 +59,7 @@ presentations:
     description: |
       It's inevitable: you'll need to do some tasks in background. Maybe it's an email you need to send. Maybe it's an image resizing. Maybe it's a business rule that doesn't need to run in the web request.
 
-      In this talk, we'll code and test implementations for these patterns in Elixir/Phoenix, ranging from how you can use `Task.async` or `Task.Supervisor` for fire-and-forget tasks, to using an "external" queue and workers like `exq`. 
+      In this talk, we'll code and test implementations for these patterns in Elixir/Phoenix, ranging from how you can use `Task.async` or `Task.Supervisor` for fire-and-forget tasks, to using an "external" queue and workers like `exq`.
 
       More importantly than the tools, we'll examine the kinds of questions you need to ask to decide which tool will fit your needs.
 
@@ -100,11 +117,14 @@ presentations:
       - The resulting application and benchmarks
       - Issues we ran into along the way
       - What the future holds for our company and Elixir/Phoenix (Hint: more projects!)
-  - title: "The Climb - Experiencing the Rise of Eilxir from the Inside"
+
+  - title: "The Climb - Experiencing the Rise of Elixir from the Inside"
     id: tate-the-climb
     presenters:
       - tate-bruce
     keynote: true
+    description: |
+      Coming soon!
 
   - title: "Code Generation in Elixir"
     id: weber-code-generation-in-elixir
@@ -114,9 +134,21 @@ presentations:
     description: |
       This talk will cover how to create custom generators for Mix, when they are appropriate to use, and when to use macros instead. We will also look at some techniques for generating flexible code that will allow subsequent re-generations to minimize the impact on changes that were made to the generated code.
     
+sponsor_intro: |
+
+sponsorship_levels:
+  - name: platinum
+    sponsor_ids:
+      - societyofgrownups
+  - name: silver
+    sponsor_ids:
+      - honeybadger
+      - madebymany
 schedule:
   - time: 9:00AM
     title: Doors open / Registration
+    description: |
+      We'll be opening the doors for the conference at 9AM, providing breakfast, coffee, lunch, and refreshments throughout the day, and hosting an after-party at a nearby location.
 
   - time: 9:30AM
     title: Opening Remarks
@@ -168,5 +200,7 @@ schedule:
 
   - time: 5:30PM
     title: After Party!
-    description: Swift Hibernian
+    description: |
+      The afterparty will be held a short walk away at Swift Hibernian Lounge ([34 E 4th St New York, NY 10012](https://www.google.com/maps?ion=1&espv=2&q=swift+bar&bav=on.2,or.&biw=1024&bih=562&dpr=2.5&um=1&ie=UTF-8&sa=X&ved=0ahUKEwj3sdrvlOnMAhUDmx4KHUq4Bu8Q_AUIBigB))
+
 

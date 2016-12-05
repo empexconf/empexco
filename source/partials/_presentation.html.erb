@@ -1,0 +1,19 @@
+<section class="presentation" id="<% presentation.id %>">
+  <h3 class="name"><%= presentation.title %></h3>
+  <div class="summary">
+    <%= render_markdown(presentation.description) %>
+  </div>
+  <div class="presenters">
+    <% presentation.presenters.sort.map { |p| find_presenter(p) }.each do |id, presenter| %>
+      <div class="presenter">
+        <%= image_tag "people/presenters/#{presenter.image}" %>
+        <div class="bio">
+          <h4><%= presenter.name %></h4>
+          <% if presenter.bio.present? %>
+            <%= render_markdown(presenter.bio) %>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</section>

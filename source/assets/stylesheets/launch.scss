@@ -25,6 +25,19 @@ body, input, select, textarea {
   line-height: 1.65em;
 }
 
+main {
+  @include bg-cloudy;
+
+  padding-top: 1em;
+  background-color: #f5f3f6;
+  color: black;
+
+  // direct child section elements mixin content-section
+  > section {
+    @include content-section;
+  }
+}
+
 @include hd {
   body, input, select, textarea {
     font-size: 12pt;
@@ -86,7 +99,7 @@ em, i {
 }
 
 p {
-  margin: 0 0 2em 0;
+  margin: 0 0 1em 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -350,12 +363,15 @@ header {
   width: 1px;
 }
 
-.halloween {
+.current-event {
   background-color: rgba(0,0,0,1) !important;
   border-color: $halloweenOrange !important;
 }
 
-.halloween-text {
+.current-event-text {
   color: $halloweenOrange;
 }
 
+.presenter {
+  width: 100%;
+}

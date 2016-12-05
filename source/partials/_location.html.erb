@@ -1,0 +1,13 @@
+<%= render_markdown(description) %>
+<address>
+  <%= location.name %><br />
+  <%= location.address %>
+</address>
+<%= link_to "Find it on Google Maps", location.mapurl, target: "_blank" %>
+<div class="gallery">
+  <div class="subculture-carousel">
+    <% location.images.each do |image| %>
+      <div><%= image_tag "locations/#{image}", class: 'carousel-image' %></div>
+    <% end %>
+  </div>
+</div>
