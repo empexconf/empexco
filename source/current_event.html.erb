@@ -7,6 +7,10 @@ layout: layout
   <%= javascript_include_tag "moon"%>
 <% end %>
 
+<% content_for(:title) do %>
+  <%= event.title %>
+<% end %>
+
 <% content_for(:hero) do %>
   <section id="hero">
     <div id="moon"><div></div></div>

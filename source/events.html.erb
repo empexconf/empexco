@@ -11,7 +11,9 @@ layout: layout
     <h2><%= year %></h2>
     <ul>
     <% events.sort { |e1, e2| e1.last.date <=> e2.last.date }.each do |slug, event| %>
-      <li><%= link_to event.title, "/events/#{year}/#{slug}.html" %></li>
+      <% unless event.current %>
+        <li><%= link_to event.title, "/events/#{year}/#{slug}.html" %></li>
+      <% end %>
     <% end %>
     </ul>
   </div>

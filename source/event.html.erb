@@ -6,6 +6,10 @@ layout: layout
   <%= javascript_include_tag "carousel" %>
 <% end %>
 
+<% content_for(:title) do %>
+  <%= event.title %>
+<% end %>
+
 <section id="about">
   <div class="content-section container">
     <h2>About</h2>
