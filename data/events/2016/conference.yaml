@@ -3,6 +3,8 @@ current: false
 date: 2016-05-21
 short_description:
   A one-day conference for curious programmers
+twitter_description:
+  EmpEx, the Empire City Elixir Conference, is a new conference for the Elixir programming language and ecosystem held in New York City.
 description:
   EmpEx, the Empire City Elixir Conference, is a new conference for the Elixir programming language and ecosystem held in New York City.
   We will present a single track of technical talks in a memorable, sophisticated environment.

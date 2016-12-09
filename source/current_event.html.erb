@@ -2,6 +2,12 @@
 layout: layout
 ---
 
+<% content_for(:head) do %>
+  <% url = "#{host}/events/#{year}/#{slug}.html" %>
+  <link rel="canonical" href="<%= url %>">
+  <%= partial "partials/event_meta", locals: {event: event, url: url} %>
+<% end %>
+
 <% content_for(:bottom_of_page) do %>
   <%= javascript_include_tag "carousel" %>
   <%= javascript_include_tag "moon"%>
