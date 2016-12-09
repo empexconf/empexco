@@ -1,0 +1,5 @@
+<section class="presenter-list">
+  <% presenters.each do |id, presenter| %>
+    <%= partial "partials/presenter", locals: {presenter: presenter} %>
+  <% end %>
+</section>

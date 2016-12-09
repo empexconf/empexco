@@ -158,11 +158,6 @@ $breakpoints: (mobile: 350px,
   }
 }
 
-@mixin speaker-item($size: 70px) {
+@mixin presenter-item($size: 70px) {
   @include media-item($size);
-
-  img {
-    float:none;
-    margin-right: 0;
-  }
 }

@@ -1,0 +1,18 @@
+<%= render_markdown(description) %>
+<address>
+  <%= location.name %><br />
+  <%= location.address %>
+</address>
+<%= link_to "Find it on Google Maps", location.mapurl, target: "_blank" %>
+<div class="gallery">
+  <div id="location-display" class="gallery-display">
+    <% location.images.each do |image| %>
+      <div><%= image_tag "locations/#{image}" %></div>
+    <% end %>
+  </div>
+  <div id="location-carousel" class="gallery-carousel" data-slick='{"asNavFor": "#location-display"}'>
+    <% location.images.each do |image| %>
+      <div><%= image_tag "locations/#{image}", class: 'carousel-image' %></div>
+    <% end %>
+  </div>
+</div>

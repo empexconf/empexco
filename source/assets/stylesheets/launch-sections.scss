@@ -97,47 +97,42 @@
 }
 
 #about {
-  @include bg-cloudy;
-  @include content-section;
-
   p {
     margin: 10px 0
   }
 }
 
-#location {
-  @include bg-cloudy;
-  @include content-section;
-
+section {
   .gallery {
     height: 640px;
-
-    background-image: url('/assets/images/background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
     position: relative;
   }
 
-  .subculture-carousel {
-    position: absolute;
-    width: 100%;
-    bottom: 10px;
+  .gallery-display {
+    img {
+      margin: 0 auto;
+    }
   }
 
+  .gallery-carousel {
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+  }
+
+  img.carousel-image {
+    width: 80%;
+  }
+}
+
+#location {
   .hotel {
     margin-top: 2em;
     p:last-child { margin: 0; }
   }
-
-  img.carousel-image {
-    width: 90%;
-  }
 }
 
 #sponsors {
-  @include bg-cloudy;
-  @include content-section;
-
   a.image-link {
     &:hover {
       border-bottom: none;
@@ -219,9 +214,6 @@
 }
 
 #organizers {
-  @include bg-cloudy;
-  @include content-section;
-
   .organizer-list {
     @include media-container;
   }
@@ -255,22 +247,17 @@
   }
 }
 
-#speakers {
-  @include bg-cloudy;
-  @include content-section;
-
-  .speaker-list {
+#presentations {
+  .presentations-list {
     @include media-container;
   }
 
-  .speaker {
-    @include speaker-item(250px);
-    margin: 1em 1em 1em 0;
+  .presentation {
+    margin: 3em 1em 1em 0;
     line-height: 1.2em;
     width: 100%;
 
     h3 {
-      margin: 0;
       font-size: 1.5em;
       letter-spacing: .05rem;
       color: $primaryColor;
@@ -281,21 +268,21 @@
       }
     }
 
-    .bd {
-      margin: 2em 0;
-    }
-
-    .bio {
-      margin-top: 1em;
-      font-size: 10pt;
-    }
-
-    &:nth-child(odd) {
-      clear: left;
-    }
-
     ul {
       margin-left: 5px;
+    }
+
+    .presenter {
+      @include presenter-item(100px);
+
+      .bio {
+        margin-top: 1em;
+        font-size: 10pt;
+      }
+
+      .bd {
+        margin: 2em 0;
+      }
     }
 
     @include mobile {
@@ -316,9 +303,6 @@
 }
 
 #schedule {
-  @include bg-cloudy;
-  @include content-section;
-
   .schedule-table {
     .time, .title {
       font-size: 2rem;

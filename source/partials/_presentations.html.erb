@@ -1,0 +1,18 @@
+<section class="presentation-list">
+  <% unless presentations.select{ |p| p.keynote }.empty? %>
+    <h2>Keynotes</h2>
+    <% if keynotes_intro.present? %>
+      <%= render_markdown(keynotes_intro) %>
+    <% end %>
+    <% presentations.select{ |p| p.keynote }.each do |presentation| %>
+      <%= partial "partials/presentation", locals: {presentation: presentation} %>
+    <% end %>
+  <% end %>
+  <h2>Presentations</h2>
+  <% if presentations_intro.present? %>
+    <%= render_markdown(presentations_intro) %>
+  <% end %>
+  <% presentations.select{ |p| !p.keynote.present? }.each do |presentation| %>
+    <%= partial "partials/presentation", locals: {presentation: presentation} %>
+  <% end %>
+</section>

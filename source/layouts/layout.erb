@@ -14,12 +14,22 @@
 
     <%= partial "partials/meta" %>
     <%= favicon_tag "favicon.ico" %>
+
+    <%= yield_content :head %>
   </head>
 
   <body class="<%= page_classes %>">
-    <%= yield %>
-    <%= javascript_include_tag "vendor/jquery-2.2.1.min.js" %>
+    <%= yield_content :hero %>
+    <div class="navbar-spacer"></div>
+    <%= partial "partials/navbar" %>
+    <main>
+      <%= yield %>
+    </main>
+    <%= partial "partials/bottom" %>
     <%= partial "partials/analytics" %>
+    <%= javascript_include_tag "vendor/jquery-2.2.1.min.js" %>
+    <%= javascript_include_tag "//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js" %>
+    <%= javascript_include_tag "nav"%>
     <%= yield_content :bottom_of_page %>
   </body>
 </html>

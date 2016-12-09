@@ -2,24 +2,29 @@
   <div class="row">
     <div class="sponsors crevalle">
       The Empire City Elixir Conference is a production of <br />
-      <% link_to crevalle.data.link, class: 'image-link', target: '_blank' do %>
-        <%= image_tag crevalle.data.image, alt: crevalle.data.title, class: 'crevalle-logo' %>
+      <% link_to producer.link, class: 'image-link', target: '_blank' do %>
+        <%= image_tag "sponsors/#{producer.image}", alt: producer.name, class: 'crevalle-logo' %>
       <% end %>
       </a>
     </div>
     <div class="row">
-      ⚡️ The Halloween Lightning Talks are brought to you by our Lightning Sponsors ⚡️
+      <%= introduction %>
     </div>
-    <div class="row">
-      <div class="sponsors lightning">
-        <% sponsors.select{|s| s.date.month == 10 && s.date.day == 27}.each do |sponsor| %>
+    <% sponsorship_levels.each do |level| %>
+      <div class="row">
+        <div class="sponsors <%= level.name %>">
+          <% if %w(platinum gold silver).include? level.name %>
+            <h3><%= level.name.capitalize %></h3>
+          <% end %>
+          <% level.sponsor_ids.map {|id| find_sponsor(id) }.each do |slug, sponsor| %>
 
-          <% link_to sponsor.data.link, class: 'image-link', target: '_blank' do %>
-            <%= image_tag sponsor.data.image, alt: sponsor.data.title %>
+            <% link_to sponsor.link, class: 'image-link', target: '_blank' do %>
+              <%= image_tag "sponsors/#{sponsor.image}", alt: sponsor.name %>
+            <% end %>
 
           <% end %>
-        <% end %>
+        </div>
       </div>
-    </div>
+    <% end %>
   </div>
 </section>

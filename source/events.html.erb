@@ -1,0 +1,18 @@
+---
+layout: layout
+---
+
+<% content_for(:bottom_of_page) do %>
+  <%= javascript_include_tag "carousel" %>
+<% end %>
+
+<% data.events.each do |year, events| %>
+  <div class="content-section container">
+    <h2><%= year %></h2>
+    <ul>
+    <% events.sort { |e1, e2| e1.last.date <=> e2.last.date }.each do |slug, event| %>
+      <li><%= link_to event.title, "/events/#{year}/#{slug}.html" %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>

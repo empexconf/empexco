@@ -18,16 +18,6 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
-# With alternative layout
-# page "/path/to/file.html", layout: :otherlayout
-
-# Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
-# proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
-#  which_fake_page: "Rendering a fake page with a local variable" }
-
-# General configuration
-activate :directory_indexes
-
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
@@ -35,70 +25,17 @@ configure :development do
   set :segment_id, "wjgcEjr9l62PIrXXgtJapxrLYFYTsF40"
 end
 
-###########################
-## organizers
-###########################
-
-activate :blog do |blog|
-  blog.name = "organizers"
-  blog.prefix = "organizers"
-  blog.permalink = "{year}/{title}"
-  blog.taglink = "tags/{tag}"
-  blog.default_extension = ".md"
-  blog.layout   = "layout"
-  blog.paginate = true
-  blog.per_page = 10
-  blog.publish_future_dated = true
+data.events.each do |year, events|
+  events.each do |slug, event|
+    proxy "events/#{year}/#{slug}.html", "event.html", locals: { event: event, year: year, slug: slug }, ignore: true
+    if event.current
+      proxy "index.html", "current_event.html", locals: { event: event, year: year, slug: slug }, ignore: true
+    end
+  end
 end
 
-###########################
-## speakers
-###########################
-
-activate :blog do |blog|
-  blog.name = "speakers"
-  blog.prefix = "speakers"
-  blog.sources = "{year}-{month}-{day}-{title}.html"
-  blog.permalink = "{year}/{title}"
-  blog.taglink = "tags/{tag}"
-  blog.default_extension = ".md"
-  blog.layout   = "speaker"
-  blog.paginate = true
-  blog.per_page = 10
-  blog.publish_future_dated = true
-end
-
-###########################
-## sponsors
-###########################
-
-activate :blog do |blog|
-  blog.name = "sponsors"
-  blog.prefix = "sponsors"
-  blog.permalink = "{year}/{title}"
-  blog.taglink = "tags/{tag}"
-  blog.default_extension = ".md"
-  blog.layout   = "layout"
-  blog.paginate = true
-  blog.per_page = 10
-  blog.publish_future_dated = true
-end
-
-###########################
-## schedule
-###########################
-
-activate :blog do |blog|
-  blog.name = "schedule"
-  blog.prefix = "schedule"
-  blog.sources = "{year}-{month}-{day}-{title}.html"
-  blog.taglink = "tags/{tag}"
-  blog.default_extension = ".md"
-  blog.layout   = "layout"
-  blog.paginate = true
-  blog.per_page = 20
-  blog.publish_future_dated = true
-end
+ignore "current_event.html"
+ignore "event.html"
 
 #######
 # Build
@@ -108,7 +45,7 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :asset_hash
-  activate :gzip, exts: %w(.js .css .html .htm .svg .ttf .otf .woff .eot)
+  #activate :gzip, exts: %w(.js .css .html .htm .svg .ttf .otf .woff .eot)
 
   set :segment_id, "zjDir8SGfEhikBBIlTqmXCwJxgjUICxk"
   set :host, "http://empex.co"
@@ -125,7 +62,15 @@ class RenderWithoutProtocol < Redcarpet::Render::HTML
   end
 end
 
+MarkdownRenderer = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
+
 helpers do
+  # Format the date like "Monday, June 7"
+  def format_date(date)
+    date.strftime("%A, %B %-d")
+  end
+
+  # Links to the tweet creation form on Twitter with custom tweet text
   def tweet_link_to(text, params = {})
     uri = Addressable::URI.parse("https://twitter.com/intent/tweet")
     uri.query_values = params
@@ -145,6 +90,7 @@ helpers do
     link_to uri.host, uri, target: "_blank"
   end
 
+  # Creates a link to a Twitter account
   def link_to_twitter(handle = nil, text = "@#{handle}")
     link_to text, "https://twitter.com/#{handle}" if handle
   end
@@ -153,34 +99,105 @@ helpers do
     'AIzaSyDavTubUc7sQx7cvY-NA--jLhQgOrEpgic'
   end
 
-  def autolink(text)
+  # Renders the text as Markdown with autolinking enabled
+  #
+  # @param text [String]
+  # @return [String]
+  def autolink text
     renderer = RenderWithoutProtocol.new
     markdown = Redcarpet::Markdown.new(renderer, autolink: true)
     markdown.render(text)
   end
 
-  def speakers
-    blog("speakers").articles
+  # Renders text as Markdown
+  #
+  # @param text [String]
+  # @return [String]
+  def render_markdown text
+    MarkdownRenderer.render(text)
   end
 
-  def sponsors
-    blog("sponsors").articles
+  # Finds the sponsor with the given ID
+  #
+  # @param sponsor_id [String]
+  # @return [Array<String, Hash>] A two element array consisting of the slug
+  #   and the data hash for the sponsor
+  def find_sponsor sponsor_id
+    # Iterates over the list of sponsors, checking each ID
+    #
+    # The matching data returned will be a two element array
+    # where the first element is the sponsor's slug and
+    # the second element is the data for the sponsor
+    data.sponsors.detect {|slug, data| data.id == sponsor_id}
   end
 
-  def organizers
-    blog("organizers").articles
+  # Finds the producer entry in the sponsors (Crevalle)
+  #
+  # @return [Hash] The hash of data for the producing sponsor
+  def producer
+    # Iterates over the list of sponsors, checking whether the
+    # producer flag is set
+    #
+    # The matching data returned will be a two element array
+    # where the first element is the sponsor's slug and
+    # the second element is the data for the sponsor
+    data.sponsors.detect { |slug, data| data.producer }.last
   end
 
-  def alphabetize speakers
-    speakers.sort_by { |s| s.data.title.split(" ").last }
+  # Finds the presenter with the given ID
+  #
+  # @param presenter_id [String]
+  # @return [Array<String, Hash>] A two element array consisting of the slug
+  #   and the data hash for the presenter
+  def find_presenter presenter_id
+    # Iterates over the list of presenters, checking each ID
+    #
+    # The ID in this case is actually the slug (the filename
+    # without its extension). 
+    data.presenters.detect { |slug, data| slug == presenter_id }
   end
 
-  def sponsors_for level
-    sponsors.select {|s| s.data.level == level}
+  # Finds the location with the given ID
+  #
+  # @param location_id [String]
+  # @return [Array<String, Hash>] A two element array consisting of the slug
+  #   and the data hash for the location
+  def find_location location_id
+    data.locations.detect { |slug, data| slug == location_id }
   end
 
-  def crevalle
-    sponsors.detect { |s| s.data.level == 'crevalle' }
+  # Extracts the presenters from the list of presentations
+  #
+  # @param presentations [Array<Hash>] An array of presentation hashes
+  # @return [Array<Hash>] An array of presenter hashses, sorted by last name
+  def extract_presenters presentations
+    presentations.flat_map do |presentation|
+      # First extract the presenters by mapping over each presentation
+      # and then retrieving the presenter's info
+      presentation.presenters.map{ |p| find_presenter(p) }
+    end
+    .uniq do |p|
+      # Unique the presenters by their slug since a presenter
+      # may be a part of multiple presentations
+      p.first
+    end
+    .sort_by do |p|
+      # Now sort all the presenters by their slug. Since their slug
+      # should be their last name followed by their first name, this
+      # should result in them being alphabetically ordered by last name
+      p.first
+    end
+  end
+
+  # Finds the presentation with the given ID
+  def find_presentation presentation_id
+    presentations = data.events.flat_map do |year, es|
+      es.flat_map do |slug, event|
+        event.presentations
+      end
+    end
+
+    presentations.detect { |presentation| presentation.id == presentation_id }
   end
 
   def hotel_url

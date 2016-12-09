@@ -1,22 +1,5 @@
 <section class="organizer-list">
-  <% organizers.sort_by { |a| a.data.title.split(" ").last }.each do |article| %>
-    <section class="organizer">
-      <% if article.data.image.present? %>
-        <img src="<%= article.data.image %>" alt="<%= article.data.title %>" />
-      <% end %>
-      <div class="bd">
-        <h3><%= article.data.title %></h3>
-        <% if article.data.twitter.present? %>
-          <div>
-            <%= link_to_twitter article.data.twitter %>
-          </div>
-        <% end %>
-        <% if article.data.link.present? %>
-          <div>
-            <%= link_to_link article.data.link %>
-          </div>
-        <% end %>
-      </div>
-    </section>
+  <% data.organizers.map{ |a| a.last }.sort_by{ |o| o.name.split(" ").last }.each do |organizer| %>
+    <%= partial "partials/organizer", locals: {organizer: organizer} %>
   <% end %>
 </section>
