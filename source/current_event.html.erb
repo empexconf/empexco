@@ -41,7 +41,7 @@ layout: layout
   <div class="content-section container">
     <div class="bg-wrapper">
       <h2>Location</h2>
-      <%= partial "partials/location", locals: {location: fetch_location(event.location.id), description: event.location.description } %>
+      <%= partial "partials/location", locals: {location: find_location(event.location.id).last, description: event.location.description } %>
     </div>
   </div>
 </section>

@@ -16,7 +16,7 @@
           <% end %>
           <% if entry.presentation.present? %>
             <div class="title">
-              <% presentation = fetch_presentation_by_id(entry.presentation, event) %>
+              <% presentation = find_presentation(entry.presentation) %>
               <%= presentation.keynote ? "Keynote: " : "" %><%= presentation.title %>
             </div>
           <% end %>
