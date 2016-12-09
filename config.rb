@@ -27,9 +27,9 @@ end
 
 data.events.each do |year, events|
   events.each do |slug, event|
-    proxy "events/#{year}/#{slug}.html", "event.html", locals: { event: event }, ignore: true
+    proxy "events/#{year}/#{slug}.html", "event.html", locals: { event: event, year: year, slug: slug }, ignore: true
     if event.current
-      proxy "index.html", "current_event.html", locals: { event: event }, ignore: true
+      proxy "index.html", "current_event.html", locals: { event: event, year: year, slug: slug }, ignore: true
     end
   end
 end

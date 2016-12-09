@@ -13,6 +13,26 @@ layout: layout
   </div>
 </section>
 
+<% if event.photos.present? %>
+<section id="photos">
+  <div class="content-section container">
+    <h2>Photos</h2>
+    <div class="gallery">
+      <div id="event-display" class="gallery-display">
+        <% event.photos.each do |photo|  %>
+          <div><%= image_tag "events/#{year}/#{slug}/#{photo}" %></div>
+        <% end %>
+      </div>
+      <div id="event-carousel" class="gallery-carousel" data-slick='{"asNavFor": "#event-display"}'>
+        <% event.photos.each do |photo|  %>
+          <div><%= image_tag "events/#{year}/#{slug}/#{photo}", class: 'carousel-image' %></div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
+<% end %>
+
 <section id="location">
   <div class="content-section container">
     <div class="bg-wrapper">

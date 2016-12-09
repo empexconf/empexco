@@ -1,14 +1,25 @@
 
 (function() {
-  var $carousel = $('.subculture-carousel');
+  var $gallery = $('.gallery-display');
+  var $carousel = $('.gallery-carousel');
+
+  $gallery.slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+  });
+
 
   $carousel.slick({
-    dots: true,
     speed: 300,
+    centerMode: true,
+    arrows: false,
     infinite: true,
     slidesToShow: 3,
     centerPadding: '10px',
-    focusOnSelect: false
+    swipeToSlide: true,
+    focusOnSelect: true
   });
 
 })();

@@ -102,29 +102,33 @@
   }
 }
 
-#location {
+section {
   .gallery {
     height: 640px;
-
-    background-image: url('/assets/images/background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
     position: relative;
   }
 
-  .subculture-carousel {
-    position: absolute;
-    width: 100%;
-    bottom: 10px;
+  .gallery-display {
+    img {
+      margin: 0 auto;
+    }
   }
 
-  .hotel {
-    margin-top: 2em;
-    p:last-child { margin: 0; }
+  .gallery-carousel {
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
   }
 
   img.carousel-image {
-    width: 90%;
+    width: 80%;
+  }
+}
+
+#location {
+  .hotel {
+    margin-top: 2em;
+    p:last-child { margin: 0; }
   }
 }
 
