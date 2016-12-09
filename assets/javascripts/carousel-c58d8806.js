@@ -1,0 +1,1 @@
+!function(){var e=$(".gallery-display"),l=$(".gallery-carousel");e.slick({slidesToShow:1,slidesToScroll:1,arrows:!1,fade:!0}),l.slick({speed:300,centerMode:!0,arrows:!1,infinite:!0,slidesToShow:3,centerPadding:"10px",swipeToSlide:!0,focusOnSelect:!0})}();

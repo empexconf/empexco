@@ -1,1 +1,0 @@
-!function(){var e=$(".subculture-carousel");e.slick({dots:!0,speed:300,infinite:!0,slidesToShow:3,centerPadding:"10px",focusOnSelect:!1})}();

@@ -19,118 +19,160 @@ body, input, select, textarea {
   letter-spacing: -0.01em;
   line-height: 1.65em; }
 
+/* line 28, launch.scss */
+main {
+  background-color: #f5f3f6;
+  color: #000;
+  padding-top: 1em;
+  background-color: #f5f3f6;
+  color: black; }
+  /* line 81, launch-settings.scss */
+  main h1, main h2, main h3, main h4, main h5, main h6, main strong {
+    color: #000; }
+  /* line 36, launch.scss */
+  main > section {
+    padding: 1.5em 0;
+    overflow: hidden; }
+    /* line 106, launch-settings.scss */
+    main > section h1, main > section h2, main > section h3, main > section h4, main > section h5, main > section h6 {
+      margin-bottom: 0.75em; }
+    /* line 110, launch-settings.scss */
+    main > section p {
+      font-size: 1.25em;
+      line-height: 1.5em; }
+    /* line 115, launch-settings.scss */
+    main > section .bg-wrapper {
+      background-color: #1f1f1f;
+      color: #FFF;
+      margin: -30px -40px;
+      padding: 30px 40px; }
+      /* line 89, launch-settings.scss */
+      main > section .bg-wrapper h1, main > section .bg-wrapper h2, main > section .bg-wrapper h3, main > section .bg-wrapper h4, main > section .bg-wrapper h5, main > section .bg-wrapper h6, main > section .bg-wrapper strong {
+        color: #FFF; }
+    @media (min-width: 750px) {
+      /* line 36, launch.scss */
+      main > section {
+        padding: 3em 0; } }
+    @media (min-width: 1000px) {
+      /* line 36, launch.scss */
+      main > section {
+        padding: 4em 0; }
+        /* line 127, launch-settings.scss */
+        main > section h1, main > section h2, main > section h3, main > section h4, main > section h5, main > section h6 {
+          margin-bottom: 1em; } }
+
 @media (min-width: 1200px) {
-  /* line 29, launch.scss */
+  /* line 42, launch.scss */
   body, input, select, textarea {
     font-size: 12pt; } }
 @media (min-width: 1000px) {
-  /* line 35, launch.scss */
+  /* line 48, launch.scss */
   body, input, select, textarea {
     font-size: 11pt; } }
 @media (min-width: 750px) {
-  /* line 41, launch.scss */
+  /* line 54, launch.scss */
   body, input, select, textarea {
     font-size: 12pt; } }
 @media (min-width: 550px) {
-  /* line 47, launch.scss */
+  /* line 60, launch.scss */
   body, input, select, textarea {
     font-size: 12pt; } }
 @media (min-width: 350px) {
-  /* line 53, launch.scss */
+  /* line 66, launch.scss */
   body, input, select, textarea {
     font-size: 12pt; } }
-/* line 58, launch.scss */
+/* line 71, launch.scss */
 a {
   color: #dd8923;
   text-decoration: none; }
-  /* line 62, launch.scss */
+  /* line 75, launch.scss */
   a:hover {
     border-bottom: dotted 1px rgba(255, 255, 255, 0.25);
     color: #dd8923;
     text-decoration: none; }
 
-/* line 70, launch.scss */
+/* line 83, launch.scss */
 .no-hover.button:hover {
   border: solid 1px; }
-/* line 74, launch.scss */
+/* line 87, launch.scss */
 .no-hover:hover {
   border: inherit; }
 
-/* line 79, launch.scss */
+/* line 92, launch.scss */
 strong, b {
   color: #fff;
   font-weight: 700; }
 
-/* line 84, launch.scss */
+/* line 97, launch.scss */
 em, i {
   font-style: italic; }
 
-/* line 88, launch.scss */
+/* line 101, launch.scss */
 p {
-  margin: 0 0 2em 0; }
+  margin: 0 0 1em 0; }
 
-/* line 92, launch.scss */
+/* line 105, launch.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #fff;
   font-weight: 700;
   line-height: 1em;
   margin: 0 0 1em 0; }
 
-/* line 99, launch.scss */
+/* line 112, launch.scss */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: inherit;
   text-decoration: none; }
 
-/* line 104, launch.scss */
+/* line 117, launch.scss */
 h1 {
   font-size: 2.5em;
   line-height: 1.25em; }
 
-/* line 109, launch.scss */
+/* line 122, launch.scss */
 h2 {
   font-size: 1.75em;
   line-height: 1.5em; }
 
-/* line 114, launch.scss */
+/* line 127, launch.scss */
 h3 {
   font-size: 1.35em;
   line-height: 1.5em; }
 
-/* line 119, launch.scss */
+/* line 132, launch.scss */
 h4 {
   font-size: 1.1em;
   line-height: 1.5em; }
 
-/* line 124, launch.scss */
+/* line 137, launch.scss */
 h5 {
   font-size: 0.9em;
   line-height: 1.5em; }
 
-/* line 129, launch.scss */
+/* line 142, launch.scss */
 h6 {
   font-size: 0.7em;
   line-height: 1.5em; }
 
-/* line 134, launch.scss */
+/* line 147, launch.scss */
 sub {
   font-size: 0.8em;
   position: relative;
   top: 0.5em; }
 
-/* line 140, launch.scss */
+/* line 153, launch.scss */
 sup {
   font-size: 0.8em;
   position: relative;
   top: -0.5em; }
 
-/* line 146, launch.scss */
+/* line 159, launch.scss */
 blockquote {
   border-left: solid 8px rgba(255, 255, 255, 0.35);
   font-style: italic;
   margin: 0 0 2em 0;
   padding: 0.5em 0 0.5em 2em; }
 
-/* line 153, launch.scss */
+/* line 166, launch.scss */
 code {
   background: rgba(255, 255, 255, 0.125);
   border-radius: 6px;
@@ -140,35 +182,35 @@ code {
   margin: 0 0.25em;
   padding: 0.25em 0.65em; }
 
-/* line 163, launch.scss */
+/* line 176, launch.scss */
 pre {
   font-family: "Courier New", monospace;
   font-size: 0.9em;
   margin: 0 0 2em 0; }
 
-/* line 169, launch.scss */
+/* line 182, launch.scss */
 pre code {
   display: block;
   line-height: 1.75em;
   padding: 1em 1.5em;
   overflow-x: auto; }
 
-/* line 176, launch.scss */
+/* line 189, launch.scss */
 hr {
   border: 0;
   border-bottom: solid 2px rgba(255, 255, 255, 0.35);
   margin: 2em 0; }
 
-/* line 182, launch.scss */
+/* line 195, launch.scss */
 hr.major {
   margin: 3em 0; }
 
-/* line 186, launch.scss */
+/* line 199, launch.scss */
 .icon {
   text-decoration: none;
   border-bottom: none;
   position: relative; }
-  /* line 191, launch.scss */
+  /* line 204, launch.scss */
   .icon:before {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -176,110 +218,110 @@ hr.major {
     font-style: normal;
     font-weight: normal;
     text-transform: none !important; }
-  /* line 199, launch.scss */
+  /* line 212, launch.scss */
   .icon > .label {
     display: none; }
 
 /* List */
-/* line 206, launch.scss */
+/* line 219, launch.scss */
 ol {
   list-style: decimal;
   margin: 0 0 2em 0;
   padding-left: 1.25em; }
 
-/* line 212, launch.scss */
+/* line 225, launch.scss */
 ol li {
   padding-left: 0.25em; }
 
-/* line 216, launch.scss */
+/* line 229, launch.scss */
 ul {
   list-style: disc;
   margin: 0 0 2em 0;
   padding-left: 1em; }
 
-/* line 223, launch.scss */
+/* line 236, launch.scss */
 ul.icons {
   cursor: default;
   list-style: none;
   padding-left: 0; }
-  /* line 228, launch.scss */
+  /* line 241, launch.scss */
   ul.icons li {
     display: inline-block;
     padding: 0 1em 0 0; }
-  /* line 233, launch.scss */
+  /* line 246, launch.scss */
   ul.icons li:last-child {
     padding-right: 0; }
-  /* line 237, launch.scss */
+  /* line 250, launch.scss */
   ul.icons li .icon:before {
     font-size: 1.5em; }
-  /* line 241, launch.scss */
+  /* line 254, launch.scss */
   ul.icons li a {
     color: inherit; }
-    /* line 243, launch.scss */
+    /* line 256, launch.scss */
     ul.icons li a:hover {
       color: #dd8923;
       text-decoration: none; }
 
-/* line 252, launch.scss */
+/* line 265, launch.scss */
 header h1 {
   font-size: 3.25em;
   margin: 0 0 0.55em 0; }
-/* line 257, launch.scss */
+/* line 270, launch.scss */
 header p {
   font-size: 1.35em;
   line-height: 1.65em;
   color: rgba(255, 255, 255, 0.5);
   position: relative;
   margin: 0 0 1.5em 0; }
-/* line 265, launch.scss */
+/* line 278, launch.scss */
 header h2 + p {
   font-size: 1.25em;
   margin-top: -1em;
   line-height: 1.5em; }
-/* line 271, launch.scss */
+/* line 284, launch.scss */
 header h3 + p {
   font-size: 1.1em;
   margin-top: -0.8em;
   line-height: 1.5em; }
-/* line 277, launch.scss */
+/* line 290, launch.scss */
 header h4 + p,
 header h5 + p,
 header h6 + p {
   font-size: 0.9em;
   margin-top: -0.6em;
   line-height: 1.5em; }
-/* line 284, launch.scss */
+/* line 297, launch.scss */
 header small {
   font-size: 1em; }
-/* line 288, launch.scss */
+/* line 301, launch.scss */
 header .crevalle-name {
   width: 100px; }
 
 @media screen and (max-width: 980px) {
-  /* line 294, launch.scss */
-  header br {
-    display: none; } }
-@media screen and (max-width: 736px) {
-  /* line 301, launch.scss */
-  header br {
-    display: inline; } }
-@media screen and (max-width: 480px) {
   /* line 307, launch.scss */
   header br {
     display: none; } }
 @media screen and (max-width: 736px) {
-  /* line 313, launch.scss */
+  /* line 314, launch.scss */
+  header br {
+    display: inline; } }
+@media screen and (max-width: 480px) {
+  /* line 320, launch.scss */
+  header br {
+    display: none; } }
+@media screen and (max-width: 736px) {
+  /* line 326, launch.scss */
   header h1 {
     font-size: 2em; }
 
-  /* line 317, launch.scss */
+  /* line 330, launch.scss */
   header p {
     font-size: 1em; } }
 @media screen and (max-width: 480px) {
-  /* line 323, launch.scss */
+  /* line 336, launch.scss */
   header {
     margin: 0 0 1em 0; } }
-/* line 328, launch.scss */
+/* line 341, launch.scss */
 .logo {
   display: block;
   background-size: 260%;
@@ -288,11 +330,11 @@ header .crevalle-name {
   height: 150px;
   background-image: url("/assets/images/empex-logo-official.svg");
   margin-bottom: 2em; }
-  /* line 337, launch.scss */
+  /* line 350, launch.scss */
   .logo.white {
     background-image: url("/assets/images/empex-logo-official-white.svg"); }
 
-/* line 342, launch.scss */
+/* line 355, launch.scss */
 .replace-text {
   border: 0;
   clip: rect(0 0 0 0);
@@ -303,11 +345,15 @@ header .crevalle-name {
   position: absolute;
   width: 1px; }
 
-/* line 353, launch.scss */
-.halloween {
+/* line 366, launch.scss */
+.current-event {
   background-color: black !important;
   border-color: #dd8923 !important; }
 
-/* line 358, launch.scss */
-.halloween-text {
+/* line 371, launch.scss */
+.current-event-text {
   color: #dd8923; }
+
+/* line 375, launch.scss */
+.presenter {
+  width: 100%; }
