@@ -31,6 +31,9 @@ layout: layout
         <%= format_date(event.date) %><br />
         New York City<br />
       </p>
+      <div class="button button-primary button-large current-event no-hover">
+        CFP Opens January 17th!
+      </div>
       <% if event.open %>
         <p>
           <%= link_to "Register now!", event.registration.url, class: "button button-primary button-large current-event no-hover", target: "_blank" %>
@@ -56,17 +59,17 @@ layout: layout
   </div>
 </section>
 
-<section id="presentations">
-  <div class="content-section container">
-    <%=
-      partial "partials/presentations", locals: {
-        keynotes_intro: event.keynotes_intro,
-        presentations_intro: event.presentations_intro,
-        presentations: event.presentations
-      }
-    %>
-  </div>
-</section>
+<%# <section id="presentations"> %>
+  <%# <div class="content-section container"> %>
+    <%# <%= %>
+      <%# partial "partials/presentations", locals: { %>
+        <%# keynotes_intro: event.keynotes_intro, %>
+        <%# presentations_intro: event.presentations_intro, %>
+        <%# presentations: event.presentations %>
+      <%# } %>
+    <%# %>
+  <%# </div> %>
+<%# </section> %>
 
 <section id="schedule">
   <div class="content-section container">
@@ -84,6 +87,7 @@ layout: layout
     <div class="bg-wrapper">
       <h2>Sponsors</h2>
       <%= partial "partials/sponsors", locals: {sponsorship_levels: event.sponsorship_levels, introduction: event.sponsor_intro} %>
+      We're currently finalizing our sponsorship prospectus.</br>If you're interested in sponsoring EMPEX, please email <a mailto: 'info@empex.co'>info@empex.co</a>.
     </div>
   </div>
 </section>

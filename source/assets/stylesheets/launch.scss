@@ -69,12 +69,12 @@ main {
 }
 
 a {
-  color: $halloweenOrange;
+  /* color: $halloweenOrange; */
   text-decoration: none;
 
   &:hover {
     border-bottom: dotted 1px rgba(255, 255, 255, 0.25);
-    color: $halloweenOrange;
+    /* color: $halloweenOrange; */
     text-decoration: none;
   }
 }
@@ -254,7 +254,7 @@ ul {
     li a {
       color: inherit;
       &:hover {
-        color: $halloweenOrange;
+        /* color: $halloweenOrange; */
         text-decoration: none;
       }
     }
@@ -365,11 +365,11 @@ header {
 
 .current-event {
   background-color: rgba(0,0,0,1) !important;
-  border-color: $halloweenOrange !important;
+  /* border-color: $halloweenOrange !important; */
 }
 
 .current-event-text {
-  color: $halloweenOrange;
+  /* color: $halloweenOrange; */
 }
 
 .presenter {

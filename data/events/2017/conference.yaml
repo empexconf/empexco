@@ -1,0 +1,31 @@
+title: Empire City Elixir Conference 2017
+current: true
+date: 2017-05-20
+short_description:
+  A one-day conference for curious programmers
+twitter_description:
+  EMPEX, the Empire City Elixir Conference, is a sophisticated conference series for the Elixir programming language and ecosystem held in New York City.
+description:
+  EMPEX, the Empire City Elixir Conference, is a sophisticated conference series for the Elixir programming language and ecosystem held in New York City.
+  We present a single track of technical talks in a jazz club.
+  Our goal is to bring a sense of aesthetic and fun to the growing Elixir community.  We'd love for you to join us!
+photos:
+location:
+  id: subculture
+  description: |
+    EMPEX will be held at
+    [Subculture](http://subculturenewyork.com/), an initimate jazz club
+    in Soho.
+registration:
+  url: https://ti.to/crevalle/empex-2017
+  open: false
+keynotes_intro:
+presentations_intro:
+presentations: []
+    
+sponsor_intro: |
+sponsorship_levels: []
+
+schedule: CFP opens on January 17th!  We'll announce the full schedule in March.
+
+
