@@ -83,12 +83,12 @@ main {
     font-size: 12pt; } }
 /* line 71, launch.scss */
 a {
-  color: #dd8923;
+  /* color: $halloweenOrange; */
   text-decoration: none; }
   /* line 75, launch.scss */
   a:hover {
     border-bottom: dotted 1px rgba(255, 255, 255, 0.25);
-    color: #dd8923;
+    /* color: $halloweenOrange; */
     text-decoration: none; }
 
 /* line 83, launch.scss */
@@ -259,7 +259,7 @@ ul.icons {
     color: inherit; }
     /* line 256, launch.scss */
     ul.icons li a:hover {
-      color: #dd8923;
+      /* color: $halloweenOrange; */
       text-decoration: none; }
 
 /* line 265, launch.scss */
@@ -348,11 +348,11 @@ header .crevalle-name {
 /* line 366, launch.scss */
 .current-event {
   background-color: black !important;
-  border-color: #dd8923 !important; }
+  /* border-color: $halloweenOrange !important; */ }
 
 /* line 371, launch.scss */
 .current-event-text {
-  color: #dd8923; }
+  /* color: $halloweenOrange; */ }
 
 /* line 375, launch.scss */
 .presenter {
