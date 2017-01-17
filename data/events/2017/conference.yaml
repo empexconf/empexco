@@ -24,7 +24,10 @@ presentations_intro:
 presentations: []
     
 sponsor_intro: |
-sponsorship_levels: []
+sponsorship_levels:
+  - name: platinum
+    sponsor_ids:
+      - stride
 
 schedule: CFP opens on January 17th!  We'll announce the full schedule in March.
 
