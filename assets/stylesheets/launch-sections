@@ -161,39 +161,38 @@ section img.carousel-image {
   @media (min-width: 750px) {
     /* line 170, launch-sections.scss */
     #sponsors .sponsors.platinum img {
-      height: 71px;
-      width: 500px; } }
-  /* line 183, launch-sections.scss */
+      height: 100%; } }
+  /* line 182, launch-sections.scss */
   #sponsors .sponsors.gold h3 {
     color: #e5b848; }
-  /* line 187, launch-sections.scss */
+  /* line 186, launch-sections.scss */
   #sponsors .sponsors.gold img {
     height: 110px;
     width: 200px; }
-  /* line 193, launch-sections.scss */
+  /* line 192, launch-sections.scss */
   #sponsors .sponsors.lightning h3 {
     color: #e5b848; }
-  /* line 197, launch-sections.scss */
+  /* line 196, launch-sections.scss */
   #sponsors .sponsors.lightning img {
     height: 110px;
     width: 200px; }
-  /* line 203, launch-sections.scss */
+  /* line 202, launch-sections.scss */
   #sponsors .sponsors.silver h3 {
     color: rgba(175, 175, 175, 0.5); }
-  /* line 207, launch-sections.scss */
+  /* line 206, launch-sections.scss */
   #sponsors .sponsors.silver img {
     height: 75px;
     width: 150px;
     padding: 0 15px; }
 
-/* line 217, launch-sections.scss */
+/* line 216, launch-sections.scss */
 #organizers .organizer-list {
   padding: 0;
   margin: 0;
   list-style: none;
   overflow: hidden;
   *zoom: 1; }
-/* line 221, launch-sections.scss */
+/* line 220, launch-sections.scss */
 #organizers .organizer {
   float: left;
   overflow: hidden;
@@ -213,52 +212,52 @@ section img.carousel-image {
     margin-right: 13.63636px;
     display: block;
     border-radius: 37.5px; }
-  /* line 227, launch-sections.scss */
+  /* line 226, launch-sections.scss */
   #organizers .organizer h3 {
     margin: 0;
     font-size: 1.2em;
     letter-spacing: .05rem; }
   @media (min-width: 550px) {
-    /* line 221, launch-sections.scss */
+    /* line 220, launch-sections.scss */
     #organizers .organizer {
       width: 45%;
       font-size: 0.9em;
       min-height: 90px; } }
   @media (min-width: 750px) {
-    /* line 221, launch-sections.scss */
+    /* line 220, launch-sections.scss */
     #organizers .organizer {
       width: 30%; } }
   @media (min-width: 1200px) {
-    /* line 221, launch-sections.scss */
+    /* line 220, launch-sections.scss */
     #organizers .organizer {
       font-size: 1em;
       line-height: 1.25em; } }
 
-/* line 251, launch-sections.scss */
+/* line 250, launch-sections.scss */
 #presentations .presentations-list {
   padding: 0;
   margin: 0;
   list-style: none;
   overflow: hidden;
   *zoom: 1; }
-/* line 255, launch-sections.scss */
+/* line 254, launch-sections.scss */
 #presentations .presentation {
   margin: 3em 1em 1em 0;
   line-height: 1.2em;
   width: 100%; }
-  /* line 260, launch-sections.scss */
+  /* line 259, launch-sections.scss */
   #presentations .presentation h3 {
     font-size: 1.5em;
     letter-spacing: .05rem;
     color: #1cb495; }
-    /* line 265, launch-sections.scss */
+    /* line 264, launch-sections.scss */
     #presentations .presentation h3 small {
       color: #666;
       font-size: 60%; }
-  /* line 271, launch-sections.scss */
+  /* line 270, launch-sections.scss */
   #presentations .presentation ul {
     margin-left: 5px; }
-  /* line 275, launch-sections.scss */
+  /* line 274, launch-sections.scss */
   #presentations .presentation .presenter {
     float: left;
     overflow: hidden;
@@ -275,60 +274,60 @@ section img.carousel-image {
       margin-right: 18.18182px;
       display: block;
       border-radius: 50px; }
-    /* line 278, launch-sections.scss */
+    /* line 277, launch-sections.scss */
     #presentations .presentation .presenter .bio {
       margin-top: 1em;
       font-size: 10pt; }
-    /* line 283, launch-sections.scss */
+    /* line 282, launch-sections.scss */
     #presentations .presentation .presenter .bd {
       margin: 2em 0; }
   @media (min-width: 350px) {
-    /* line 255, launch-sections.scss */
+    /* line 254, launch-sections.scss */
     #presentations .presentation {
       width: 100%; } }
   @media (min-width: 750px) {
-    /* line 255, launch-sections.scss */
+    /* line 254, launch-sections.scss */
     #presentations .presentation {
       line-height: 1.5em; } }
   @media (min-width: 1200px) {
-    /* line 255, launch-sections.scss */
+    /* line 254, launch-sections.scss */
     #presentations .presentation {
       padding-right: 30px; } }
 
-/* line 307, launch-sections.scss */
+/* line 306, launch-sections.scss */
 #schedule .schedule-table .time, #schedule .schedule-table .title {
   font-size: 2rem; }
-/* line 310, launch-sections.scss */
+/* line 309, launch-sections.scss */
 #schedule .schedule-table .time {
   text-align: right; }
-/* line 313, launch-sections.scss */
+/* line 312, launch-sections.scss */
 #schedule .schedule-table .title {
   font-weight: bold; }
 @media (min-width: 1200px) {
-  /* line 328, launch-sections.scss */
+  /* line 327, launch-sections.scss */
   #schedule .container {
     margin-top: -4em;
     padding-top: 4em;
     border-top: 1px #E1E1E1 solid; } }
 
-/* line 336, launch-sections.scss */
+/* line 335, launch-sections.scss */
 #signup-form {
   display: -webkit-flex;
   display: flex;
   position: relative; }
-  /* line 340, launch-sections.scss */
+  /* line 339, launch-sections.scss */
   #signup-form input[type="text"],
   #signup-form input[type="password"],
   #signup-form input[type="email"] {
     width: 18em; }
-  /* line 346, launch-sections.scss */
+  /* line 345, launch-sections.scss */
   #signup-form > * {
     margin: 0 0 0 1em; }
-  /* line 350, launch-sections.scss */
+  /* line 349, launch-sections.scss */
   #signup-form > :first-child {
     margin: 0 0 0 0; }
 
-/* line 355, launch-sections.scss */
+/* line 354, launch-sections.scss */
 #bottom {
   padding: 1.5em 0;
   overflow: hidden; }
@@ -349,18 +348,18 @@ section img.carousel-image {
     #bottom .bg-wrapper h1, #bottom .bg-wrapper h2, #bottom .bg-wrapper h3, #bottom .bg-wrapper h4, #bottom .bg-wrapper h5, #bottom .bg-wrapper h6, #bottom .bg-wrapper strong {
       color: #FFF; }
   @media (min-width: 750px) {
-    /* line 355, launch-sections.scss */
+    /* line 354, launch-sections.scss */
     #bottom {
       padding: 3em 0; } }
   @media (min-width: 1000px) {
-    /* line 355, launch-sections.scss */
+    /* line 354, launch-sections.scss */
     #bottom {
       padding: 4em 0; }
       /* line 127, launch-settings.scss */
       #bottom h1, #bottom h2, #bottom h3, #bottom h4, #bottom h5, #bottom h6 {
         margin-bottom: 1em; } }
 
-/* line 359, launch-sections.scss */
+/* line 358, launch-sections.scss */
 #footer {
   -moz-transition: opacity 0.2s ease-in-out;
   -o-transition: opacity 0.2s ease-in-out;
@@ -372,45 +371,45 @@ section img.carousel-image {
   opacity: 0.5;
   margin-top: 2em;
   color: rgba(255, 255, 255, 0.7); }
-  /* line 368, launch-sections.scss */
+  /* line 367, launch-sections.scss */
   #footer a {
     color: inherit; }
-    /* line 370, launch-sections.scss */
+    /* line 369, launch-sections.scss */
     #footer a:hover {
       color: #dd8923;
       text-decoration: none; }
-  /* line 376, launch-sections.scss */
+  /* line 375, launch-sections.scss */
   #footer .icons {
     margin: 0 0 0.5em 0; }
-  /* line 380, launch-sections.scss */
+  /* line 379, launch-sections.scss */
   #footer .links {
     list-style: none;
     padding: 0; }
-    /* line 384, launch-sections.scss */
+    /* line 383, launch-sections.scss */
     #footer .links li {
       border-left: solid 1px rgba(255, 255, 255, 0.25);
       display: inline-block;
       line-height: 1em;
       margin: 0 0 0 0.75em;
       padding: 0 0 0 0.75em; }
-    /* line 392, launch-sections.scss */
+    /* line 391, launch-sections.scss */
     #footer .links li:first-child {
       border-left: 0;
       margin-left: 0;
       padding-left: 0; }
-  /* line 399, launch-sections.scss */
+  /* line 398, launch-sections.scss */
   #footer:hover {
     color: rgba(255, 255, 255, 0.9);
     opacity: 1; }
-  /* line 404, launch-sections.scss */
+  /* line 403, launch-sections.scss */
   #footer > :last-child {
     margin-bottom: 0; }
-  /* line 407, launch-sections.scss */
+  /* line 406, launch-sections.scss */
   #footer .crevalle-name {
     height: 16px;
     width: 92px; }
 
-/* line 415, launch-sections.scss */
+/* line 414, launch-sections.scss */
 #moon {
   left: 0;
   opacity: 0.50;
@@ -419,7 +418,7 @@ section img.carousel-image {
   width: 100%;
   height: 100%;
   z-index: -1; }
-  /* line 424, launch-sections.scss */
+  /* line 423, launch-sections.scss */
   #moon div {
     background-image: url("/assets/images/empex-moon.jpg");
     background-size: cover;
@@ -430,7 +429,7 @@ section img.carousel-image {
     top: 0;
     width: 100%;
     opacity: 0; }
-    /* line 435, launch-sections.scss */
+    /* line 434, launch-sections.scss */
     #moon div.visible {
       -moz-transition: opacity 3s ease;
       -o-transition: opacity 3s ease;
@@ -439,14 +438,14 @@ section img.carousel-image {
       opacity: 1; }
 
 @media (min-width: 350px) {
-  /* line 443, launch-sections.scss */
+  /* line 442, launch-sections.scss */
   #moon {
     top: 200px; } }
 @media (min-width: 750px) {
-  /* line 447, launch-sections.scss */
+  /* line 446, launch-sections.scss */
   #moon {
     top: 100px; } }
 @media (min-width: 1000px) {
-  /* line 451, launch-sections.scss */
+  /* line 450, launch-sections.scss */
   #moon {
     top: 0px; } }
