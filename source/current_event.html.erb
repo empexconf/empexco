@@ -67,17 +67,17 @@ layout: layout
   </div>
 </section>
 
-<%# <section id="presentations"> %>
-  <%# <div class="content-section container"> %>
-    <%# <%= %>
-      <%# partial "partials/presentations", locals: { %>
-        <%# keynotes_intro: event.keynotes_intro, %>
-        <%# presentations_intro: event.presentations_intro, %>
-        <%# presentations: event.presentations %>
-      <%# } %>
-    <%# %>
-  <%# </div> %>
-<%# </section> %>
+<section id="presentations">
+  <div class="content-section container">
+    <%=
+      partial "partials/presentations", locals: {
+        keynotes_intro: event.keynotes_intro,
+        presentations_intro: event.presentations_intro,
+        presentations: event.presentations
+      }
+    %>
+  </div>
+</section>
 
 <section id="schedule">
   <div class="content-section container">
