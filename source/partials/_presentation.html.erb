@@ -8,7 +8,13 @@
       <div class="presenter">
         <%= image_tag "people/presenters/#{presenter.image}" %>
         <div class="bio">
-          <h4><%= presenter.name %></h4>
+          <h2><%= presenter.name %></h2>
+          <% if presenter.twitter.present? %>
+            <div><%= link_to_twitter presenter.twitter %></div>
+          <% end %>
+          <% if presenter.website.present? %>
+            <div><%= link_to_link presenter.website %></div>
+          <% end %>
           <% if presenter.bio.present? %>
             <%= render_markdown(presenter.bio) %>
           <% end %>

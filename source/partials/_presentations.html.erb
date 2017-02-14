@@ -8,8 +8,9 @@
       <%= partial "partials/presentation", locals: {presentation: presentation} %>
     <% end %>
   <% end %>
-  <h2>Presentations</h2>
+
   <% if presentations_intro.present? %>
+    <h2>Presentations</h2>
     <%= render_markdown(presentations_intro) %>
   <% end %>
   <% presentations.select{ |p| !p.keynote.present? }.each do |presentation| %>

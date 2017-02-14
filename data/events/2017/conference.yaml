@@ -20,9 +20,23 @@ registration:
   url: https://ti.to/crevalle/empex-2017
   open: false
 keynotes_intro:
+  We're excited and proud to announce our keynote speakers for the second annual EMPEX!
 presentations_intro:
-presentations: []
-    
+presentations:
+  - title:
+    id:
+    presenters:
+      - kerr-jessica
+    keynote: true
+    description: |
+
+  - title:
+    id:
+    presenters:
+      - cheng-eugenia
+    keynote: true
+    description: |
+
 sponsor_intro: |
 sponsorship_levels:
   - name: platinum
