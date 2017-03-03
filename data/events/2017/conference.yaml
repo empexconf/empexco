@@ -43,6 +43,10 @@ sponsorship_levels:
     sponsor_ids:
       - stride
 
+courses:
+  - id: begin-elixir-2017
+  - id: intermed-elixir-2017
+
 schedule: CFP opens on January 17th!  We'll announce the full schedule in March.
 
 
