@@ -157,6 +157,20 @@ helpers do
     data.presenters.detect { |slug, data| slug == presenter_id }
   end
 
+	# Finds the course with teh given ID
+	#
+	# @param course_id [String]
+	# @return [Array<String, Hash>] A two element array consisting of the slug
+	#   and the data hash for the course
+	def find_course course_id
+    # Iterates over the list of courses, checking each ID
+    #
+    # The ID in this case is actually the slug (the filename
+    # without its extension). 
+		data.courses.detect { |slug, data| slug == course_id }
+	end
+ 
+
   # Finds the location with the given ID
   #
   # @param location_id [String]

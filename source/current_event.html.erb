@@ -90,6 +90,16 @@ layout: layout
   </div>
 </section>
 
+
+<% if event.courses %>
+<section>
+	<div class="content-section container" >
+		<h2>Training</h2>
+		<%= partial "partials/courses", locals: {courses: event.courses} %>
+	</div>
+</section>
+<% end %>
+
 <section id="sponsors">
   <div class="content-section container">
     <div class="bg-wrapper">
