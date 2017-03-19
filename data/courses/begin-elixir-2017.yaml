@@ -1,17 +1,17 @@
 id: begin-elixir-2017
 title: Crash Course in Elixir, for (Ruby, Java, JS, etc) Developers
 description: |
-  Are you interested in Elixir, but you haven't yet learned the language?  
+  Are you interested in Elixir, but you haven't yet learned the language?
 
   Are you an imperative language programmer who's finding it tricky to get a handle on the functional approach?
 
   Do you find yourself wishing that Elixir had a "for loop"?
 
-  We've all been there, and we've developed a one-day workshop to get you past the learning curve.  Starting with the absolute fundamentals of Elixir's datatypes, we'll take you through every aspect of the language that tripped us up when we were learning.  
+  We've all been there, and we've developed a one-day workshop to get you past the learning curve.  Starting with the absolute fundamentals of Elixir's datatypes, we'll take you through every aspect of the language that tripped us up when we were learning.
 
-  By the end of the day, you will be cable to confidentntly solve complex business problems faster and more reliably than you'd have ever believed possible.  Learning to build solutions on top of immutable data structures requires a new way of thinking, and we've designed our workshop to get you thinking that way quickly.  
+  By the end of the day, you will be able to confidently solve complex business problems faster and more reliably than you'd have ever believed possible.  Learning to build solutions on top of immutable data structures requires a new way of thinking, and we've designed our workshop to get you thinking that way quickly.
 
-  Finally, we will introduce the Elixir concurrency model.  If your experience of concurrency consists of threads, mutexes, and critical sections, you will be amazed at the simplicity of building reliable concurrent systems using Elixir and OTP.  
+  Finally, we will introduce the Elixir concurrency model.  If your experience of concurrency consists of threads, mutexes, and critical sections, you will be amazed at the simplicity of building reliable concurrent systems using Elixir and OTP.
 
   We will cover:
 
@@ -19,15 +19,15 @@ description: |
 
   * Functions: anonymous functions, named functions, and higher order functions.
 
-  * Pattern matching:  This is a hugely powerful technique, and is probably the one thing most developers miss when they find themselves coding in another language after experiencing it in Elixir
+  * Pattern matching:  This is a hugely powerful technique, and is probably the one thing most developers miss when they find themselves coding in another language after experiencing it in Elixir.
 
   * Elixir tooling: How our projects are organized, the build system, the dependency management system, the test framework, and the rich documentation system.
 
-  * How to model problems using functional patterns instead of Object Oriented patterns
+  * How to model problems using functional patterns instead of Object Oriented patterns.
 
   * OTP: OTP is a powerful framework developed for Erlang, and battle-hardened after 30 years of continuous ongoing development.  A complete view of OTP is beyond the scope of this course, but we will introduce the high level concepts.
 
 
   Our aim is to provide a mentally challenging, but enormously rewarding day.  Every segment will include hands-on exercises and challenges, and we will have two instructors helping you if you get stuck.
 
-  Who should come?  The course is not for complete beginners. You should be comfortable programming in some language, but what language is unimportant.  People whose proficiency lies outside the functional paradigm will probably get the most out of the course, but functional programmers who are new to Elixir will find the course to be a useful survey of the main features of the  Elixir ecosystem. 
+  Who should come?  The course is not for complete beginners. You should be comfortable programming in some language, but what language is unimportant.  People whose proficiency lies outside the functional paradigm will probably get the most out of the course, but functional programmers who are new to Elixir will find the course to be a useful survey of the main features of the  Elixir ecosystem.
