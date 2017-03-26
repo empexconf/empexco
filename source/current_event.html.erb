@@ -79,16 +79,16 @@ layout: layout
   </div>
 </section>
 
-<section id="schedule">
-  <div class="content-section container">
-    <h2>Schedule</h2>
-    <% if event.schedule.kind_of?(Array) %>
-      <%= partial "partials/schedule", locals: {schedule: event.schedule, event: event} %>
-    <% else %>
-      <%= render_markdown(event.schedule) %>
-    <% end %>
-  </div>
-</section>
+<%# <section id="schedule"> %>
+<%#   <div class="content-section container"> %>
+<%#     <h2>Schedule</h2> %>
+<%#     <% if event.schedule.kind_of?(Array) %1> %>
+<%#       <%= partial "partials/schedule", locals: {schedule: event.schedule, event: event} %1> %>
+<%#     <% else %1> %>
+<%#       <%= render_markdown(event.schedule) %1> %>
+<%#     <% end %1> %>
+<%#   </div> %>
+<%# </section> %>
 
 
 <% if event.courses %>
