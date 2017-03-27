@@ -3,9 +3,9 @@
   <h3 class="name"><%= presentation.title %></h3>
   <div class="summary">
     <div class="presenter">
-      <%= image_tag "people/presenters/#{presenter.image}" %>
-      <div class="bio">
-        <h2><%= presenter.name %></h2>
+      <div class="nameplate">
+        <%= image_tag "people/presenters/#{presenter.image}" %>
+        <h2 class="presenter-name"><%= presenter.name %></h2>
         <% if presenter.twitter.present? %>
           <div><%= link_to_twitter presenter.twitter %></div>
         <% end %>
