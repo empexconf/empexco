@@ -61,6 +61,7 @@ presentations:
     keynote: false
     description: |
       Phoenix Channels are one of the framework's best features, making real-time applications a snap. But what happens when a channel's responsibilities grow to the point of ill-repute? Let's look at the evolution of a single Phoenix Channel implementation over the course of several small and related features, and see what patterns Elixir developers can leverage to keep their Channels skinny.
+
   - title: "Understanding Elixir's (re)compilation"
     id: ranellia-renan
     presenters:

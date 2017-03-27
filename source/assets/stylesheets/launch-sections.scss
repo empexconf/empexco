@@ -274,6 +274,12 @@ section {
     .presenter {
       @include presenter-item(100px);
 
+      .nameplate {
+        h2 {
+          margin-bottom: 0;
+        }
+      }
+
       .bio {
         margin-top: 1em;
         font-size: 10pt;
