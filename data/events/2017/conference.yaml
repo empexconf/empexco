@@ -43,6 +43,14 @@ sponsorship_levels:
     sponsor_ids:
       - stride
 
+  - name: gold
+    sponsor_ids:
+      - sparkpost
+
+  - name: silver
+    sponsor_ids:
+      - carbon5
+
 courses:
   - id: begin-elixir-2017
   - id: intermed-elixir-2017
