@@ -1,6 +1,6 @@
 name: Juan Soto
 image: soto-juan.jpg
-twitter: some_handle
-website:
+twitter:
+website: https://github.com/sotojuan
 bio: |
-  **About Juan:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla placerat condimentum urna, vitae auctor felis consequat vel. Curabitur bibendum lobortis cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id sapien risus. Aliquam nec nibh ac ipsum eleifend pulvinar. Nulla in orci nec elit tristique porta ac a magna.
+  **About Juan:** Juan is an engineer at Capsule and attended the Recurse Center, where he studied functional and distributed programming with Erlang, Elixir, and a bit of Haskell. After work, Juan likes to read about art history and make coffee with his Chemex.
