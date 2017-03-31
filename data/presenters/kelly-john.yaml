@@ -1,6 +1,6 @@
 name: John Kelly
 image: kelly-john.jpg
-twitter: somehandle
+twitter: code_jk
 website:
 bio: |
-  **About John:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla placerat condimentum urna, vitae auctor felis consequat vel. Curabitur bibendum lobortis cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id sapien risus. Aliquam nec nibh ac ipsum eleifend pulvinar. Nulla in orci nec elit tristique porta ac a magna.
+  **About John:** John is a mostly autodidact programmer who writes with Elixir, Ruby, Go, or Clojure. He's a former Ruby developer/manager who now works almost exclusively with Elixir at Bleacher Report. His current work involves using Elixir with Neo4j and Apache Kafka.
