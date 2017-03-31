@@ -256,10 +256,12 @@ section {
     line-height: 1.2em;
     width: 100%;
 
-    h3 {
-      font-size: 1.5em;
+    .title {
+      font-size: 2em;
+      font-weight: bold;
       letter-spacing: .05rem;
       color: $primaryColor;
+      margin: 0;
 
       small {
         color: #666;
@@ -274,19 +276,38 @@ section {
     .presenter {
       @include presenter-item(100px);
 
-      .nameplate {
-        h2 {
+      .personal-info {
+        text-align: center;
+        float: left;
+        padding: 20px;
+
+        .presenter-image {
+          img {
+            display: block;
+            margin: 0 auto;
+          }
+        }
+
+        .presenter-name {
+          font-size: 16pt;
+        }
+
+        .presenter-twitter,
+        .presenter-website {
+          font-size: 12pt;
           margin-bottom: 0;
         }
+
       }
 
       .bio {
         margin-top: 1em;
         font-size: 10pt;
+        font-style: italic;
       }
 
-      .bd {
-        margin: 2em 0;
+      .description {
+        font-size: 12pt;
       }
     }
 
