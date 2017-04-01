@@ -44,7 +44,7 @@ presentations:
       - kelly-john
     keynote: false
     description: |
-      You just celebrated the launch of your first production elixir application and now have real users using your application. In this talk, you’ll learn how to measure and monitor your elixir application as your user base grows from hundreds of daily users to millions. With more users comes more revenue, but also more technical challenges as you go from 1 server to many. `Tail –f` is no longer useful when the logs are going by faster than you can read or the requests are load balanced across many servers. You’ll learn the best practices for monitoring your applications that will scale with you. Best of all these practices are universal so they will be applicable if your organization is solely in the BEAM world or if you’re are in a polyglot environment. Lastly you’ll learn about how to measure availability in the context of web applications and give you the knowledge to measure how many nines of availability your api has.
+      You just celebrated the launch of your first production elixir application and now have real users using your application. In this talk, you'll learn how to measure and monitor your elixir application as your user base grows from hundreds of daily users to millions. With more users comes more revenue, but also more technical challenges as you go from one server to many. And 'tail –f' is no longer useful when the logs are going by faster than you can read or the requests are load balanced across many servers. In this talk you'll learn the best practices for monitoring your applications in a way that will scale as you grow. Best of all these practices are universal, so they will be applicable if your organization is solely in the BEAM world or if you're are in a polyglot environment. Lastly, you'll learn about to measure availability in the context of web applications and how many nines of availability your API has.
 
   - title: Solid Ground
     id: juric-sasa
@@ -52,7 +52,7 @@ presentations:
       - juric-sasa
     keynote: false
     description: |
-      The BEAM, the official Erlang VM implementation, is the most important piece of the puzzle in the Elixir ecosystem. It provides some strong guarantees which minimize or completely remove some classes of problems, and simplify implementation of fault-tolerant systems. It is the foundation which makes all other things in the ecosystem possible.
+      The BEAM, the official Erlang VM implementation, is the most important piece of the puzzle in the Elixir ecosystem. It provides some strong guarantees which minimize or completely remove some classes of problems and simplify implementation of fault-tolerant systems. It is the foundation which makes all other things in the ecosystem possible.
 
   - title: Channels as Controllers (An Exercise in Refactoring)
     id: vander-hoop-travis
@@ -60,7 +60,7 @@ presentations:
      - vander-hoop-travis
     keynote: false
     description: |
-      Phoenix Channels are one of the framework's best features, making real-time applications a snap. But what happens when a channel's responsibilities grow to the point of ill-repute? Let's look at the evolution of a single Phoenix Channel implementation over the course of several small and related features, and see what patterns Elixir developers can leverage to keep their Channels skinny.
+      Phoenix Channels are one of the framework's best features, making real-time applications a snap. But what happens when a channel's responsibilities grow to the point of ill-repute? We'll look at the evolution of a single Phoenix Channel implementation over the course of several small and related features, and we'll see what patterns Elixir developers can leverage to keep their Channels skinny.
 
   - title: "Understanding Elixir's (re)compilation"
     id: ranellia-renan
@@ -76,7 +76,7 @@ presentations:
       - grayson-bobby
     keynote: false
     description: |
-      The halting problem is a classical concept in computer science. In "Scooping the Loop Snooper" Geoffrey K. Pullum wrote a wonderful general proof of it, entirely in Dr. Seuss-Style verse. In this talk we examine the core principles of the paper, also (to the best of my ability), in the same style while working in IEx.
+      The halting problem is a classical concept in computer science. In "Scooping the Loop Snooper," Geoffrey K. Pullum wrote a wonderful general proof of it, entirely in Dr. Seuss-style verse. In this talk we examine the core principles of the paper, in the same style (to the best of my ability), while working in IEx.
 
   - title: When Does Concurrency Pay Off?
     id: carroll-william
@@ -84,7 +84,7 @@ presentations:
       - carroll-william
     keynote: false
     description: |
-      This talk explores concurrency in Elixir at multiple different scales. From parsing simple strings to unleashing an army of workers to fetch, decode, and store data, at what scale does the overhead of using concurrent computing make sense? This talk presents the findings of someone using Elixir at his day-job where performance isn't a luxury but oftentimes a requirement.
+      This talk explores concurrency in Elixir at many different scales. From parsing simple strings to unleashing an army of workers to fetch, decode, and store data &mdash; at what scale does the overhead of using concurrent computing make sense? This talk presents the findings of someone using Elixir at his day-job where performance isn't a luxury but oftentimes a requirement.
 
   - title: Everything Beautiful is in Plug
     id: bachari-omid
@@ -92,7 +92,7 @@ presentations:
       - bachari-omid
     keynote: false
     description: |
-      Elixir's Plug is a library of code that demonstrates the best of the language. In my talk, I outline the anatomy of the library and do a deep dive into Plug Router. I discuss interesting functions inside the Plug.Router module, especially `compile/4`, which demonstrates the gold standard for implementing macros. Finally, I will recommend the takeaways that can help each of us write great macros.
+      Elixir's Plug is a library of code that demonstrates the best of the language. We'll look at the anatomy of the library and do a deep dive into Plug Router and discuss interesting functions, especially `compile/4`, which demonstrates the gold standard for implementing macros. Finally, we'll hear some recommendations that can help each of us write great macros.
 
   - title: Functional Data Structures
     id:
@@ -100,7 +100,7 @@ presentations:
       - soto-juan
     keynote: false
     description: |
-      Most developers learn data structures in the context of imperative or object oriented languages. Chris Okasaki, in Purely Functional Data Structures, proved that they can be written from a functional perspective, but his examples were steeped in ML/Haskell semantics. We will take Okasaki's and other's functional data structures, explain them in Elixir terms, and show their practical uses and performance implications. The talk's aim is to be as ""real world"" as possible while showing Elixir's capability to go beyond the standard library data structures and how its semantics favorably support functional data structures."
+      Most developers learn data structures in the context of imperative or object oriented languages. Chris Okasaki, in "Purely Functional Data Structures," proved that they can be written from a functional perspective, but his examples are steeped in ML/Haskell semantics. We will take the functional data structures of Okasaki and others, explain them in Elixir terms, and show their practical uses and performance implications. We will aim to be as 'real world' as possible while showing Elixir's capability to go beyond the standard library data structures. And we'll see how its semantics favorably support functional data structures.
 
 sponsor_intro: |
 sponsorship_levels:
