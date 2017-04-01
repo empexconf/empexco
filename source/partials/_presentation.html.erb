@@ -1,38 +1,40 @@
 <section class="presentation" id="<% presentation.id %>">
   <% presenter = find_presenter(presentation.presenters.first).last %>
 
-  <div class="summary">
-    <p class="title"><%= presentation.title %></p>
-  </div>
-  <div class="presenter">
-    <div class="personal-info">
-
-      <div class="presenter-image">
-        <%= image_tag "people/presenters/#{presenter.image}" %>
-      </div>
-
-      <div class="presenter-name"><%= presenter.name %></div>
-
-      <% if presenter.twitter.present? %>
-        <p class="presenter-twitter">
-          <%= link_to_twitter presenter.twitter %>
-        </p>
-      <% end %>
-
-      <% if presenter.website.present? %>
-        <p class="presenter-website">
-          <%= link_to_link presenter.website %>
-        </p>
-      <% end %>
+  <h3 class="presentation__title">
+    <%= presentation.title %>
+  </h3>
+  
+  <div class="presentation-presenter">
+    <div class="presentation-presenter__avatar-container">
+      <%= image_tag "people/presenters/#{presenter.image}", 
+            class: "presentation-presenter__avatar" %>
     </div>
+    
+    <h4 class="presentation-presenter__name">
+      <%= presenter.name %>
+    </h4>
+    
+    <% if presenter.twitter.present? %>
+      <p class="presentation-presenter__link">
+        <%= link_to_twitter presenter.twitter %>
+      </p>
+    <% end %>
 
-    <div class="description">
+    <% if presenter.website.present? %>
+      <p class="presentation-presenter__link">
+        <%= link_to_link presenter.website %>
+      </p>
+    <% end %>
+  </div>
+  
+  <div class="presentation__details">
+    <div class="presentation__description">
       <%= render_markdown(presentation.description) %>
     </div>
 
-    <div class="bio">
+    <div class="presentation__bio">
       <%= render_markdown(presenter.bio) %>
     </div>
-
   </div>
 </section>
