@@ -1,9 +1,5 @@
 <section class="presentation" id="<% presentation.id %>">
   <% presenter = find_presenter(presentation.presenters.first).last %>
-
-  <h3 class="presentation__title">
-    <%= presentation.title %>
-  </h3>
   
   <div class="presentation-presenter">
     <div class="presentation-presenter__avatar-container">
@@ -29,6 +25,10 @@
   </div>
   
   <div class="presentation__details">
+    <h3 class="presentation__title">
+      <%= presentation.title %>
+    </h3>
+    
     <div class="presentation__description">
       <%= render_markdown(presentation.description) %>
     </div>
