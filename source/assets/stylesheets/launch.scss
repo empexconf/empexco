@@ -372,6 +372,19 @@ header {
   /* color: $halloweenOrange; */
 }
 
-.presenter {
-  width: 100%;
+
+.not-mobile {
+  display: none;
+  
+  @include phablet {
+    display: inline-block;
+  }
+}
+
+.mobile-only {
+  display: inline-block;
+  
+  @include phablet {
+    display: none;
+  }
 }
