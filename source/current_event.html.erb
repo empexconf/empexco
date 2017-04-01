@@ -32,9 +32,20 @@ layout: layout
         New York City<br />
       </p>
       <p>
-      <a class="button button-primary button-large current-event no-hover" href="https://ti.to/crevalle/empex-2017" target="_blank">
-        Tickets on sale!  Get yours today!
-      </a>
+        
+        <a 
+          class="button button-primary button-large current-event no-hover not-mobile" 
+          href="https://ti.to/crevalle/empex-2017" 
+          target="_blank">
+          Tickets on sale! Get yours today!
+        </a>
+        
+        <a 
+          class="button button-primary button-large current-event no-hover mobile-only" 
+          href="https://ti.to/crevalle/empex-2017" 
+          target="_blank">
+          Buy Ticket
+        </a>
       </p>
 
       <div>
@@ -79,16 +90,16 @@ layout: layout
   </div>
 </section>
 
-<section id="schedule">
-  <div class="content-section container">
-    <h2>Schedule</h2>
-    <% if event.schedule.kind_of?(Array) %>
-      <%= partial "partials/schedule", locals: {schedule: event.schedule, event: event} %>
-    <% else %>
-      <%= render_markdown(event.schedule) %>
-    <% end %>
-  </div>
-</section>
+<%# <section id="schedule"> %>
+<%#   <div class="content-section container"> %>
+<%#     <h2>Schedule</h2> %>
+<%#     <% if event.schedule.kind_of?(Array) %1> %>
+<%#       <%= partial "partials/schedule", locals: {schedule: event.schedule, event: event} %1> %>
+<%#     <% else %1> %>
+<%#       <%= render_markdown(event.schedule) %1> %>
+<%#     <% end %1> %>
+<%#   </div> %>
+<%# </section> %>
 
 
 <% if event.courses %>

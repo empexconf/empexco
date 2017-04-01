@@ -1,0 +1,88 @@
+.presentations-list__title {
+  font-size: 1.75em;
+  margin-bottom: .5em;
+}
+
+.presentations-list__intro {
+  color: $color1;
+}
+
+.presentation {
+  @include clearfix;
+  margin: 2em 0 0;
+  padding: 0 0 2em;
+  border-bottom: 1px solid #e5e5e5;
+  
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.presentation__title {
+  color: $primaryColor;
+  font-size: 1.5em;
+}
+
+.presentation-presenter {
+  text-align: center;
+  float: none;
+  width: 100%;
+  margin-bottom: 2em;
+  
+  @include phablet {
+    width: 20%;
+    float: left;
+    margin-right: 2.5%;
+  }
+}
+
+.presentation-presenter__avatar-container {
+  border-radius: 100%;
+  overflow: hidden;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  
+  @include phablet {
+    margin-bottom: 1em;
+  }
+}
+
+.presentation-presenter__avatar {
+  width: 100%;
+  display: block;
+}
+
+.presentation-presenter__name {
+  line-height: 1.1;
+  font-size: 1.2em;
+  margin-bottom: .25em;
+}
+
+.presentation-presenter__link {
+  font-size: 1em;
+  margin-bottom: 0!important;
+}
+
+.presentation__description {
+  p {
+    font-size: 1em!important;
+  }
+}
+
+.presentation__bio {
+  p, strong {
+    color: #666;
+    font-size: 1em!important;
+  }
+}
+
+.presentation__details {
+  float: none;
+  width: 100%;
+  
+  @include phablet {
+    float: left;
+    width: 66%;
+  }
+}

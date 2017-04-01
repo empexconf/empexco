@@ -106,6 +106,7 @@ section {
   .gallery {
     height: 640px;
     position: relative;
+    margin-top: 2em;
   }
 
   .gallery-display {
@@ -242,61 +243,6 @@ section {
     @include hd {
       font-size: 1em;
       line-height: 1.25em;
-    }
-  }
-}
-
-#presentations {
-  .presentations-list {
-    @include media-container;
-  }
-
-  .presentation {
-    margin: 3em 1em 1em 0;
-    line-height: 1.2em;
-    width: 100%;
-
-    h3 {
-      font-size: 1.5em;
-      letter-spacing: .05rem;
-      color: $primaryColor;
-
-      small {
-        color: #666;
-        font-size: 60%;
-      }
-    }
-
-    ul {
-      margin-left: 5px;
-    }
-
-    .presenter {
-      @include presenter-item(100px);
-
-      .bio {
-        margin-top: 1em;
-        font-size: 10pt;
-      }
-
-      .bd {
-        margin: 2em 0;
-      }
-    }
-
-    @include mobile {
-      width: 100%;
-    }
-
-    @include phablet {
-    }
-
-    @include tablet {
-      line-height: 1.5em;
-    }
-
-    @include hd {
-      padding-right: 30px;
     }
   }
 }

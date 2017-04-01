@@ -1,0 +1,21 @@
+.course {
+  margin: 2em 0 0;
+  padding: 0 0 2em;
+  border-bottom: 1px solid #e5e5e5;
+  max-width: 800px;
+  
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.course__name {
+  color: $primaryColor;
+  font-size: 1.5em;
+}
+
+.course__summary {
+  p, strong {
+    font-size: 1em!important;
+  }
+}
