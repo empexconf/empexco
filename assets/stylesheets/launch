@@ -52,11 +52,11 @@ main {
     @media (min-width: 750px) {
       /* line 36, launch.scss */
       main > section {
-        padding: 3em 0; } }
+        padding: 2em 0; } }
     @media (min-width: 1000px) {
       /* line 36, launch.scss */
       main > section {
-        padding: 4em 0; }
+        padding: 3em 0; }
         /* line 127, launch-settings.scss */
         main > section h1, main > section h2, main > section h3, main > section h4, main > section h5, main > section h6 {
           margin-bottom: 1em; } }
@@ -354,6 +354,18 @@ header .crevalle-name {
 .current-event-text {
   /* color: $halloweenOrange; */ }
 
-/* line 375, launch.scss */
-.presenter {
-  width: 100%; }
+/* line 376, launch.scss */
+.not-mobile {
+  display: none; }
+  @media (min-width: 550px) {
+    /* line 376, launch.scss */
+    .not-mobile {
+      display: inline-block; } }
+
+/* line 384, launch.scss */
+.mobile-only {
+  display: inline-block; }
+  @media (min-width: 550px) {
+    /* line 384, launch.scss */
+    .mobile-only {
+      display: none; } }
