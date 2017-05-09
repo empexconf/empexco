@@ -1,7 +1,9 @@
 id: 1-intermed-elixir-2017
 title: Intermediate Elixir
 description: |
-    The intermediate / advanced Elixir training will help those familiar with the Elixir language pickup the skills of how to work with and model applications using Processes and the OTP library.
+    This course will be taught by **James Fish** ([fishcakez](https://github.com/fishcakez)), well-known Elixir expert and Elixir Core Team member. James will be assisted by Elixir veterans **Chris Bell** and **David Antaramian**.
+
+    The intermediate/advanced Elixir training will help those familiar with the Elixir language pickup the skills of how to work with and model applications using Processes and the OTP library.
 
     In this course we will take a complex real-world problem and use a variety of tools and techniques to solve it. Along the way we'll cover:
 
@@ -13,4 +15,3 @@ description: |
 
     You'll come away from this course with a clear understanding of how to apply these concepts to your next Elixir project as well as a repository and source material that you can reference in the future.
 
-    The course will be taught by two Elixir veterans; Chris Bell and David Antaramian.
