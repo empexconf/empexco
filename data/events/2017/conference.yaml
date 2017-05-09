@@ -24,14 +24,14 @@ keynotes_intro:
 presentations_intro:
   "We're proud to announce the following presentations for EMPEX!"
 presentations:
-  - title:
+  - title: "Closing Keynote: The Language is the Least of It"
     id: kerr-jessica
     presenters:
       - kerr-jessica
     keynote: true
     description: |
 
-  - title:
+  - title: Opening Keynote
     id: cheng-eugenia
     presenters:
       - cheng-eugenia
@@ -63,7 +63,7 @@ presentations:
       Phoenix Channels are one of the framework's best features, making real-time applications a snap. But what happens when a channel's responsibilities grow to the point of ill-repute? We'll look at the evolution of a single Phoenix Channel implementation over the course of several small and related features, and we'll see what patterns Elixir developers can leverage to keep their Channels skinny.
 
   - title: "Understanding Elixir's (re)compilation"
-    id: ranellia-renan
+    id: ranelli-renan
     presenters:
       - ranelli-renan
     keynote: false
@@ -95,7 +95,7 @@ presentations:
       Elixir's Plug is a library of code that demonstrates the best of the language. We'll look at the anatomy of the library and do a deep dive into Plug Router and discuss interesting functions, especially `compile/4`, which demonstrates the gold standard for implementing macros. Finally, we'll hear some recommendations that can help each of us write great macros.
 
   - title: Functional Data Structures
-    id:
+    id: soto-juan
     presenters:
       - soto-juan
     keynote: false
@@ -117,9 +117,63 @@ sponsorship_levels:
       - carbon5
 
 courses:
-  - id: begin-elixir-2017
-  - id: intermed-elixir-2017
+  - id: 1-intermed-elixir-2017
+  - id: 2-begin-elixir-2017
 
-schedule: CFP is closed!  We will announce the full schedule by April 1st.
+schedule:
+  - time: 9:00AM
+    title: Doors open / Registration
 
+  - time: 9:30AM
+    title: Opening Remarks
+
+  - time: 9:35AM
+    presentation: cheng-eugenia
+
+  - time: 10:20AM
+    presentation: bachari-omid
+
+  - time: 10:40AM
+    title: Break
+
+  - time: 10:50AM
+    presentation: vander-hoop-travis
+
+  - time: 11:35AM
+    presentation: carroll-william
+
+  - time: 11:55AM
+    title: Lunch
+
+  - time: 12:40PM
+    presentation: grayson-bobby
+
+  - time: 1:05PM
+    presentation: kelly-john
+
+  - time: 1:45PM
+    title: Break
+
+  - time: 1:55PM
+    presentation: soto-juan
+
+  - time: 2:20PM
+    presentation: ranelli-renan
+
+  - time: 3:00PM
+    title: Break
+
+  - time: 3:25PM
+    presentation: juric-sasa
+
+  - time: 4:10PM
+    presentation: kerr-jessica
+
+  - time: 4:50PM
+    title: Closing Remarks
+
+  - time: 5:30PM
+    title: After Party!
+    description: |
+      The afterparty will be held a short walk away at Swift Hibernian Lounge ([34 E 4th St New York, NY 10012](https://www.google.com/maps?ion=1&espv=2&q=swift+bar&bav=on.2,or.&biw=1024&bih=562&dpr=2.5&um=1&ie=UTF-8&sa=X&ved=0ahUKEwj3sdrvlOnMAhUDmx4KHUq4Bu8Q_AUIBigB))
 
