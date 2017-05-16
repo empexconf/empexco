@@ -22,7 +22,22 @@
   @include desktop {
     padding: 8em 0;
   }
+
+  .callout {
+    height: 54px;
+    line-height: 54px;
+    padding: 0 48px;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    border-radius: 4px;
+    border-color: #555;
+    border: 3px solid #1cb495;
+    background-color: rgba(255, 255, 255, 0.75);
+    color: #000;
+  }
 }
+
 
 .navbar {
   display: none;
