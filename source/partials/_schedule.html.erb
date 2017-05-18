@@ -17,7 +17,7 @@
           <% if entry.presentation.present? %>
             <div class="title">
               <% presentation = find_presentation(entry.presentation) %>
-              <%= presentation.keynote ? "Keynote: " : "" %><%= presentation.title %>
+              <%= presentation.title %>
             </div>
           <% end %>
         </td>

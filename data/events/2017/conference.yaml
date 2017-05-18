@@ -24,14 +24,14 @@ keynotes_intro:
 presentations_intro:
   "We're proud to announce the following presentations for EMPEX!"
 presentations:
-  - title: "Closing Keynote: The Language is the Least of It"
+  - title: "Keynote: The Language is the Least of It"
     id: kerr-jessica
     presenters:
       - kerr-jessica
     keynote: true
     description: |
 
-  - title: Opening Keynote
+  - title: "Closing Keynote"
     id: cheng-eugenia
     presenters:
       - cheng-eugenia
@@ -128,7 +128,7 @@ schedule:
     title: Opening Remarks
 
   - time: 9:35AM
-    presentation: cheng-eugenia
+    presentation: kerr-jessica
 
   - time: 10:20AM
     presentation: bachari-omid
@@ -167,7 +167,7 @@ schedule:
     presentation: juric-sasa
 
   - time: 4:10PM
-    presentation: kerr-jessica
+    presentation: cheng-eugenia
 
   - time: 4:50PM
     title: Closing Remarks
