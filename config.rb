@@ -35,10 +35,10 @@ data.events.each do |year, events|
 end
 
 page 'index.html', layout: false
+page 'la.html', layout: false
 
 ignore "current_event.html"
 ignore "event.html"
-ignore "la-event.html"
 
 #######
 # Build
