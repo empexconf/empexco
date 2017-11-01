@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+  <title>EMPEX</title>
+
+  <%= stylesheet_link_tag "landing" %>
+  <%= stylesheet_link_tag "//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css" %>
+  <%= stylesheet_link_tag "//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css" %>
+
+  <%= favicon_tag "favicon.ico" %>
+
+  <link rel="canonical" href="http://empex.co">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@empexco" />
+  <meta name="twitter:title" content="EMPEX - An Elixir Movement." />
+  <meta name="twitter:description" content="EMPEX is a sophisticated conference series for the Elixir programming language and ecosystem held in New York City and Los Angeles."
+  />
+  <meta name="twitter:image" content="http://empex.co/assets/images/flag-577c45fc.jpg" />
+
+  <meta property="og:url" content="http://empex.co/" />
+  <meta property="og:title" content="EMPEX - Empire City Elixir Conference 2017" />
+  <meta property="og:description" content="EMPEX, the Empire City Elixir Conference, is a sophisticated conference series for the Elixir programming language and ecosystem held in New York City."
+  />
+  <meta property="og:image" content="http://empex.co/assets/images/flag-577c45fc.jpg" />
+</head>
+
+<body class="index">
+  <section id="top" class="top">
+    <h1>EMPEX</h1>
+    <h2>An Elixir Movement.</h2>
+
+    <p>
+      A one-day conference for passionate programmers. Coming to Los Angeles Saturday, February 16th 2018. <a>
+      <a>call for speakers now open.</a>
+      #empex
+    </p>
+  </section>
+
+  <section id="conferences" class="heros">
+    <div class="heros">
+      <div class="hero-card">
+        <img />
+        <h2>Los Angeles</h2>
+        <p>February 16, 2018<p>
+        <p>
+          A one-day conference for passionate programmers. Coming to Los Angeles Saturday, February 16th 2018.
+          <a>call for speakers now open.</a>
+          #empex
+        </p>
+
+        <button>More information</button>
+        <button>Buy Tickets</button>
+      </div>
+      <div class="hero-card">
+        <img />
+        <h2>New York City</h2>
+        <p>August 9, 2018<p>
+        <p>
+          A one-day conference for passionate programmers. Coming to New York City Saturday, February 10th 2018.
+          <a>call for speakers now open.</a>
+          #empex
+        </p>
+
+        <button>More information</button>
+        <button>Buy Tickets</button>
+      </div>
+    </div>
+
+    <h2>Stay involved in our Elixir community.</h2>
+    <p>Enter your email address to get the updates from our small but amazing crew of Elixir enthusiasts. Expect CFP alerts, speaker announcements, or anything else we figure you might find valuable.</p>
+
+    <!-- EMAIL HERE -->
+    <%= partial "partials/signup" %>
+
+    <img />
+  </section>
+
+  <!-- GOOD STUFF HERE -->
+
+  <script src="/assets/javascripts/vendor/jquery-2.2.1.min-7cb05e3d.js"></script>
+  <script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+  <script src="/assets/javascripts/nav-e89d8ad7.js"></script>
+  <script src="/assets/javascripts/carousel-c58d8806.js"></script>
+  <script src="/assets/javascripts/moon-cb860d25.js"></script>
+</body>
+</html>
