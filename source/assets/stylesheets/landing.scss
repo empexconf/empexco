@@ -1,0 +1,82 @@
+$page-width: 1200px;
+$small-section-width: 800px;
+$page-padding: 2rem;
+
+@mixin normal-section {
+  max-width: $page-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin small-section {
+  max-width: $small-section-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.landing {
+  background: white;
+  margin: 0 $page-padding;
+
+  h1, h2, h3 {
+    margin: 0;
+  }
+}
+
+.top {
+  @include small-section();
+
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+
+  h1, h2, p {
+    color: $color0;
+  }
+}
+
+.conferences {
+  background: $color0;
+  margin: 0 (-$page-padding);
+  padding: 0 $page-padding;
+
+  &__content {
+    @include normal-section();
+  }
+
+  &__stay-involved {
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+
+.heros {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hero-card {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 1rem;
+
+  &__description {
+    flex-grow: 1;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+#signup-form {
+  @include small-section();
+  display: flex;
+  flex-direction: row;
+
+  .button-primary {
+    margin-left: 0.5rem;
+  }
+}
+
