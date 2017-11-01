@@ -44,8 +44,8 @@
   <section id="conferences" class="conferences">
     <div class="conferences__content">
       <div class="heros">
-        <div class="hero-card">
-          <img />
+        <div class="hero-card hero-card--la">
+          <div class="hero-card__logo logo white"></div>
           <h2 class="hero-card__city">Los Angeles</h2>
           <p>February 16, 2018</p>
           <p class="hero-card__description">
@@ -54,11 +54,15 @@
             #empex
           </p>
 
-          <a class="button">More information</a>
-          <a class="button">Buy Tickets</a>
+          <a class="button button-dark button-sentence">
+            More information
+          </a>
+          <a class="button button-white button-sentence">
+            Buy Tickets
+          </a>
         </div>
-        <div class="hero-card">
-          <img />
+        <div class="hero-card hero-card--nyc">
+          <div class="hero-card__logo logo white"></div>
           <h2 class="hero-card__city">New York City</h2>
           <p>August 9, 2018</p>
           <p class="hero-card__description">
@@ -67,8 +71,12 @@
             #empex
           </p>
 
-          <a class="button button-secondary">More information</a>
-          <a class="button">Buy Tickets</a>
+          <a class="button button-dark button-sentence">
+            More information
+          </a>
+          <a class="button button-white button-sentence">
+            Buy Tickets
+          </a>
         </div>
       </div>
 
@@ -79,7 +87,7 @@
         <!-- EMAIL HERE -->
         <%= partial "partials/signup" %>
 
-        <img />
+        <img class="spiky-circle" src="/assets/images/landing/spiky-circle.png" />
       </div>
     </div>
   </section>

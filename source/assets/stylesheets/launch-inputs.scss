@@ -80,6 +80,30 @@ button,
     }
   }
 
+  &.button-dark{
+    color: white;
+    background-color: $color0;
+    border-color: $color0;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  &.button-white{
+    color: $color0;
+    background-color: white;
+    border-color: white;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  &.button-sentence {
+    text-transform: none;
+  }
+
   &.button-large {
     height: 54px;
     line-height: 54px;

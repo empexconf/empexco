@@ -35,9 +35,13 @@ $page-padding: 2rem;
 }
 
 .conferences {
-  background: $color0;
   margin: 0 (-$page-padding);
   padding: 0 $page-padding;
+
+  background-image: url('/assets/images/landing/landing-background.png');
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   &__content {
     @include normal-section();
@@ -59,14 +63,32 @@ $page-padding: 2rem;
   display: flex;
   flex-direction: column;
 
-  margin-left: 1rem;
+  padding: 2rem;
 
-  &__description {
-    flex-grow: 1;
-  }
+  margin-left: 1rem;
 
   &:first-child {
     margin-left: 0;
+  }
+
+  background-position: bottom left;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &--la {
+    background-image: url('/assets/images/empex-moon.jpg');
+  }
+
+  &--nyc {
+    background-image: url('/assets/images/empex-moon.jpg');
+  }
+
+  &__logo {
+    align-self: center;
+  }
+
+  &__description {
+    flex-grow: 1;
   }
 }
 
@@ -80,3 +102,7 @@ $page-padding: 2rem;
   }
 }
 
+.spiky-circle {
+  width: 50px;
+  margin-bottom: 50px;
+}
