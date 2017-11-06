@@ -326,15 +326,20 @@ header .crevalle-name {
   display: block;
   background-size: 260%;
   background-position: center;
+  background-repeat: no-repeat;
   width: 150px;
   height: 150px;
   background-image: url("/assets/images/empex-logo-official.svg");
   margin-bottom: 2em; }
-  /* line 350, launch.scss */
+  /* line 351, launch.scss */
   .logo.white {
     background-image: url("/assets/images/empex-logo-official-white.svg"); }
+  /* line 355, launch.scss */
+  .logo.la {
+    background-image: url("/assets/images/empex-logo-la-white.png");
+    background-size: contain; }
 
-/* line 355, launch.scss */
+/* line 361, launch.scss */
 .replace-text {
   border: 0;
   clip: rect(0 0 0 0);
@@ -345,27 +350,27 @@ header .crevalle-name {
   position: absolute;
   width: 1px; }
 
-/* line 366, launch.scss */
+/* line 372, launch.scss */
 .current-event {
   background-color: black !important;
   /* border-color: $halloweenOrange !important; */ }
 
-/* line 371, launch.scss */
+/* line 377, launch.scss */
 .current-event-text {
   /* color: $halloweenOrange; */ }
 
-/* line 376, launch.scss */
+/* line 382, launch.scss */
 .not-mobile {
   display: none; }
   @media (min-width: 550px) {
-    /* line 376, launch.scss */
+    /* line 382, launch.scss */
     .not-mobile {
       display: inline-block; } }
 
-/* line 384, launch.scss */
+/* line 390, launch.scss */
 .mobile-only {
   display: inline-block; }
   @media (min-width: 550px) {
-    /* line 384, launch.scss */
+    /* line 390, launch.scss */
     .mobile-only {
       display: none; } }
