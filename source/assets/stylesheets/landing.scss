@@ -1,6 +1,10 @@
 $page-width: 1200px;
-$small-section-width: 800px;
+$small-section-width: 960px;
 $page-padding: 2rem;
+
+$landing-font-size-h2: 48px;
+$landing-font-size-body: 25px;
+
 
 @mixin normal-section {
   max-width: $page-width;
@@ -18,29 +22,68 @@ $page-padding: 2rem;
   background: white;
   margin: 0 $page-padding;
 
-  h1, h2, h3 {
-    margin: 0;
+  h2 {
+    font-size: $landing-font-size-h2;
+  }
+
+  p {
+    font-size: $landing-font-size-body;
+    line-height: 1.25;
+  }
+
+  .button, .button-primary, input {
+    font-size: $landing-font-size-body;
+    padding: (100px - $landing-font-size-body) / 2;
+    height: auto;
+
   }
 }
 
 .top {
   @include small-section();
 
-  margin-top: 5rem;
-  margin-bottom: 8rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-top: 37px;
+  margin-bottom: 37px;
+
+  @media screen and (min-height: 600px) {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: calc(100vh - 250px - 40px);
+  }
 
   h1, h2, p {
     color: $color0;
+  }
+
+  &__name {
+    font-size: 64px;
+    margin-bottom: 0;
+  }
+
+  &__subhead {
+    font-size: 50px;
+    font-weight: normal;
+    margin-bottom: 22px;
+  }
+
+  &__description {
+    font-size: 24px;
+    margin: 0;
   }
 }
 
 .conferences {
   margin: 0 (-$page-padding);
+  margin-bottom: 10rem;
   padding: 0 $page-padding;
 
   background-image: url('/assets/images/landing/landing-background.png');
   background-position: bottom center;
-  background-size: cover;
+  background-size: auto;
   background-repeat: no-repeat;
 
   &__content {
@@ -50,6 +93,7 @@ $page-padding: 2rem;
   &__stay-involved {
     text-align: center;
     margin-top: 1rem;
+    margin-top: 70px;
   }
 }
 
@@ -60,6 +104,8 @@ $page-padding: 2rem;
 }
 
 .hero-card {
+  width: 600px;
+  height: 1000px;
   display: flex;
   flex-direction: column;
 
@@ -76,15 +122,22 @@ $page-padding: 2rem;
   background-repeat: no-repeat;
 
   &--la {
-    background-image: url('/assets/images/empex-moon.jpg');
+    background-image: url('/assets/images/landing/landing-background-la.png');
   }
 
   &--nyc {
-    background-image: url('/assets/images/empex-moon.jpg');
+    background-image: url('/assets/images/landing/landing-background-nyc.png');
   }
 
   &__logo {
     align-self: center;
+    height: 250px;
+    width: 240px;
+  }
+
+  &__city {
+    font-weight: normal;
+    margin: 0;
   }
 
   &__description {
@@ -100,9 +153,12 @@ $page-padding: 2rem;
   .button-primary {
     margin-left: 0.5rem;
   }
+
+  margin-top: 70px;
 }
 
 .spiky-circle {
-  width: 50px;
-  margin-bottom: 50px;
+  width: 100px;
+  margin-bottom: 125px;
+  margin-top: 75px;
 }
