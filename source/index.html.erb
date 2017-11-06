@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+  <title>EMPEX</title>
+
+  <%= stylesheet_link_tag "landing-all" %>
+  <%= stylesheet_link_tag "//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css" %>
+  <%= stylesheet_link_tag "//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css" %>
+
+  <%= favicon_tag "favicon.ico" %>
+
+  <link rel="canonical" href="http://empex.co">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@empexco" />
+  <meta name="twitter:title" content="EMPEX - An Elixir Movement." />
+  <meta name="twitter:description" content="EMPEX is a sophisticated conference series for the Elixir programming language and ecosystem held in New York City and Los Angeles."
+  />
+  <meta name="twitter:image" content="http://empex.co/assets/images/flag-577c45fc.jpg" />
+
+  <meta property="og:url" content="http://empex.co/" />
+  <meta property="og:title" content="EMPEX - An Elixir Movement." />
+  <meta property="og:description" content="EMPEX is a sophisticated conference series for the Elixir programming language and ecosystem held in New York City and Los Angeles."
+  />
+  <meta property="og:image" content="http://empex.co/assets/images/flag-577c45fc.jpg" />
+</head>
+
+<body class="landing">
+  <section id="top" class="top">
+    <div class="top__content">
+      <h1 class="top__name">EMPEX</h1>
+      <h2 class="top__subhead">An Elixir Movement.</h2>
+
+      <p class="top__description">
+        One-day conferences for curious programmers.<br/>
+        Happening in New York City and Los Angeles, California.
+      </p>
+    </div>
+  </section>
+
+  <section id="conferences" class="conferences">
+    <div class="conferences__content">
+      <div class="heros">
+        <div class="hero-card hero-card--la">
+          <div class="hero-card__logo logo la"></div>
+          <h2 class="hero-card__city">Los Angeles</h2>
+          <p class="hero-card__date">February 10, 2018</p>
+          <p class="hero-card__description">
+            The EMPEX experience with California style.  Coming to Los Angeles in February 2018.
+          </p>
+
+          <a class="landing__button button button-dark button-sentence">
+            More Information Coming Soon
+          </a>
+          <a class="landing__button button button-white button-sentence">
+            Tickets on Sale December 1
+          </a>
+        </div>
+        <div class="hero-card hero-card--nyc">
+          <div class="hero-card__logo logo white"></div>
+          <h2 class="hero-card__city">New York City</h2>
+          <p class="hero-card__date">May 19, 2018</p>
+          <p class="hero-card__description">
+            A sophisticated conference for the Elixir programming language and ecosystem held in New York City. We present a single track of technical talks in a jazz club.
+          </p>
+
+          <a class="landing__button button button-dark button-sentence" href="/nyc">
+            More Information
+          </a>
+          <a class="landing__button button button-white button-sentence">
+            Ticket info coming soon
+          </a>
+        </div>
+      </div>
+
+      <div class="conferences__stay-involved">
+        <h2>Stay involved in our Elixir community.</h2>
+        <p>Get the updates from our small crew of Elixir enthusiasts. Expect CFP alerts, speaker announcements, or any other fun stuff we figure you might find valuable.</p>
+
+        <!-- EMAIL HERE -->
+        <%= partial "partials/signup" %>
+
+        <img class="spiky-circle" src="/assets/images/landing/spiky-circle.png" />
+      </div>
+    </div>
+  </section>
+
+  <!-- GOOD STUFF HERE -->
+
+  <script src="/assets/javascripts/vendor/jquery-2.2.1.min-7cb05e3d.js"></script>
+  <script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+  <script src="/assets/javascripts/nav-e89d8ad7.js"></script>
+  <script src="/assets/javascripts/carousel-c58d8806.js"></script>
+  <script src="/assets/javascripts/moon-cb860d25.js"></script>
+</body>
+</html>
