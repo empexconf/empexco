@@ -5,6 +5,13 @@ $page-padding: 2rem;
 $landing-font-size-h2: 48px;
 $landing-font-size-body: 25px;
 
+$tablet-width: $small-section-width;
+
+@mixin media-tablet {
+  @media screen and (min-width: $tablet-width) {
+    @content;
+  }
+}
 
 @mixin normal-section {
   max-width: $page-width;
@@ -31,11 +38,30 @@ $landing-font-size-body: 25px;
     line-height: 1.25;
   }
 
-  .button, .button-primary, input {
+  $button-padding: (100px - $landing-font-size-body) / 2;
+
+  .button,
+  .button-primary {
     font-size: $landing-font-size-body;
-    padding: (100px - $landing-font-size-body) / 2;
+
     height: auto;
 
+    padding: $button-padding 0;
+
+    @include media-tablet {
+      padding: $button-padding;
+    }
+  }
+
+  input {
+    height: auto;
+    font-size: 2rem;
+    padding: $button-padding 2rem;
+
+    @include media-tablet {
+      font-size: $landing-font-size-body;
+      padding: $button-padding;
+    }
   }
 }
 
@@ -49,13 +75,15 @@ $landing-font-size-body: 25px;
   margin-top: 37px;
   margin-bottom: 37px;
 
-  @media screen and (min-height: 600px) {
+  @media screen and (min-height: 775px) and (min-width: $tablet-width) {
     margin-top: 0;
     margin-bottom: 0;
-    height: calc(100vh - 250px - 40px);
+    height: calc(100vh - 250px - 20px - 32px - 72px - 31px - 25px);
   }
 
-  h1, h2, p {
+  h1,
+  h2,
+  p {
     color: $color0;
   }
 
@@ -99,40 +127,66 @@ $landing-font-size-body: 25px;
 
 .heros {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  flex-direction: column;
+
+  @include media-tablet {
+    flex-direction: row;
+  }
 }
 
 .hero-card {
-  width: 600px;
-  height: 1000px;
+  box-sizing: border-box;
+  width: 100%;
+
+  margin-top: 42px;
+  &:first-child {
+    margin-top: 0;
+  }
+
+  @include media-tablet {
+    width: 600px;
+    height: 1000px;
+
+    margin-left: 42px;
+    margin-top: 0;
+
+    &:first-child {
+      margin-left: 0;
+      margin-top: 0;
+    }
+  }
+
   display: flex;
   flex-direction: column;
 
   padding: 2rem;
 
-  margin-left: 1rem;
-
-  &:first-child {
-    margin-left: 0;
-  }
-
   background-position: bottom left;
   background-size: cover;
   background-repeat: no-repeat;
 
+  border-radius: 10px;
+
   &--la {
-    background-image: url('/assets/images/landing/landing-background-la.png');
+    background-image: url('/assets/images/landing/landing-background-la.jpg');
   }
 
   &--nyc {
-    background-image: url('/assets/images/landing/landing-background-nyc.png');
+    background-image: url('/assets/images/landing/landing-background-nyc.jpg');
   }
 
   &__logo {
     align-self: center;
-    height: 250px;
-    width: 240px;
+
+    width: 75%;
+    height: auto;
+
+
+  @include media-tablet {
+      height: 250px;
+      width: 240px;
+    }
   }
 
   &__city {
@@ -148,10 +202,15 @@ $landing-font-size-body: 25px;
 #signup-form {
   @include small-section();
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 
-  .button-primary {
-    margin-left: 0.5rem;
+
+  @include media-tablet {
+    flex-direction: row;
+
+    .button-primary {
+      margin-left: 0.5rem;
+    }
   }
 
   margin-top: 70px;
