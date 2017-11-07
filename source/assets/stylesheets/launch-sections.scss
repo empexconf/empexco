@@ -430,6 +430,17 @@ section {
     background: #000;
     position: absolute;
   }
+  
+  #about #signup-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 0;
+
+    #email {
+      border: 1px solid gray;
+    }
+  }
 
   &__location-data {
     margin-top: 50px;
