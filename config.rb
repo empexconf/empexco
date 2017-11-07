@@ -156,7 +156,7 @@ helpers do
 		# Iterates over the list of presenters, checking each ID
 		#
 		# The ID in this case is actually the slug (the filename
-		# without its extension). 
+		# without its extension).
 		data.presenters.detect { |slug, data| slug == presenter_id }
 	end
 
@@ -169,10 +169,10 @@ helpers do
 		# Iterates over the list of courses, checking each ID
 		#
 		# The ID in this case is actually the slug (the filename
-		# without its extension). 
+		# without its extension).
 		data.courses.detect { |slug, data| slug == course_id }
 	end
- 
+
 
 	# Finds the location with the given ID
 	#

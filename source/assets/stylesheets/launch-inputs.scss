@@ -84,6 +84,12 @@ button,
     color: white;
     background-color: $color0;
     border-color: $color0;
+  }
+
+  &.button-tertiary{
+    color: white;
+    background-color: rgb(255, 108, 0);
+    border-color: black;
 
     &:hover {
       opacity: 0.9;
