@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
 
-  <title> EMPEX LA 2018</title>
+  <title>EMPEX LA 2018</title>
 
   <%= stylesheet_link_tag "all" %>
   <%= stylesheet_link_tag "//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css" %>
@@ -34,7 +34,7 @@
     </div>
     <header id="header" class="header container">
       <a target="_blank" class="no-hover" href="http://crevalle.io/">
-        <img alt="Crevalle" class="crevalle-name" src="/assets/images/sponsors/crevalle-footer-1afc54fb.png" />
+        <%= image_tag "sponsors/crevalle-footer.png", alt: "Crevalle", class: 'crevalle-name' %>
       </a>
 
       <small>presents</small>
@@ -48,10 +48,10 @@
       </p>
 
       <p>
-        <a class="button button-tertiary button-large current-event no-hover not-mobile" href="https://ti.to/crevalle/empex-2018" target="_blank">
+        <a class="button button-tertiary button-large current-event no-hover not-mobile" target="_blank">
           Buy tickets
         </a>
-        <a class="button button-tertiary button-large current-event no-hover not-mobile" href="https://ti.to/crevalle/empex-2018" target="_blank">
+        <a class="button button-tertiary button-large current-event no-hover not-mobile" target="_blank">
           Submit a proposal
         </a>
       </p>
@@ -64,10 +64,7 @@
         <ul class="navbar-list">
           <li class="navbar-item"><a class="navbar-link" href="/#about">About</a></li>
           <li class="navbar-item"><a class="navbar-link" href="/#location">Location</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="/#presentations">Presentations</a></li>
           <li class="navbar-item"><a class="navbar-link" href="/#schedule">Schedule</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="/#training">Training</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="/#sponsors">Sponsors</a></li>
           <li class="navbar-item"><a class="navbar-link" href="/#organizers">Organizers</a></li>
           <li class="navbar-item"><a class="navbar-link" href="/events.html">Past Events</a></li>
         </ul>
@@ -95,29 +92,32 @@
             <h2>Creative Downtown Exhibition Space in Los Angeles, California</h2>
 
             Downtown LA huge 7.500 sqft space Hourly / Daily / Weekly rent for Events, Wedding, Wedding reception, Birthday Party, Concert, DJ, Filmmaker, Art Exhibitions, Company or Cooperate celebration, business launch expo, Catering Events, fashion show, Church worship, winetasting, Formal Seated Dinner with parking on the street (free after 6 pm) or Valet Parking. Walking distance to Metro Blue line (801) Grand / LATTC Station.
-            <!-- <div class="location-la">
-              <img src="/assets/images/locations/la-location.jpg" />
-            </div> -->
-            <a target="_blank" href="https://www.google.com/maps/place/45+Bleecker+St,+New+York,+NY+10012/@40.7259994,-73.9963642,17z/data=!3m1!4b1!4m2!3m1!1s0x89c259855d92fe97:0xf52b5c50ff1c04c">
-              Find it on Google Maps
-            </a>
             <div class="gallery">
               <div id="location-display" class="gallery-display">
-                <div><img src="/assets/images/locations/la-location.jpg" /></div>
+                <div>
+                  <%= image_tag "locations/la-location.jpg" %>
+                </div>
               </div>
               <div id="location-carousel" class="gallery-carousel" data-slick='{"asNavFor": "#location-display"}'>
-                <div><img class="carousel-image" src="/assets/images/locations/la-location.jpg" /></div>
+                <div>
+                  <%= image_tag "locations/la-location.jpg", class: "carousel-image" %>
+                </div>
               </div>
             </div>
-            <a class="image-link" target="_blank" href="https://www.google.com/maps/place/45+Bleecker+St,+New+York,+NY+10012/@40.7259994,-73.9963642,17z/data=!3m1!4b1!4m2!3m1!1s0x89c259855d92fe97:0xf52b5c50ff1c04c">
-              <img alt="Location Icon" src="/assets/images/location-icon.svg" />
+          </div>
+
+          <div class="la__location-data">
+            <a class="la__location-fact" target="_blank" href="https://www.google.com/maps/place/45+Bleecker+St,+New+York,+NY+10012/@40.7259994,-73.9963642,17z/data=!3m1!4b1!4m2!3m1!1s0x89c259855d92fe97:0xf52b5c50ff1c04c">
+              <%= image_tag "icons/location-icon.png", alt: "Find it on Google Maps", class: "la__location-icon" %>
               100 Some Street, Los Angeles, Califoria
             </a>
-            <a class="image-link" target="_blank" href="https://www.google.com/maps/place/45+Bleecker+St,+New+York,+NY+10012/@40.7259994,-73.9963642,17z/data=!3m1!4b1!4m2!3m1!1s0x89c259855d92fe97:0xf52b5c50ff1c04c">
-              <img alt="Location Icon" src="/assets/images/bus-icon.svg" />
+
+            <div class="la__location-fact">
+              <%= image_tag "icons/bus-icon.png", class: "la__location-icon" %>
               Walking distance to Metro Blue line
-            </a>
+            </div>
           </div>
+
         </div>
       </section>
 
@@ -298,17 +298,17 @@
             <li><a href="mailto:info@empex.co" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
           </ul>
           <ul class="links">
-            <li>
-            &copy;
-              <a target="_blank" class="no-hover" href="#">
-                <img alt="Crevalle" class="crevalle-name" src="/assets/images/sponsors/crevalle-footer-1afc54fb.png" />
-              </a>
+            <li>&copy; <% link_to "http://crevalle.io/", target: '_blank', class: 'no-hover' do %>
+              <%= image_tag "sponsors/crevalle-footer.png", alt: "Crevalle", class: 'crevalle-name' %>
+            <% end %>
             </li>
             <li>
-              <a target="_blank" href="https://twitter.com/intent/tweet?text=EMPEX%20Halloween%20Lightning%20Talks%20are%20striking%20New%20York%20City%20on%20October%2027th%2C%202016%20%23empex%20%23elixirlang&amp;url=http%3A%2F%2Fempex.co">Tweet at #empex</a>
+              <%= tweet_link_to "Tweet at #empex",
+                url: "http://empex.co",
+                text: "EMPEX Halloween Lightning Talks are striking New York City on October 27th, 2016 #empex #elixirlang" %>
             </li>
-            <li><a href="code-of-conduct.html">Code of Conduct</a></li>
-            <li>Design by <a href="http://thoughtmerchants.com">Thought Merchants</a></li>
+            <li><%= link_to "Code of Conduct", '/code-of-conduct.html', relative: true %></li>
+            <li>Design by <%= link_to "Thought Merchants", 'http://thoughtmerchants.com' %></li>
           </ul>
         </footer>
 
