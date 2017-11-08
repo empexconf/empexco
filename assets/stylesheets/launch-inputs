@@ -153,6 +153,22 @@ button.button-dark,
   .button.button-dark:hover {
     opacity: 0.9; }
 /* line 93, launch-inputs.scss */
+input[type="submit"].button-tertiary,
+input[type="reset"].button-tertiary,
+input[type="button"].button-tertiary,
+button.button-tertiary,
+.button.button-tertiary {
+  color: white;
+  background-color: #ff6c00;
+  border-color: black; }
+  /* line 98, launch-inputs.scss */
+  input[type="submit"].button-tertiary:hover,
+  input[type="reset"].button-tertiary:hover,
+  input[type="button"].button-tertiary:hover,
+  button.button-tertiary:hover,
+  .button.button-tertiary:hover {
+    opacity: 0.9; }
+/* line 103, launch-inputs.scss */
 input[type="submit"].button-white,
 input[type="reset"].button-white,
 input[type="button"].button-white,
@@ -161,21 +177,21 @@ button.button-white,
   color: #1f1f1f;
   background-color: white;
   border-color: white; }
-  /* line 98, launch-inputs.scss */
+  /* line 108, launch-inputs.scss */
   input[type="submit"].button-white:hover,
   input[type="reset"].button-white:hover,
   input[type="button"].button-white:hover,
   button.button-white:hover,
   .button.button-white:hover {
     opacity: 0.9; }
-/* line 103, launch-inputs.scss */
+/* line 113, launch-inputs.scss */
 input[type="submit"].button-sentence,
 input[type="reset"].button-sentence,
 input[type="button"].button-sentence,
 button.button-sentence,
 .button.button-sentence {
   text-transform: none; }
-/* line 107, launch-inputs.scss */
+/* line 117, launch-inputs.scss */
 input[type="submit"].button-large,
 input[type="reset"].button-large,
 input[type="button"].button-large,

@@ -377,15 +377,49 @@ section img.carousel-image {
       transition: opacity 3s ease;
       opacity: 1; }
 
+/* line 389, launch-sections.scss */
+.la #hero .logo {
+  background-image: url("/assets/images/empex-logo-la-white.png"); }
+/* line 395, launch-sections.scss */
+.la #moon div {
+  background-image: url("/assets/images/la-hero.jpg"); }
+/* line 400, launch-sections.scss */
+.la #about #signup-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 0; }
+  /* line 406, launch-sections.scss */
+  .la #about #signup-form #email {
+    border: 1px solid gray; }
+/* line 411, launch-sections.scss */
+.la__location-data {
+  margin-top: 50px;
+  margin-bottom: -30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center; }
+/* line 420, launch-sections.scss */
+.la__location-fact {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  color: black; }
+/* line 427, launch-sections.scss */
+.la__location-icon {
+  height: 3rem;
+  margin-right: 1rem; }
+
 @media (min-width: 350px) {
-  /* line 388, launch-sections.scss */
+  /* line 434, launch-sections.scss */
   #moon {
     top: 200px; } }
 @media (min-width: 750px) {
-  /* line 392, launch-sections.scss */
+  /* line 438, launch-sections.scss */
   #moon {
     top: 100px; } }
 @media (min-width: 1000px) {
-  /* line 396, launch-sections.scss */
+  /* line 442, launch-sections.scss */
   #moon {
     top: 0px; } }

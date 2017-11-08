@@ -359,18 +359,23 @@ header .crevalle-name {
 .current-event-text {
   /* color: $halloweenOrange; */ }
 
-/* line 382, launch.scss */
+/* line 381, launch.scss */
+.current-event-text-la {
+  color: black;
+  font-size: 36px; }
+
+/* line 387, launch.scss */
 .not-mobile {
   display: none; }
   @media (min-width: 550px) {
-    /* line 382, launch.scss */
+    /* line 387, launch.scss */
     .not-mobile {
       display: inline-block; } }
 
-/* line 390, launch.scss */
+/* line 395, launch.scss */
 .mobile-only {
   display: inline-block; }
   @media (min-width: 550px) {
-    /* line 390, launch.scss */
+    /* line 395, launch.scss */
     .mobile-only {
       display: none; } }
