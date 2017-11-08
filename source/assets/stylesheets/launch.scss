@@ -378,10 +378,15 @@ header {
   /* color: $halloweenOrange; */
 }
 
+.current-event-text-la {
+  color: black;
+  font-size: 36px;
+}
+
 
 .not-mobile {
   display: none;
-  
+
   @include phablet {
     display: inline-block;
   }
@@ -389,7 +394,7 @@ header {
 
 .mobile-only {
   display: inline-block;
-  
+
   @include phablet {
     display: none;
   }

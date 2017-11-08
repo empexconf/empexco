@@ -90,6 +90,16 @@ button,
     }
   }
 
+  &.button-tertiary{
+    color: white;
+    background-color: rgb(255, 108, 0);
+    border-color: black;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
   &.button-white{
     color: $color0;
     background-color: white;

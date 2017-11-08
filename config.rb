@@ -35,6 +35,7 @@ data.events.each do |year, events|
 end
 
 page 'index.html', layout: false
+page 'la.html', layout: false
 
 ignore "current_event.html"
 ignore "event.html"
@@ -155,23 +156,23 @@ helpers do
     # Iterates over the list of presenters, checking each ID
     #
     # The ID in this case is actually the slug (the filename
-    # without its extension). 
+    # without its extension).
     data.presenters.detect { |slug, data| slug == presenter_id }
   end
 
-	# Finds the course with teh given ID
-	#
-	# @param course_id [String]
-	# @return [Array<String, Hash>] A two element array consisting of the slug
-	#   and the data hash for the course
-	def find_course course_id
+  # Finds the course with teh given ID
+  #
+  # @param course_id [String]
+  # @return [Array<String, Hash>] A two element array consisting of the slug
+  #   and the data hash for the course
+  def find_course course_id
     # Iterates over the list of courses, checking each ID
     #
     # The ID in this case is actually the slug (the filename
-    # without its extension). 
-		data.courses.detect { |slug, data| slug == course_id }
-	end
- 
+    # without its extension).
+    data.courses.detect { |slug, data| slug == course_id }
+  end
+
 
   # Finds the location with the given ID
   #

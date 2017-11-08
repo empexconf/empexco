@@ -20,13 +20,13 @@
   <meta name="twitter:title" content="EMPEX - An Elixir Movement." />
   <meta name="twitter:description" content="EMPEX is a sophisticated conference series for the Elixir programming language and ecosystem held in New York City and Los Angeles."
   />
-  <meta name="twitter:image" content="http://empex.co/assets/images/flag-577c45fc.jpg" />
+  <meta name="twitter:image" content="<%= asset_url :images, 'flag.jpg' %>" />
 
   <meta property="og:url" content="http://empex.co/" />
   <meta property="og:title" content="EMPEX - An Elixir Movement." />
   <meta property="og:description" content="EMPEX is a sophisticated conference series for the Elixir programming language and ecosystem held in New York City and Los Angeles."
   />
-  <meta property="og:image" content="http://empex.co/assets/images/flag-577c45fc.jpg" />
+  <meta property="og:image" content="<%= asset_url :images, 'flag.jpg' %>" />
 </head>
 
 <body class="landing">
@@ -53,8 +53,8 @@
             The EMPEX experience with California style.  Coming to Los Angeles in February 2018.
           </p>
 
-          <a class="landing__button button button-dark button-sentence">
-            More Information Coming Soon
+          <a class="landing__button button button-dark button-sentence" href="/la.html">
+            More Information
           </a>
           <a class="landing__button button button-white button-sentence">
             Tickets on Sale December 1
@@ -91,10 +91,5 @@
 
   <!-- GOOD STUFF HERE -->
 
-  <script src="/assets/javascripts/vendor/jquery-2.2.1.min-7cb05e3d.js"></script>
-  <script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
-  <script src="/assets/javascripts/nav-e89d8ad7.js"></script>
-  <script src="/assets/javascripts/carousel-c58d8806.js"></script>
-  <script src="/assets/javascripts/moon-cb860d25.js"></script>
 </body>
 </html>

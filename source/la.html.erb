@@ -1,0 +1,333 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+  <title>EMPEX LA 2018</title>
+
+  <%= stylesheet_link_tag "all" %>
+  <%= stylesheet_link_tag "//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css" %>
+  <%= stylesheet_link_tag "//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css" %>
+
+  <link href="/assets/images/favicon.ico" rel="icon" type="image/ico" />
+
+  <link rel="canonical" href="http://empex.co/events/2017/conference.html">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@empexco" />
+  <meta name="twitter:title" content="EMPEX - LA 2018" />
+  <meta name="twitter:description" content="EMPEX LA is a sophisticated conference series for the Elixir programming language and ecosystem held in Los Angeles." />
+  <meta name="twitter:image" content="<%= asset_url :images, 'flag.jpg' %>" />
+  <meta name="twitter:image" content="http://empex.co/assets/images/flag-577c45fc.jpg" />
+
+  <meta property="og:url" content="http://empex.co/" />
+  <meta property="og:title" content="EMPEX - LA 2018" />
+  <meta property="og:description" content="EMPEX LA is a sophisticated conference series for the Elixir programming language and ecosystem held in Los Angeles." />
+  <meta property="og:image" content="<%= asset_url :images, 'flag.jpg' %>" />
+</head>
+
+<body class="la">
+  <section id="hero">
+    <div id="moon"><div></div></div>
+
+    <header id="header" class="header container">
+      <a target="_blank" class="no-hover" href="http://crevalle.io/">
+        <%= image_tag "sponsors/crevalle-footer.png", alt: "Crevalle", class: 'crevalle-name' %>
+      </a>
+      <br/>
+      <small>presents</small>
+
+      <a class="la logo no-hover" href="#"></a>
+
+      <h1>
+        A one-day conference for curious elixir programmers
+      </h1>
+
+      <p>
+        <a class="button button-tertiary button-large current-event no-hover" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfjqGB4siWwoDridg-LSCR1muijzebBm6iYRE6Iru6svz8Syw/viewform">
+          Submit a proposal
+        </a>
+      </p>
+    </header>
+  </section>
+
+  <div class="navbar-spacer"></div>
+
+  <nav id="navbar" class="navbar">
+    <div class="container">
+      <ul class="navbar-list">
+        <li class="navbar-item"><a class="navbar-link" href="#about">About</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#location">Location</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#schedule">Schedule</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#organizers">Organizers</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="/events.html">Past Events</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section id="about">
+      <div class="content-section container">
+        <h2>Los Angeles</h2>
+        <p>Febrary 10, 2018</p>
+        <p>
+          EMPEX is a sophisticated conference series for the Elixir programming language and ecosystem held in Los Angeles. We present a single track of technical talks in a fun space in downtown LA. Our goal is to bring a sense of aesthetic and fun to the growing Elixir community.
+        </p>
+
+        <p> We&#39;d love for you to join us. Put your email address in so we can keep you up to date.</p>
+
+        <%= partial "partials/signup" %>
+      </div>
+    </section>
+
+    <section id="location">
+      <div class="content-section container">
+        <div class="bg-wrapper">
+          <h2>Location</h2>
+          <h2>Creative Downtown Exhibition Space in Los Angeles, California</h2>
+
+          <div class="gallery">
+            <div id="location-display" class="gallery-display">
+              <div>
+                <%= image_tag "locations/la-location.jpg" %>
+              </div>
+            </div>
+            <div id="location-carousel" class="gallery-carousel" data-slick='{"asNavFor": "#location-display"}'>
+              <div>
+                <%= image_tag "locations/la-location.jpg", class: "carousel-image" %>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="la__location-data">
+          <a class="la__location-fact" target="_blank" href="https://goo.gl/maps/LNLQRQvCZpB2">
+            <%= image_tag "icons/location-icon.png", alt: "Find it on Google Maps", class: "la__location-icon" %>
+            1827 South Hope Street, Los Angeles, CA 90015
+          </a>
+
+          <div class="la__location-fact">
+            <%= image_tag "icons/bus-icon.png", class: "la__location-icon" %>
+            Walking distance to Metro Blue line
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="schedule">
+      <div class="content-section container">
+        <h2>Schedule</h2>
+        <section class="schedule-table">
+          <table>
+            <tr>
+              <td class="time">
+                9:00AM
+              </td>
+              <td class="event">
+                <div class="title">Doors open / Registration</div>
+                Show up and hang out.  Mingle!
+              </td>
+            </tr>
+            <tr>
+              <td class="time">
+                9:30AM
+              </td>
+              <td class="event">
+                <div class="title">Morning presentations</div>
+                Awesome people presenting.
+              </td>
+            </tr>
+            <tr>
+              <td class="time">
+                12:00PM
+              </td>
+              <td class="event">
+                <div class="title">
+                  Lunch
+                </div>
+                Yum yums.
+              </td>
+            </tr>
+            <tr>
+              <td class="time">
+                1:00PM
+              </td>
+              <td class="event">
+                <div class="title">
+                  Afternoon presentations
+                </div>
+                More quality content.
+              </td>
+            </tr>
+            <tr>
+              <td class="time">
+                5:00PM
+              </td>
+              <td class="event">
+                <div class="title">Closing remarks</div>
+                Let's wrap it up!
+              </td>
+            </tr>
+            <tr>
+              <td class="time">
+                6:00PM
+              </td>
+              <td class="event">
+                <div class="title">
+                  After party
+                </div>
+                Some drinks to wash down the learning.
+              </td>
+            </tr>
+          </table>
+        </section>
+      </div>
+    </section>
+
+    <section id="organizers">
+      <div class="content-section container">
+        <h2>Organizers</h2>
+        <section class="organizer-list">
+
+          <section class="organizer">
+            <%= image_tag "people/organizers/bowe-desmond.png" %>
+            <div class="bd">
+              <h3>Desmond Bowe</h3>
+              <div>
+                <a href="https://twitter.com/desmondmonster" target="_blank">
+                  @desmondmonster
+                </a>
+              </div>
+              <div>
+                <a target="_blank" href="http://crevalle.io">
+                  crevalle.io
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section class="organizer">
+            <%= image_tag "people/organizers/tony.jpg" %>
+            <div class="bd">
+              <h3>Tony Delgado-Willis</h3>
+              <div>
+              </div>
+            </div>
+          </section>
+
+          <section class="organizer">
+            <%= image_tag "people/organizers/jack.jpg" %>
+            <div class="bd">
+              <h3>Jack Eisenberg</h3>
+              <div>
+              </div>
+            </div>
+          </section>
+
+          <section class="organizer">
+            <%= image_tag "people/organizers/hannah.png" %>
+            <div class="bd">
+              <h3>Hannah Howard</h3>
+              <div>
+                <a href="https://twitter.com/techgirlwonder" target="_blank">
+                  @techgirlwonder
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section class="organizer">
+            <%= image_tag "people/organizers/rosemary.jpg" %>
+            <div class="bd">
+              <h3>Rosemary Ledesma</h3>
+              <div>
+              </div>
+            </div>
+          </section>
+
+          <section class="organizer">
+            <%= image_tag "people/organizers/will.jpg" %>
+            <div class="bd">
+              <h3>Will Ockelmann-Wagner</h3>
+              <div>
+                <a href="https://twitter.com/WowItsWillWow" target="_blank">
+                  @WowItsWillWow
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section class="organizer">
+            <%= image_tag "people/organizers/bruce.jpg" %>
+            <div class="bd">
+              <h3>Bruce Park</h3>
+              <div>
+                <a href="https://twitter.com/bpark0" target="_blank">
+                  @bpark0
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section class="organizer">
+            <%= image_tag "people/organizers/sarah.jpg" %>
+            <div class="bd">
+              <h3>Sarah Port</h3>
+              <div>
+                <a href="https://github.com/seport" target="_blank">
+                  @seport
+                </a>
+              </div>
+            </div>
+          </section>
+
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <section id="bottom">
+    <section class="container content-section">
+      <h2>Updates</h2>
+      <form id="signup-form" accept-charset="UTF-8" action="https://formkeep.com/f/f87b168aeb37" method="POST">
+        <input type="email" name="email" id="email" placeholder="Email Address" />
+        <input type="submit" value="Send Me Updates" class="button-primary halloween" />
+      </form>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="icons">
+          <li><a href="https://twitter.com/empexco" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+          <li><a href="https://instagram.com/empirecityelixir" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+          <li><a href="https://github.com/empirecityelixir" class="icon fa-github"><span class="label">GitHub</span></a></li>
+          <li><a href="mailto:info@empex.co" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+        </ul>
+        <ul class="links">
+          <li>&copy; <% link_to "http://crevalle.io/", target: '_blank', class: 'no-hover' do %>
+            <%= image_tag "sponsors/crevalle-footer.png", alt: "Crevalle", class: 'crevalle-name' %>
+          <% end %>
+          </li>
+          <li>
+            <%= tweet_link_to "Tweet at #empex",
+              url: "http://empex.co",
+              text: "EMPEX Halloween Lightning Talks are striking New York City on October 27th, 2016 #empex #elixirlang" %>
+          </li>
+          <li><%= link_to "Code of Conduct", '/code-of-conduct.html', relative: true %></li>
+          <li>Design by <%= link_to "Thought Merchants", 'http://thoughtmerchants.com' %></li>
+        </ul>
+      </footer>
+
+    </section>
+  </section>
+
+  <%= javascript_include_tag "vendor/jquery-2.2.1.min.js" %>
+  <%= javascript_include_tag "//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js" %>
+  <%= javascript_include_tag "nav"%>
+  <%= javascript_include_tag "carousel" %>
+  <%= javascript_include_tag "moon"%>
+</body>
+
+</html>

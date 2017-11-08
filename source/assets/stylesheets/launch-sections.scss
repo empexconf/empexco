@@ -384,6 +384,52 @@ section {
   }
 }
 
+.la {
+  #hero {
+    .logo {
+      background-image: url('/assets/images/empex-logo-la-white.png');
+    }
+  }
+
+  #moon {
+    div {
+      background-image: url('/assets/images/la-hero.jpg');
+    }
+  }
+  
+  #about #signup-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 0;
+
+    #email {
+      border: 1px solid gray;
+    }
+  }
+
+  &__location-data {
+    margin-top: 50px;
+    margin-bottom: -30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  &__location-fact {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    color: black;
+  }
+
+  &__location-icon {
+    height: 3rem;
+    margin-right: 1rem;
+  }
+}
+
 @include mobile {
   #moon { top: 200px; }
 }
