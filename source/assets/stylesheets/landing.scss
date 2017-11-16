@@ -138,6 +138,7 @@ $tablet-width: $small-section-width;
 .hero-card {
   box-sizing: border-box;
   width: 100%;
+  cursor: pointer;
 
   margin-top: 42px;
   &:first-child {
