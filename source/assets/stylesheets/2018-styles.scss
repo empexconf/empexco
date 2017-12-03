@@ -17,17 +17,18 @@ $tablet-width: $small-section-width;
   max-width: $page-width;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 $page-padding;
 }
 
 @mixin small-section {
   max-width: $small-section-width;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 $page-padding;
 }
 
 .body {
   background: white;
-  margin: 0 $page-padding;
   color: $color0;
 
   h2 {

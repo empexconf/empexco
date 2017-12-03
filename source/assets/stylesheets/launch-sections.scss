@@ -407,27 +407,6 @@ section {
       border: 1px solid gray;
     }
   }
-
-  &__location-data {
-    margin-top: 50px;
-    margin-bottom: -30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
-  }
-
-  &__location-fact {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    color: black;
-  }
-
-  &__location-icon {
-    height: 3rem;
-    margin-right: 1rem;
-  }
 }
 
 @include mobile {

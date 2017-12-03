@@ -4,12 +4,66 @@ $h3: 22px;
 $p: 16px;
 
 h1, h2, h3, h4, h5, h6 {
-  color: $color0;
   font-weight: normal;
   margin-bottom: 0;
 }
 
+@mixin color($color) {
+  p, h1, h2, h3, h4, h5, h6 {
+    color: $color;
+  }
+}
+
+.location {
+  &__content-color {
+    background: $color0;
+    @include color($color5);
+  }
+
+  &__content {
+    @include small-section();
+  }
+
+  &__details-color {
+    color: $color0;
+
+    background: white;
+    background-image: linear-gradient(to bottom, $color0 25%, white 25%);
+  }
+
+  &__details {
+    @include normal-section();
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__data {
+    margin-top: 50px;
+    margin-bottom: -30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  &__fact {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    color: black;
+  }
+
+  &__icon {
+    height: 3rem;
+    margin-right: 1rem;
+  }
+}
+
 .sponsors {
+  @include color($color0);
+
   a.image-link {
     &:hover {
       border-bottom: none;
@@ -91,6 +145,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .organizers {
   @include small-section();
+  @include color($color0);
 
   .organizer-list {
     width: 100%;
@@ -133,6 +188,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .schedule {
   @include small-section();
+  @include color($color0);
 
   .schedule-table {
     width: 100%;

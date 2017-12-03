@@ -41,6 +41,31 @@
   </section>
 
   <section id="location" class="location">
+    <div class="location__content-color">
+      <div class="location__content">
+        <h2>
+          Creative Downtown Exhibition Space<br/>
+          in Los Angeles, California
+        </h2>
+      </div>
+    </div>
+
+    <div class="location__details-color">
+      <div class="location__details">
+        <%= image_tag "locations/la-location.jpg", class: "location__image" %>
+
+        <div class="location__data">
+          <a class="location__fact" target="_blank" href="https://goo.gl/maps/LNLQRQvCZpB2">
+            <%= image_tag "icons/location-icon.png", alt: "Find it on Google Maps", class: "la__location-icon" %>
+            1827 South Hope Street, Los Angeles, CA 90015
+          </a>
+          <div class="location__fact">
+            <%= image_tag "icons/bus-icon.png", class: "location__icon" %>
+            Walking distance to Metro Blue line
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="schedule" class="schedule">
