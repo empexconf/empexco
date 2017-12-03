@@ -5,6 +5,8 @@ $p: 16px;
 
 $section-margin: 5rem;
 
+$background-black: #010205;
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   margin-bottom: 0;
@@ -86,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   &--black {
-    background: black;
+    background: $background-black;
 
     &::after {
       background: rgba(white, 0.75);
@@ -144,7 +146,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero {
   @include normal-section();
-  height: 100vh;
+  min-height: 82vw;
 
   &__content {
     @include section-color(black);
@@ -207,7 +209,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: $section-margin;
 
   &__content-color {
-    background: black;
+    background: $background-black;
     @include section-color(white);
   }
 
@@ -220,7 +222,7 @@ h1, h2, h3, h4, h5, h6 {
     color: $color0;
 
     background: white;
-    background-image: linear-gradient(to bottom, black 25%, white 25%);
+    background-image: linear-gradient(to bottom, $background-black 25%, white 25%);
   }
 
   &__details {
