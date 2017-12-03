@@ -8,16 +8,186 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
 
-@mixin color($color) {
+@mixin section-color($color) {
+  color: $color;
   p, h1, h2, h3, h4, h5, h6 {
     color: $color;
   }
 }
 
+@mixin city-input($background: rgba(gray, 0.25),$border: gray) {
+  background: $background;
+  padding: 2.375rem 2.875rem;
+  font-size: $p;
+  border-radius: 4px;
+  border: 1px solid $border;
+  height: initial;
+  box-sizing: border-box;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: initial;
+  text-transform: none;
+}
+
+@mixin city-button($background, $text, $border: $background) {
+  @include city-input();
+  background: $background;
+
+  border: 1px solid $border;
+  color: $text;
+
+  &:hover {
+    color: $text;
+    background: lighten($background, 0.25);
+    border: 1px solid lighten($border, 0.25);
+  }
+}
+
+@mixin transparent-city-button($background, $text) {
+  @include city-input();
+
+  background: rgba($background, 0.25);
+  border: 1px solid rgba($background, 0.5);
+  color: $text;
+  display: inline-block;
+
+  &:hover {
+    color: $text;
+    border: 1px solid rgba($background, 0.75);
+    background: rgba($background, 0.5);
+  }
+}
+
+.city-button {
+  &--transparent-white {
+    @include transparent-city-button(white, black);
+  }
+
+  &--transparent-black {
+    @include transparent-city-button(black, white);
+  }
+}
+
+
+.hr {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  &::after {
+    @include small-section();
+    content: '';
+    height: 1px;
+    padding: 0;
+    display: block;
+  }
+
+  &--black {
+    background: black;
+
+    &::after {
+      background: rgba(white, 0.75);
+    }
+  }
+
+  &--white {
+    background: white;
+
+    &::after {
+      background: $color0;
+    }
+  }
+}
+
+.hero-background {
+  background-image: url('/assets/images/la-hero.jpg');
+  background-position: top center;
+  background-size: cover;
+
+}
+
+.nav {
+  @include section-color(white);
+
+  a {
+    color: white;
+  }
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 3rem;
+
+  &__empex {
+    font-size: 36px;
+    text-transform: uppercase;
+  }
+
+  &__spacer {
+    flex-grow: 1;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+  
+  &__link {
+    margin-left: 1em;
+  }
+}
+
+.hero {
+  @include normal-section();
+  height: 100vh;
+
+  &__content {
+    @include section-color(black);
+    margin-top: 12rem;
+  }
+
+  &__presents {
+    margin-bottom: 0;
+  }
+
+  &__crevalle {
+    text-decoration: underline;
+  }
+
+  &__buttons {
+    margin-top: 2rem;
+    
+    & > * {
+      margin-right: 1rem;
+    }
+  }
+}
+
+.about {
+  @include small-section();
+  @include section-color(white);
+
+  #signup-form {
+    margin-top: 2rem;
+    margin-bottom: 0;
+
+    #email {
+      @include city-input();
+    }
+
+    input.button-primary {
+      @include city-button(#DA604B, white);
+    }
+  }
+}
+
 .location {
   &__content-color {
-    background: $color0;
-    @include color($color5);
+    background: black;
+    @include section-color(white);
   }
 
   &__content {
@@ -28,7 +198,7 @@ h1, h2, h3, h4, h5, h6 {
     color: $color0;
 
     background: white;
-    background-image: linear-gradient(to bottom, $color0 25%, white 25%);
+    background-image: linear-gradient(to bottom, black 25%, white 25%);
   }
 
   &__details {
@@ -62,7 +232,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sponsors {
-  @include color($color0);
+  @include section-color($color0);
 
   a.image-link {
     &:hover {
@@ -145,7 +315,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .organizers {
   @include small-section();
-  @include color($color0);
+  @include section-color($color0);
 
   .organizer-list {
     width: 100%;
@@ -188,7 +358,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .schedule {
   @include small-section();
-  @include color($color0);
+  @include section-color($color0);
 
   .schedule-table {
     width: 100%;

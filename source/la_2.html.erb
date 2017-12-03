@@ -37,8 +37,67 @@
 </head>
 
 <body class="body">
-  <section class="top">
-  </section>
+  <div class="hero-background">
+    <section class="hero">
+      <nav class="nav">
+        <div class="nav__empex">
+          <strong>Empex</strong>
+          Los Angeles
+        </div>
+
+        <div class="nav__spacer"></div>
+
+        <div class="nav__links">
+          <a class="nav__link" href="#about">
+            About
+          </a>
+          <a class="nav__link" href="#location">
+            Location
+          </a>
+          <a class="nav__link" href="#schedule">
+            Schedule 
+          </a>
+          <a class="nav__link" href="#organizers">
+            Organizers
+          </a>
+        </div>
+      </nav>
+
+      <div class="hero__content">
+        <p class="hero__presents">
+          <span class="hero__crevalle">Crevalle</span>
+          presents:
+        </p>
+        <h2>
+          A one-day conference for curious<br/>
+          elixir programmers.
+        </h2>
+      </div>
+
+      <div class="hero__buttons">
+        <a class="city-button--transparent-white" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfjqGB4siWwoDridg-LSCR1muijzebBm6iYRE6Iru6svz8Syw/viewform">
+          Submit a proposal
+        </a>
+        <a class="city-button--transparent-black" href="https://ti.to/crevalle/empex-la-2018">
+          Buy Tickets
+        </a>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>Los Angeles</h2>
+      <p>Febrary 10, 2018</p>
+      <p>
+        EMPEX is a sophisticated conference series for the Elixir programming language and ecosystem held in Los Angeles. We present a single track of technical talks in a fun space in downtown LA. Our goal is to bring a sense of aesthetic and fun to the growing Elixir community.
+      </p>
+
+      <p> We&#39;d love for you to join us. Put your email address in so we can keep you up to date.</p>
+
+      <%= partial "partials/signup" %>
+    </section>
+  </div>
+
+  <div class="hr hr--black"></div>
 
   <section id="location" class="location">
     <div class="location__content-color">
@@ -133,6 +192,8 @@
       </tr>
     </table>
   </section>
+
+  <div class="hr hr--white"></div>
 
   <section id="organizers" class="organizers">
     <h2>Organizers</h2>
