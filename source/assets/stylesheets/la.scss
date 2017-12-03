@@ -37,8 +37,11 @@ h1, h2, h3, h4, h5, h6 {
 
 @mixin city-button($background, $text, $border: $background) {
   @include city-input();
-  background: $background;
 
+  display: inline-block;
+  text-align: center;
+
+  background: $background;
   border: 1px solid $border;
   color: $text;
 
@@ -52,10 +55,12 @@ h1, h2, h3, h4, h5, h6 {
 @mixin transparent-city-button($background, $text) {
   @include city-input();
 
-  background: rgba($background, 0.25);
-  border: 1px solid rgba($background, 0.5);
-  color: $text;
   display: inline-block;
+  text-align: center;
+
+  background: rgba($background, 0.5);
+  border: 1px solid rgba($background, 0.75);
+  color: $text;
 
   &:hover {
     color: $text;
@@ -63,17 +68,6 @@ h1, h2, h3, h4, h5, h6 {
     background: rgba($background, 0.5);
   }
 }
-
-.city-button {
-  &--transparent-white {
-    @include transparent-city-button(white, black);
-  }
-
-  &--transparent-black {
-    @include transparent-city-button(black, white);
-  }
-}
-
 
 .hr {
   padding-top: $section-margin;
@@ -108,7 +102,6 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url('/assets/images/la-hero.jpg');
   background-position: top center;
   background-size: cover;
-
 }
 
 .nav {
@@ -119,11 +112,16 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   padding-top: 3rem;
 
+  @include tablet {
+    flex-direction: row;
+  }
+
   &__empex {
+    line-height: 1;
     font-size: 36px;
     text-transform: uppercase;
   }
@@ -141,16 +139,30 @@ h1, h2, h3, h4, h5, h6 {
   
   &__link {
     margin-left: 1em;
+    
+    &:first-child {
+      margin-left: 0;
+    }
   }
 }
 
 .hero {
   @include normal-section();
+
   min-height: 82vw;
 
   &__content {
     @include section-color(black);
-    margin-top: 12rem;
+
+    background: rgba(white, 0.5);
+    padding: 0.5rem;
+    margin-top: 2rem;
+
+    @include media-tablet {
+      background: transparent;
+      padding: 0;
+      margin-top: 12rem;
+    }
   }
 
   &__presents {
@@ -163,9 +175,22 @@ h1, h2, h3, h4, h5, h6 {
 
   &__buttons {
     margin-top: 2rem;
-    
-    & > * {
+  }
+
+  &__button {
+    width: 100%;
+
+    @include media-tablet {
+      width: auto;
       margin-right: 1rem;
+    }
+
+    &--cfp {
+      @include transparent-city-button(white, black);
+    }
+
+    &--buy {
+      @include transparent-city-button(black, white);
     }
   }
 }
@@ -178,29 +203,31 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 2rem;
     margin-bottom: 0;
 
+    @include display-flex;
+    position: relative;
+
+    @include media-tablet {
+      input[type="text"],
+      input[type="password"],
+      input[type="email"] {
+        width: 18em;
+      }
+
+      > * {
+        margin: 0 0 0 1em;
+      }
+
+      > :first-child {
+        margin: 0 0 0 0;
+      }
+    }
+
     #email {
       @include city-input();
     }
 
     input.button-primary {
       @include city-button(#DA604B, white);
-    }
-
-    @include display-flex;
-    position: relative;
-
-    input[type="text"],
-    input[type="password"],
-    input[type="email"] {
-      width: 18em;
-    }
-
-    > * {
-      margin: 0 0 0 1em;
-    }
-
-    > :first-child {
-      margin: 0 0 0 0;
     }
   }
 }

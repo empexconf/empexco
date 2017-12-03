@@ -139,16 +139,6 @@
 
 #signup-form {
   @include small-section();
-  display: flex;
-  flex-direction: column;
-
-  @include media-tablet {
-    flex-direction: row;
-
-    .button-primary {
-      margin-left: 0.5rem;
-    }
-  }
 
   margin-top: 70px;
 }

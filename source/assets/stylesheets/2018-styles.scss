@@ -7,6 +7,12 @@ $landing-font-size-body: 25px;
 
 $tablet-width: $small-section-width;
 
+@mixin media-mobile {
+  @media screen and (max-width: $tablet-width) {
+    @content;
+  }
+}
+
 @mixin media-tablet {
   @media screen and (min-width: $tablet-width) {
     @content;
@@ -25,6 +31,18 @@ $tablet-width: $small-section-width;
   margin-left: auto;
   margin-right: auto;
   padding: 0 $page-padding;
+}
+
+.hide-mobile {
+  @include media-mobile() {
+    display: none;
+  }
+}
+
+.hide-tablet {
+  @include media-tablet() {
+    display: none;
+  }
 }
 
 .body {
@@ -63,6 +81,19 @@ $tablet-width: $small-section-width;
     @include media-tablet {
       font-size: $landing-font-size-body;
       padding: $button-padding;
+    }
+  }
+}
+
+#signup-form {
+  display: flex;
+  flex-direction: column;
+
+  @include media-tablet {
+    flex-direction: row;
+
+    .button-primary {
+      margin-left: 0.5rem;
     }
   }
 }
