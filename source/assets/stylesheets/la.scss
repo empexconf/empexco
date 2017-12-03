@@ -3,6 +3,12 @@
 $h3: 22px;
 $p: 16px;
 
+h1, h2, h3, h4, h5, h6 {
+  color: $color0;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
 .sponsors {
   a.image-link {
     &:hover {
@@ -97,7 +103,7 @@ $p: 16px;
   .organizer {
     @include media-item(75px);
     float: none;
-    margin: 1em 1em 1em 0;
+    margin: 1em 0;
     line-height: 1.2em;
     width: 100%;
 
@@ -130,18 +136,13 @@ $p: 16px;
 
   .schedule-table {
     width: 100%;
+      font-size: $p;
 
     .title {
       font-size: $h3;
-      font-weight: bold;
-    }
-
-    .description {
-      font-size: $p;
     }
 
     .time {
-      font-size: $p;
       text-align: right;
     }
   }
@@ -167,8 +168,10 @@ $p: 16px;
 }
 
 .footer {
+  display: flex;
+  justify-content: center;
   &__logo {
-    width: 30px;
-    height: 30px;
+    // width: 30px;
+    // height: 30px;
   }
 }
