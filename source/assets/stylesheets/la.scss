@@ -3,6 +3,8 @@
 $h3: 22px;
 $p: 16px;
 
+$section-margin: 5rem;
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   margin-bottom: 0;
@@ -72,8 +74,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .hr {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: $section-margin;
+  padding-bottom: $section-margin;
 
   &::after {
     @include small-section();
@@ -181,10 +183,29 @@ h1, h2, h3, h4, h5, h6 {
     input.button-primary {
       @include city-button(#DA604B, white);
     }
+
+    @include display-flex;
+    position: relative;
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+      width: 18em;
+    }
+
+    > * {
+      margin: 0 0 0 1em;
+    }
+
+    > :first-child {
+      margin: 0 0 0 0;
+    }
   }
 }
 
 .location {
+  margin-bottom: $section-margin;
+
   &__content-color {
     background: black;
     @include section-color(white);
@@ -192,6 +213,7 @@ h1, h2, h3, h4, h5, h6 {
 
   &__content {
     @include small-section();
+    padding-bottom: $section-margin;
   }
 
   &__details-color {
@@ -210,8 +232,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   &__data {
-    margin-top: 50px;
-    margin-bottom: -30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -313,9 +333,28 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.schedule {
+  @include small-section();
+  @include section-color($color0);
+
+  .schedule-table {
+    width: 100%;
+      font-size: $p;
+
+    .title {
+      font-size: $h3;
+    }
+
+    .time {
+      text-align: right;
+    }
+  }
+}
+
 .organizers {
   @include small-section();
   @include section-color($color0);
+  margin-bottom: $section-margin;
 
   .organizer-list {
     width: 100%;
@@ -356,48 +395,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.schedule {
-  @include small-section();
-  @include section-color($color0);
-
-  .schedule-table {
-    width: 100%;
-      font-size: $p;
-
-    .title {
-      font-size: $h3;
-    }
-
-    .time {
-      text-align: right;
-    }
-  }
-}
-
-#signup-form {
-  @include display-flex;
-  position: relative;
-
-  input[type="text"],
-  input[type="password"],
-  input[type="email"] {
-    width: 18em;
-  }
-
-  > * {
-    margin: 0 0 0 1em;
-  }
-
-  > :first-child {
-    margin: 0 0 0 0;
-  }
-}
 
 .footer {
   display: flex;
   justify-content: center;
-  &__logo {
-    // width: 30px;
-    // height: 30px;
-  }
 }
