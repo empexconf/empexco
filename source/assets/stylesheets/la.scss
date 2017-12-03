@@ -1,0 +1,174 @@
+@import './2018-styles';
+
+$h3: 22px;
+$p: 16px;
+
+.sponsors {
+  a.image-link {
+    &:hover {
+      border-bottom: none;
+      text-decoration: none;
+    }
+  }
+
+  .sponsor-list {
+    @include media-container;
+    text-align: center;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 4em;
+    margin-bottom: 0em;
+  }
+
+  .sponsors {
+    padding-bottom: 30px;
+    display: inline-block;
+
+    &.crevalle {
+      padding-bottom: 0px;
+      img.crevalle-logo {
+        height: 250px;
+        width: 250px;
+      }
+    }
+
+    &.platinum {
+      h3 {
+        color: rgba(175,175,175,1);
+      }
+      img {
+        @include mobile {
+          height: 43px;
+          width: 300px;
+        }
+
+        @include tablet {
+          height: 100%;
+        }
+      }
+    }
+    &.gold {
+      h3 {
+        color: rgba(229,184,72,1);
+      }
+
+      img {
+        height: 110px;
+        width: 200px;
+      }
+    }
+    &.lightning {
+      h3 {
+        color: rgba(229,184,72,1);
+      }
+
+      img {
+        height: 110px;
+        width: 200px;
+      }
+    }
+    &.silver {
+      h3 {
+        color: rgba(175,175,175,0.5);
+      }
+
+      img {
+        height: 75px;
+        width: 150px;
+        padding: 0 15px;
+      }
+    }
+  }
+}
+
+.organizers {
+  @include small-section();
+
+  .organizer-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .organizer {
+    @include media-item(75px);
+    float: none;
+    margin: 1em 1em 1em 0;
+    line-height: 1.2em;
+    width: 100%;
+
+    h3 {
+      margin: 0;
+      font-size: 1.2em;
+      letter-spacing: .05rem;
+      color: $color0;
+    }
+
+    @include phablet {
+      width: 45%;
+      font-size: 0.9em;
+      min-height: 90px;
+    }
+
+    @include tablet {
+      width: 30%;
+    }
+
+    @include hd {
+      font-size: 1em;
+      line-height: 1.25em;
+    }
+  }
+}
+
+.schedule {
+  @include small-section();
+
+  .schedule-table {
+    width: 100%;
+
+    .title {
+      font-size: $h3;
+      font-weight: bold;
+    }
+
+    .description {
+      font-size: $p;
+    }
+
+    .time {
+      font-size: $p;
+      text-align: right;
+    }
+  }
+}
+
+#signup-form {
+  @include display-flex;
+  position: relative;
+
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    width: 18em;
+  }
+
+  > * {
+    margin: 0 0 0 1em;
+  }
+
+  > :first-child {
+    margin: 0 0 0 0;
+  }
+}
+
+.footer {
+  &__logo {
+    width: 30px;
+    height: 30px;
+  }
+}

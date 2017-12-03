@@ -11,6 +11,8 @@ $color3: #45ada8;
 $color4: #9de0ad;
 $color5: #e5fcc2;
 
+$bodyColor: rgba($color5, 0.75);
+
 @import "compass/css3/animation";
 @import "compass/css3/appearance";
 @import "compass/css3/flexbox";

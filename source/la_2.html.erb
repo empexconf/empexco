@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+  <title>EMPEX LA 2018</title>
+
+  <%= stylesheet_link_tag "la-all" %>
+
+  <link href="/assets/images/favicon.ico" rel="icon" type="image/ico" />
+
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-73059900-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+
+    gtag('config', 'UA-73059900-1');
+  </script>
+
+  <link rel="canonical" href="http://empex.co/events/2017/conference.html">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@empexco" />
+  <meta name="twitter:title" content="EMPEX - LA 2018" />
+  <meta name="twitter:description" content="EMPEX LA is a sophisticated conference series for the Elixir programming language and ecosystem held in Los Angeles." />
+  <meta name="twitter:image" content="<%= asset_url :images, 'flag.jpg' %>" />
+  <meta name="twitter:image" content="http://empex.co/assets/images/flag-577c45fc.jpg" />
+
+  <meta property="og:url" content="http://empex.co/" />
+  <meta property="og:title" content="EMPEX - LA 2018" />
+  <meta property="og:description" content="EMPEX LA is a sophisticated conference series for the Elixir programming language and ecosystem held in Los Angeles." />
+  <meta property="og:image" content="<%= asset_url :images, 'flag.jpg' %>" />
+</head>
+
+<body class="body">
+  <section class="top">
+  </section>
+
+  <section id="location" class="location">
+  </section>
+
+  <section id="schedule" class="schedule">
+    <h2>Schedule</h2>
+    <table class="schedule-table">
+      <tr>
+        <td class="event">
+          <div class="title">Doors open / Registration</div>
+          Show up and hang out.  Mingle!
+        </td>
+        <td class="time">
+          9:00AM
+        </td>
+      </tr>
+      <tr>
+        <td class="event">
+          <div class="title">Morning presentations</div>
+          Awesome people presenting.
+        </td>
+        <td class="time">
+          9:30AM
+        </td>
+      </tr>
+      <tr>
+        <td class="event">
+          <div class="title">
+            Lunch
+          </div>
+          Yum yums.
+        </td>
+        <td class="time">
+          12:00PM
+        </td>
+      </tr>
+      <tr>
+        <td class="event">
+          <div class="title">
+            Afternoon presentations
+          </div>
+          More quality content.
+        </td>
+        <td class="time">
+          1:00PM
+        </td>
+      </tr>
+      <tr>
+        <td class="event">
+          <div class="title">Closing remarks</div>
+          Let's wrap it up!
+        </td>
+        <td class="time">
+          5:00PM
+        </td>
+      </tr>
+      <tr>
+        <td class="event">
+          <div class="title">
+            After party
+          </div>
+          Some drinks to wash down the learning.
+        </td>
+        <td class="time">
+          6:00PM
+        </td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="organizers" class="organizers">
+    <h2>Organizers</h2>
+    <section class="organizer-list">
+
+      <section class="organizer">
+        <%= image_tag "people/organizers/bowe-desmond.png" %>
+        <div class="bd">
+          <h3>Desmond Bowe</h3>
+          <div>
+            <a href="https://twitter.com/desmondmonster" target="_blank">
+              @desmondmonster
+            </a>
+          </div>
+          <div>
+            <a target="_blank" href="http://crevalle.io">
+              crevalle.io
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="organizer">
+        <%= image_tag "people/organizers/tony.jpg" %>
+        <div class="bd">
+          <h3>Tony Delgado-Willis</h3>
+          <div>
+          </div>
+        </div>
+      </section>
+
+      <section class="organizer">
+        <%= image_tag "people/organizers/jack.jpg" %>
+        <div class="bd">
+          <h3>Jack Eisenberg</h3>
+          <div>
+          </div>
+        </div>
+      </section>
+
+      <section class="organizer">
+        <%= image_tag "people/organizers/hannah.png" %>
+        <div class="bd">
+          <h3>Hannah Howard</h3>
+          <div>
+            <a href="https://twitter.com/techgirlwonder" target="_blank">
+              @techgirlwonder
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="organizer">
+        <%= image_tag "people/organizers/rosemary.jpg" %>
+        <div class="bd">
+          <h3>Rosemary Ledesma</h3>
+          <div>
+          </div>
+        </div>
+      </section>
+
+      <section class="organizer">
+        <%= image_tag "people/organizers/will.jpg" %>
+        <div class="bd">
+          <h3>Will Ockelmann-Wagner</h3>
+          <div>
+            <a href="https://twitter.com/WowItsWillWow" target="_blank">
+              @WowItsWillWow
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="organizer">
+        <%= image_tag "people/organizers/bruce.jpg" %>
+        <div class="bd">
+          <h3>Bruce Park</h3>
+          <div>
+            <a href="https://twitter.com/bpark0" target="_blank">
+              @bpark0
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="organizer">
+        <%= image_tag "people/organizers/sarah.jpg" %>
+        <div class="bd">
+          <h3>Sarah Port</h3>
+          <div>
+            <a href="https://github.com/seport" target="_blank">
+              @seport
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="organizer">
+        <!-- spacer -->
+      </section>
+    </section>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__logo logo la black"></div>
+  </footer>
+</body>
+
+</html>
+
