@@ -1,23 +1,21 @@
 /*
 Error: Undefined variable: "$color0".
         on line 50 of /Users/wow/repos/empexco/source/assets/stylesheets/2018-styles.scss
-        from line 1 of /Users/wow/repos/empexco/source/assets/stylesheets/landing.scss
 
-45:   padding: 0 $page-padding;
-46: 
-47:   background-image: url('/assets/images/landing/landing-background.png');
-48:   background-position: bottom center;
-49:   background-size: auto;
-50:   background-repeat: no-repeat;
+45:   }
+46: }
+47: 
+48: .body {
+49:   background: white;
+50:   color: $color0;
 51: 
-52:   &__content {
-53:     @include normal-section();
+52:   h2 {
+53:     font-size: $landing-font-size-h2;
 54:   }
 55: 
 
 Backtrace:
 /Users/wow/repos/empexco/source/assets/stylesheets/2018-styles.scss:50
-/Users/wow/repos/empexco/source/assets/stylesheets/landing.scss:1
 /Users/wow/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/wow/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /Users/wow/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -32,19 +30,6 @@ Backtrace:
 /Users/wow/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
 /Users/wow/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
 /Users/wow/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/Users/wow/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/wow/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Users/wow/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/Users/wow/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Users/wow/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/Users/wow/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Users/wow/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:328:in `block (2 levels) in visit_import'
-/Users/wow/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:328:in `map'
-/Users/wow/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
-/Users/wow/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `block in with_import'
-/Users/wow/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Users/wow/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `with_import'
-/Users/wow/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
 /Users/wow/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Users/wow/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 /Users/wow/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
@@ -136,4 +121,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color0\".\A         on line 50 of /Users/wow/repos/empexco/source/assets/stylesheets/2018-styles.scss\A         from line 1 of /Users/wow/repos/empexco/source/assets/stylesheets/landing.scss\A \A 45:   padding: 0 $page-padding;\A 46: \A 47:   background-image: url('/assets/images/landing/landing-background.png');\A 48:   background-position: bottom center;\A 49:   background-size: auto;\A 50:   background-repeat: no-repeat;\A 51: \A 52:   &__content {\A 53:     @include normal-section();\A 54:   }\A 55: "; }
+  content: "Error: Undefined variable: \"$color0\".\A         on line 50 of /Users/wow/repos/empexco/source/assets/stylesheets/2018-styles.scss\A \A 45:   }\A 46: }\A 47: \A 48: .body {\A 49:   background: white;\A 50:   color: $color0;\A 51: \A 52:   h2 {\A 53:     font-size: $landing-font-size-h2;\A 54:   }\A 55: "; }

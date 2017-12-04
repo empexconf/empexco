@@ -201,11 +201,11 @@ section img.carousel-image {
   margin: 1em 1em 1em 0;
   line-height: 1.2em;
   width: 100%; }
-  /* line 146, launch-settings.scss */
+  /* line 148, launch-settings.scss */
   #organizers .organizer .bd {
     overflow: hidden;
     zoom: 1; }
-  /* line 151, launch-settings.scss */
+  /* line 153, launch-settings.scss */
   #organizers .organizer img {
     width: 75px;
     height: 75px;
@@ -271,20 +271,20 @@ section img.carousel-image {
 #bottom {
   padding: 1.5em 0;
   overflow: hidden; }
-  /* line 106, launch-settings.scss */
+  /* line 108, launch-settings.scss */
   #bottom h1, #bottom h2, #bottom h3, #bottom h4, #bottom h5, #bottom h6 {
     margin-bottom: 0.75em; }
-  /* line 110, launch-settings.scss */
+  /* line 112, launch-settings.scss */
   #bottom p {
     font-size: 1.25em;
     line-height: 1.5em; }
-  /* line 115, launch-settings.scss */
+  /* line 117, launch-settings.scss */
   #bottom .bg-wrapper {
     background-color: #1f1f1f;
     color: #FFF;
     margin: -30px -40px;
     padding: 30px 40px; }
-    /* line 89, launch-settings.scss */
+    /* line 91, launch-settings.scss */
     #bottom .bg-wrapper h1, #bottom .bg-wrapper h2, #bottom .bg-wrapper h3, #bottom .bg-wrapper h4, #bottom .bg-wrapper h5, #bottom .bg-wrapper h6, #bottom .bg-wrapper strong {
       color: #FFF; }
   @media (min-width: 750px) {
@@ -295,7 +295,7 @@ section img.carousel-image {
     /* line 300, launch-sections.scss */
     #bottom {
       padding: 3em 0; }
-      /* line 127, launch-settings.scss */
+      /* line 129, launch-settings.scss */
       #bottom h1, #bottom h2, #bottom h3, #bottom h4, #bottom h5, #bottom h6 {
         margin-bottom: 1em; } }
 

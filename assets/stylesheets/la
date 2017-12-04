@@ -1,23 +1,23 @@
 /*
 Error: Undefined variable: "$color0".
         on line 50 of /Users/wow/repos/empexco/source/assets/stylesheets/2018-styles.scss
-        from line 1 of /Users/wow/repos/empexco/source/assets/stylesheets/landing.scss
+        from line 1 of /Users/wow/repos/empexco/source/assets/stylesheets/la.scss
 
-45:   padding: 0 $page-padding;
-46: 
-47:   background-image: url('/assets/images/landing/landing-background.png');
-48:   background-position: bottom center;
-49:   background-size: auto;
-50:   background-repeat: no-repeat;
-51: 
-52:   &__content {
-53:     @include normal-section();
-54:   }
-55: 
+45:   border: 1px solid $border;
+46:   color: $text;
+47: 
+48:   &:hover {
+49:     color: $text;
+50:     background: lighten($background, 0.25);
+51:     border: 1px solid lighten($border, 0.25);
+52:   }
+53: }
+54: 
+55: @mixin transparent-city-button($background, $text) {
 
 Backtrace:
 /Users/wow/repos/empexco/source/assets/stylesheets/2018-styles.scss:50
-/Users/wow/repos/empexco/source/assets/stylesheets/landing.scss:1
+/Users/wow/repos/empexco/source/assets/stylesheets/la.scss:1
 /Users/wow/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/wow/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /Users/wow/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -136,4 +136,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color0\".\A         on line 50 of /Users/wow/repos/empexco/source/assets/stylesheets/2018-styles.scss\A         from line 1 of /Users/wow/repos/empexco/source/assets/stylesheets/landing.scss\A \A 45:   padding: 0 $page-padding;\A 46: \A 47:   background-image: url('/assets/images/landing/landing-background.png');\A 48:   background-position: bottom center;\A 49:   background-size: auto;\A 50:   background-repeat: no-repeat;\A 51: \A 52:   &__content {\A 53:     @include normal-section();\A 54:   }\A 55: "; }
+  content: "Error: Undefined variable: \"$color0\".\A         on line 50 of /Users/wow/repos/empexco/source/assets/stylesheets/2018-styles.scss\A         from line 1 of /Users/wow/repos/empexco/source/assets/stylesheets/la.scss\A \A 45:   border: 1px solid $border;\A 46:   color: $text;\A 47: \A 48:   &:hover {\A 49:     color: $text;\A 50:     background: lighten($background, 0.25);\A 51:     border: 1px solid lighten($border, 0.25);\A 52:   }\A 53: }\A 54: \A 55: @mixin transparent-city-button($background, $text) {"; }

@@ -12,7 +12,7 @@ body {
 
 /* line 19, launch.scss */
 body, input, select, textarea {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(229, 252, 194, 0.75);
   font-family: "GT-Walsheim-Regular";
   font-size: 16pt;
   font-weight: 400;
@@ -26,27 +26,27 @@ main {
   padding-top: 1em;
   background-color: #f5f3f6;
   color: black; }
-  /* line 81, launch-settings.scss */
+  /* line 83, launch-settings.scss */
   main h1, main h2, main h3, main h4, main h5, main h6, main strong {
     color: #000; }
   /* line 36, launch.scss */
   main > section {
     padding: 1.5em 0;
     overflow: hidden; }
-    /* line 106, launch-settings.scss */
+    /* line 108, launch-settings.scss */
     main > section h1, main > section h2, main > section h3, main > section h4, main > section h5, main > section h6 {
       margin-bottom: 0.75em; }
-    /* line 110, launch-settings.scss */
+    /* line 112, launch-settings.scss */
     main > section p {
       font-size: 1.25em;
       line-height: 1.5em; }
-    /* line 115, launch-settings.scss */
+    /* line 117, launch-settings.scss */
     main > section .bg-wrapper {
       background-color: #1f1f1f;
       color: #FFF;
       margin: -30px -40px;
       padding: 30px 40px; }
-      /* line 89, launch-settings.scss */
+      /* line 91, launch-settings.scss */
       main > section .bg-wrapper h1, main > section .bg-wrapper h2, main > section .bg-wrapper h3, main > section .bg-wrapper h4, main > section .bg-wrapper h5, main > section .bg-wrapper h6, main > section .bg-wrapper strong {
         color: #FFF; }
     @media (min-width: 750px) {
@@ -57,7 +57,7 @@ main {
       /* line 36, launch.scss */
       main > section {
         padding: 3em 0; }
-        /* line 127, launch-settings.scss */
+        /* line 129, launch-settings.scss */
         main > section h1, main > section h2, main > section h3, main > section h4, main > section h5, main > section h6 {
           margin-bottom: 1em; } }
 
@@ -338,8 +338,11 @@ header .crevalle-name {
   .logo.la {
     background-image: url("/assets/images/empex-logo-la-white.png");
     background-size: contain; }
+    /* line 359, launch.scss */
+    .logo.la.black {
+      background-image: url("/assets/images/empex-logo-la.png"); }
 
-/* line 361, launch.scss */
+/* line 365, launch.scss */
 .replace-text {
   border: 0;
   clip: rect(0 0 0 0);
@@ -350,32 +353,32 @@ header .crevalle-name {
   position: absolute;
   width: 1px; }
 
-/* line 372, launch.scss */
+/* line 376, launch.scss */
 .current-event {
   background-color: black !important;
   /* border-color: $halloweenOrange !important; */ }
 
-/* line 377, launch.scss */
+/* line 381, launch.scss */
 .current-event-text {
   /* color: $halloweenOrange; */ }
 
-/* line 381, launch.scss */
+/* line 385, launch.scss */
 .current-event-text-la {
   color: black;
   font-size: 36px; }
 
-/* line 387, launch.scss */
+/* line 391, launch.scss */
 .not-mobile {
   display: none; }
   @media (min-width: 550px) {
-    /* line 387, launch.scss */
+    /* line 391, launch.scss */
     .not-mobile {
       display: inline-block; } }
 
-/* line 395, launch.scss */
+/* line 399, launch.scss */
 .mobile-only {
   display: inline-block; }
   @media (min-width: 550px) {
-    /* line 395, launch.scss */
+    /* line 399, launch.scss */
     .mobile-only {
       display: none; } }
