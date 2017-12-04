@@ -1,0 +1,99 @@
+$page-width: 1200px;
+$small-section-width: 960px;
+$page-padding: 2rem;
+
+$landing-font-size-h2: 48px;
+$landing-font-size-body: 25px;
+
+$tablet-width: $small-section-width;
+
+@mixin media-mobile {
+  @media screen and (max-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media screen and (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin normal-section {
+  max-width: $page-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 $page-padding;
+}
+
+@mixin small-section {
+  max-width: $small-section-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 $page-padding;
+}
+
+.hide-mobile {
+  @include media-mobile() {
+    display: none;
+  }
+}
+
+.hide-tablet {
+  @include media-tablet() {
+    display: none;
+  }
+}
+
+.body {
+  background: white;
+  color: $color0;
+
+  h2 {
+    font-size: $landing-font-size-h2;
+  }
+
+  p {
+    font-size: $landing-font-size-body;
+    line-height: 1.25;
+  }
+
+  $button-padding: (100px - $landing-font-size-body) / 2;
+
+  .button,
+  .button-primary {
+    font-size: $landing-font-size-body;
+
+    height: auto;
+
+    padding: $button-padding 0;
+
+    @include media-tablet {
+      padding: $button-padding;
+    }
+  }
+
+  input {
+    height: auto;
+    font-size: 2rem;
+    padding: $button-padding 2rem;
+
+    @include media-tablet {
+      font-size: $landing-font-size-body;
+      padding: $button-padding;
+    }
+  }
+}
+
+#signup-form {
+  display: flex;
+  flex-direction: column;
+
+  @include media-tablet {
+    flex-direction: row;
+
+    .button-primary {
+      margin-left: 0.5rem;
+    }
+  }
+}

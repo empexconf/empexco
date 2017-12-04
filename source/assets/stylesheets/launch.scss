@@ -17,7 +17,7 @@ body {
 }
 
 body, input, select, textarea {
-  color: rgba(255, 255, 255, 0.75);
+  color: $bodyColor;
   font-family: "GT-Walsheim-Regular";
   font-size: 16pt;
   font-weight: 400;
@@ -355,6 +355,10 @@ header {
   &.la {
     background-image: url('/assets/images/empex-logo-la-white.png');
     background-size: contain;
+
+    &.black {
+    background-image: url('/assets/images/empex-logo-la.png');
+    }
   }
 }
 
