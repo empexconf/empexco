@@ -134,14 +134,20 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    flex-wrap: wrap;
   }
   
   &__link {
-    margin-left: 1em;
-    
-    &:first-child {
-      margin-left: 0;
+    flex-basis: 33%;
+
+    @include tablet {
+      flex-basis: auto;
+
+      margin-left: 1em;
+      
+      &:first-child {
+        margin-left: 0;
+      }
     }
   }
 }
