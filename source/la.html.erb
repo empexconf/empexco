@@ -1,285 +1,333 @@
 <!doctype html>
 <html>
 
-<head>
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta charset="utf-8">
-  <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
 
-  <title>EMPEX LA 2018</title>
+    <title>EMPEX LA 2018</title>
 
-  <%= stylesheet_link_tag "la-all" %>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="/assets/javascripts/smoothScroll.js"></script>
+    <%= stylesheet_link_tag "la-all" %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/assets/javascripts/smoothScroll.js"></script>
 
-  <link href="/assets/images/favicon.ico" rel="icon" type="image/ico" />
+    <link href="/assets/images/favicon.ico" rel="icon" type="image/ico" />
 
-  <!-- Global Site Tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-73059900-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments)};
-    gtag('js', new Date());
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-73059900-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+      
+      gtag('config', 'UA-73059900-1');
+    </script>
 
-    gtag('config', 'UA-73059900-1');
-  </script>
+    <link rel="canonical" href="http://empex.co/events/2017/conference.html">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@empexco" />
+    <meta name="twitter:title" content="EMPEX - LA 2018" />
+    <meta name="twitter:description" content="EMPEX LA is a sophisticated conference series for the Elixir programming language and ecosystem held in Los Angeles." />
+    <meta name="twitter:image" content="<%= asset_url :images, 'flag.jpg' %>" />
+    <meta name="twitter:image" content="http://empex.co/assets/images/flag-577c45fc.jpg" />
 
-  <link rel="canonical" href="http://empex.co/events/2017/conference.html">
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@empexco" />
-  <meta name="twitter:title" content="EMPEX - LA 2018" />
-  <meta name="twitter:description" content="EMPEX LA is a sophisticated conference series for the Elixir programming language and ecosystem held in Los Angeles." />
-  <meta name="twitter:image" content="<%= asset_url :images, 'flag.jpg' %>" />
-  <meta name="twitter:image" content="http://empex.co/assets/images/flag-577c45fc.jpg" />
+    <meta property="og:url" content="http://empex.co/" />
+    <meta property="og:title" content="EMPEX - LA 2018" />
+    <meta property="og:description" content="EMPEX LA is a sophisticated conference series for the Elixir programming language and ecosystem held in Los Angeles." />
+    <meta property="og:image" content="<%= asset_url :images, 'flag.jpg' %>" />
+  </head>
 
-  <meta property="og:url" content="http://empex.co/" />
-  <meta property="og:title" content="EMPEX - LA 2018" />
-  <meta property="og:description" content="EMPEX LA is a sophisticated conference series for the Elixir programming language and ecosystem held in Los Angeles." />
-  <meta property="og:image" content="<%= asset_url :images, 'flag.jpg' %>" />
-</head>
+  <body class="body">
+    <div class="hero-background">
+      <section class="hero">
+        <nav class="nav">
+          <div class="nav__empex">
+            <strong>Empex</strong>
+            <br class="hide-tablet"/>
 
-<body class="body">
-  <div class="hero-background">
-    <section class="hero">
-      <nav class="nav">
-        <div class="nav__empex">
-          <strong>Empex</strong>
-          <br class="hide-tablet"/>
+            Los Angeles
+          </div>
 
-          Los Angeles
+          <div class="nav__spacer"></div>
+
+          <div class="nav__links">
+            <a class="nav__link" href="#about">
+              About
+            </a>
+            <a class="nav__link" href="#location">
+              Location
+            </a>
+            <a class="nav__link" href="#schedule">
+              Schedule
+            </a>
+            <a class="nav__link" href="#organizers">
+              Organizers
+            </a>
+          </div>
+        </nav>
+
+        <div class="hero__content">
+          <p class="hero__presents">
+            <span class="hero__crevalle">Crevalle</span>
+            presents:
+          </p>
+          <h2>
+            A one-day conference for curious<br class="hide-mobile" / >
+            elixir programmers.
+          </h2>
+          <p>
+            Saturday, February 10, 2018
+          </p>
         </div>
 
-        <div class="nav__spacer"></div>
-
-        <div class="nav__links">
-          <a class="nav__link" href="#about">
-            About
+        <div class="hero__buttons">
+          <a class="hero__button hero__button--cfp" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfjqGB4siWwoDridg-LSCR1muijzebBm6iYRE6Iru6svz8Syw/viewform">
+            Submit a proposal
           </a>
-          <a class="nav__link" href="#location">
-            Location
-          </a>
-          <a class="nav__link" href="#schedule">
-            Schedule
-          </a>
-          <a class="nav__link" href="#organizers">
-            Organizers
+          <a class="hero__button hero__button--buy" href="https://ti.to/crevalle/empex-la-2018">
+            Buy Tickets
           </a>
         </div>
-      </nav>
+      </section>
 
-      <div class="hero__content">
-        <p class="hero__presents">
-          <span class="hero__crevalle">Crevalle</span>
-          presents:
-        </p>
-        <h2>
-          A one-day conference for curious<br class="hide-mobile" / >
-          elixir programmers.
-        </h2>
+      <section id="about" class="about">
+        <h2>Los Angeles</h2>
+        <p>Saturday, February 10, 2018</p>
         <p>
-        Saturday, February 10, 2018
+          EMPEX is a sophisticated conference series for the Elixir programming language and ecosystem held in Los Angeles. We present a single track of technical talks in a fun space in downtown LA. Our goal is to bring a sense of aesthetic and fun to the growing Elixir community.
         </p>
-      </div>
 
-      <div class="hero__buttons">
-        <a class="hero__button hero__button--cfp" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfjqGB4siWwoDridg-LSCR1muijzebBm6iYRE6Iru6svz8Syw/viewform">
-          Submit a proposal
-        </a>
-        <a class="hero__button hero__button--buy" href="https://ti.to/crevalle/empex-la-2018">
-          Buy Tickets
-        </a>
-      </div>
-    </section>
+        <p> We&#39;d love for you to join us. Put your email address in so we can keep you up to date.</p>
 
-    <section id="about" class="about">
-      <h2>Los Angeles</h2>
-      <p>Saturday, February 10, 2018</p>
-      <p>
-        EMPEX is a sophisticated conference series for the Elixir programming language and ecosystem held in Los Angeles. We present a single track of technical talks in a fun space in downtown LA. Our goal is to bring a sense of aesthetic and fun to the growing Elixir community.
-      </p>
-
-      <p> We&#39;d love for you to join us. Put your email address in so we can keep you up to date.</p>
-
-      <%= partial "partials/signup" %>
-    </section>
-  </div>
-
-  <div class="hr hr--black"></div>
-
-  <section id="location" class="location">
-    <div class="location__content-color">
-      <div class="location__content">
-        <h2>
-          Creative Downtown Exhibition Space<br/>
-          in Los Angeles, California
-        </h2>
-      </div>
+        <%= partial "partials/signup" %>
+      </section>
     </div>
 
-    <div class="location__details-color">
-      <div class="location__details">
-        <%= image_tag "locations/la-location.jpg", class: "location__image" %>
+    <div class="hr hr--black"></div>
 
-        <div class="location__data">
-          <a class="location__fact" target="_blank" href="https://goo.gl/maps/LNLQRQvCZpB2">
-            <%= image_tag "icons/location-icon.png", alt: "Find it on Google Maps", class: "location__icon" %>
+    <section id="location" class="location">
+      <div class="location__content-color">
+        <div class="location__content">
+          <h2>
+            Creative Downtown Exhibition Space<br/>
+            in Los Angeles, California
+          </h2>
+        </div>
+      </div>
 
-            <span>
-              1827 South Hope Street, Los Angeles, CA 90015
-            </span>
-          </a>
-          <div class="location__fact">
-            <%= image_tag "icons/bus-icon.png", class: "location__icon"%>
-            <span>
-              Walking distance to Metro Blue line
-            </span>
+      <div class="location__details-color">
+        <div class="location__details">
+          <%= image_tag "locations/la-location.jpg", class: "location__image" %>
+
+          <div class="location__data">
+            <a class="location__fact" target="_blank" href="https://goo.gl/maps/LNLQRQvCZpB2">
+              <%= image_tag "icons/location-icon.png", alt: "Find it on Google Maps", class: "location__icon" %>
+
+              <span>
+                1827 South Hope Street, Los Angeles, CA 90015
+              </span>
+            </a>
+            <div class="location__fact">
+              <%= image_tag "icons/bus-icon.png", class: "location__icon"%>
+              <span>
+                Walking distance to Metro Blue line
+              </span>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section id="presentations" class="presentations">
+      <section class="presentation-list">
+        <h2 class="presentations-list__title">Keynotes</h2>
+        <div class="presentations-list__intro">
+          <p>We&#39;re excited and proud to announce our keynote speakers for EMPEX LA!</p>
+        </div>
+
+        <section class="presentation">
+          <div class="presentation-presenter">
+            <div class="presentation-presenter__avatar-container">
+              <%= image_tag "people/presenters/cunningham-emma.jpg", class: "presentation-presenter__avatar" %>
+            </div>
+
+            <h4 class="presentation-presenter__name">
+              Emma Cunningham
+            </h4>
+
+            <p class="presentation-presenter__link">
+              <a target="_blank" href="https://twitter.com/emmatcu">@emmatcu</a>
+            </p>
+          </div>
+
+          <div class="presentation__details">
+            <h3 class="presentation__title">
+              Keynote
+            </h3>
+
+            <div class="presentation__description">
+
+            </div>
+
+            <div class="presentation__bio">
+              <p>
+                Emma is a Senior Software Engineer at Second Spectrum, where she gets to solve all kinds of fun problems around how to build compelling data visualization and analytics apps for clients like the NBA and the LA Clippers. She is actively involved in various STEAM education equity initiatives in low-income communities across Los Angeles, including co-organizing YouthBuild Charter School of California’s <a href="http://www.youthbuildcharter.org/news-events/codechella/" target="_blank">CODEChella</a>, serving on the Advisory Board at the Critical Design and Gaming School, teaching robotics and programming at <a href="https://www.heartofla.org/" target="_blank">Heart of Los Angeles</a>, and co-directing <a href="http://codehawkcamp.org/" target="_blank">Code Hawk Camp</a>, an inclusive and free summer computer science camp for students in South LA.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="presentation">
+          <div class="presentation-presenter">
+            <div class="presentation-presenter__avatar-container">
+              <%= image_tag "people/presenters/gray-sarah.jpg", class: "presentation-presenter__avatar" %>
+            </div>
+
+            <h4 class="presentation-presenter__name">
+              Sarah Gray
+            </h4>
+
+            <p class="presentation-presenter__link">
+              <a target="_blank" href="https://twitter.com/fablednet">@fablednet</a>
+            </p>
+          </div>
+
+          <div class="presentation__details">
+            <h3 class="presentation__title">
+              Keynote
+            </h3>
+
+            <div class="presentation__description">
+
+            </div>
+
+            <div class="presentation__bio">
+              <p>
+                Sarah has been a software developer since 2001, when she was spit out of grad school from ITP,  NYU’s interactive technology program. Prior to that, she’d been directing experimental theater, which gradually led her deeper and deeper into technology and code. Since 2001, she’s worked on a cross-section of projects across different industries. Highlights include building medical software at Mt. Sinai Hospital; leading the technology integration for startup Trunk Club when they were acquired by Nordstrom; and working on Hillary Clinton’s tech team in Brooklyn. In 2017 she learned how to program for the Ethereum blockchain, because in The Future (TM) we will all be on the blockchain. Sarah’s career is predicated on a mix of exploring the new while maintaining solid software development practices in order to make projects come to life. Because of her dual background in coding and experimental performance, she is constantly playing with forms, and putting together new, short-lived (theater-life-span) projects. We’re excited for Sarah to bring her breadth of experience to keynote at Empex LA!
+              </p>
+            </div>
+          </div>
+        </section>
+
+      </section>
+    </section>
+
+    <section id="schedule" class="schedule">
+      <h2>Schedule</h2>
+      <table class="schedule-table">
+        <tr>
+          <td class="event">
+            <div class="title">Doors open / Registration</div>
+            Show up and hang out.  Mingle!
+          </td>
+          <td class="time">
+            9:00AM
+          </td>
+        </tr>
+        <tr>
+          <td class="event">
+            <div class="title">Morning presentations</div>
+            Awesome people presenting.
+          </td>
+          <td class="time">
+            9:30AM
+          </td>
+        </tr>
+        <tr>
+          <td class="event">
+            <div class="title">
+              Lunch
+            </div>
+            Yum yums.
+          </td>
+          <td class="time">
+            12:00PM
+          </td>
+        </tr>
+        <tr>
+          <td class="event">
+            <div class="title">
+              Afternoon presentations
+            </div>
+            More quality content.
+          </td>
+          <td class="time">
+            1:00PM
+          </td>
+        </tr>
+        <tr>
+          <td class="event">
+            <div class="title">Closing remarks</div>
+            Let's wrap it up!
+          </td>
+          <td class="time">
+            5:00PM
+          </td>
+        </tr>
+        <tr>
+          <td class="event">
+            <div class="title">
+              After party
+            </div>
+            Some drinks to wash down the learning.
+          </td>
+          <td class="time">
+            6:00PM
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="sponsors" class="sponsor-section">
+      <h2>Sponsors</h2>
+
+      <section class="sponsor-list">
+        <div class="row">
+          <div class="sponsors crevalle">
+            EMPEX is a production of <br />
+            <a class="image-link" target="_blank" href="http://crevalle.io/">
+              <%= image_tag "sponsors/crevalle.png", alt: "Crevalle", class: "crevalle-logo" %>
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="sponsors platinum">
+            <h3>Platinum</h3>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="sponsors gold">
+            <h3>Gold</h3>
+
+            <a class="image-link" target="_blank" href="http://carbonfive.com">
+
+              <%= image_tag "sponsors/carbonfive.svg", alt: "Carbon Five" %>
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="sponsors silver">
+            <h3>Silver</h3>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      <div>
+        If you're interested in sponsoring EMPEX, please see the
+        <a href="https://docs.google.com/document/d/1meg5KshORij9x6nwda8Oh4zmEl70sWpN7reqcKS5tYs/edit">prospectus</a>,
+        or email
+        <a mailto: 'info@empex.co'>info@empex.co</a>.
       </div>
     </div>
   </section>
-
-  <section id="presentations" class="presentations">
-    <section class="presentation-list">
-      <h2 class="presentations-list__title">Keynotes</h2>
-      <div class="presentations-list__intro">
-        <p>We&#39;re excited and proud to announce our keynote speakers for EMPEX LA!</p>
-      </div>
-
-      <section class="presentation">
-        <div class="presentation-presenter">
-          <div class="presentation-presenter__avatar-container">
-            <%= image_tag "people/presenters/cunningham-emma.jpg", class: "presentation-presenter__avatar" %>
-          </div>
-
-          <h4 class="presentation-presenter__name">
-            Emma Cunningham
-          </h4>
-
-          <p class="presentation-presenter__link">
-            <a target="_blank" href="https://twitter.com/emmatcu">@emmatcu</a>
-          </p>
-        </div>
-
-        <div class="presentation__details">
-          <h3 class="presentation__title">
-            Keynote
-          </h3>
-
-          <div class="presentation__description">
-
-          </div>
-
-          <div class="presentation__bio">
-            <p>
-              Emma is a Senior Software Engineer at Second Spectrum, where she gets to solve all kinds of fun problems around how to build compelling data visualization and analytics apps for clients like the NBA and the LA Clippers. She is actively involved in various STEAM education equity initiatives in low-income communities across Los Angeles, including co-organizing YouthBuild Charter School of California’s <a href="http://www.youthbuildcharter.org/news-events/codechella/" target="_blank">CODEChella</a>, serving on the Advisory Board at the Critical Design and Gaming School, teaching robotics and programming at <a href="https://www.heartofla.org/" target="_blank">Heart of Los Angeles</a>, and co-directing <a href="http://codehawkcamp.org/" target="_blank">Code Hawk Camp</a>, an inclusive and free summer computer science camp for students in South LA.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="presentation">
-        <div class="presentation-presenter">
-          <div class="presentation-presenter__avatar-container">
-            <%= image_tag "people/presenters/gray-sarah.jpg", class: "presentation-presenter__avatar" %>
-          </div>
-
-          <h4 class="presentation-presenter__name">
-            Sarah Gray
-          </h4>
-
-          <p class="presentation-presenter__link">
-            <a target="_blank" href="https://twitter.com/fablednet">@fablednet</a>
-          </p>
-        </div>
-
-        <div class="presentation__details">
-          <h3 class="presentation__title">
-            Keynote
-          </h3>
-
-          <div class="presentation__description">
-
-          </div>
-
-          <div class="presentation__bio">
-            <p>
-              Sarah has been a software developer since 2001, when she was spit out of grad school from ITP,  NYU’s interactive technology program. Prior to that, she’d been directing experimental theater, which gradually led her deeper and deeper into technology and code. Since 2001, she’s worked on a cross-section of projects across different industries. Highlights include building medical software at Mt. Sinai Hospital; leading the technology integration for startup Trunk Club when they were acquired by Nordstrom; and working on Hillary Clinton’s tech team in Brooklyn. In 2017 she learned how to program for the Ethereum blockchain, because in The Future (TM) we will all be on the blockchain. Sarah’s career is predicated on a mix of exploring the new while maintaining solid software development practices in order to make projects come to life. Because of her dual background in coding and experimental performance, she is constantly playing with forms, and putting together new, short-lived (theater-life-span) projects. We’re excited for Sarah to bring her breadth of experience to keynote at Empex LA!
-            </p>
-          </div>
-        </div>
-      </section>
-
-    </section>
-  </section>
-
-  <section id="schedule" class="schedule">
-    <h2>Schedule</h2>
-    <table class="schedule-table">
-      <tr>
-        <td class="event">
-          <div class="title">Doors open / Registration</div>
-          Show up and hang out.  Mingle!
-        </td>
-        <td class="time">
-          9:00AM
-        </td>
-      </tr>
-      <tr>
-        <td class="event">
-          <div class="title">Morning presentations</div>
-          Awesome people presenting.
-        </td>
-        <td class="time">
-          9:30AM
-        </td>
-      </tr>
-      <tr>
-        <td class="event">
-          <div class="title">
-            Lunch
-          </div>
-          Yum yums.
-        </td>
-        <td class="time">
-          12:00PM
-        </td>
-      </tr>
-      <tr>
-        <td class="event">
-          <div class="title">
-            Afternoon presentations
-          </div>
-          More quality content.
-        </td>
-        <td class="time">
-          1:00PM
-        </td>
-      </tr>
-      <tr>
-        <td class="event">
-          <div class="title">Closing remarks</div>
-          Let's wrap it up!
-        </td>
-        <td class="time">
-          5:00PM
-        </td>
-      </tr>
-      <tr>
-        <td class="event">
-          <div class="title">
-            After party
-          </div>
-          Some drinks to wash down the learning.
-        </td>
-        <td class="time">
-          6:00PM
-        </td>
-      </tr>
-    </table>
-  </section>
-
-  <div class="hr hr--white"></div>
 
   <section id="organizers" class="organizers">
     <h2>Organizers</h2>
@@ -389,4 +437,3 @@
 </body>
 
 </html>
-
