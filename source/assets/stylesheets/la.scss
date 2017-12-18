@@ -134,14 +134,20 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    flex-wrap: wrap;
   }
   
   &__link {
-    margin-left: 1em;
-    
-    &:first-child {
-      margin-left: 0;
+    flex-basis: 33%;
+
+    @include tablet {
+      flex-basis: auto;
+
+      margin-left: 1em;
+      
+      &:first-child {
+        margin-left: 0;
+      }
     }
   }
 }
@@ -284,8 +290,12 @@ h1, h2, h3, h4, h5, h6 {
   @include small-section();
 }
 
-.sponsors {
-  @include section-color($color0);
+.sponsor-section {
+  @include small-section();
+  @include section-color(white);
+  background: $color0;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 
   a.image-link {
     &:hover {
@@ -301,8 +311,8 @@ h1, h2, h3, h4, h5, h6 {
 
   .footer {
     text-align: center;
-    margin-top: 4em;
-    margin-bottom: 0em;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .sponsors {
