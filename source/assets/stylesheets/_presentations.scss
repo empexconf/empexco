@@ -23,6 +23,27 @@
   font-size: 1.5em;
 }
 
+.presentation-panel {
+  display: flex;
+  flex-direction: row;
+
+  &__member {
+    margin-right: 1rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @include phablet {
+      margin-right: 0;
+    }
+  }
+
+  @include phablet {
+    flex-direction: column;
+  }
+}
+
 .presentation-presenter {
   text-align: center;
   float: none;
