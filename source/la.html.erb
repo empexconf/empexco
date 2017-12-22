@@ -219,42 +219,115 @@
       <h2 class="presentations-list__title">Presentations</h2>
       <div class="presentations-list__intro">
         <p>
-          We're proud to announce the following presentations for EMPEX!
+          We're proud to announce the following presentations for EMPEX LA!
         </p>
       </div>
 
       <section class="presentation">
         <div class="presentation-presenter">
           <div class="presentation-presenter__avatar-container">
-            <%= image_tag "people/organizers/will.jpg", class: "presentation-presenter__avatar" %>
+            <%= image_tag "people/presenters/user.jpg", class: "presentation-presenter__avatar" %>
           </div>
 
           <h4 class="presentation-presenter__name">
-            Will Ockelmann-Wagner
+            Geoffrey Lessel
           </h4>
 
-          <div class="presentation-presenter__link">
+          <%# <div class="presentation-presenter__link">
             <a target="_blank" href="https://twitter.com/WowItsWillWow">@WowItsWillWow</a>
-          </div>
+          </div> %>
         </div>
 
         <div class="presentation__details">
           <h3 class="presentation__title">
-            A Swarm of Processes — Simulating Ant Foraging Behavior with OTP
+            Life is but a Stream
           </h3>
 
           <div class="presentation__description">
             <p>
-              In this talk, we'll see a simulation of a foraging ant colony that can efficiently solve mazes, built using a separate OTP process for each ant. Along the way we'll look at GenServers, dynamic Supervisors, Registries, and more OTP goodness. We’ll also learn a little bit about ants!
+              A overview and dive into the Stream module. When should you use it over Enum? What are the pros and cons of using Stream for your day-to-day tasks? How are some of the functions implemented? We'll go into those questions and find some answers together.
             </p>
           </div>
 
-          <div class="presentation__bio">
+          <%# <div class="presentation__bio">
             <p>
-              <strong>About Will:</strong>
-              Will is a software developer at Carbon Five. Originally working in accounting, he found that automating his job away was more fun than the actual job, and moved over to software. He’s into typed functional programming and thinking about how space is big.
+              <strong>About Geoffrey:</strong>
+              foobar
+            </p>
+          </div> %>
+        </div>
+      </section>
+
+      <section class="presentation">
+        <div class="presentation-presenter">
+          <div class="presentation-presenter__avatar-container">
+            <%= image_tag "people/presenters/user.jpg", class: "presentation-presenter__avatar" %>
+          </div>
+
+          <h4 class="presentation-presenter__name">
+            Andrew Hao
+          </h4>
+
+          <%# <div class="presentation-presenter__link">
+            <a target="_blank" href="https://twitter.com/WowItsWillWow">@WowItsWillWow</a>
+          </div> %>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            Building beautiful systems with Phoenix contexts and Domain-Driven Design
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              Phoenix contexts are a powerful code organization tool - but without a clear idea of what business domains live under the hood of your systems, naively creating contexts leads to over-engineered, fragile systems.
+            </p>
+            <p>
+              Today, we’ll learn about the philosophical roots of Bounded Contexts from the hard-earned wisdom of Domain-Driven Design. We’ll quickly get our hands dirty in the nuts and bolts of a Context Mapping exercise, a strategic design tool that reveals domain-specific system boundaries. With our newfound architectural vision, we’ll learn how to write context-driven Phoenix code and develop some organizational rules around communication, boundary enforcement and testing between contexts. We’ll leverage the unique powers of Elixir that make this style of architecture so natural and see how using contexts easily leads to highly-cohesive and loosely-coupled outcomes!
             </p>
           </div>
+
+          <%# <div class="presentation__bio">
+            <p>
+              <strong>About Geoffrey:</strong>
+              foobar
+            </p>
+          </div> %>
+        </div>
+      </section>
+
+      <section class="presentation">
+        <div class="presentation-presenter">
+          <div class="presentation-presenter__avatar-container">
+            <%= image_tag "people/presenters/user.jpg", class: "presentation-presenter__avatar" %>
+          </div>
+
+          <h4 class="presentation-presenter__name">
+            Todd Resudek
+          </h4>
+
+          <%# <div class="presentation-presenter__link">
+            <a target="_blank" href="https://twitter.com/WowItsWillWow">@WowItsWillWow</a>
+          </div> %>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            Become a Hex Power User
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              We all use Hex every day on our Elixir projects, but how many of us really know everything Hex can do and how it works? Taking a deep dive into the Hex internals will show you some tips and tricks you can use on a future project.
+            </p>
+          </div>
+
+          <%# <div class="presentation__bio">
+            <p>
+              <strong>About Geoffrey:</strong>
+              foobar
+            </p>
+          </div> %>
         </div>
       </section>
 
@@ -370,7 +443,7 @@
             </p>
           </div>
 
-          <div class="presentation__bio">
+          <%# <div class="presentation__bio">
             <p>
               <strong>About Will:</strong>
               Will is a software developer at Carbon Five. Originally working in accounting, he found that automating his job away was more fun than the actual job, and moved over to software. He’s into typed functional programming and thinking about how space is big.
@@ -380,7 +453,194 @@
               <strong>About Desmond:</strong>
               Will is a software developer at Carbon Five. Originally working in accounting, he found that automating his job away was more fun than the actual job, and moved over to software. He’s into typed functional programming and thinking about how space is big.
             </p>
+          </div> %>
+        </div>
+      </section>
+
+      <section class="presentation">
+        <div class="presentation-presenter">
+          <div class="presentation-presenter__avatar-container">
+            <%= image_tag "people/organizers/rosemary.jpg", class: "presentation-presenter__avatar" %>
           </div>
+
+          <h4 class="presentation-presenter__name">
+            Rosemary Ledesma
+          </h4>
+
+          <%# <div class="presentation-presenter__link">
+            <a target="_blank" href="https://twitter.com/WowItsWillWow">@WowItsWillWow</a>
+          </div> %>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            Ecto.Schema without Ecto.Repo
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              With newer versions of Ecto you can use Ecto.Schema without even importing Ecto.Repo or setting up a traditional database. Why would you wish to?
+            </p>
+            <p>
+              Your microservice or other lightweight app may not use a database but you'll probably still need to wrangle some serious data: complex params, JSON request/response bodies, RabbitMQ payloads, etc.  That's data that you'll need to parse, cast, and validate.
+            </p>
+            <p>
+              I'll step you through how to use Ecto.Schema on its own to cast and validate various kinds of data, and how to extract the final results whether the data is valid or invalid.
+            </p>
+            <p>
+              I'll also discuss some of the stumbling blocks and limitations I've encountered while leveraging Ecto.Schema in this way.
+            </p>
+          </div>
+
+          <%# <div class="presentation__bio">
+            <p>
+              <strong>About Geoffrey:</strong>
+              foobar
+            </p>
+          </div> %>
+        </div>
+      </section>
+
+      <section class="presentation">
+        <div class="presentation-presenter">
+          <div class="presentation-presenter__avatar-container">
+            <%= image_tag "people/presenters/user.jpg", class: "presentation-presenter__avatar" %>
+          </div>
+
+          <h4 class="presentation-presenter__name">
+            Chris Bell
+          </h4>
+
+          <%# <div class="presentation-presenter__link">
+            <a target="_blank" href="https://twitter.com/WowItsWillWow">@WowItsWillWow</a>
+          </div> %>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            Shipping a Replacement Architecture in Elixir
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              This talk will be a deep dive of how we spent the last 4 months replacing our Rails API and various Node.JS microservices with a single Elixir Umbrella Application. We’ve gone from no Elixir in production to replacing all but one of our services with it and launching and running those to power our Enterprise SaaS startup with hundreds of thousands of users.
+            </p>
+            <p>
+              During this talk we’ll walk through:
+            </p>
+
+            <ul>
+              <li>Application structure inside of the Umbrella (includes 3 separate Phoenix applications inside of it).</li>
+              <li>How we modeled our async event bus powered by GenStage</li>
+              <li>How we leveraged Flow to parallelize the syncing of millions of database records in record time</li>
+              <li>Deploying our various services to ECS via Docker</li>
+              <li>Monitoring and stat-ing our services</li>
+              <li>Problems we encountered during the road to production</li>
+              <li>The huge wins we got!</li>
+            </ul>
+
+            <p>
+              We’ll really dig into the real-world requirements of shipping and running a complex Elixir application with many moving parts; we'll be concentrated on the high level, with a few little dips into some specific parts of the app."
+            </p>
+          </div>
+
+          <%# <div class="presentation__bio">
+            <p>
+              <strong>About Geoffrey:</strong>
+              foobar
+            </p>
+          </div> %>
+        </div>
+      </section>
+
+      <section class="presentation">
+        <div class="presentation-presenter">
+          <div class="presentation-presenter__avatar-container">
+            <%= image_tag "people/organizers/will.jpg", class: "presentation-presenter__avatar" %>
+          </div>
+
+          <h4 class="presentation-presenter__name">
+            Will Ockelmann-Wagner
+          </h4>
+
+          <div class="presentation-presenter__link">
+            <a target="_blank" href="https://twitter.com/WowItsWillWow">@WowItsWillWow</a>
+          </div>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            A Swarm of Processes — Simulating Ant Foraging Behavior with OTP
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              In this talk, we'll see a simulation of a foraging ant colony that can efficiently solve mazes, built using a separate OTP process for each ant. Along the way we'll look at GenServers, dynamic Supervisors, Registries, and more OTP goodness. We’ll also learn a little bit about ants!
+            </p>
+          </div>
+
+          <div class="presentation__bio">
+            <p>
+              <strong>About Will:</strong>
+              Will is a software developer at Carbon Five. Originally working in accounting, he found that automating his job away was more fun than the actual job, and moved over to software. He’s into typed functional programming and thinking about how space is big.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="presentation">
+        <div class="presentation-presenter">
+          <div class="presentation-presenter__avatar-container">
+            <%= image_tag "people/presenters/user.jpg", class: "presentation-presenter__avatar" %>
+          </div>
+
+          <h4 class="presentation-presenter__name">
+            Pete Gamache
+          </h4>
+
+          <%# <div class="presentation-presenter__link">
+            <a target="_blank" href="https://twitter.com/WowItsWillWow">@WowItsWillWow</a>
+          </div> %>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            Inclusion Starts with Docs
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              Great documentation is the single most powerful tool for increasing inclusion in a project.  Docs can level the playing field between beginners and experts, providing everyone a better understanding of using and contributing to a library.
+            </p>
+            <p>
+              The feeling of creating a project, putting it out there, and watching people contribute to it is breathtaking -- it's one of the things that gets people hooked on participating in the free software ecosystem. High-quality docs get a project, and its creator, to that point faster.
+            </p>
+            <p>
+              Lucky for us, Elixir has best-in-class features for authoring and generating online documentation. In this talk, we'll examine and demonstrate Elixir's doc system, covering in particular:
+            </p>
+
+            <ul>
+              <li>An introduction to ExDoc</li>
+              <li>Top level project docs using @moduledoc</li>
+              <li>Function docs using @doc</li>
+              <li>Executable code samples using doctests</li>
+              <li>Type annotations and docs using typespecs</li>
+              <li>Linking your docs to your source code</li>
+              <li>Magically auto-updating install instructions</li>
+              <li>Documentation techniques and tactics for other kinds of projects (e.g. HTTP APIs)</li>
+            </ul>
+
+            <p>
+              This talk has two goals: to show the power of Elixir's built-in docs system, and more importantly to get folks excited about how strongly fantastic docs can improve a project and its community.
+            </p>
+          </div>
+
+          <%# <div class="presentation__bio">
+            <p>
+              <strong>About Geoffrey:</strong>
+              foobar
+            </p>
+          </div> %>
         </div>
       </section>
 
