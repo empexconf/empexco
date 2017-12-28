@@ -5,7 +5,7 @@ PROJECT_ROOT = `git rev-parse --show-toplevel`.strip
 ORIGIN_URL = `git config --get remote.origin.url`.strip
 
 def account
-  "empirecityelixir"
+  "empexconf"
 end
 
 def cname
