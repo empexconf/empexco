@@ -6,7 +6,7 @@
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title> EMPEX - 
+    <title> EMPEX -
       <% if content_for?(:title) %>
         <%= yield_content :title %>
       <% elsif current_page.data.title.present? %>
@@ -43,7 +43,6 @@
       <%= yield %>
     </main>
     <%= partial "partials/bottom" %>
-    <%= partial "partials/analytics" %>
     <%= javascript_include_tag "vendor/jquery-2.2.1.min.js" %>
     <%= javascript_include_tag "//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js" %>
     <%= javascript_include_tag "nav"%>
