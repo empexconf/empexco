@@ -42,6 +42,10 @@
 <body class="body">
   <section id="top" class="top">
     <div class="top__content">
+      <% link_to producer.link, target: '_blank', class: 'no-hover' do %>
+        <%= image_tag "sponsors/#{producer.footer_logo}", alt: producer.name , class: 'crevalle-name', width: '100' %>
+      <% end %>
+      </br><small>presents</small></br>
       <h1 class="top__name">EMPEX</h1>
       <h2 class="top__subhead">An Elixir Movement.</h2>
 
