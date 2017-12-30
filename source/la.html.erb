@@ -75,7 +75,7 @@
 
       <div class="hero__content">
         <p class="hero__presents">
-          <span class="hero__crevalle">Crevalle</span>
+          <span class="hero__crevalle"><a href="http://crevalle.io" target="_blank">Crevalle</a></span>
           presents:
         </p>
         <h2>
@@ -848,7 +848,7 @@
         <div class="sponsors crevalle">
           EMPEX is a production of <br />
           <a class="image-link" target="_blank" href="http://crevalle.io/">
-            <%= image_tag "sponsors/crevalle.png", alt: "Crevalle", class: "crevalle-logo" %>
+            <%= image_tag "sponsors/crevalle-la.svg", alt: "Crevalle", class: "crevalle-logo" %>
           </a>
         </div>
       </div>
@@ -993,9 +993,26 @@
     </section>
   </section>
 
-  <footer class="footer">
-    <div class="footer__logo logo la black"></div>
-  </footer>
+  <section id="bottom">
+  <footer id="footer" class="footer">
+    <div class="footer__logo logo la"></div>
+    <div>
+        <ul class="links">
+          <li>&copy; <% link_to "http://crevalle.io", target: '_blank', class: 'no-hover' do %>
+              <%= image_tag "sponsors/#{producer.footer_logo}", alt: producer.name, class: 'crevalle-name' %>
+          <% end %>
+          </li>
+          <li>
+            <%= tweet_link_to "Tweet at #empex",
+              url: "http://empex.co",
+              text: "EMPEX LA is happening on Feburary 10, 2018" %>
+          </li>
+          <li><%= link_to "Code of Conduct", '/code-of-conduct.html', relative: true %></li>
+          <li>Design by <%= link_to "Thought Merchants", 'http://thoughtmerchants.com' %></li>
+        </ul>
+    </div>
+      </footer>
+  </section>
 </body>
 
 </html>
