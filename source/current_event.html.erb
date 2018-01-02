@@ -25,6 +25,7 @@ layout: layout
         <%= image_tag "sponsors/#{producer.footer_logo}", alt: producer.name , class: 'crevalle-name' %>
       <% end %>
       </br><small>presents</small></br>
+
       <%= partial "partials/logo" %>
       <h1 class="current-event-text"><%= event.title %></h1>
       <p><%= event.short_description %><br />
@@ -32,27 +33,24 @@ layout: layout
         New York City<br />
       </p>
       <p>
-
-        <a
-          class="button button-primary button-large current-event no-hover not-mobile"
-          href="https://ti.to/crevalle/empex-2017"
-          target="_blank">
-          We are sold out! Join the waiting list
+        <a class="button button-primary button-large current-event no-hover" href="https://goo.gl/forms/wyigoDV1E66eMsw22" target="_blank">
+          Our CFP Is Open!
         </a>
+        <%# <a %>
+        <%#   class="button button-primary button-large current-event no-hover not-mobile" %>
+        <%#   href="https://ti.to/crevalle/empex-2018" %>
+        <%#   target="_blank"> %>
+        <%#   We are sold out! Join the waiting list %>
+        <%# </a> %>
 
-        <a
-          class="button button-primary button-large current-event no-hover mobile-only"
-          href="https://ti.to/crevalle/empex-2017"
-          target="_blank">
-          Sold out! Waiting list
-        </a>
+        <%# <a %>
+        <%#   class="button button-primary button-large current-event no-hover mobile-only" %>
+        <%#   href="https://ti.to/crevalle/empex-2017" %>
+        <%#   target="_blank"> %>
+        <%#   Sold out! Waiting list %>
+        <%# </a> %>
       </p>
 
-      <div>
-        <%# <a class="button-small halloween no-hover" href="https://goo.gl/forms/q94xsqlq6Ccp4tkn2" target="_blank"> %>
-        <%#   CFP Now Open.  Submit your talk here. %>
-        <%# </a> %>
-      </div>
       <% if event.open %>
         <p>
           <%= link_to "Register now!", event.registration.url, class: "button button-primary button-large current-event no-hover", target: "_blank" %>
@@ -90,38 +88,38 @@ layout: layout
   </div>
 </section>
 
-<section id="schedule">
-  <div class="content-section container">
-    <h2>Schedule</h2>
-    <% if event.schedule.kind_of?(Array) %>
-      <%= partial "partials/schedule", locals: {schedule: event.schedule, event: event} %>
-    <% else %>
-      <%= render_markdown(event.schedule) %>
-    <% end %>
-  </div>
-</section>
+<%# <section id="schedule"> %>
+<%#   <div class="content-section container"> %>
+<%#     <h2>Schedule</h2> %>
+<%#     <% if event.schedule.kind_of?(Array) %1> %>
+<%#       <%= partial "partials/schedule", locals: {schedule: event.schedule, event: event} %1> %>
+<%#     <% else %1> %>
+<%#       <%= render_markdown(event.schedule) %1> %>
+<%#     <% end %1> %>
+<%#   </div> %>
+<%# </section> %>
 
 
-<% if event.courses %>
-<section id="training">
-	<div class="content-section container" >
-		<h2>Training</h2>
-        <p>Training tickets are <a href="https://ti.to/crevalle/empex-2017">available here.</a></p>
-		<%= partial "partials/courses", locals: {courses: event.courses} %>
-        <p>Training tickets are <a href="https://ti.to/crevalle/empex-2017">available here.</a></p>
-	</div>
-</section>
-<% end %>
+<%# <% if event.courses %1> %>
+<%# <section id="training"> %>
+<%# 	<div class="content-section container" > %>
+<%# 		<h2>Training</h2> %>
+<%#         <p>Training tickets are <a href="https://ti.to/crevalle/empex-2017">available here.</a></p> %>
+<%# 		<%= partial "partials/courses", locals: {courses: event.courses} %1> %>
+<%#         <p>Training tickets are <a href="https://ti.to/crevalle/empex-2017">available here.</a></p> %>
+<%# 	</div> %>
+<%# </section> %>
+<%# <% end %1> %>
 
-<section id="sponsors">
-  <div class="content-section container">
-    <div class="bg-wrapper">
-      <h2>Sponsors</h2>
-      <%= partial "partials/sponsors", locals: {sponsorship_levels: event.sponsorship_levels, introduction: event.sponsor_intro} %>
-      If you're interested in sponsoring EMPEX, please email <a mailto: 'info@empex.co'>info@empex.co</a>.
-    </div>
-  </div>
-</section>
+<%# <section id="sponsors"> %>
+<%#   <div class="content-section container"> %>
+<%#     <div class="bg-wrapper"> %>
+<%#       <h2>Sponsors</h2> %>
+<%#       <%= partial "partials/sponsors", locals: {sponsorship_levels: event.sponsorship_levels, introduction: event.sponsor_intro} %1> %>
+<%#       If you're interested in sponsoring EMPEX, please email <a mailto: 'info@empex.co'>info@empex.co</a>. %>
+<%#     </div> %>
+<%#   </div> %>
+<%# </section> %>
 
 <section id="organizers">
   <div class="content-section container">
