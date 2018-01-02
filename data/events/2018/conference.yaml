@@ -1,0 +1,132 @@
+title: Empire City Elixir Conference 2018
+current: true
+date: 2018-05-19
+short_description:
+  A one-day conference for curious programmers
+twitter_description:
+  EMPEX, the Empire City Elixir Conference, is a sophisticated conference series for the Elixir programming language and ecosystem held in New York City.
+description:
+  EMPEX, the Empire City Elixir Conference, is a sophisticated conference series for the Elixir programming language and ecosystem held in New York City.
+  We present a single track of technical talks in a jazz club.
+  Our goal is to bring a sense of aesthetic and fun to the growing Elixir community.  We'd love for you to join us!
+photos:
+location:
+  id: subculture
+  description: |
+    EMPEX will be held at
+    [Subculture](http://subculturenewyork.com/), an intimate jazz club
+    in Soho.
+registration:
+  url: https://ti.to/crevalle/empex-2018
+  open: false
+keynotes_intro:
+  We're excited and proud to announce our first keynote speaker for the third annual EMPEX!
+presentations_intro:
+  "<a href='https://goo.gl/forms/GtufcrZ1G0VEbnYy2'>Our CFP is open! Submit yours today.</a>"
+  # "We're proud to announce the following presentations for EMPEX!"
+presentations:
+  - title: "Keynote"
+    id: brooklyn-zelenka
+    presenters:
+      - zelenka-brooklyn
+    keynote: true
+    description: |
+
+  # - title: "Keynote"
+  #   id: cheng-eugenia
+  #   presenters:
+  #     - cheng-eugenia
+  #   keynote: true
+  #   description: |
+
+  # - title: Monitoring Production Elixir Applications
+  #   id: kelly-john
+  #   presenters:
+  #     - kelly-john
+  #   keynote: false
+  #   description: |
+  #     You just celebrated the launch of your first production elixir application and now have real users using your application. In this talk, you'll learn how to measure and monitor your elixir application as your user base grows from hundreds of daily users to millions. With more users comes more revenue, but also more technical challenges as you go from one server to many. And 'tail –f' is no longer useful when the logs are going by faster than you can read or the requests are load balanced across many servers. In this talk you'll learn the best practices for monitoring your applications in a way that will scale as you grow. Best of all these practices are universal, so they will be applicable if your organization is solely in the BEAM world or if you're are in a polyglot environment. Lastly, you'll learn about to measure availability in the context of web applications and how many nines of availability your API has.
+
+  # - title: Solid Ground
+  #   id: juric-sasa
+  #   presenters:
+  #     - juric-sasa
+  #   keynote: false
+  #   description: |
+  #     The BEAM, the official Erlang VM implementation, is the most important piece of the puzzle in the Elixir ecosystem. It provides some strong guarantees which minimize or completely remove some classes of problems and simplify implementation of fault-tolerant systems. It is the foundation which makes all other things in the ecosystem possible. The OTP framework, as well as third party libraries and frameworks, such as Phoenix, Ecto, or Nerves, make most sense when running on top of BEAM. Replace BEAM with something else, and you'll lose some important guarantees, which in turn can make your life much more complicated. In this talk we’ll take a closer look at a couple of seemingly simple, yet very powerful properties of BEAM, focusing in particular on some aspects of its lightweight concurrency. Going further, we’ll explore how OTP builds on top of these guarantees to bring us reliable higher-level abstractions such as supervisors. For good measure, there will be a couple of demos to make these claims more concrete.
+
+sponsor_intro: |
+sponsorship_levels:
+  - name: platinum
+    sponsor_ids:
+      - stride
+
+  - name: gold
+    sponsor_ids:
+      - sparkpost
+
+  - name: silver
+    sponsor_ids:
+      - carbon5
+
+courses:
+  - id: 1-intermed-elixir-2017
+  - id: 2-begin-elixir-2017
+
+schedule:
+  - time: 9:00AM
+    title: Doors open / Registration
+
+  - time: 9:30AM
+    title: Opening Remarks
+
+  - time: 9:35AM
+    presentation: kerr-jessica
+
+  - time: 10:20AM
+    presentation: bachari-omid
+
+  - time: 10:40AM
+    title: Break
+
+  - time: 10:50AM
+    presentation: vander-hoop-travis
+
+  - time: 11:35AM
+    presentation: carroll-william
+
+  - time: 11:55AM
+    title: Lunch
+
+  - time: 12:40PM
+    presentation: grayson-bobby
+
+  - time: 1:05PM
+    presentation: kelly-john
+
+  - time: 1:45PM
+    title: Break
+
+  - time: 1:55PM
+    presentation: soto-juan
+
+  - time: 2:20PM
+    presentation: ranelli-renan
+
+  - time: 3:00PM
+    title: Break
+
+  - time: 3:25PM
+    presentation: juric-sasa
+
+  - time: 4:10PM
+    presentation: cheng-eugenia
+
+  - time: 4:50PM
+    title: Closing Remarks
+
+  - time: 5:30PM
+    title: After Party!
+    description: |
+      The afterparty will be held a short walk away at Swift Hibernian Lounge ([34 E 4th St New York, NY 10012](https://www.google.com/maps?ion=1&espv=2&q=swift+bar&bav=on.2,or.&biw=1024&bih=562&dpr=2.5&um=1&ie=UTF-8&sa=X&ved=0ahUKEwj3sdrvlOnMAhUDmx4KHUq4Bu8Q_AUIBigB))
+

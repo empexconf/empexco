@@ -1,16 +1,15 @@
-<section class="presentation" id="<% presentation.id %>">
+<section class="presentation" id="<%= presentation.id %>">
   <% presenter = find_presenter(presentation.presenters.first).last %>
-  
   <div class="presentation-presenter">
     <div class="presentation-presenter__avatar-container">
-      <%= image_tag "people/presenters/#{presenter.image}", 
+      <%= image_tag "people/presenters/#{presenter.image}",
             class: "presentation-presenter__avatar" %>
     </div>
-    
+
     <h4 class="presentation-presenter__name">
       <%= presenter.name %>
     </h4>
-    
+
     <% if presenter.twitter.present? %>
       <p class="presentation-presenter__link">
         <%= link_to_twitter presenter.twitter %>
@@ -23,12 +22,12 @@
       </p>
     <% end %>
   </div>
-  
+
   <div class="presentation__details">
     <h3 class="presentation__title">
       <%= presentation.title %>
     </h3>
-    
+
     <div class="presentation__description">
       <%= render_markdown(presentation.description) %>
     </div>

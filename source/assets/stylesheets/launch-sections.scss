@@ -55,13 +55,11 @@
     width: 100%;
   }
   .navbar-list {
+    display: flex;
+    justify-content: space-between;
     list-style: none;
-    margin-bottom: 0;
-    padding-left:0;
   }
   .navbar-item {
-    position: relative;
-    float: left;
     margin-bottom: 0;
   }
   .navbar-link {
@@ -367,7 +365,7 @@ section {
   z-index: -1;
 
   div {
-    background-image: url('/assets/images/empex-moon.jpg');
+    background-image: url('/assets/images/empire_state.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -396,7 +394,7 @@ section {
       background-image: url('/assets/images/la-hero.jpg');
     }
   }
-  
+
   #about #signup-form {
     display: flex;
     justify-content: center;
