@@ -528,31 +528,14 @@
 
           <div class="presentation__description">
             <p>
-              This talk will be a deep dive of how we spent the last 4 months replacing our Rails API and various Node.JS microservices with a single Elixir Umbrella Application. We’ve gone from no Elixir in production to replacing all but one of our services with it and launching and running those to power our Enterprise SaaS startup with hundreds of thousands of users.
-            </p>
-            <p>
-              During this talk we’ll walk through:
-            </p>
-
-            <ul>
-              <li>Application structure inside of the Umbrella (includes 3 separate Phoenix applications inside of it).</li>
-              <li>How we modeled our async event bus powered by GenStage</li>
-              <li>How we leveraged Flow to parallelize the syncing of millions of database records in record time</li>
-              <li>Deploying our various services to ECS via Docker</li>
-              <li>Monitoring and stat-ing our services</li>
-              <li>Problems we encountered during the road to production</li>
-              <li>The huge wins we got!</li>
-            </ul>
-
-            <p>
-              We’ll really dig into the real-world requirements of shipping and running a complex Elixir application with many moving parts; we'll be concentrated on the high level, with a few little dips into some specific parts of the app."
+              This talk will be deep-dive of how over the last 6 months at Frame.io we shipped a replacement API architecture built entirely in Elixir and Phoenix to replace an aging Rails monolith. During the talk we’ll dig into the structure, talk about our nifty GenStage event bus, take a quick tour of moving millions of records using Flow, and wind up showing some nice graphs of all the wins.
             </p>
           </div>
 
           <div class="presentation__bio">
             <p>
               <strong>About Chris:</strong>
-              Chris is a British person who helps organize the New York EMPEX Conference and cohosts the popular ElixirTalk podcast.
+              Chris is an Englishman in New York, where he works as the Director of Engineering at Frame.io, a startup that helps video teams collaborate. He’s an avid alchemist and helps organize the NYC branch of EMPEX as well as co-hosting a podcast, ElixirTalk.
             </p>
           </div>
         </div>
