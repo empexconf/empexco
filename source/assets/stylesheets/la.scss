@@ -7,14 +7,25 @@ $section-margin: 5rem;
 
 $background-black: #010205;
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: normal;
   margin-bottom: 0;
 }
 
 @mixin section-color($color) {
   color: $color;
-  p, h1, h2, h3, h4, h5, h6 {
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: $color;
   }
 }
@@ -27,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid $border;
   height: initial;
   box-sizing: border-box;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
@@ -218,9 +229,9 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 
     @include media-tablet {
-      input[type="text"],
-      input[type="password"],
-      input[type="email"] {
+      input[type='text'],
+      input[type='password'],
+      input[type='email'] {
         width: 18em;
       }
 
@@ -260,7 +271,11 @@ h1, h2, h3, h4, h5, h6 {
     color: $color0;
 
     background: white;
-    background-image: linear-gradient(to bottom, $background-black 25%, white 25%);
+    background-image: linear-gradient(
+      to bottom,
+      $background-black 25%,
+      white 25%
+    );
   }
 
   &__details {
@@ -335,7 +350,7 @@ h1, h2, h3, h4, h5, h6 {
 
     &.platinum {
       h3 {
-        color: rgba(175,175,175,1);
+        color: rgba(175, 175, 175, 1);
       }
       img {
         @include mobile {
@@ -349,18 +364,25 @@ h1, h2, h3, h4, h5, h6 {
       }
     }
     &.gold {
+      a {
+        margin-right: 1rem;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
       h3 {
-        color: rgba(229,184,72,1);
+        color: rgba(229, 184, 72, 1);
       }
 
       img {
-        height: 110px;
         width: 200px;
       }
     }
     &.lightning {
       h3 {
-        color: rgba(229,184,72,1);
+        color: rgba(229, 184, 72, 1);
       }
 
       img {
@@ -370,7 +392,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     &.silver {
       h3 {
-        color: rgba(175,175,175,0.5);
+        color: rgba(175, 175, 175, 0.5);
       }
 
       img {
@@ -388,7 +410,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .schedule-table {
     width: 100%;
-      font-size: $p;
+    font-size: $p;
 
     .title {
       font-size: $h3;
@@ -423,7 +445,7 @@ h1, h2, h3, h4, h5, h6 {
     h3 {
       margin: 0;
       font-size: 1.2em;
-      letter-spacing: .05rem;
+      letter-spacing: 0.05rem;
       color: $color0;
     }
 
@@ -443,7 +465,6 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
 }
-
 
 #bottom {
   @include content-section;
@@ -500,8 +521,5 @@ h1, h2, h3, h4, h5, h6 {
   .crevalle-name {
     height: 16px;
     width: 92px;
-
   }
-
 }
-
