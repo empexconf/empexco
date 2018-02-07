@@ -31,6 +31,13 @@ presentations:
       - zelenka-brooklyn
     keynote: true
     description: |
+  - title: "Keynote"
+    id: dave-thomas
+    presenters:
+      - thomas-dave
+    keynote: true
+    description: |
+
 
   # - title: "Keynote"
   #   id: cheng-eugenia
