@@ -11,16 +11,16 @@
     margin-bottom: 1em;
   }
 
-  @include tablet {
-    padding: 4em 0;
+  @include phablet {
+    padding: 1em 0;
   }
 
   @include tablet {
-    padding: 4em 0;
+    padding: 1em 0;
   }
 
   @include desktop {
-    padding: 8em 0;
+    padding: 2em 0;
   }
 }
 
