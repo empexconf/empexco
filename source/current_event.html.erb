@@ -28,15 +28,12 @@ layout: layout
 
       <%= partial "partials/logo" %>
       <h1 class="current-event-text"><%= event.title %></h1>
-      <p><%= event.short_description %><br />
-        <%= format_date(event.date) %><br />
+      <p>
+        A one-day conference for curious programmers.<br />
+        May 19th, 2018<br />
         New York City<br />
       </p>
       <p>
-        <a class="button button-primary button-large current-event no-hover" href="https://goo.gl/forms/wyigoDV1E66eMsw22" target="_blank">
-          Our CFP Is Open!
-        </a>
-
         <a class="button button-primary button-large current-event no-hover" href="https://ti.to/empex-nyc/empex-nyc-2018" target="_blank">
           Get Your Tickets!
         </a>
@@ -48,7 +45,7 @@ layout: layout
         <%#   We are sold out! Join the waiting list %>
         <%# </a> %>
 
-              </p>
+      </p>
     </header>
   </section>
 <% end %>
