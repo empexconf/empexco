@@ -270,7 +270,7 @@ header {
   p {
     font-size: 1.35em;
     line-height: 1.65em;
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 1.0);
     position: relative;
     margin: 0 0 1.5em 0;
   }
@@ -301,13 +301,6 @@ header {
   .crevalle-name {
     width: 100px;
   }
-}
-
-@media screen and (max-width: 980px) {
-  header br {
-    display: none;
-  }
-
 }
 
 @media screen and (max-width: 736px) {
