@@ -270,7 +270,7 @@ header h1 {
 header p {
   font-size: 1.35em;
   line-height: 1.65em;
-  color: rgba(255, 255, 255, 0.75);
+  color: white;
   position: relative;
   margin: 0 0 1.5em 0; }
 /* line 278, launch.scss */
@@ -297,31 +297,27 @@ header small {
 header .crevalle-name {
   width: 100px; }
 
-@media screen and (max-width: 980px) {
-  /* line 307, launch.scss */
-  header br {
-    display: none; } }
 @media screen and (max-width: 736px) {
-  /* line 314, launch.scss */
+  /* line 307, launch.scss */
   header br {
     display: inline; } }
 @media screen and (max-width: 480px) {
-  /* line 320, launch.scss */
+  /* line 313, launch.scss */
   header br {
     display: none; } }
 @media screen and (max-width: 736px) {
-  /* line 326, launch.scss */
+  /* line 319, launch.scss */
   header h1 {
     font-size: 2em; }
 
-  /* line 330, launch.scss */
+  /* line 323, launch.scss */
   header p {
     font-size: 1em; } }
 @media screen and (max-width: 480px) {
-  /* line 336, launch.scss */
+  /* line 329, launch.scss */
   header {
     margin: 0 0 1em 0; } }
-/* line 341, launch.scss */
+/* line 334, launch.scss */
 .logo {
   display: block;
   background-size: 260%;
@@ -331,18 +327,18 @@ header .crevalle-name {
   height: 150px;
   background-image: url("/assets/images/empex-logo-official.svg");
   margin-bottom: 2em; }
-  /* line 351, launch.scss */
+  /* line 344, launch.scss */
   .logo.white {
     background-image: url("/assets/images/empex-logo-official-white.svg"); }
-  /* line 355, launch.scss */
+  /* line 348, launch.scss */
   .logo.la {
     background-image: url("/assets/images/empex-logo-la-white.png");
     background-size: contain; }
-    /* line 359, launch.scss */
+    /* line 352, launch.scss */
     .logo.la.black {
       background-image: url("/assets/images/empex-logo-la.png"); }
 
-/* line 365, launch.scss */
+/* line 358, launch.scss */
 .replace-text {
   border: 0;
   clip: rect(0 0 0 0);
@@ -353,32 +349,32 @@ header .crevalle-name {
   position: absolute;
   width: 1px; }
 
-/* line 376, launch.scss */
+/* line 369, launch.scss */
 .current-event {
   background-color: black !important;
   /* border-color: $halloweenOrange !important; */ }
 
-/* line 381, launch.scss */
+/* line 374, launch.scss */
 .current-event-text {
   /* color: $halloweenOrange; */ }
 
-/* line 385, launch.scss */
+/* line 378, launch.scss */
 .current-event-text-la {
   color: black;
   font-size: 36px; }
 
-/* line 391, launch.scss */
+/* line 384, launch.scss */
 .not-mobile {
   display: none; }
   @media (min-width: 550px) {
-    /* line 391, launch.scss */
+    /* line 384, launch.scss */
     .not-mobile {
       display: inline-block; } }
 
-/* line 399, launch.scss */
+/* line 392, launch.scss */
 .mobile-only {
   display: inline-block; }
   @media (min-width: 550px) {
-    /* line 399, launch.scss */
+    /* line 392, launch.scss */
     .mobile-only {
       display: none; } }

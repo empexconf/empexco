@@ -1,423 +1,151 @@
-/* line 3, launch-sections.scss */
-#hero {
-  text-align: center;
-  position: relative;
-  padding: 2em 0; }
-  /* line 8, launch-sections.scss */
-  #hero .logo {
-    margin: 0 auto;
-    background-image: url("/assets/images/empex-logo-official-white.svg");
-    margin-bottom: 1em; }
-  @media (min-width: 550px) {
-    /* line 3, launch-sections.scss */
-    #hero {
-      padding: 1em 0; } }
-  @media (min-width: 750px) {
-    /* line 3, launch-sections.scss */
-    #hero {
-      padding: 1em 0; } }
-  @media (min-width: 1000px) {
-    /* line 3, launch-sections.scss */
-    #hero {
-      padding: 2em 0; } }
+/*
+Error: Undefined mixin 'phablet'.
+        on line 13 of /Users/troy/projects/empexco/source/assets/stylesheets/launch-sections.scss, in `phablet'
+        from line 13 of /Users/troy/projects/empexco/source/assets/stylesheets/launch-sections.scss
 
-/* line 27, launch-sections.scss */
-.navbar {
-  display: none; }
+8:     margin: 0 auto;
+9:     background-image: url('/assets/images/empex-logo-official-white.svg');
+10:     margin-bottom: 1em;
+11:   }
+12: 
+13:   @include phablet {
+14:     padding: 1em 0;
+15:   }
+16: 
+17:   @include tablet {
+18:     padding: 1em 0;
 
-@media (min-width: 750px) {
-  /* Navbar */
-  /* line 36, launch-sections.scss */
-  .navbar,
-  .navbar-spacer {
-    background-color: #1f1f1f;
-    color: white;
-    display: block;
-    width: 100%;
-    height: 6.5rem;
-    z-index: 99;
-    border-top: 1px solid #333;
-    border-bottom: 1px solid #333; }
-    /* line 47, launch-sections.scss */
-    .navbar + .content-section,
-    .navbar-spacer + .content-section {
-      border-top-width: 0; }
-
-  /* line 51, launch-sections.scss */
-  .navbar-spacer {
-    display: none; }
-
-  /* line 54, launch-sections.scss */
-  .navbar > .container {
-    width: 100%; }
-
-  /* line 57, launch-sections.scss */
-  .navbar-list {
-    display: flex;
-    justify-content: space-between;
-    list-style: none; }
-
-  /* line 62, launch-sections.scss */
-  .navbar-item {
-    margin-bottom: 0; }
-
-  /* line 65, launch-sections.scss */
-  .navbar-link {
-    text-transform: uppercase;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: .2rem;
-    margin-right: 35px;
-    text-decoration: none;
-    line-height: 6.5rem;
-    color: white; }
-    /* line 74, launch-sections.scss */
-    .navbar-link:hover {
-      color: #dd8923; }
-
-  /* line 78, launch-sections.scss */
-  .has-docked-nav .navbar {
-    position: fixed;
-    top: 0;
-    left: 0; }
-
-  /* line 83, launch-sections.scss */
-  .has-docked-nav .navbar-spacer {
-    display: block; }
-
-  /* Re-overiding the width 100% declaration to match size of % based container */
-  /* line 87, launch-sections.scss */
-  .has-docked-nav .navbar > .container {
-    width: 80%; } }
-/* line 93, launch-sections.scss */
-.slick-slide {
-  outline: none; }
-
-/* line 98, launch-sections.scss */
-#about p {
-  margin: 10px 0; }
-
-/* line 104, launch-sections.scss */
-section .gallery {
-  height: 640px;
-  position: relative;
-  margin-top: 2em; }
-/* line 111, launch-sections.scss */
-section .gallery-display img {
-  margin: 0 auto; }
-/* line 116, launch-sections.scss */
-section .gallery-carousel {
-  position: absolute;
-  width: 100%;
-  bottom: 5px; }
-/* line 122, launch-sections.scss */
-section img.carousel-image {
-  width: 80%; }
-
-/* line 128, launch-sections.scss */
-#location .hotel {
-  margin-top: 2em; }
-  /* line 130, launch-sections.scss */
-  #location .hotel p:last-child {
-    margin: 0; }
-
-/* line 136, launch-sections.scss */
-#sponsors a.image-link:hover {
-  border-bottom: none;
-  text-decoration: none; }
-/* line 142, launch-sections.scss */
-#sponsors .sponsor-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  overflow: hidden;
-  *zoom: 1;
-  text-align: center; }
-/* line 147, launch-sections.scss */
-#sponsors .footer {
-  text-align: center;
-  margin-top: 4em;
-  margin-bottom: 0em; }
-/* line 153, launch-sections.scss */
-#sponsors .sponsors {
-  padding-bottom: 30px;
-  display: inline-block; }
-  /* line 157, launch-sections.scss */
-  #sponsors .sponsors.crevalle {
-    padding-bottom: 0px; }
-    /* line 159, launch-sections.scss */
-    #sponsors .sponsors.crevalle img.crevalle-logo {
-      height: 250px;
-      width: 250px; }
-  /* line 166, launch-sections.scss */
-  #sponsors .sponsors.platinum h3 {
-    color: #afafaf; }
-  @media (min-width: 350px) {
-    /* line 169, launch-sections.scss */
-    #sponsors .sponsors.platinum img {
-      height: 43px;
-      width: 300px; } }
-  @media (min-width: 750px) {
-    /* line 169, launch-sections.scss */
-    #sponsors .sponsors.platinum img {
-      height: 100%; } }
-  /* line 181, launch-sections.scss */
-  #sponsors .sponsors.gold h3 {
-    color: #e5b848; }
-  /* line 185, launch-sections.scss */
-  #sponsors .sponsors.gold img {
-    height: 110px;
-    width: 200px; }
-  /* line 191, launch-sections.scss */
-  #sponsors .sponsors.lightning h3 {
-    color: #e5b848; }
-  /* line 195, launch-sections.scss */
-  #sponsors .sponsors.lightning img {
-    height: 110px;
-    width: 200px; }
-  /* line 201, launch-sections.scss */
-  #sponsors .sponsors.silver h3 {
-    color: rgba(175, 175, 175, 0.5); }
-  /* line 205, launch-sections.scss */
-  #sponsors .sponsors.silver img {
-    height: 75px;
-    width: 150px;
-    padding: 0 15px; }
-
-/* line 215, launch-sections.scss */
-#organizers .organizer-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  overflow: hidden;
-  *zoom: 1; }
-/* line 219, launch-sections.scss */
-#organizers .organizer {
-  float: left;
-  overflow: hidden;
-  zoom: 1;
-  margin: 1em 1em 1em 0;
-  line-height: 1.2em;
-  width: 100%; }
-  /* line 148, launch-settings.scss */
-  #organizers .organizer .bd {
-    overflow: hidden;
-    zoom: 1; }
-  /* line 153, launch-settings.scss */
-  #organizers .organizer img {
-    width: 75px;
-    height: 75px;
-    float: left;
-    margin-right: 13.63636px;
-    display: block;
-    border-radius: 37.5px; }
-  /* line 225, launch-sections.scss */
-  #organizers .organizer h3 {
-    margin: 0;
-    font-size: 1.2em;
-    letter-spacing: .05rem; }
-  @media (min-width: 550px) {
-    /* line 219, launch-sections.scss */
-    #organizers .organizer {
-      width: 45%;
-      font-size: 0.9em;
-      min-height: 90px; } }
-  @media (min-width: 750px) {
-    /* line 219, launch-sections.scss */
-    #organizers .organizer {
-      width: 30%; } }
-  @media (min-width: 1200px) {
-    /* line 219, launch-sections.scss */
-    #organizers .organizer {
-      font-size: 1em;
-      line-height: 1.25em; } }
-
-/* line 250, launch-sections.scss */
-#schedule .schedule-table .time, #schedule .schedule-table .title {
-  font-size: 2rem; }
-/* line 253, launch-sections.scss */
-#schedule .schedule-table .time {
-  text-align: right; }
-/* line 256, launch-sections.scss */
-#schedule .schedule-table .title {
-  font-weight: bold; }
-@media (min-width: 1200px) {
-  /* line 271, launch-sections.scss */
-  #schedule .container {
-    margin-top: -4em;
-    padding-top: 4em;
-    border-top: 1px #E1E1E1 solid; } }
-
-/* line 279, launch-sections.scss */
-#signup-form {
-  display: -webkit-flex;
-  display: flex;
-  position: relative; }
-  /* line 283, launch-sections.scss */
-  #signup-form input[type="text"],
-  #signup-form input[type="password"],
-  #signup-form input[type="email"] {
-    width: 18em; }
-  /* line 289, launch-sections.scss */
-  #signup-form > * {
-    margin: 0 0 0 1em; }
-  /* line 293, launch-sections.scss */
-  #signup-form > :first-child {
-    margin: 0 0 0 0; }
-
-/* line 298, launch-sections.scss */
-#bottom {
-  padding: 1.5em 0;
-  overflow: hidden; }
-  /* line 108, launch-settings.scss */
-  #bottom h1, #bottom h2, #bottom h3, #bottom h4, #bottom h5, #bottom h6 {
-    margin-bottom: 0.75em; }
-  /* line 112, launch-settings.scss */
-  #bottom p {
-    font-size: 1.25em;
-    line-height: 1.5em; }
-  /* line 117, launch-settings.scss */
-  #bottom .bg-wrapper {
-    background-color: #1f1f1f;
-    color: #FFF;
-    margin: -30px -40px;
-    padding: 30px 40px; }
-    /* line 91, launch-settings.scss */
-    #bottom .bg-wrapper h1, #bottom .bg-wrapper h2, #bottom .bg-wrapper h3, #bottom .bg-wrapper h4, #bottom .bg-wrapper h5, #bottom .bg-wrapper h6, #bottom .bg-wrapper strong {
-      color: #FFF; }
-  @media (min-width: 750px) {
-    /* line 298, launch-sections.scss */
-    #bottom {
-      padding: 2em 0; } }
-  @media (min-width: 1000px) {
-    /* line 298, launch-sections.scss */
-    #bottom {
-      padding: 3em 0; }
-      /* line 129, launch-settings.scss */
-      #bottom h1, #bottom h2, #bottom h3, #bottom h4, #bottom h5, #bottom h6 {
-        margin-bottom: 1em; } }
-
-/* line 302, launch-sections.scss */
-#footer {
-  -moz-transition: opacity 0.2s ease-in-out;
-  -o-transition: opacity 0.2s ease-in-out;
-  -webkit-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
-  bottom: 4em;
-  color: rgba(255, 255, 255, 0.5);
-  left: 4em;
-  opacity: 0.5;
-  margin-top: 2em;
-  color: rgba(255, 255, 255, 0.7); }
-  /* line 311, launch-sections.scss */
-  #footer a {
-    color: inherit; }
-    /* line 313, launch-sections.scss */
-    #footer a:hover {
-      color: #dd8923;
-      text-decoration: none; }
-  /* line 319, launch-sections.scss */
-  #footer .icons {
-    margin: 0 0 0.5em 0; }
-  /* line 323, launch-sections.scss */
-  #footer .links {
-    list-style: none;
-    padding: 0; }
-    /* line 327, launch-sections.scss */
-    #footer .links li {
-      border-left: solid 1px rgba(255, 255, 255, 0.25);
-      display: inline-block;
-      line-height: 1em;
-      margin: 0 0 0 0.75em;
-      padding: 0 0 0 0.75em; }
-    /* line 335, launch-sections.scss */
-    #footer .links li:first-child {
-      border-left: 0;
-      margin-left: 0;
-      padding-left: 0; }
-  /* line 342, launch-sections.scss */
-  #footer:hover {
-    color: rgba(255, 255, 255, 0.9);
-    opacity: 1; }
-  /* line 347, launch-sections.scss */
-  #footer > :last-child {
-    margin-bottom: 0; }
-  /* line 350, launch-sections.scss */
-  #footer .crevalle-name {
-    height: 16px;
-    width: 92px; }
-
-/* line 358, launch-sections.scss */
-#moon {
-  left: 0;
-  opacity: 0.50;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1; }
-  /* line 367, launch-sections.scss */
-  #moon div {
-    background-image: url("/assets/images/empire_state.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    opacity: 0; }
-    /* line 378, launch-sections.scss */
-    #moon div.visible {
-      -moz-transition: opacity 3s ease;
-      -o-transition: opacity 3s ease;
-      -webkit-transition: opacity 3s ease;
-      transition: opacity 3s ease;
-      opacity: 1; }
-
-/* line 387, launch-sections.scss */
-.la #hero .logo {
-  background-image: url("/assets/images/empex-logo-la-white.png"); }
-/* line 393, launch-sections.scss */
-.la #moon div {
-  background-image: url("/assets/images/la-hero.jpg"); }
-/* line 398, launch-sections.scss */
-.la #about #signup-form {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-  margin-bottom: 0; }
-  /* line 404, launch-sections.scss */
-  .la #about #signup-form #email {
-    border: 1px solid gray; }
-/* line 409, launch-sections.scss */
-.la__location-data {
-  margin-top: 50px;
-  margin-bottom: -30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: center; }
-/* line 418, launch-sections.scss */
-.la__location-fact {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  color: black; }
-/* line 425, launch-sections.scss */
-.la__location-icon {
-  height: 3rem;
-  margin-right: 1rem; }
-
-@media (min-width: 350px) {
-  /* line 432, launch-sections.scss */
-  #moon {
-    top: 200px; } }
-@media (min-width: 750px) {
-  /* line 436, launch-sections.scss */
-  #moon {
-    top: 100px; } }
-@media (min-width: 1000px) {
-  /* line 440, launch-sections.scss */
-  #moon {
-    top: 0px; } }
+Backtrace:
+/Users/troy/projects/empexco/source/assets/stylesheets/launch-sections.scss:13:in `phablet'
+/Users/troy/projects/empexco/source/assets/stylesheets/launch-sections.scss:13
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:98:in `block in with_mixin'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:98:in `with_mixin'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block (2 levels) in visit_rule'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `map'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block in visit_rule'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:432:in `visit_rule'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:20:in `render'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/middleman-core-4.2.1/lib/middleman-core/renderers/sass.rb:68:in `evaluate'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/tilt-2.0.8/lib/tilt/template.rb:109:in `render'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/middleman-core-4.2.1/lib/middleman-core/file_renderer.rb:79:in `render'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/middleman-core-4.2.1/lib/middleman-core/template_renderer.rb:184:in `_render_with_all_renderers'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/middleman-core-4.2.1/lib/middleman-core/template_renderer.rb:147:in `block in render'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.0.6/lib/active_support/notifications.rb:166:in `instrument'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/middleman-core-4.2.1/lib/middleman-core/util.rb:21:in `instrument'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/middleman-core-4.2.1/lib/middleman-core/template_renderer.rb:146:in `render'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/middleman-core-4.2.1/lib/middleman-core/sitemap/resource.rb:154:in `render'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/middleman-core-4.2.1/lib/middleman-core/rack.rb:112:in `process_request'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/middleman-core-4.2.1/lib/middleman-core/rack.rb:66:in `block in call'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/middleman-core-4.2.1/lib/middleman-core/rack.rb:65:in `catch'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/middleman-core-4.2.1/lib/middleman-core/rack.rb:65:in `call'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/rack-2.0.3/lib/rack/urlmap.rb:68:in `block in call'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/rack-2.0.3/lib/rack/urlmap.rb:53:in `each'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/rack-2.0.3/lib/rack/urlmap.rb:53:in `call'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/middleman-core-4.2.1/lib/middleman-core/extensions/minify_javascript.rb:55:in `call'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/middleman-core-4.2.1/lib/middleman-core/extensions/minify_css.rb:63:in `call'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/middleman-core-4.2.1/lib/middleman-core/core_extensions/inline_url_rewriter.rb:74:in `call'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/rack-2.0.3/lib/rack/head.rb:12:in `call'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/rack-2.0.3/lib/rack/lint.rb:49:in `_call'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/rack-2.0.3/lib/rack/lint.rb:37:in `call'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/rack-2.0.3/lib/rack/builder.rb:153:in `call'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/rack-2.0.3/lib/rack/mock.rb:74:in `request'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/rack-2.0.3/lib/rack/mock.rb:56:in `get'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:232:in `block in output_resource'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.0.6/lib/active_support/notifications.rb:166:in `instrument'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/middleman-core-4.2.1/lib/middleman-core/util.rb:21:in `instrument'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:225:in `output_resource'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/parallel-1.12.1/lib/parallel.rb:484:in `call_with_index'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/parallel-1.12.1/lib/parallel.rb:455:in `process_incoming_jobs'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/parallel-1.12.1/lib/parallel.rb:437:in `block in worker'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/parallel-1.12.1/lib/parallel.rb:428:in `fork'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/parallel-1.12.1/lib/parallel.rb:428:in `worker'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/parallel-1.12.1/lib/parallel.rb:419:in `block in create_workers'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/parallel-1.12.1/lib/parallel.rb:418:in `each'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/parallel-1.12.1/lib/parallel.rb:418:in `each_with_index'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/parallel-1.12.1/lib/parallel.rb:418:in `create_workers'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/parallel-1.12.1/lib/parallel.rb:358:in `work_in_processes'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/parallel-1.12.1/lib/parallel.rb:264:in `map'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:137:in `output_resources'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:131:in `output_files'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:71:in `block in run!'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.0.6/lib/active_support/notifications.rb:166:in `instrument'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/middleman-core-4.2.1/lib/middleman-core/util.rb:21:in `instrument'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:70:in `run!'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/middleman-cli-4.2.1/lib/middleman-cli/build.rb:80:in `block in build'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.0.6/lib/active_support/notifications.rb:166:in `instrument'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/middleman-core-4.2.1/lib/middleman-core/util.rb:21:in `instrument'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/middleman-cli-4.2.1/lib/middleman-cli/build.rb:79:in `build'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/thor-0.20.0/lib/thor/command.rb:27:in `run'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/thor-0.20.0/lib/thor/invocation.rb:126:in `invoke_command'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/thor-0.20.0/lib/thor/invocation.rb:133:in `block in invoke_all'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/thor-0.20.0/lib/thor/invocation.rb:133:in `each'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/thor-0.20.0/lib/thor/invocation.rb:133:in `map'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/thor-0.20.0/lib/thor/invocation.rb:133:in `invoke_all'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/thor-0.20.0/lib/thor/group.rb:232:in `dispatch'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/thor-0.20.0/lib/thor/invocation.rb:115:in `invoke'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/thor-0.20.0/lib/thor.rb:40:in `block in register'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/thor-0.20.0/lib/thor/command.rb:27:in `run'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/thor-0.20.0/lib/thor/invocation.rb:126:in `invoke_command'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/thor-0.20.0/lib/thor.rb:387:in `dispatch'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/thor-0.20.0/lib/thor/base.rb:466:in `start'
+/Users/troy/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/middleman-cli-4.2.1/bin/middleman:70:in `<top (required)>'
+/Users/troy/.asdf/installs/ruby/2.5.0/bin/middleman:23:in `load'
+/Users/troy/.asdf/installs/ruby/2.5.0/bin/middleman:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'phablet'.\A         on line 13 of /Users/troy/projects/empexco/source/assets/stylesheets/launch-sections.scss, in `phablet'\A         from line 13 of /Users/troy/projects/empexco/source/assets/stylesheets/launch-sections.scss\A \A 8:     margin: 0 auto;\A 9:     background-image: url('/assets/images/empex-logo-official-white.svg');\A 10:     margin-bottom: 1em;\A 11:   }\A 12: \A 13:   @include phablet {\A 14:     padding: 1em 0;\A 15:   }\A 16: \A 17:   @include tablet {\A 18:     padding: 1em 0;"; }
