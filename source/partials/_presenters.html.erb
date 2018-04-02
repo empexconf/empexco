@@ -1,5 +1,17 @@
 <section class="presenter-list">
-  <% presenters.each do |id, presenter| %>
-    <%= partial "partials/presenter", locals: {presenter: presenter} %>
-  <% end %>
+  <h2 class="presentations-list__title">Presentations</h2>
+
+  <div class="presentations-list__intro">
+      We're proud to announce the following presenters for EMPEX!
+  </div>
+
+  <%= partial "partials/presenters/bill-peregoy" %>
+  <%= partial "partials/presenters/james-lavin" %>
+  <%= partial "partials/presenters/jeff-smith" %>
+  <%= partial "partials/presenters/kate-travers" %>
+  <%= partial "partials/presenters/mat-trudel" %>
+  <%= partial "partials/presenters/robert-beene" %>
+  <%= partial "partials/presenters/shanti-chellaram" %>
+  <%= partial "partials/presenters/sophie-debenedetto" %>
+  <%= partial "partials/presenters/wojtek-mach" %>
 </section>

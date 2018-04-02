@@ -35,21 +35,13 @@ presentations:
     keynote: true
     description: |
 
-
-  # - title: "Keynote"
-  #   id: cheng-eugenia
-  #   presenters:
-  #     - cheng-eugenia
-  #   keynote: true
-  #   description: |
-
-  # - title: Monitoring Production Elixir Applications
-  #   id: kelly-john
-  #   presenters:
-  #     - kelly-john
-  #   keynote: false
-  #   description: |
-  #     You just celebrated the launch of your first production elixir application and now have real users using your application. In this talk, you'll learn how to measure and monitor your elixir application as your user base grows from hundreds of daily users to millions. With more users comes more revenue, but also more technical challenges as you go from one server to many. And 'tail –f' is no longer useful when the logs are going by faster than you can read or the requests are load balanced across many servers. In this talk you'll learn the best practices for monitoring your applications in a way that will scale as you grow. Best of all these practices are universal, so they will be applicable if your organization is solely in the BEAM world or if you're are in a polyglot environment. Lastly, you'll learn about to measure availability in the context of web applications and how many nines of availability your API has.
+  - title: Monitoring Production Elixir Applications
+    id: kelly-john
+    presenters:
+      - kelly-john
+    keynote: false
+    description: |
+      You just celebrated the launch of your first production elixir application and now have real users using your application. In this talk, you'll learn how to measure and monitor your elixir application as your user base grows from hundreds of daily users to millions. With more users comes more revenue, but also more technical challenges as you go from one server to many. And 'tail –f' is no longer useful when the logs are going by faster than you can read or the requests are load balanced across many servers. In this talk you'll learn the best practices for monitoring your applications in a way that will scale as you grow. Best of all these practices are universal, so they will be applicable if your organization is solely in the BEAM world or if you're are in a polyglot environment. Lastly, you'll learn about to measure availability in the context of web applications and how many nines of availability your API has.
 
   # - title: Solid Ground
   #   id: juric-sasa
