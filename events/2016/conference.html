@@ -143,128 +143,328 @@ in Soho.</p>
 
 <section id="presentations">
   <div class="content-section container">
-    <section class="presentation-list">
-    <h2 class="presentations-list__title">Keynotes</h2>
-
-    <div class="presentations-list__intro">
-        <p>We&#39;re proud to announce the following keynotes for the first annual EMPEX!</p>
-
-    </div>
-
-      <section class="presentation" id="cesarini-concurrency-distribution-scalability-availability">
-  <div class="presentation-presenter">
-    <div class="presentation-presenter__avatar-container">
-      <img src="/assets/images/people/presenters/cesarini-francesco-00a62f1a.jpg" class="presentation-presenter__avatar" alt="Cesarini francesco" />
-    </div>
-
-    <h4 class="presentation-presenter__name">
-      Francesco Cesarini
-    </h4>
-
-      <p class="presentation-presenter__link">
-        <a href="https://twitter.com/FrancescoC">@FrancescoC</a>
-      </p>
-
-  </div>
-
-  <div class="presentation__details">
-    <h3 class="presentation__title">
-      Concurrency + Distribution = Scalability + Availability, a journey architecting Systems on BEAM
-    </h3>
-
-    <div class="presentation__description">
-      <p>Erlang/OTP has for years been described as your secret sauce to writing scalable and available systems. Erlang alone, however, will not do any magic. It is merely an enabler that, thanks to its semantics, programming model and predictable virtual machine makes the end results easier to achieve.</p>
-
-<p>In this talk, we will walk through the topology patterns of modern distributed architectures, discussing the tradeoffs in scalability and reliability of the actor model, the failure model and the built-in distribution model the BEAM encourages you to take.</p>
-
-    </div>
-
-    <div class="presentation__bio">
-      <p>Francesco founded Erlang Solutions and has written Erlang Programming and Designing for Scalability with Erlang/OTP.</p>
-
-    </div>
-  </div>
-</section>
-
-      <section class="presentation" id="guimaraes-async-jobs-in-phoenix">
-  <div class="presentation-presenter">
-    <div class="presentation-presenter__avatar-container">
-      <img src="/assets/images/people/presenters/guimaraes-george-dc6d1f22.jpg" class="presentation-presenter__avatar" alt="Guimaraes george" />
-    </div>
-
-    <h4 class="presentation-presenter__name">
-      George Guimarães
-    </h4>
-
-      <p class="presentation-presenter__link">
-        <a href="https://twitter.com/georgeguimaraes">@georgeguimaraes</a>
-      </p>
-
-  </div>
-
-  <div class="presentation__details">
-    <h3 class="presentation__title">
-      Async Jobs in Phoenix
-    </h3>
-
-    <div class="presentation__description">
-      <p>It&#39;s inevitable: you&#39;ll need to do some tasks in background. Maybe it&#39;s an email you need to send. Maybe it&#39;s an image resizing. Maybe it&#39;s a business rule that doesn&#39;t need to run in the web request.</p>
-
-<p>In this talk, we&#39;ll code and test implementations for these patterns in Elixir/Phoenix, ranging from how you can use <code>Task.async</code> or <code>Task.Supervisor</code> for fire-and-forget tasks, to using an &quot;external&quot; queue and workers like <code>exq</code>.</p>
-
-<p>More importantly than the tools, we&#39;ll examine the kinds of questions you need to ask to decide which tool will fit your needs.</p>
-
-    </div>
-
-    <div class="presentation__bio">
-      <p>George is co-founder at Plataformatec, a software consultancy in Elixir and Ruby. His favorite topics are Discrete Integration, monoliths, and picoservices with Elixir.</p>
-
-    </div>
-  </div>
-</section>
-
-      <section class="presentation" id="tate-the-climb">
-  <div class="presentation-presenter">
-    <div class="presentation-presenter__avatar-container">
-      <img src="/assets/images/people/presenters/tate-bruce-318317b5.jpg" class="presentation-presenter__avatar" alt="Tate bruce" />
-    </div>
-
-    <h4 class="presentation-presenter__name">
-      Bruce tate
-    </h4>
-
-      <p class="presentation-presenter__link">
-        <a href="https://twitter.com/redrapids">@redrapids</a>
-      </p>
-
-  </div>
-
-  <div class="presentation__details">
-    <h3 class="presentation__title">
-      The Climb - Experiencing the Rise of Elixir from the Inside
-    </h3>
-
-    <div class="presentation__description">
-      <p>Coming soon!</p>
-
-    </div>
-
-    <div class="presentation__bio">
-      <p>Bruce is the author of Seven Languages in Seven Weeks and co-author of Programming Phoenix. He is CTO at http://icanmakeitbetter.com.</p>
-
-    </div>
-  </div>
-</section>
-
-</section>
-
+    <!-- KEYNOTES -->
 <section class="presentation-list">
+        <h2 class="presentations-list__title">Keynotes</h2>
+    <div class="presentations-list__intro">
+        <p>We&#39;re excited and proud to announce our keynote speakers for the third annual EMPEX!</p>
+    </div>
+
+    <section class="presentation" id="brooklyn-zelenka">
+        <div class="presentation-presenter">
+            <div class="presentation-presenter__avatar-container">
+                <img src="/assets/images/people/presenters/zelenka-brooklyn-2c1aad3a.jpg" class="presentation-presenter__avatar" alt="Zelenka brooklyn" />
+            </div>
+
+            <h4 class="presentation-presenter__name">Brooklyn Zelenka</h4>
+            <p class="presentation-presenter__link"><a href="https://twitter.com/expede">@expede</a></p>
+            <p class="presentation-presenter__link"><a href="http://robotoverlord.io" target="_blank">robotoverlord.io</a></p>
+        </div>
+
+        <div class="presentation__details">
+            <h3 class="presentation__title">Keynote</h3>
+            <div class="presentation__description"></div>
+            <div class="presentation__bio">
+                <p>Brooklyn Zelenka is a polyglot programmer, a founding partner at
+                    Robot Overlord Software, and coffee enthusiast. She has been doing
+                    production Phoenix work for a few years, mentored teams through
+                    their adoption of Elixir, and released several BEAM libraries
+                    including Quark, Witchcraft, and Exceptional. She is the founder
+                    and organizer of multiple Vancouver meetups and conferences,
+                    variously centred around functional programming, culture,
+                    and mentorship. Lately she has been thinking a lot about the
+                    success and failure modes of different tech disciplines,
+                    scaling blockchain VMs, and how dependent types can help save us
+                    from ourselves. When not roaming the world as a digital nomad,
+                    Brooklyn is based out of Vancouver, Canada.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="presentation" id="dave-thomas">
+    <div class="presentation-presenter">
+        <div class="presentation-presenter__avatar-container">
+            <img src="/assets/images/people/presenters/thomas-dave-ea66ffb6.png" class="presentation-presenter__avatar" alt="Thomas dave" />
+        </div>
+
+        <h4 class="presentation-presenter__name">Dave Thomas</h4>
+        <p class="presentation-presenter__link"><a href="https://twitter.com/pragdave">@pragdave</a></p>
+        <p class="presentation-presenter__link"><a href="https://pragdave.me" target="_blank">pragdave.me</a></p>
+    </div>
+
+    <div class="presentation__details">
+        <h3 class="presentation__title">Keynote</h3>
+        <div class="presentation__description"></div>
+        <div class="presentation__bio">
+          <p>
+            Dave Thomas has written code just about every day in the last 45 years. One day he’ll get it right.
+            </p><p>
+            He’s an author: The Pragmatic Programmer, The Manifesto for Agile Software Development, Programming Ruby, Agile Web Development with Rails, and recently Programming Elixir. He speaks at conferences around the world, and runs training for folks who want to enjoy themselves while learning (kind of like a Comedy Defensive Driving class).
+            </p><p>
+            But mostly he writes code; sometimes to solve problems, sometimes to understand problems, and often to create them.
+            </p><p>
+            He has strong and controversial views on how Elixir should be written; prepare to be both entertained and annoyed.
+          </p>
+        </div>
+    </div>
+</section>
+
+
+</section>
+
+<!-- PRESENTERS -->
+<section class="presentation-list">
+    <section class="presenter-list">
   <h2 class="presentations-list__title">Presentations</h2>
 
   <div class="presentations-list__intro">
-    <p>We&#39;re proud to announce the following presentations for the first annual EMPEX!</p>
-
+      We're proud to announce the following presenters for EMPEX!
   </div>
+
+  <section class="presentation" id="bill-peregoy">
+    <div class="presentation-presenter">
+        <div class="presentation-presenter__avatar-container">
+            <img src="/assets/images/people/presenters/bill-peregoy-f0e6d563.jpg" class="presentation-presenter__avatar" alt="Bill Peregoy" />
+        </div>
+
+        <h4 class="presentation-presenter__name">Bill Peregoy</h4>
+
+        <p class="presentation-presenter__link"><a href="https://twitter.com/billperegoy">@billperegoy</a></p>
+    </div>
+
+    <div class="presentation__details">
+        <h3 class="presentation__title">Higher Level Functions for the Win</h3>
+        <div class="presentation__description">
+          <p>
+            One of the key tenets of functional programming is that functions are first-class citizens. Amongst other things, this means that functions can be accepted as parameters to other functions. While this seems like an interesting idea in theory, developers new to functional programming often have a hard time understanding how to apply higher order functions in their day-to-day work. This talk will give an overview of what higher order functions are, and how we may already be using them in our daily programming life using Elixir library functions like map, filter and reduce. With this background, we will show how to create and use our own higher order functions to increase readability, decrease repetition and simplify the testing process.
+          </p>
+        </div>
+        <div class="presentation__bio">
+            <p><strong>About Bill: </strong>Bill Peregoy is a developer at The Gnar Company, a software consultancy in Boston, MA. Bill has worked in a wide range of technical positions, from sub-micron semiconductor design and test, to systems and web programming. Bill is currently exploring the world of functional programming (and chronicling it at: becoming-functional.com) and is currently consulting in Boston MBTA using Elixir to improve local mass transit.</p>
+        </div>
+    </div>
+</section>
+
+
+  <section class="presentation" id="james-lavin">
+    <div class="presentation-presenter">
+        <div class="presentation-presenter__avatar-container">
+            <img src="/assets/images/people/presenters/james-lavin-cafcda72.jpg" class="presentation-presenter__avatar" alt="James Lavin" />
+        </div>
+
+        <h4 class="presentation-presenter__name">James Lavin</h4>
+
+        <p class="presentation-presenter__link"><a href="https://twitter.com/jamesklavin">@jamesklavin</a></p>
+    </div>
+
+    <div class="presentation__details">
+        <h3 class="presentation__title">How Ecto helped Teladoc connect with SureScripts and saved a poor developer's sanity</h3>
+        <div class="presentation__description">
+          <p>
+            Learn how Teladoc built a medication history and pharmacy benefits service as an Elixir umbrella project. Hear about tools used and lessons learned during the project. And find out how Ecto saved the day when databases were radically overhauled.
+          </p>
+        </div>
+        <div class="presentation__bio">
+            <p><strong>About James: </strong>James wasted 14 years at Harvard, LSE, and Stanford studying Not Programming, wrote "Management Secrets of the N.E. Patriots," then became a Ruby dev, the last 5 yrs at Hedgeye &amp; Teladoc. Spoiled by Elixir, he's now enjoying learning Elm, Haskell, &amp; FP.</p>
+        </div>
+    </div>
+</section>
+
+
+  <section class="presentation" id="jeff-smith">
+    <div class="presentation-presenter">
+        <div class="presentation-presenter__avatar-container">
+            <img src="/assets/images/people/presenters/jeff-smith-f08b36be.jpg" class="presentation-presenter__avatar" alt="Jeff Smith" />
+        </div>
+
+        <h4 class="presentation-presenter__name">Jeff Smith</h4>
+
+        <p class="presentation-presenter__link"><a href="https://twitter.com/jeffksmithjr">@jeffksmithjr</a></p>
+    </div>
+
+    <div class="presentation__details">
+        <h3 class="presentation__title">Neuroevolution in Elixir</h3>
+        <div class="presentation__description">
+          <p>
+          Python has become the dominant language for machine learning, and as an Elixir dev, that’s a real bummer. When building machine learning systems, there’s lots of reasons to want to use tools like metaprogramming, concurrency, supervision, distribution, higher-order functions, and all of the other things that Elixir does well. This talk introduces a library that tries to let Elixir and Python each do what they do best, in collaboration.
+          </p>
+          <p>
+          Galápagos Nǎo is an Elixir library to evolve deep neural networks. Under the hood it uses the Gluon Python API to Apache MXNet, to take advantage of one of the most flexible and performant deep learning libraries around. The goal of this unholy union of technologies is to do something even harder than building deep learning models: build an ecosystem that evolves deep learning model architectures. Just for fun, the framework also includes shiny features like interactive evolution and optimization of architectures for non-functional requirements.
+          </p>
+          <p>
+          Other exciting highlights:
+          <ul>
+            <li>Supervision</li>
+            <li>Cyborg tortoises</li>
+            <li>Language interop</li>
+            <li>Evolutionary theory</li>
+            <li>Bleeding edge deep learning</li>
+            <li>Snake charming</li>
+          </ul>
+          </p>
+
+        </div>
+        <div class="presentation__bio">
+            <p><strong>About Speaker: </strong>Jeff Smith is an AI developer, author, and manager. He coined the term reactive machine learning and wrote the definitive text on the topic.</p>
+        </div>
+    </div>
+</section>
+
+
+  <section class="presentation" id="kate-travers">
+    <div class="presentation-presenter">
+        <div class="presentation-presenter__avatar-container">
+            <img src="/assets/images/people/presenters/kate-travers-affd6c21.jpg" class="presentation-presenter__avatar" alt="Kate Travers" />
+        </div>
+
+        <h4 class="presentation-presenter__name">Kate Travers</h4>
+
+        <p class="presentation-presenter__link"><a href="https://twitter.com/kttravers">@kttravers</a></p>
+    </div>
+
+    <div class="presentation__details">
+        <h3 class="presentation__title">Pattern Matching: The Gateway to Loving Elixir</h3>
+        <div class="presentation__description">
+          <p>
+            What is pattern matching in Elixir? For this developer, it's what won me over to the language. This deceptively powerful paradigm is at the heart of what makes Elixir such a compelling language to program in. It's doing so much more than help you write small, declarative, maintainable functions; it's making you a stronger programmer. This talk covers pattern matching basics, then moves into practical, real world examples for a thorough introduction to Elixir's implementation of this crush-worthy construct.
+          </p>
+        </div>
+        <div class="presentation__bio">
+            <p><strong>About Kate: </strong>Kate is a NYC-based web developer. A graduate of the Flatiron School, Kate spends her days building Learn.co. Outside work, Kate is an active volunteer and tutor through FIS, as well as backup quarterback for her co-ed touch football team.</p>
+        </div>
+    </div>
+</section>
+
+
+  <section class="presentation" id="mat-trudel">
+    <div class="presentation-presenter">
+        <div class="presentation-presenter__avatar-container">
+            <img src="/assets/images/people/presenters/mat-trudel-09f78371.jpg" class="presentation-presenter__avatar" alt="Mat Trudel" />
+        </div>
+
+        <h4 class="presentation-presenter__name">Mat Trudel</h4>
+
+        <p class="presentation-presenter__link"><a href="https://twitter.com/mattrudel">@mattrudel</a></p>
+    </div>
+
+    <div class="presentation__details">
+        <h3 class="presentation__title">`mix new beats` -- Recreating The "Amen Break" with Elixir</h3>
+        <div class="presentation__description">
+          <p>
+            As part of my day job I write and maintain SchedEx, a Swiss Army knife for job scheduling in Elixir. It's an indispensable library that sits at the core of a product used in manufacturing plants worldwide. An after work discussion led me down the path of applying SchedEx to soft real-time scheduling, and before long the beats project was born. Using the production proven SchedEx library as a foundation, beats is an ncurses-based, file-driven, actually-sort-of-useful drum machine that also happens to be a great lab for exploring scheduling. The talk will provide a tour of several real world patterns for job scheduling within Elixir, demonstrate some strengths and limitations of the Erlang runtime, and also build up a few classic beats &amp; breaks along the way.
+          </p>
+        </div>
+        <div class="presentation__bio">
+            <p><strong>About Mat: </strong>Mat is a polymath tech consultant from Toronto who loves solving the really gnarly problems. A relentless builder whose natural habitat is the basement workbench, he's a fan of honesty, good design, and golden era hip-hop.</p>
+        </div>
+    </div>
+</section>
+
+
+  <section class="presentation" id="robert-beene">
+    <div class="presentation-presenter">
+        <div class="presentation-presenter__avatar-container">
+            <img src="/assets/images/people/presenters/robert-beene-9692da2c.jpg" class="presentation-presenter__avatar" alt="Robert Beene" />
+        </div>
+
+        <h4 class="presentation-presenter__name">Robert Beene</h4>
+
+        <p class="presentation-presenter__link"><a href="https://twitter.com/robert_beene">@robert_beene</a></p>
+    </div>
+
+    <div class="presentation__details">
+        <h3 class="presentation__title">GenStage: Keeping large amounts of data up-to-date with Pipelines</h3>
+        <div class="presentation__description">
+          <p>
+            SMS is the dominant communication channel for how business is done in Africa. The healthcare industry, in particular, has taken advantage of targeted messaging to better patient outcomes. Our team had the opportunity to architect a messaging platform that integrates into any number of partner hospitals to leverage SMS. By filtering patients based on their condition, demographics, or location, healthcare workers can effectively communicate with their patient base. To achieve this, medical records need to be up-to-date. How do we effectively manage updates in a way that is fault-tolerant? How can we ensure that we don't overwhelm a partner's API? What solution gives us the tools to support multiple partners in the same system? In this talk, we'll share how we used GenStage to answer all of these questions and share our road to production.
+          </p>
+        </div>
+        <div class="presentation__bio">
+            <p><strong>About Robert: </strong>Robert loves bouncing around the globe helping companies. You'll find him developing an indie music app one day, then scaling a giant telemedicine platform the next. He's worked gigs in Boston, NYC and Paris but now runs his remote agency, Echobind.</p>
+        </div>
+    </div>
+</section>
+
+
+  <section class="presentation" id="shanti-chellaram">
+    <div class="presentation-presenter">
+        <div class="presentation-presenter__avatar-container">
+            <img src="/assets/images/people/presenters/shanti-chellaram-0027e647.jpg" class="presentation-presenter__avatar" alt="Shanti Chellaram" />
+        </div>
+
+        <h4 class="presentation-presenter__name">Shanti Chellaram</h4>
+
+        <p class="presentation-presenter__link"><a href="https://twitter.com/theccoder">@theccoder</a></p>
+    </div>
+
+    <div class="presentation__details">
+        <h3 class="presentation__title">The Best of Both Worlds: High Performance Recommendations with Elixir NIFs</h3>
+        <div class="presentation__description">
+          <p>
+            Teachers Pay Teachers needed to build a system to serve our feature-factorization item recommendation model. I go in depth to how we used erlang's process model for managing and sharding the data set, and C's power for fast number crunching to build a system that could serve thousands of users personalized recommendations from over 2 million items.
+          </p>
+        </div>
+        <div class="presentation__bio">
+            <p><strong>About Shanti: </strong>Shanti is a software engineer at Teachers Pay Teachers, where she helps develop backend systems in Elixir and Erlang.</p>
+        </div>
+    </div>
+</section>
+
+
+  <section class="presentation" id="sophie-debenedetto">
+    <div class="presentation-presenter">
+        <div class="presentation-presenter__avatar-container">
+            <img src="/assets/images/people/presenters/sophie-debenedetto-72acbb7e.jpg" class="presentation-presenter__avatar" alt="Sophie DeBenedetto" />
+        </div>
+
+        <h4 class="presentation-presenter__name">Sophie DeBenedetto</h4>
+
+        <p class="presentation-presenter__link"><a href="https://twitter.com/sm_debenedetto">@sm_debenedetto</a></p>
+    </div>
+
+    <div class="presentation__details">
+        <h3 class="presentation__title">Phoenix Presence: The Right Way To Track User Involvement in Real-Time Features</h3>
+        <div class="presentation__description">
+          <p>
+            You've used Phoenix Channels to build real-time features like collaborative text editors, games and chatting apps. But how can you acheive the common real-time aim of tracking and displaying a user's participation in such features? While we can leverage GenServers to build out features like displaying the users in a chat room and indicating who is typing, that approach leaves us responsible for hand rolling *a lot* of code. Enter Phoenix Presence! The Phoenix Presence module provides an API for you to register information regarding a given topic and expose that information to all of that topic's channels. Phoenix Presence is powerful because it is distributed and resilient––unlike tools like Redis, which rely on a centralized data store, Presence uses a conflict-free replicated data type protocol. 
+          <p></p> 
+            You'll learn how to use Phoenix Presence to track user participation in a real-time feature and you'll gain a deeper understanding of the technology behind the awesome power of Phoenix Presence. We'll look at how to include Phoenix Presence in a Phoenix app that already leverages channels to implement a real-time collaborative text editor. If you have some experience with Phoenix Channels, all the better, but we'll cover some high-level Phoenix Channel concepts and spend most of our time on the incorporation of Phoenix Presence on the back-end, with a brief look at some Phoenix Presence client-side code.
+          </p>
+        </div>
+        <div class="presentation__bio">
+            <p><strong>About Sophie: </strong>Sophie is a software engineer at TuneCore where she helps artists distribute their music to all the online stores. As a former instructor at the Flatiron School, she's passionate about teaching and learning all things code. Historically she is a cat lover but will admit to owning a dog.</p>
+        </div>
+    </div>
+</section>
+
+
+  <section class="presentation" id="wojtek-mach">
+    <div class="presentation-presenter">
+        <div class="presentation-presenter__avatar-container">
+            <img src="/assets/images/people/presenters/user-2c81af27.jpg" class="presentation-presenter__avatar" alt="Wojtek Mach" />
+        </div>
+
+        <h4 class="presentation-presenter__name">Wojtek Mach</h4>
+
+    </div>
+
+    <div class="presentation__details">
+        <h3 class="presentation__title">Recurrences & Intervals</h3>
+        <div class="presentation__description">
+          <p>
+            This talk is retelling my journey down the rabbit hole of dealing with date &amp; time.
+          </p>
+          <p>
+          We will start the journey with date/time recurrences. Then, we will look at time intervals and operations around them. Finally, we will look at Eric Evans' talk "Exploring Time" which gives a fresh look at date/time in general and intervals in particular (spoiler alert: there might be some relevant research from the 80s around that too!). We will model both recurrences and intervals as streams and we will try to show that Elixir's extensibility makes it a great language for developing business applications.
+        </div>
+        <div class="presentation__bio">
+        </div>
+    </div>
+</section>
+
+
+</section>
 
 </section>
 
