@@ -68,13 +68,7 @@ layout: layout
 
 <section id="presentations">
   <div class="content-section container">
-    <%=
-      partial "partials/presentations", locals: {
-        keynotes_intro: event.keynotes_intro,
-        presentations_intro: event.presentations_intro,
-        presentations: event.presentations
-      }
-    %>
+    <%= partial "partials/presentations" %>
   </div>
 </section>
 
