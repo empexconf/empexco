@@ -1,7 +1,4 @@
-<section class="course-list">
-	<% courses
-		.map {|c| find_course(c.id)}
-		.each do |slug, course| %>
-		<%= partial "partials/course", locals: {course: course} %>
-	<% end %>
+<section class="presentation-list">
+	<%= partial "partials/courses/advanced-training" %>
+	</section>
 </section>
