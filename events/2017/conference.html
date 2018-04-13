@@ -11,7 +11,7 @@
 
     </title>
 
-    <link href="/assets/stylesheets/all-46e7d8f5.css" rel="stylesheet" />
+    <link href="/assets/stylesheets/all-d2f47ec0.css" rel="stylesheet" />
     <link href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css" rel="stylesheet" />
     <link href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css" rel="stylesheet" />
 
@@ -51,6 +51,7 @@
         <li class="navbar-item"><a href="#about" class="navbar-link">About</a></li>
         <li class="navbar-item"><a href="#location" class="navbar-link">Location</a></li>
         <li class="navbar-item"><a href="#presentations" class="navbar-link">Presentations</a></li>
+        <li class="navbar-item"><a href="#training" class="navbar-link">Training</a></li>
         <li class="navbar-item"><a href="#organizers" class="navbar-link">Organizers</a></li>
       <li class="navbar-item"><a href="/events.html" class="navbar-link">Past Events</a></li>
     </ul>
@@ -414,6 +415,7 @@ in Soho.</p>
 
         <h4 class="presentation-presenter__name">Wojtek Mach</h4>
 
+        <p class="presentation-presenter__link"><a href="https://twitter.com/@wojtekmach">@wojtekmach</a></p>
     </div>
 
     <div class="presentation__details">
@@ -430,7 +432,6 @@ in Soho.</p>
         </div>
     </div>
 </section>
-
 
 </section>
 
@@ -621,60 +622,105 @@ in Soho.</p>
 <section>
 	<div class="content-section container" >
 		<h2>Training</h2>
-		<section class="course-list">
-		<section class="course" id="1-intermed-elixir-2017">
-	<h2 class="course__name">Intermediate Elixir</h2>
-  <div class="course__summary">
-    <p>This course will be taught by <strong>James Fish</strong> (<a href="https://github.com/fishcakez">fishcakez</a>), well-known Elixir expert and Elixir Core Team member. James will be assisted by Elixir veterans <strong>Chris Bell</strong> and <strong>David Antaramian</strong>.</p>
+		<section class="presentation-list">
+	<section class="presentation">
+    <div class="presentation-presenter">
+        <div class="presentation-presenter__avatar-container">
+            <img src="/assets/images/people/presenters/andrea-leopardi-9842fccc.jpg" class="presentation-presenter__avatar" alt="Andrea Leopardi" />
+        </div>
 
-<p>The intermediate/advanced Elixir training will help those familiar with the Elixir language pickup the skills of how to work with and model applications using Processes and the OTP library.</p>
+        <h4 class="presentation-presenter__name">Andrea Leopardi</h4>
 
-<p>In this course we will take a complex real-world problem and use a variety of tools and techniques to solve it. Along the way we&#39;ll cover:</p>
+        <p class="presentation-presenter__link"><a href="https://twitter.com/whatyouhide">@whatyouhide</a></p>
+        </br>
+        <div class="presentation-presenter__avatar-container">
+            <img src="/assets/images/people/presenters/eric-meadows-jonsson-90e77ea0.jpg" class="presentation-presenter__avatar" alt="Eric Meadows-Jönsson" />
+        </div>
 
-<ul>
-<li>Structuring applications using an umbrella app</li>
-<li>Keeping state in GenServers / Agents / ETS tables</li>
-<li>Thinking in Processes to solve the problem at hand</li>
-<li>Using Supervision trees to create resilient programs that can recover from failure</li>
-<li>Testing our work as we go using isolated unit tests and integration tests</li>
-</ul>
+        <h4 class="presentation-presenter__name">Eric Meadows-Jönsson</h4>
 
-<p>You&#39;ll come away from this course with a clear understanding of how to apply these concepts to your next Elixir project as well as a repository and source material that you can reference in the future.</p>
+        <!-- <p class="presentation-presenter__link"><a href="https://twitter.com/whatyouhide">@whatyouhide</a></p> -->
+    </div>
 
-  </div>
+    <div class="presentation__details">
+        <h3 class="presentation__title">Parallel Computation with Elixir</h3>
+        <div class="presentation__description">
+          <p>
+          Elixir provides a few tools to parallelize computation and parallel processing of collections in particular. These tools operate at different levels of abstraction and complexity. On one end, you can manually spawn processes to do work and manually collect results; on the other end, you can use more complex tools like GenStage and Flow. The choice of tool depends on the situation at hand.
+          </p><p>
+          In this training, we want to explore the tools available for parallel computation, alongside their use cases and their strength and weaknesses. We will start from the simplest approach of manually spawning processes, move on to tasks and Task.async_stream, and finally work with GenStage and Flow.
+          </p><p>
+          This tutorial is aimed for people that are familiar with Elixir syntax and with the &quot;functional&quot; and data-related part of Elixir (data types, modules, functions). Knowledge about processes is welcome, but we are prepared to introduce concurrency in Elixir in case the audience is not strong on the area.
+          </p>
+        </div>
+        <div class="presentation__bio">
+            <p><strong>About Andrea:</strong> Andrea is a programming enthusiast with a soft spot for functional programming and beautiful code. He loves learning new stuff. He strongly believes in accessible culture and education and in open-source software. He&apos;s active in the Elixir community and uses almost exclusively Elixir for work purposes.</p>
+            <p><strong>About Eric:</strong> Eric Meadows-Jönsson is a member of the Elixir team and an active member of the Elixir community being the creator of many libraries, including Ecto and the Hex package manager. Eric works as a Software Engineer at Cabify.</p>
+        </div>
+    </div>
 </section>
 
-		<section class="course" id="2-begin-elixir-2017">
-	<h2 class="course__name">Crash Course in Elixir, for (Ruby, Java, JS, etc) Developers</h2>
-  <div class="course__summary">
-    <p>Are you interested in Elixir, but you haven&#39;t yet learned the language?</p>
+	  <section class="presentation">
+      <div class="presentation-presenter">
+          <div class="presentation-presenter__avatar-container">
+              <img src="/assets/images/people/presenters/andy-mccown-78385782.jpg" class="presentation-presenter__avatar" alt="Andy McCown" />
+          </div>
 
-<p>Are you an imperative language programmer who&#39;s finding it tricky to get a handle on the functional approach?</p>
+          <h4 class="presentation-presenter__name">Andy McCown</h4>
 
-<p>Do you find yourself wishing that Elixir had a &quot;for loop&quot;?</p>
+          <p class="presentation-presenter__link"><a href="https://twitter.com/AndyMcDev">@AndyMcDev</a></p>
+      </div>
 
-<p>We&#39;ve all been there, and we&#39;ve developed a one-day workshop to get you past the learning curve.  Starting with the absolute fundamentals of Elixir&#39;s datatypes, we&#39;ll take you through every aspect of the language that tripped us up when we were learning.</p>
+      <div class="presentation__details">
+          <h3 class="presentation__title">Crash Course in Elixir, for (Ruby, Java, JS, etc) Developers</h3>
+          <div class="presentation__description">
+            <p>Are you interested in Elixir, but you haven't yet learned the language?</p>
+            <p>Are you an imperative language programmer who's finding it tricky to get a handle on the functional approach?</p>
+            <p>Do you find yourself wishing that Elixir had a "for loop"?</p>
+            <p>We've all been there, and we've developed a one-day workshop to get you past the learning curve.  Starting with the absolute fundamentals of Elixir's datatypes, we'll take you through every aspect of the language that tripped us up when we were learning.</p>
+            <p>By the end of the day, you will be able to confidently solve complex business problems faster and more reliably than you'd have ever believed possible.  Learning to build solutions on top of immutable data structures requires a new way of thinking, and we've designed our workshop to get you thinking that way quickly.</p>
+            <p>
+              We will cover:
+              <ul>
+                <li>All the built-in datatypes: numbers, binaries (strings), lists, maps, structures, tuples, and atoms.</li>
+                <li>Functions: anonymous functions, named functions, and higher order functions.</li>
+                <li>Pattern matching:  This is a hugely powerful technique, and is probably the one thing most developers miss when they find themselves coding in another language after experiencing it in Elixir.</li>
+                <li>Elixir tooling: How our projects are organized, the build system, the dependency management system, the test framework, and the rich documentation system.</li>
+                <li>How to model problems using functional patterns instead of Object Oriented patterns.</li>
+              </ul>
+            </p>
 
-<p>By the end of the day, you will be able to confidently solve complex business problems faster and more reliably than you&#39;d have ever believed possible.  Learning to build solutions on top of immutable data structures requires a new way of thinking, and we&#39;ve designed our workshop to get you thinking that way quickly.</p>
+            <p>Our aim is to provide a mentally challenging, but enormously rewarding day.  Every segment will include hands-on exercises and challenges, and we will have two instructors helping you if you get stuck.</p>
+            <p>Who should come?  The course is not for complete beginners. You should be comfortable programming in some language, but what language is unimportant.  People whose proficiency lies outside the functional paradigm will probably get the most out of the course, but functional programmers who are new to Elixir will find the course to be a useful survey of the main features of the  Elixir ecosystem.</p>
+          </div>
+          <div class="presentation__bio">
+              <p><strong>About Andy:</strong> Andy is life-long developer currently managing a development team at TBWA\Worldwide. He came across Elixir a couple years ago and since then it&apos;s absorbed much of his &quot;play&quot; time.</p>
+          </div>
+      </div>
+  </section>
 
-<p>Finally, we will introduce the Elixir concurrency model.  If your experience of concurrency consists of threads, mutexes, and critical sections, you will be amazed at the simplicity of building reliable concurrent systems using Elixir and OTP.</p>
+	<section class="presentation">
+    <div class="presentation-presenter">
+        <div class="presentation-presenter__avatar-container">
+            <img src="/assets/images/people/presenters/user-2c81af27.jpg" class="presentation-presenter__avatar" alt="" />
+        </div>
 
-<p>We will cover:</p>
+        <h4 class="presentation-presenter__name">Instructor TBA</h4>
 
-<ul>
-<li><p>All the built-in datatypes: numbers, binaries (strings), lists, maps, structures, tuples, and atoms.</p></li>
-<li><p>Functions: anonymous functions, named functions, and higher order functions.</p></li>
-<li><p>Pattern matching:  This is a hugely powerful technique, and is probably the one thing most developers miss when they find themselves coding in another language after experiencing it in Elixir.</p></li>
-<li><p>Elixir tooling: How our projects are organized, the build system, the dependency management system, the test framework, and the rich documentation system.</p></li>
-<li><p>How to model problems using functional patterns instead of Object Oriented patterns.</p></li>
-<li><p>OTP: OTP is a powerful framework developed for Erlang, and battle-hardened after 30 years of continuous ongoing development.  A complete view of OTP is beyond the scope of this course, but we will introduce the high level concepts.</p></li>
-</ul>
+        <!-- <p class="presentation-presenter__link"><a href="https://twitter.com/">@</a></p> -->
+    </div>
 
-<p>Our aim is to provide a mentally challenging, but enormously rewarding day.  Every segment will include hands-on exercises and challenges, and we will have two instructors helping you if you get stuck.</p>
-
-<p>Who should come?  The course is not for complete beginners. You should be comfortable programming in some language, but what language is unimportant.  People whose proficiency lies outside the functional paradigm will probably get the most out of the course, but functional programmers who are new to Elixir will find the course to be a useful survey of the main features of the  Elixir ecosystem.</p>
-
-  </div>
+    <div class="presentation__details">
+        <h3 class="presentation__title">Intro To Nerves</h3>
+        <div class="presentation__description">
+          In this day-long workshop, you'll be introduced to <a href="https://nerves-project.org">Nerves</a>, the Elixir framework for embedded applications.
+          You'll build and run your code on hardware provided by your trainers, developers with experience using Nerves in a real-world application.
+          More info coming soon!
+        </div>
+        <div class="presentation__bio">
+            <!-- <p><strong>About :</strong> </p> -->
+        </div>
+    </div>
 </section>
 
 </section>
@@ -842,9 +888,6 @@ in Soho.</p>
     <li>&copy; <a href="#" target="_blank" class="no-hover">
         <img src="/assets/images/sponsors/crevalle-footer-1afc54fb.png" alt="Crevalle" class="crevalle-name" />
 </a>    </li>
-    <li>
-      <a href="https://twitter.com/intent/tweet?text=EMPEX%20Halloween%20Lightning%20Talks%20are%20striking%20New%20York%20City%20on%20October%2027th%2C%202016%20%23empex%20%23elixirlang&amp;url=http%3A%2F%2Fempex.co" target="_blank">Tweet at #empex</a>
-    </li>
     <li><a href="../../code-of-conduct.html">Code of Conduct</a></li>
     <li>Design by <a href="http://thoughtmerchants.com">Thought Merchants</a></li>
   </ul>

@@ -56,7 +56,7 @@ main {
     @media (min-width: 1000px) {
       /* line 36, launch.scss */
       main > section {
-        padding: 3em 0; }
+        padding: 2em 0; }
         /* line 129, launch-settings.scss */
         main > section h1, main > section h2, main > section h3, main > section h4, main > section h5, main > section h6 {
           margin-bottom: 1em; } }
