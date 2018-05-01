@@ -214,7 +214,7 @@ helpers do
       end
     end
 
-    presentations.detect { |presentation| presentation.id == presentation_id }
+    presentations.detect { |presentation| presentation && presentation.id == presentation_id }
   end
 
   def hotel_url
