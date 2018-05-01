@@ -962,7 +962,7 @@
         <div class="sponsors crevalle">
           EMPEX is a production of <br />
           <a class="image-link" target="_blank" href="http://crevalle.io/">
-            <%= image_tag "sponsors/crevalle-la.svg", alt: "Crevalle", class: "crevalle-logo" %>
+            <%= image_tag "sponsors/crevalle-la.svg", alt: "Crevalle", title: "Crevalle", class: "crevalle-logo" %>
           </a>
         </div>
       </div>
@@ -1116,7 +1116,7 @@
     <div>
         <ul class="links">
           <li>&copy; <% link_to "http://crevalle.io", target: '_blank', class: 'no-hover' do %>
-              <%= image_tag "sponsors/#{producer.footer_logo}", alt: producer.name, class: 'crevalle-name' %>
+              <%= image_tag "sponsors/#{producer.footer_logo}", alt: producer.name, title: producer.name, class: 'crevalle-name' %>
           <% end %>
           </li>
           <li>

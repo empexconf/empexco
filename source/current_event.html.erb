@@ -22,7 +22,7 @@ layout: layout
     <div id="moon"><div></div></div>
     <header id="header" class="header container">
       <% link_to producer.link, target: '_blank', class: 'no-hover' do %>
-        <%= image_tag "sponsors/#{producer.footer_logo}", alt: producer.name , class: 'crevalle-name' %>
+        <%= image_tag "sponsors/#{producer.footer_logo}", alt: producer.name , title: producer.name, class: 'crevalle-name' %>
       <% end %>
       </br><small>presents</small></br>
 
