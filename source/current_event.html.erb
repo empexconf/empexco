@@ -71,22 +71,18 @@ layout: layout
   </div>
 </section>
 
+<section id="schedule">
+  <div class="content-section container">
+    <h2>Schedule</h2>
+    <%= partial "partials/schedule" %>
+  </div>
+</section>
+
 <section id="presentations">
   <div class="content-section container">
     <%= partial "partials/presentations" %>
   </div>
 </section>
-
-<%# <section id="schedule"> %>
-<%#   <div class="content-section container"> %>
-<%#     <h2>Schedule</h2> %>
-<%#     <% if event.schedule.kind_of?(Array) %1> %>
-<%#       <%= partial "partials/schedule", locals: {schedule: event.schedule, event: event} %1> %>
-<%#     <% else %1> %>
-<%#       <%= render_markdown(event.schedule) %1> %>
-<%#     <% end %1> %>
-<%#   </div> %>
-<%# </section> %>
 
 <section id="training">
   <div class="content-section container">
