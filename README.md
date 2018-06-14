@@ -9,7 +9,7 @@ Conference website. Work-in-progress.
 To get started:
 
 ``` sh
-git clone https://github.com/empirecityelixirconf/empexco.git
+git clone https://github.com/empexconf/empexco.git
 cd website
 bundle
 bin/middleman
