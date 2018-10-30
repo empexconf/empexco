@@ -1,1 +1,0 @@
-!function(){function c(c){return function(){window.location.href="/"+c+".html"}}$(".hero-card--nyc").click(c("nyc")),$(".hero-card--la").click(c("la"))}();
