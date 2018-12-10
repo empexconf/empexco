@@ -57,11 +57,11 @@
           <a class="nav__link" href="#location">
             Location
           </a>
-          <%# <a class="nav__link" href="#training">
-            Training
-          </a> %>
           <a class="nav__link" href="#presentations">
             Presentations
+          </a>
+          <a class="nav__link" href="#training">
+            Training
           </a>
           <a class="nav__link" href="#schedule">
             Schedule
@@ -84,7 +84,7 @@
           presents:
         </p> %>
         <h2>
-          A one-day conference for curious<br class="hide-mobile" / >
+          A one-day conference for curious<br class="hide-mobile" />
           elixir programmers.
         </h2>
         <p>
@@ -153,10 +153,10 @@
         <p>We&#39;re excited and proud to announce our keynote speakers for EMPEX LA!</p>
       </div>
 
-      <section class="presentation" id="mariam">
+      <section class="presentation" id="mariam-pena-villanueva">
         <div class="presentation-presenter">
           <h4 class="presentation-presenter__name">
-            Mariam
+            Mariam Peña Villanueva
           </h4>
 
           <div class="presentation-presenter__link">
@@ -626,6 +626,81 @@
     </section>
   </section>
 
+  <section id="training" class="presentations">
+    <section class="presentation-list">
+      <h2 class="presentations-list__title">Trainings</h2>
+      <div class="presentations-list__intro">
+        <p>
+          We're pleased to offer a training session on Friday, February 1, 2019.
+        </p>
+      </div>
+      Training will begin at 9am and run until roughly 4pm at a location TBA.  Catered lunch is included.
+
+      <section class="presentation" id="advanced-training">
+        <div class="presentation-presenter">
+          <div class="presentation-panel">
+            <div class="presentation-panel__member">
+              <%# <div class="presentation-presenter__avatar-container">
+              </div> %>
+
+              <h4 class="presentation-presenter__name">
+                Justin Schneck
+              </h4>
+
+              <div class="presentation-presenter__link">
+                <a target="_blank" href="https://twitter.com/mobileoverlord">@mobileoverlord</a>
+              </div>
+            </div>
+
+            <div class="presentation-panel__member">
+              <%# <div class="presentation-presenter__avatar-container">
+              </div> %>
+
+              <h4 class="presentation-presenter__name">
+                Frank Hunleth
+              </h4>
+
+              <div class="presentation-presenter__link">
+                <a target="_blank" href="https://github.com/fhunleth">@fhunleth</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            Device to the Cloud with Nerves and NervesHub
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              The Elixir language and Erlang runtime provide a uniquely robust and productive environment that runs well from embedded to server. This class extends on previous Nerves training to the cloud for device/server communications and device management with NervesHub. Attendees will assemble real devices and build out the software step-by-step for a simple multi-user game with the help of the authors of Nerves.
+            </p>
+            <p>
+              We’ll spend the first half of the day building the device and getting comfortable with developing and debugging on Nerves. If you’ve attended previous Nerves courses, this one will have greater emphasis on networking and device provisioning. The second half transitions to managing devices with NervesHub and developing a simple companion Phoenix application.
+            </p>
+            <p>
+              The workshop is appropriate for beginners and expert Elixir programmers alike since it focuses more on embedded development than pure coding. Since the Nerves development is rapidly improving, even veteran embedded Elixir programmers will learn new ways of making their development cycle better. Beginners to Elixir are highly encouraged to create a couple toy projects and learn about GenServers and OTP releases beforehand.
+            </p>
+          </div>
+
+          <%# <div class="presentation__bio">
+            <p>
+              <strong>About Andrea:</strong>
+              Andrea is an Elixir Core Team member and the driving force behind the new property-based testing features in Elixir 1.6.  He works as a backend developer at Football Addicts in Gothenburg, Sweden.  He is often found by his handle @whatyouhide.
+            </p>
+
+            <p>
+              <strong>About James:</strong>
+              James is also an Elixir Core Team member and developer at Pinterest, and a really good guy.
+            </p>
+
+          </div> %>
+        </div>
+      </section>
+    </section>
+  </section>
+
   <section id="schedule" class="schedule">
     <h2>Schedule</h2>
     <table class="schedule-table">
@@ -649,7 +724,7 @@
       <tr>
         <td class="event">
           <div class="title">Morning Keynote</div>
-          Mariam
+          Mariam Peña Villanueva
         </td>
         <td class="time">
           9:35AM
