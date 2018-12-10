@@ -155,25 +155,37 @@
 
       <section class="presentation" id="mariam-pena-villanueva">
         <div class="presentation-presenter">
+          <div class="presentation-presenter__avatar-container">
+            <%= image_tag "people/presenters/miriam-pena.jpg", class: "presentation-presenter__avatar" %>
+          </div>
+
           <h4 class="presentation-presenter__name">
-            Mariam Peña Villanueva
+            Miriam Peña
           </h4>
 
           <div class="presentation-presenter__link">
-            <%# <a target="_blank" href="https://twitter.com/fablednet">@fablednet</a> %>
+            <a target="_blank" href="https://twitter.com/miriampena">@miriampena</a>
           </div>
         </div>
 
         <div class="presentation__details">
           <h3 class="presentation__title">
-            Opening Keynote
+            Opening Keynote - War Stories: Scaling Distributed Systems
           </h3>
 
           <div class="presentation__description">
+            <p>
+            Architecting a highly concurrent distributed system in the BEAM ecosystem is not an easy thing to do even on a perfect world of homogeneous traffic, reliable, secure and low latency networks. But real life internet applications may have millions of users and bizarre faulty scenarios that can arise hidden scaling issues.
+            </p>
+
+            <p>
+            In this talk, I'll describe how the distribution model works in Erlang, and when/how you should take advantage of it –or not! Spiced up with real-life war stories from architectures running in production. Hopefully, you can learn from our mistakes!
+            </p>
           </div>
 
           <div class="presentation__bio">
             <p>
+            Miriam loves to architect distributed, scalable, high performance, high concurrency, and high availability systems. Bonus point if they are written in Erlang/Elixir. She is a Staff Engineer at AdRoll, designing critical parts of their AdServers/RTB infrastructure and organizer of the Erlang and Elixir meetup in San Francisco. Prior to AdRoll, she provided Erlang specialized consultancy and studied Computer Science Engineering from La Coruña University in Spain. Voted one of the women to watch in 2018 by Women 2.0 here. She published some open source libraries such as mero, a scalable and lightweight client for Memcached and Spillway for load shedding.
             </p>
           </div>
         </div>
@@ -455,7 +467,7 @@
 
           <div class="presentation__description">
             <p>
-              Elixir is a programming language that has become dear to me as it has become my go-to choice for most of the things at work and personal projects. One thing that people notice when getting started with Elixir is that, in fact, a good chunk of it is written in Elixir. Now you might be thinking, "Wait. What? How can that be?". Well, the short answer is: metaprogramming. 
+              Elixir is a programming language that has become dear to me as it has become my go-to choice for most of the things at work and personal projects. One thing that people notice when getting started with Elixir is that, in fact, a good chunk of it is written in Elixir. Now you might be thinking, "Wait. What? How can that be?". Well, the short answer is: metaprogramming.
             </p>
             <p>
               Metaprogramming doesn’t have to be too scary to think about and it’s not so bad at all. I’ll show examples of the standard library where functionality is written in Elixir and I will also dive into extending Elixir by writing our own macros. But by also diving into the Elixir-lang code base we can explore the bootstrap process and see how you can start implementing Elixir in Elixir.
@@ -563,7 +575,7 @@
         <div class="presentation__details">
           <h3 class="presentation__title">
             Rebuilding a BDD Testing Framework (ESpec):<br/>
-            Foundations in Metaprogramming 
+            Foundations in Metaprogramming
           </h3>
 
           <div class="presentation__description">
@@ -875,7 +887,7 @@
       <tr>
         <td class="event">
           <div class="title">
-            Rebuilding a BDD Testing Framework (ESpec): Foundations in Metaprogramming 
+            Rebuilding a BDD Testing Framework (ESpec): Foundations in Metaprogramming
           </div>
           Bruce Park
         </td>
