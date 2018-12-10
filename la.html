@@ -57,6 +57,12 @@
           <a class="nav__link" href="#location">
             Location
           </a>
+          <a class="nav__link" href="#presentations">
+            Presentations
+          </a>
+          <a class="nav__link" href="#training">
+            Training
+          </a>
           <a class="nav__link" href="#schedule">
             Schedule
           </a>
@@ -74,7 +80,7 @@
 
       <div class="hero__content">
         <h2>
-          A one-day conference for curious<br class="hide-mobile" / >
+          A one-day conference for curious<br class="hide-mobile" />
           elixir programmers.
         </h2>
         <p>
@@ -83,11 +89,8 @@
       </div>
 
       <div class="hero__buttons">
-        <a class="hero__button hero__button--cfp" target="_blank" href="https://docs.google.com/forms/d/1O39cq-CSRrgpZpY3uX7kJVl-4yu8dzt9WC7e0KstVaM/edit?usp=sharing">
-          CFP Is Open: Submit a Talk!
-        </a>
         <div class="hero__button hero__button--buy" target="_blank" href="">
-          Tickets On Sale December 3
+          Tickets On Sale December 12
         </div>
       </div>
     </section>
@@ -119,7 +122,7 @@
     <div class="location__content-color">
       <div class="location__content">
         <h2>
-          The Hungarian Social Club</br> in Downtown Los Angeles
+          The Hungarian Social Club<br/> in Downtown Los Angeles
         </h2>
       </div>
     </div>
@@ -154,6 +157,31 @@
         <p>We&#39;re excited and proud to announce our keynote speakers for EMPEX LA!</p>
       </div>
 
+      <section class="presentation" id="mariam-pena-villanueva">
+        <div class="presentation-presenter">
+          <h4 class="presentation-presenter__name">
+            Mariam Peña Villanueva
+          </h4>
+
+          <div class="presentation-presenter__link">
+          </div>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            Opening Keynote
+          </h3>
+
+          <div class="presentation__description">
+          </div>
+
+          <div class="presentation__bio">
+            <p>
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section class="presentation" id="ashi-krishnan">
         <div class="presentation-presenter">
           <div class="presentation-presenter__avatar-container">
@@ -171,7 +199,7 @@
 
         <div class="presentation__details">
           <h3 class="presentation__title">
-            Keynote
+            Closing Keynote
           </h3>
 
           <div class="presentation__description">
@@ -185,11 +213,406 @@
         </div>
       </section>
     </section>
+
+    <section class="presentation-list">
+      <h2 class="presentations-list__title">Presentations</h2>
+      <div class="presentations-list__intro">
+        <p>
+          We're proud to announce the following presentations for EMPEX LA!
+        </p>
+      </div>
+
+      <section class="presentation" id="john-mertens">
+        <div class="presentation-presenter">
+          <h4 class="presentation-presenter__name">
+            John Mertens
+          </h4>
+
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            Lessons From Our First Trillion Messages with Flow
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              For many of us recent Elixir converts, our initial attraction to Elixir was rooted in the promise of access to the BEAM concurrency model.
+            </p>
+            <p>
+              While this has been possible in Elixir from day one, Flow has made it incredibly easy to build highly concurrent and parallel data pipelines utilizing the BEAM. The problem is that while the docs are great, there aren't many resources about running Flow-based systems in production.
+            </p>
+            <p>
+              In this talk I'll share some of the lessons my team has learned from processing our first trillion messages through Flow. You'll leave with practical knowledge you can directly apply to your applications.
+            </p>
+            <p>
+              For the last year, my team &amp; I have been using Flow to power a reactive, high volume and mission-critical data processing pipeline. In that time we've recognized some patterns and techniques to keep our system easy to reason about while also being flexible to handle a variety of requirements.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="presentation" id="elixir-vs-go">
+        <div class="presentation-presenter">
+          <div class="presentation-panel">
+
+            <div class="presentation-panel__member">
+              <h4 class="presentation-presenter__name">
+                Anna Neyzberg
+              </h4>
+
+              <div class="presentation-presenter__link">
+                <a target="_blank" href="https://twitter.com/aneyzb">@aneyzb</a>
+              </div>
+            </div>
+
+            <div class="presentation-panel__member">
+              <div class="presentation-presenter__avatar-container">
+                <img src="/assets/images/people/organizers/hannah-28ac8b76.png" class="presentation-presenter__avatar" alt="Hannah" />
+              </div>
+
+              <h4 class="presentation-presenter__name">
+                Hannah Howard
+              </h4>
+
+              <div class="presentation-presenter__link">
+                <a target="_blank" href="https://twitter.com/techgirlwonder">@techgirlwonder</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            Go vs Elixir: A concurrency comparison
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              As software engineers we often are looking for the best tool for the job. Yet what about when languages appear similar? What then?
+            </p>
+            <p>
+              In this talk we will compare Go and Elixir. These languages have similar principles but make core tradeoffs that affect when one might use them. We will specifically  compare their concurrency paradigms to see what tool we might use when.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="presentation" id="kalisa-falzone">
+        <div class="presentation-presenter">
+          <h4 class="presentation-presenter__name">
+            Kalisa Falzone
+          </h4>
+
+          <div class="presentation-presenter__link">
+          </div>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            Making your Elixir API Accessible to non-Elixir developers
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              This talk will describe tools, application best practices, and team collaboration tips that make consuming and working with an Elixir API easier for those not familiar with Elixir. I will talk about how I went from programing in only Javascript to working full stack at Versus Systems, what things we did to inspire engineers to work full stack. Some topics I will explore are useful testing, documentation, and scripts, as well as application organization, and effective teamwork.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="presentation" id="aaron-harpole">
+        <div class="presentation-presenter">
+          <h4 class="presentation-presenter__name">
+            Aaron Harpole
+          </h4>
+
+          <div class="presentation-presenter__link">
+          </div>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            You might say I have 🕶 mix feelings
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              Yes, Elixir’s great, it’s based on Erlang, making it fault tolerant and scalable. But a few months with it day-to day, am I still singing its praises?
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="presentation" id="michael-ries">
+        <div class="presentation-presenter">
+          <h4 class="presentation-presenter__name">
+          Michael Ries
+          </h4>
+
+          <div class="presentation-presenter__link">
+          </div>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            Five Easy Ways To Start With Nerves
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              Writing code that touches the real world is a magical experience. Nerves makes the software more approachable and much more powerful. Come see five fun projects that you can build from beginning to end without reading spec sheets or thinking about capacitors. From a garage controller, to LEDs and sprinkler controllers there are a lot of cool things you can build from scratch.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="presentation" id="alex-peachey">
+        <div class="presentation-presenter">
+          <h4 class="presentation-presenter__name">
+            Alex Peachey
+          </h4>
+
+          <div class="presentation-presenter__link">
+          </div>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            Where did I put my data?
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              A look at how Amnesia's Elixir wrapper over Erlang's Mnesia distributed DBMS can be used to keep your application state in a scalable resilient manner. We will start by looking at Agents and GenServers as they are primarily the first thing people reach for when storing state. From there we will show how we can gain performance, remove bottlenecks, and increase stability by using ETS. Finally we examine how a more robust Amnesia solution can help systems scale beyond a single node, allowing the system to not only support higher loads but increase resiliency.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="presentation" id="adrian-cruz">
+        <div class="presentation-presenter">
+          <h4 class="presentation-presenter__name">
+            Adrian Cruz
+          </h4>
+
+          <div class="presentation-presenter__link">
+          </div>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            Elixir Code is Elixir! Metaprogramming and Elixir
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              Elixir is a programming language that has become dear to me as it has become my go-to choice for most of the things at work and personal projects. One thing that people notice when getting started with Elixir is that, in fact, a good chunk of it is written in Elixir. Now you might be thinking, "Wait. What? How can that be?". Well, the short answer is: metaprogramming. 
+            </p>
+            <p>
+              Metaprogramming doesn’t have to be too scary to think about and it’s not so bad at all. I’ll show examples of the standard library where functionality is written in Elixir and I will also dive into extending Elixir by writing our own macros. But by also diving into the Elixir-lang code base we can explore the bootstrap process and see how you can start implementing Elixir in Elixir.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="presentation" id="libby-horacek">
+        <div class="presentation-presenter">
+          <h4 class="presentation-presenter__name">
+            Libby Horacek
+          </h4>
+
+          <div class="presentation-presenter__link">
+          </div>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            Fake It 'Til You Make It (where it = Haskell expertise)
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              In 2016, Magazine X asked Position Development to expand their existing Haskell app. Instead of only serving ecommerce forms via iframes in their WordPress website, their Haskell app would serve everything, including every article from the magazine and blog. Magazine X editors would continue to use WordPress to write and edit articles, but the Haskell server would request content through the WordPress JSON API and render templates. The magazine also wanted several new subscription, mailing list, and donation features.
+
+              Early into the project, the original creator of the app left Position to begin a career in research. I was suddenly the most experienced Haskell developer on my team, while I still had less than a year of professional experience in tech. In this talk, I'll discuss both a) the technical aspects of the work and b) what it was like to try to make it all happen as part of a very small team of non-expert Haskellers.
+
+              Some of the topics I'll touch on include:
+              <ul>
+              <li>Larceny, our HTML templating language</li>
+              <li>Offset, our library for rendering content from JSON APIs</li>
+              <li>Position's workflow for developing, testing, and deploying Haskell apps</li>
+              <li>Feeling disconnected from the larger language community, struggling with imposter syndrome, and continuing to learn and grow as a functional programmer</li>
+              </ul>
+
+              In 2017, Magazine X relaunched with a bold new website. Getting to launch was a bit rocky, but for the past year we've been able to continue integrating more new features and designs into a fast, secure, and mobile-friendly Haskell app.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="presentation" id="evelyn-masso">
+        <div class="presentation-presenter">
+          <h4 class="presentation-presenter__name">
+            Evelyn Masso
+          </h4>
+
+          <div class="presentation-presenter__link">
+          </div>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            Handling Null in Functional Programming
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              Nulls are a fact of life—sometimes a value can be absent, which is important information to have However if a variable can be null, we often have to write extra code to handle that possibility. How can we utilize functional, typed languages to only allow null where it communicates important information and eliminate it everywhere else? This talk will identify patterns to do just that and discuss how they can help shape your application’s architecture.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="presentation" id="bruce-park">
+        <div class="presentation-presenter">
+          <div class="presentation-presenter__avatar-container">
+            <img src="/assets/images/people/organizers/bruce-a9673ddd.jpg" class="presentation-presenter__avatar" alt="Bruce" />
+          </div>
+
+          <h4 class="presentation-presenter__name">
+            Bruce Park
+          </h4>
+
+          <div class="presentation-presenter__link">
+            <a target="_blank" href="https://twitter.com/bpark0">@bpark0</a>
+          </div>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            Rebuilding a BDD Testing Framework (ESpec):<br/>
+            Foundations in Metaprogramming 
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              You're a Test-Driven Development disciple, but you're a little iffy on this whole metaprogramming thing and it's something you don't feel comfortable using in your day to day programming.
+            </p>
+            <p>
+              If you've looked through the ExUnit codebase, or its RSpec-inspired cousin, ESpec (RSpec is a Ruby on Rails testing framework), you've probably noticed the defmacro keyword. That's because these test frameworks make use of metaprogramming to give you those lovely DSL's.
+            </p>
+            <p>
+              Don't know what the defmacro keyword does? Don't worry.
+            </p>
+            <p>
+              Even if you've never used Elixir's metaprogramming features before, come learn how to do it by seeing a real-life application of them. During this talk, we will rebuild a small part of our own version of ESpec. We'll duck and weave through Elixir's basic metaprogramming features all while building out test assertions and error messages, and you'll gain a whole new appreciation for metaprogramming.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="presentation" id="ludwik-bukowski">
+        <div class="presentation-presenter">
+          <h4 class="presentation-presenter__name">
+            Ludwik Bukowski
+          </h4>
+
+          <div class="presentation-presenter__link">
+          </div>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            Elixir and Datadog
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              Having an Elixir application deployed it's crucial to have good insight into your architecture for multiple reasons. High level of observability helps you scale, improve your system's performance, optimise, debug and decide how to develop your product further.Good understanding of what your system is doing is even more important when it grows in time and uses more and more third party components that you don't have much influence over.
+            </p>
+            <p>
+              In my presentation I'm going to share my experience with integrating a significantly large Elixir system, with a state of the art monitoring service - Datadog. I'm going to explain how various features it offers, like metrics, live tracing, logging and analysis tools helped find number of non-obvious bottlenecks in the code.
+            </p>
+          </div>
+
+        </div>
+      </section>
+    </section>
+  </section>
+
+  <section id="training" class="presentations">
+    <section class="presentation-list">
+      <h2 class="presentations-list__title">Trainings</h2>
+      <div class="presentations-list__intro">
+        <p>
+          We're pleased to offer a training session on Friday, February 1, 2019.
+        </p>
+      </div>
+      Training will begin at 9am and run until roughly 4pm at a location TBA.  Catered lunch is included.
+
+      <section class="presentation" id="advanced-training">
+        <div class="presentation-presenter">
+          <div class="presentation-panel">
+            <div class="presentation-panel__member">
+
+              <h4 class="presentation-presenter__name">
+                Justin Schneck
+              </h4>
+
+              <div class="presentation-presenter__link">
+                <a target="_blank" href="https://twitter.com/mobileoverlord">@mobileoverlord</a>
+              </div>
+            </div>
+
+            <div class="presentation-panel__member">
+
+              <h4 class="presentation-presenter__name">
+                Frank Hunleth
+              </h4>
+
+              <div class="presentation-presenter__link">
+                <a target="_blank" href="https://github.com/fhunleth">@fhunleth</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            Device to the Cloud with Nerves and NervesHub
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              The Elixir language and Erlang runtime provide a uniquely robust and productive environment that runs well from embedded to server. This class extends on previous Nerves training to the cloud for device/server communications and device management with NervesHub. Attendees will assemble real devices and build out the software step-by-step for a simple multi-user game with the help of the authors of Nerves.
+            </p>
+            <p>
+              We’ll spend the first half of the day building the device and getting comfortable with developing and debugging on Nerves. If you’ve attended previous Nerves courses, this one will have greater emphasis on networking and device provisioning. The second half transitions to managing devices with NervesHub and developing a simple companion Phoenix application.
+            </p>
+            <p>
+              The workshop is appropriate for beginners and expert Elixir programmers alike since it focuses more on embedded development than pure coding. Since the Nerves development is rapidly improving, even veteran embedded Elixir programmers will learn new ways of making their development cycle better. Beginners to Elixir are highly encouraged to create a couple toy projects and learn about GenServers and OTP releases beforehand.
+            </p>
+          </div>
+
+        </div>
+      </section>
+    </section>
   </section>
 
   <section id="schedule" class="schedule">
     <h2>Schedule</h2>
-    <p>The full schedule will be announced December 10th.</p>
     <table class="schedule-table">
       <tr>
         <td class="event">
@@ -210,21 +633,196 @@
       </tr>
       <tr>
         <td class="event">
+          <div class="title">Morning Keynote</div>
+          Mariam Peña Villanueva
+        </td>
+        <td class="time">
+          9:35AM
+        </td>
+      </tr>
+      <tr>
+        <td class="event">
+          <div class="title">
+            Lessons From Our First Trillion Messages with Flow
+          </div>
+          John Mertens
+        </td>
+        <td class="time">
+          10:20AM
+        </td>
+      </tr>
+      <tr>
+        <td class="event">
+          <div class="title">Break</div>
+        </td>
+        <td class="time">
+          10:40AM
+        </td>
+      </tr>
+      <tr>
+        <td class="event">
+          <div class="title">
+            Go vs Elixir: A concurrency comparison
+          </div>
+          Anna Neyzberg &amp; Hannah Howard
+        </td>
+        <td class="time">
+          10:50AM
+        </td>
+      </tr>
+      <tr>
+        <td class="event">
+          <div class="title">
+            Making your Elixir API Accessible to non-Elixir developers
+          </div>
+          Kalisa Falzone
+        </td>
+        <td class="time">
+          11:35AM
+        </td>
+      </tr>
+      <tr>
+        <td class="event">
           <div class="title">
             Lunch
           </div>
           Yum yums.
         </td>
         <td class="time">
-          12:00PM
+          11:55PM
         </td>
       </tr>
       <tr>
         <td class="event">
-          <div class="title">Closing Remarks</div>
+          <div class="title">
+            You might say I have 🕶 mix feelings
+          </div>
+          Aaron Harpole
         </td>
         <td class="time">
-          5:20PM
+          12:40PM
+        </td>
+      </tr>
+      <tr>
+        <td class="event">
+          <div class="title">
+            Five Easy Ways To Start With Nerves
+          </div>
+          Michael Ries
+        </td>
+        <td class="time">
+          1:05PM
+        </td>
+      </tr>
+      <tr>
+        <td class="event">
+          <div class="title">Break</div>
+        </td>
+        <td class="time">
+          1:25PM
+        </td>
+      </tr>
+      <tr>
+        <td class="event">
+          <div class="title">
+            Where did I put my data?
+          </div>
+          Alex Peachey
+        </td>
+        <td class="time">
+          1:35PM
+        </td>
+      </tr>
+      <tr>
+        <td class="event">
+          <div class="title">
+            Elixir Code is Elixir! Metaprogramming and Elixir
+          </div>
+          Adrian Cruz
+        </td>
+        <td class="time">
+          2:10PM
+        </td>
+      </tr>
+      <tr>
+        <td class="event">
+          <div class="title">Break</div>
+        </td>
+        <td class="time">
+          2:30PM
+        </td>
+      </tr>
+      <tr>
+        <td class="event">
+          <div class="title">
+            Fake It 'Til You Make It (where it = Haskell expertise)
+          </div>
+          Libby Horacek
+        </td>
+        <td class="time">
+          2:40PM
+        </td>
+      </tr>
+      <tr>
+        <td class="event">
+          <div class="title">
+            Handling Null in Functional Programming
+          </div>
+          Evelyn Masso
+        </td>
+        <td class="time">
+          3:15PM
+        </td>
+      </tr>
+      <tr>
+        <td class="event">
+          <div class="title">Big Break</div>
+        </td>
+        <td class="time">
+          3:35PM
+        </td>
+      </tr>
+      <tr>
+        <td class="event">
+          <div class="title">
+            Rebuilding a BDD Testing Framework (ESpec): Foundations in Metaprogramming 
+          </div>
+          Bruce Park
+        </td>
+        <td class="time">
+          3:55PM
+        </td>
+      </tr>
+      <tr>
+        <td class="event">
+          <div class="title">
+            Elixir and Datadog
+          </div>
+          Ludwik Bukowski
+        </td>
+        <td class="time">
+          4:20PM
+        </td>
+      </tr>
+      <tr>
+        <td class="event">
+          <div class="title">
+            Closing Keynote
+          </div>
+          Ashi Krishnan
+        </td>
+        <td class="time">
+          4:45PM
+        </td>
+      </tr>
+      <tr>
+        <td class="event">
+          <div class="title">
+            Closing Remarks
+          </div>
+        </td>
+        <td class="time">
+          5:25PM
         </td>
       </tr>
       <tr>
@@ -233,13 +831,13 @@
           Let's wrap it up!
         </td>
         <td class="time">
-          5:25PM
+          5:30PM
         </td>
       </tr>
       <tr>
         <td class="event">
           <div class="title">
-            After Party!
+            After Party (location TBD)
           </div>
         </td>
         <td class="time">
