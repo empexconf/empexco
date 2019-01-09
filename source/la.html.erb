@@ -185,6 +185,7 @@
 
           <div class="presentation__bio">
             <p>
+            <strong>About Miriam:</strong>
             Miriam loves to architect distributed, scalable, high performance, high concurrency, and high availability systems. Bonus point if they are written in Erlang/Elixir. She is a Staff Engineer at AdRoll, designing critical parts of their AdServers/RTB infrastructure and organizer of the Erlang and Elixir meetup in San Francisco. Prior to AdRoll, she provided Erlang specialized consultancy and studied Computer Science Engineering from La Coruña University in Spain. Voted one of the women to watch in 2018 by Women 2.0 here. She published some open source libraries such as mero, a scalable and lightweight client for Memcached and Spillway for load shedding.
             </p>
           </div>
@@ -216,6 +217,7 @@
 
           <div class="presentation__bio">
             <p>
+              <strong>About Ashi:</strong>
               Ashi is a visual poet who has been telling stories with code and words since she was a child—perhaps before. She has worked at seven-person startups, fought fires in the trenches of SRE at Google, and spent the last three years teaching at coding bootcamps. She now works as a senior software engineer at GitHub, where she hopes to dissolve the walls between us and our tools. She is learning to regard every moment, and the creatures within them, with love.
             </p>
           </div>
@@ -233,13 +235,17 @@
 
       <section class="presentation" id="john-mertens">
         <div class="presentation-presenter">
+          <div class="presentation-presenter__avatar-container">
+            <%= image_tag "people/presenters/john-mertens.jpg", class: "presentation-presenter__avatar" %>
+          </div>
+
           <h4 class="presentation-presenter__name">
             John Mertens
           </h4>
 
-          <%# <div class="presentation-presenter__link">
-            <a target="_blank" href="https://twitter.com/NAME">@NAME</a>
-          </div> %>
+          <div class="presentation-presenter__link">
+            <a target="_blank" href="https://twitter.com/mertonium">@mertonium</a>
+          </div>
         </div>
 
         <div class="presentation__details">
@@ -262,12 +268,12 @@
             </p>
           </div>
 
-          <%# <div class="presentation__bio">
+          <div class="presentation__bio">
             <p>
               <strong>About John:</strong>
-              BODY
+              John is a problem solver who has spent the majority of his career using his technical skills to have a positive impact on the world around him. A former Code for America fellow and civic tech startup co-founder, he currently uses Elixir to empower social action at Change.org.
             </p>
-          </div> %>
+          </div>
         </div>
       </section>
 
@@ -320,19 +326,24 @@
             </p>
           </div>
 
-          <%# <div class="presentation__bio">
+          <div class="presentation__bio">
             <p>
-              <strong>About NAME:</strong>
-              BODY
+              <strong>About Anna:</strong>
+              Anna is a San Francisco native who has done a lot of work in the ruby community in SF and currently sits on the board of RailsBridge. She has taken this community organizing experience and several year go co-founded ElixirBridge in SF - an organization that offers free weekend-long workshops, with the goal of creating an inclusive welcoming space for underrepresented populations in tech to learn elixir. By day she works as a Developer at Carbon Five. When not in front of a keyboard, she is trying to get better at climbing rocks.
             </p>
-          </div> %>
+
+            <p>
+              <strong>About Hannah:</strong>
+              Hannah is a senior developer and tech generalist with over 15 years experience in programming and other technical fields. Prior to programming, Hannah worked for 10 years in the non-profit sector in Los Angeles, specializing in LGBT advocacy and community organizing. Hannah returned to coding in 2012 and brings her passion and experience from community organizing to helping new programmers get up to speed on technical topics.
+            </p>
+          </div>
         </div>
       </section>
 
       <section class="presentation" id="kalisa-falzone">
         <div class="presentation-presenter">
           <div class="presentation-presenter__avatar-container">
-            <%= image_tag "people/presenters/kalisa-falzone.jpeg", class: "presentation-presenter__avatar" %>
+            <%= image_tag "people/presenters/kalisa-falzone.jpg", class: "presentation-presenter__avatar" %>
           </div>
 
           <h4 class="presentation-presenter__name">
@@ -355,20 +366,21 @@
             </p>
           </div>
 
-          <%# <div class="presentation__bio">
+          <div class="presentation__bio">
             <p>
-              <strong>About NAME:</strong>
-              BODY
+              <strong>About Kalisa:</strong>
+              Kalisa Falzone is a Software Engineer at Versus Systems. She specializes in Javascript and React, but has been working with Elixir and full stack more recently. She has an educational background in Mathematics, loves board games and music.
             </p>
-          </div> %>
+          </div>
         </div>
       </section>
 
       <section class="presentation" id="aaron-harpole">
         <div class="presentation-presenter">
           <div class="presentation-presenter__avatar-container">
-            <%= image_tag "people/presenters/aaron-harpole.jpeg", class: "presentation-presenter__avatar" %>
+            <%= image_tag "people/presenters/aaron-harpole.jpg", class: "presentation-presenter__avatar" %>
           </div>
+
           <h4 class="presentation-presenter__name">
             Aaron Harpole
           </h4>
@@ -389,20 +401,21 @@
             </p>
           </div>
 
-          <%# <div class="presentation__bio">
+          <div class="presentation__bio">
             <p>
-              <strong>About NAME:</strong>
-              BODY
+              <strong>About Aaron:</strong>
+              Originally hailing from the Midwest, Aaron made the trek out to Los Angeles in 2010 to work for one of those exciting internet startups he’d been hearing so much about. Since then, he’s led teams at LA-based startups Fullscreen and Ring, both of which are all grown up now. He currently works at Carbon Five, where he’s been working with such languages as Ruby (his long time favorite) and more recently Elixir (current frontrunner to become new long time favorite). His clicky keyboard collection grows at a rate of about 1 per 1.4 months, but he can stop whenever he wants. 
             </p>
-          </div> %>
+          </div>
         </div>
       </section>
 
       <section class="presentation" id="michael-ries">
         <div class="presentation-presenter">
           <div class="presentation-presenter__avatar-container">
-            <%= image_tag "people/presenters/michael-ries.jpeg", class: "presentation-presenter__avatar" %>
+            <%= image_tag "people/presenters/michael-ries.jpg", class: "presentation-presenter__avatar" %>
           </div>
+
           <h4 class="presentation-presenter__name">
           Michael Ries
           </h4>
@@ -423,12 +436,12 @@
             </p>
           </div>
 
-          <%# <div class="presentation__bio">
+          <div class="presentation__bio">
             <p>
-              <strong>About NAME:</strong>
-              BODY
+              <strong>About Michael:</strong>
+              Michael builds systems with Elixir and Ruby in Utah. He spends most evenings reading and building legos with his children. He organizes the Nerves Remote Meetup to discuss hardware and software with friends and hopes to one day build a robot that doesn't scare his children.
             </p>
-          </div> %>
+          </div>
         </div>
       </section>
 
@@ -457,20 +470,21 @@
             </p>
           </div>
 
-          <%# <div class="presentation__bio">
+          <div class="presentation__bio">
             <p>
-              <strong>About NAME:</strong>
-              BODY
+              <strong>About Alex:</strong>
+              Alex has been developing software for over two decades and has been focused on exploring and using Elixir for the past two years. Most recently he has worked with the rest of his great team at Versus Systems to rebuild the platform in Elixir, paving the way to making many more games more fun. When not crafting code, Alex enjoys playing games of all types.
             </p>
-          </div> %>
+          </div>
         </div>
       </section>
 
       <section class="presentation" id="adrian-cruz">
         <div class="presentation-presenter">
           <div class="presentation-presenter__avatar-container">
-            <%= image_tag "people/presenters/adrian-cruz.jpeg", class: "presentation-presenter__avatar" %>
+            <%= image_tag "people/presenters/adrian-cruz.jpg", class: "presentation-presenter__avatar" %>
           </div>
+
           <h4 class="presentation-presenter__name">
             Adrian Cruz
           </h4>
@@ -494,12 +508,12 @@
             </p>
           </div>
 
-          <%# <div class="presentation__bio">
+          <div class="presentation__bio">
             <p>
-              <strong>About NAME:</strong>
-              BODY
+              <strong>About Adrian:</strong>
+              Adrian is a senior software engineer, runner, and sometimes a speaker. Adrian works on search, product discovery, and growth. He is an Elixir enthusiast and has contributed to Elixir-lang and its ecosystem. Outside of coding, he can be found running the streets of New York. 
             </p>
-          </div> %>
+          </div>
         </div>
       </section>
 
@@ -540,20 +554,21 @@
             </p>
           </div>
 
-          <%# <div class="presentation__bio">
+          <div class="presentation__bio">
             <p>
-              <strong>About NAME:</strong>
-              BODY
+              <strong>About Libby:</strong>
+              Libby is a software developer with an interest building excellent, sustainable technical infrastructure for growing organizations. In 2014, she received a grant to study at the Recurse Center, which allowed her to move from her home state of West Virginia to NYC. After studying functional programming at RC, she joined The Learning Collective, a group of activists teaching each other to create software for power-distant publics. There she met Daniel Patterson, then a worker-owner at Position, who encouraged her to apply to work with Position. Libby has also spoken at conferences and technical meetups including Allied Media Conference, !!Con, AlterConf DC, and Haskell Users Group.
             </p>
-          </div> %>
+          </div>
         </div>
       </section>
 
       <section class="presentation" id="evelyn-masso">
         <div class="presentation-presenter">
           <div class="presentation-presenter__avatar-container">
-            <%= image_tag "people/presenters/evelyn-masso.jpeg", class: "presentation-presenter__avatar" %>
+            <%= image_tag "people/presenters/evelyn-masso.jpg", class: "presentation-presenter__avatar" %>
           </div>
+
           <h4 class="presentation-presenter__name">
             Evelyn Masso
           </h4>
@@ -574,12 +589,12 @@
             </p>
           </div>
 
-          <%# <div class="presentation__bio">
+          <div class="presentation__bio">
             <p>
-              <strong>About NAME:</strong>
-              BODY
+              <strong>About Evelyn:</strong>
+              Evelyn Masso is a person (all the time), a developer+designer (on weekdays), and a poet (on weekends). She currently works as an Application Engineer on the GitHub Desktop Client and contributes to p5js. 
             </p>
-          </div> %>
+          </div>
         </div>
       </section>
 
@@ -633,7 +648,7 @@
       <section class="presentation" id="ludwik-bukowski">
         <div class="presentation-presenter">
           <div class="presentation-presenter__avatar-container">
-            <%= image_tag "people/presenters/ludwik-bukowski.jpeg", class: "presentation-presenter__avatar" %>
+            <%= image_tag "people/presenters/ludwik-bukowski.jpg", class: "presentation-presenter__avatar" %>
           </div>
           <h4 class="presentation-presenter__name">
             Ludwik Bukowski
@@ -658,12 +673,14 @@
             </p>
           </div>
 
-          <%# <div class="presentation__bio">
+          <div class="presentation__bio">
             <p>
-              <strong>About NAME:</strong>
-              BODY
+              <strong>About Ludwik:</strong>
+              Ludwik is a functional programming enthusiast who to move with the times has been recently converted from Erlang to Elixir.
+
+              He works as Software Engineer in Erlang Solutions in Kraków, and likes to travel and play squash.
             </p>
-          </div> %>
+          </div>
         </div>
       </section>
     </section>
