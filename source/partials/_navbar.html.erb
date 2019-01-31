@@ -1,12 +1,12 @@
 <%# <% page_nav = %w[about location presentations schedule training sponsors organizers] %1> %>
-<% page_nav = %w[about location schedule presentations training organizers] %>
+<% page_nav = %w[about location organizers] %>
 <nav id="navbar" class="navbar">
   <div class="container">
     <ul class="navbar-list">
       <% page_nav.each do |nav| %>
         <li class="navbar-item"><%= link_to nav.titleize, "##{nav}", class: "navbar-link" %></li>
       <% end %>
-      <li class="navbar-item"><%= link_to "Past Events", "/events.html", class: "navbar-link" %></li>
+      <%# <li class="navbar-item"><%= link_to "Past Events", "/events.html", class: "navbar-link" %1></li> %>
     </ul>
   </div>
 </nav>
