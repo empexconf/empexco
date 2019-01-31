@@ -1,0 +1,88 @@
+title: EMPEX Conference 2019
+current: true
+date: 2019-05-18
+short_description:
+  A one-day conference for curious programmers
+twitter_description:
+  EMPEX is a sophisticated conference series for functional programming languages and ecosystems held in New York City.
+description:
+  EMPEX is a sophisticated conference series for functional programming languages and ecosystems held in New York City.
+  We present a single track of technical talks in a jazz club.
+  Our goal is to bring a sense of aesthetic and fun to the growing functional community.  We'd love for you to join us!
+photos:
+location:
+  id: subculture
+  description: |
+    EMPEX will be held at
+    [Subculture](http://subculturenewyork.com/), an intimate jazz club
+    in Soho.
+# sponsor_intro: |
+# sponsorship_levels:
+#   - name: platinum
+#     sponsor_ids:
+#       - stride
+
+#   - name: gold
+#     sponsor_ids:
+#       - sparkpost
+
+#   - name: silver
+#     sponsor_ids:
+#       - carbon5
+
+# schedule:
+#   - time: 9:00AM
+#     title: Doors open / Registration
+
+#   - time: 9:30AM
+#     title: Opening Remarks
+
+#   - time: 9:35AM
+#     presentation: kerr-jessica
+
+#   - time: 10:20AM
+#     presentation: bachari-omid
+
+#   - time: 10:40AM
+#     title: Break
+
+#   - time: 10:50AM
+#     presentation: vander-hoop-travis
+
+#   - time: 11:35AM
+#     presentation: carroll-william
+
+#   - time: 11:55AM
+#     title: Lunch
+
+#   - time: 12:40PM
+#     presentation: grayson-bobby
+
+#   - time: 1:05PM
+#     presentation: kelly-john
+
+#   - time: 1:45PM
+#     title: Break
+
+#   - time: 1:55PM
+#     presentation: soto-juan
+
+#   - time: 2:20PM
+#     presentation: ranelli-renan
+
+#   - time: 3:00PM
+#     title: Break
+
+#   - time: 3:25PM
+#     presentation: juric-sasa
+
+#   - time: 4:10PM
+#     presentation: cheng-eugenia
+
+#   - time: 4:50PM
+#     title: Closing Remarks
+
+#   - time: 5:30PM
+#     title: After Party!
+#     description: |
+#       The afterparty will be held a short walk away at Swift Hibernian Lounge ([34 E 4th St New York, NY 10012](https://www.google.com/maps?ion=1&espv=2&q=swift+bar&bav=on.2,or.&biw=1024&bih=562&dpr=2.5&um=1&ie=UTF-8&sa=X&ved=0ahUKEwj3sdrvlOnMAhUDmx4KHUq4Bu8Q_AUIBigB))
