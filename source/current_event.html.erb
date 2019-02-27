@@ -33,20 +33,23 @@ layout: layout
         Saturday, May 18th<br />
       </p>
 
-      <%# <p> %>
-      <%#   Training courses to help you level up with Elixir<br /> %>
-      <%#   Friday, May 17th<br /> %>
-      <%# </p> %>
       <p>
-        <a class="button button-primary button-large current-event no-hover" href="https://goo.gl/forms/GmxaeJxCLLchnW7F2" target="_blank">
+        Training courses to help you level up.<br />
+        Friday, May 17th<br />
+      </p>
+      <p>
+        <a class="button button-primary button-large current-event no-hover"
+           href="https://goo.gl/forms/GmxaeJxCLLchnW7F2"
+           target="_blank">
           Our CFP Is Open!
         </a>
       </p>
       <p>
-        Tickets go on sale February 27!
-        <%# <a class="button button-primary button-large current-event no-hover" href="" target="_blank"> %>
-        <%#   Get Your Tickets! %>
-        <%# </a> %>
+        <a class="button button-primary button-large current-event no-hover"
+           href="https://ti.to/empex-nyc/empex-nyc-2019"
+           target="_blank">
+          Get Your Tickets!
+        </a>
 
         <%# <a %>
         <%#   class="button button-primary button-large current-event no-hover not-mobile" %>
@@ -100,15 +103,22 @@ layout: layout
 <%#   </div> %>
 <%# </section> %>
 
-<%# <section id="training"> %>
-<%#   <div class="content-section container"> %>
-<%#  		<h2>Training</h2> %>
-<%#         <p>Training courses will be held on May 18th, the day before the EMPEX conference. The %>
-<%#            location will be in Manhattan, and specifics will be announced soon.</p> %>
-<%#         <p><a href="https://ti.to/empex-nyc/empex-nyc-2018">Get Your Training Tickets Now!</a></p> %>
-<%#  		 <%= partial "partials/courses" %1> %>
-<%#  	</div> %>
-<%# </section> %>
+<section id="training">
+  <div class="content-section container">
+    <h2>Training</h2>
+    <p>
+      Training courses will be held on May 17th, the day before the EMPEX conference.
+      The location will be announced soon.
+    </p>
+    <p>
+      <a href="https://ti.to/empex-nyc/empex-nyc-2019">Get Your Training Tickets Now!</a>
+    </p>
+    <section class="presentation-list">
+	  <%= partial "partials/courses/nerves" %>
+	  <%= partial "partials/courses/crash-course" %>
+    </section>
+  </div>
+</section>
 
 <%# <section id="sponsors"> %>
 <%#   <div class="content-section container"> %>
