@@ -29,7 +29,7 @@
     
   </head>
 
-  <body class="partials partials_presenters partials_presenters_mat-trudel">
+  <body class="partials partials_presenters partials_presenters_zack-kayser">
     
     <div class="navbar-spacer"></div>
     <nav id="navbar" class="navbar">
@@ -37,6 +37,7 @@
     <ul class="navbar-list">
         <li class="navbar-item"><a href="#about" class="navbar-link">About</a></li>
         <li class="navbar-item"><a href="#location" class="navbar-link">Location</a></li>
+        <li class="navbar-item"><a href="#presentations" class="navbar-link">Presentations</a></li>
         <li class="navbar-item"><a href="#training" class="navbar-link">Training</a></li>
         <li class="navbar-item"><a href="#organizers" class="navbar-link">Organizers</a></li>
     </ul>
@@ -44,26 +45,32 @@
 </nav>
 
     <main>
-      <section class="presentation" id="mat-trudel">
+      <section class="presentation" id="zack-kayser">
     <div class="presentation-presenter">
         <div class="presentation-presenter__avatar-container">
-            <img src="/assets/images/people/presenters/mat-trudel-09f78371.jpg" class="presentation-presenter__avatar" alt="Mat Trudel" />
+          <img src="/assets/images/people/presenters/zack-kayser-b40514c4.jpg"
+               class="presentation-presenter__avatar"
+               alt="Zack Kayser headshot" />
         </div>
 
-        <h4 class="presentation-presenter__name">Mat Trudel</h4>
+        <h4 class="presentation-presenter__name">Zack Kayser</h4>
 
-        <p class="presentation-presenter__link"><a href="https://twitter.com/mattrudel">@mattrudel</a></p>
+        <p class="presentation-presenter__link">
+          <a href="https://twitter.com/kayserzl">@kayserzl</a>
+        </p>
     </div>
 
     <div class="presentation__details">
-        <h3 class="presentation__title">`mix new beats` -- Recreating The "Amen Break" with Elixir</h3>
+        <h3 class="presentation__title">Demystifying Purely Functional Data Structures in Elixir</h3>
         <div class="presentation__description">
           <p>
-            As part of my day job I write and maintain SchedEx, a Swiss Army knife for job scheduling in Elixir. It's an indispensable library that sits at the core of a product used in manufacturing plants worldwide. An after work discussion led me down the path of applying SchedEx to soft real-time scheduling, and before long the beats project was born. Using the production proven SchedEx library as a foundation, beats is an ncurses-based, file-driven, actually-sort-of-useful drum machine that also happens to be a great lab for exploring scheduling. The talk will provide a tour of several real world patterns for job scheduling within Elixir, demonstrate some strengths and limitations of the Erlang runtime, and also build up a few classic beats &amp; breaks along the way.
+            Reasoning about data structures and run times in functional languages like Elixir is a far cry from classic analysis of data structures in imperative languages. While working with immutable data structures helps us reason about the flow of state in our programs, it has implications on the data structures we choose to work with and the efficiency of operations on those data structures. We will start by briefly laying some groundwork for analyzing functional data structures and discuss some optimizations used to prevent unnecessary copying while maintaining immutability. We'll move on to take a look at some basic data structures implemented with examples in Elixir and then discuss their characteristics. Starting from naive implementations of these basic data structures and related operations on them, we will consider how to further optimize operations to draw out more efficient run times. The talk will wrap up with a discussion of how to build an intuition for creating more efficient data structures in Elixir.
           </p>
         </div>
         <div class="presentation__bio">
-            <p><strong>About Mat: </strong>Mat is a polymath tech consultant from Toronto who loves solving the really gnarly problems. A relentless builder whose natural habitat is the basement workbench, he's a fan of honesty, good design, and golden era hip-hop.</p>
+          <p><strong>About Zack: </strong>
+            Zack is a software engineer at Gaslight in Cincinnati, Ohio, and has spent the last couple of years working on a wide variety of projects -- ranging from server-side applications, to iOS and web frontend enterprise applications, to one-day hackathon projects, all the way to game development for personal enjoyment (and pain :-D). Ever since being introduced to Elixir, Erlang, and OTP in 2016, he has been a huge proponent of functional programming and an evangelist for a movement towards more immutability and no shared state wherever possible. Prior to entering the software industry, he was a professional translator specializing in English to Japanese translation. Outside of work, Zack is an avid traveler and a long distance runner (but only when it is not winter in Ohio because cold is NOT cool).
+          </p>
         </div>
     </div>
 </section>
