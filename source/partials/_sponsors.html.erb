@@ -7,24 +7,35 @@
       <% end %>
       </a>
     </div>
+
     <div class="row">
-      <%= introduction %>
-    </div>
-    <% sponsorship_levels.each do |level| %>
-      <div class="row">
-        <div class="sponsors <%= level.name %>">
-          <% if %w(platinum gold silver).include? level.name %>
-            <h3><%= level.name.capitalize %></h3>
-          <% end %>
-          <% level.sponsor_ids.map {|id| find_sponsor(id) }.each do |slug, sponsor| %>
+      <div class="sponsors platinum">
+        <h2>Platinum Level</h2>
 
-            <% link_to sponsor.link, class: 'image-link', target: '_blank' do %>
-              <%= image_tag "sponsors/#{sponsor.image}", alt: sponsor.name %>
-            <% end %>
+        <a href="http://example.com"
+           class="image-link"
+           target="_blank">
+          <img src="/assets/images/sponsors/pepsicoecomm.png" alt="PepsiCo eCommerce" />
+        </a>
 
-          <% end %>
-        </div>
       </div>
-    <% end %>
+    </div>
+
+    <div class="row">
+      <div class="sponsors platinum">
+        <h2>Gold Level</h2>
+
+        <div class="white_background" style="background-color: white; padding: 6px 8px 0px 8px">
+        <a href="http://simplebet.com"
+           class="image-link"
+           target="_blank">
+          <img src="/assets/images/sponsors/simplebet.png" alt="SimpleBet" />
+        </a>
+        </div>
+
+      </div>
+    </div>
+
   </div>
 </section>
+
