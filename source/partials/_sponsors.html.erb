@@ -1,30 +1,44 @@
-<section class="sponsor-list">
-  <div class="row">
-    <div class="sponsors crevalle">
-      EMPEX is a production of <br />
-      <% link_to producer.link, class: 'image-link', target: '_blank' do %>
-        <%= image_tag "sponsors/#{producer.image}", alt: producer.name, class: 'crevalle-logo' %>
-      <% end %>
-      </a>
-    </div>
-    <div class="row">
-      <%= introduction %>
-    </div>
-    <% sponsorship_levels.each do |level| %>
-      <div class="row">
-        <div class="sponsors <%= level.name %>">
-          <% if %w(platinum gold silver).include? level.name %>
-            <h3><%= level.name.capitalize %></h3>
-          <% end %>
-          <% level.sponsor_ids.map {|id| find_sponsor(id) }.each do |slug, sponsor| %>
+<section id="sponsors">
+  <div class="content-section container">
 
-            <% link_to sponsor.link, class: 'image-link', target: '_blank' do %>
-              <%= image_tag "sponsors/#{sponsor.image}", alt: sponsor.name %>
-            <% end %>
+      <h2>Sponsors</h2>
 
-          <% end %>
+      <section class="sponsor-list">
+        <div class="row">
+
+          <div class="row">
+            <div class="sponsors platinum">
+              <h2>Platinum Level</h2>
+
+              <%# <a href="http://example.com" %>
+                <%#    class="image-link" %>
+                <%#    target="_blank"> %>
+                <img src="/assets/images/sponsors/pepsicoecomm.png" alt="PepsiCo eCommerce" />
+                <%# </a> %>
+
+            </div>
+          </div>
+
+          <div class="row">
+              <div class="sponsors platinum">
+                  <h2>Gold Level</h2>
+
+                  <div class="white_background">
+                    <a href="http://simplebet.io"
+                         class="image-link"
+                         target="_blank">
+                        <img src="/assets/images/sponsors/simplebet.png" alt="SimpleBet" />
+                      </a>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
-      </div>
-    <% end %>
+      </section>
+
+      If you're interested in sponsoring EMPEX NYC, please email <a mailto: 'info@empex.co'>info@empex.co</a>.
+
   </div>
 </section>
+
