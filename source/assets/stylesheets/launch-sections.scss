@@ -166,9 +166,12 @@ section {
         color: rgba(175,175,175,1);
       }
       img {
+        display: inline-block;
+        max-height: 100px;
+
         @include mobile {
-          height: 43px;
-          width: 300px;
+          max-height: 100px;
+          padding: 0 15px;
         }
 
         @include tablet {
@@ -182,8 +185,8 @@ section {
       }
 
       img {
-        height: 110px;
-        width: 200px;
+        max-width: 200px;
+        padding: 0 15px;
       }
     }
     &.lightning {
@@ -192,8 +195,8 @@ section {
       }
 
       img {
-        height: 110px;
-        width: 200px;
+        max-width: 200px;
+        padding: 0 15px;
       }
     }
     &.silver {
@@ -202,8 +205,13 @@ section {
       }
 
       img {
-        height: 75px;
-        width: 150px;
+        max-width: 150px;
+        padding: 0 15px;
+      }
+    }
+    &.publisher {
+      img {
+        max-width: 150px;
         padding: 0 15px;
       }
     }
