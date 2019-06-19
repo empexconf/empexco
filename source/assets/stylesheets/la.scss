@@ -116,10 +116,10 @@ h6 {
 }
 
 .nav {
-  @include section-color(white);
+  @include section-color(black);
 
   a {
-    color: white;
+    color: black;
   }
 
   display: flex;
@@ -135,6 +135,7 @@ h6 {
     line-height: 1;
     font-size: 36px;
     text-transform: uppercase;
+    color: black;
   }
 
   &__spacer {
@@ -171,14 +172,18 @@ h6 {
   &__content {
     @include section-color(black);
 
-    background: rgba(white, 0.5);
+    /* background: rgba(white, 0.5); */
     padding: 0.5rem;
     margin-top: 2rem;
 
     @include media-tablet {
-      background: transparent;
+      /* background: transparent; */
       padding: 0;
       margin-top: 12rem;
+    }
+
+    h2, p {
+      color: white;
     }
   }
 
