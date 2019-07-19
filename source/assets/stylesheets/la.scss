@@ -110,16 +110,16 @@ h6 {
 }
 
 .hero-background {
-  background-image: url('/assets/images/la-hero-short.jpeg');
+  background-image: url('/assets/images/la-hero.jpg');
   background-position: top center;
-  /* background-size: cover; */
+  background-size: cover;
 }
 
 .nav {
-  @include section-color(black);
+  @include section-color(white);
 
   a {
-    color: black;
+    color: white;
   }
 
   display: flex;
@@ -135,7 +135,6 @@ h6 {
     line-height: 1;
     font-size: 36px;
     text-transform: uppercase;
-    color: black;
   }
 
   &__spacer {
@@ -167,25 +166,21 @@ h6 {
 .hero {
   @include normal-section();
 
+  min-height: 82vw;
+
   &__content {
     @include section-color(black);
 
-    /* background: rgba(white, 0.5); */
+    background: rgba(white, 0.5);
     padding: 0.5rem;
     margin-top: 2rem;
 
     @include media-tablet {
-      /* background: transparent; */
+      background: transparent;
       padding: 0;
       margin-top: 12rem;
     }
-
-    h2, p {
-      color: white;
-    }
   }
-
-  padding-bottom: 20px;
 
   &__presents {
     margin-bottom: 0;
@@ -223,21 +218,40 @@ h6 {
 }
 
 .about {
-  &__content-color {
-    background: $background-black;
-    @include section-color(white);
-  }
+  @include small-section();
+  @include section-color(white);
 
-  &__content {
-    @include small-section();
-    padding-top: $section-margin;
-    padding-bottom: $section-margin;
-  }
-  /* background: $background-black; */
-  /* @include section-color(white); */
-  /* @include small-section(); */
-  /* @include section-color(white); */
+  #signup-form {
+    margin-top: 2rem;
+    margin-bottom: 0;
 
+    @include display-flex;
+    position: relative;
+
+    @include media-tablet {
+      input[type='text'],
+      input[type='password'],
+      input[type='email'] {
+        width: 18em;
+      }
+
+      > * {
+        margin: 0 0 0 1em;
+      }
+
+      > :first-child {
+        margin: 0 0 0 0;
+      }
+    }
+
+    #email {
+      @include city-input();
+    }
+
+    input.button-primary {
+      @include city-button(#DA604B, white);
+    }
+  }
 }
 
 .location {
@@ -297,22 +311,12 @@ h6 {
   @include section-color($color0);
 }
 
-.sponsors {
-  &__content-color {
-    background: $background-black;
-    @include section-color(white);
-  }
-
-  &__content {
-    @include small-section();
-    margin-top: $section-margin;
-    margin-bottom: $section-margin;
-  }
-  /* @include small-section(); */
-  /* @include section-color(white); */
-  /* background: $color0; */
-  /* margin-top: 5rem; */
-  /* margin-bottom: 5rem; */
+.sponsor-section {
+  @include small-section();
+  @include section-color(white);
+  background: $color0;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 
   a.image-link {
     &:hover {
@@ -471,10 +475,6 @@ h6 {
   background: black;
 }
 
-#signup {
-  @include small-section;
-}
-
 #footer {
   @include transition(opacity 0.2s ease-in-out);
   text-align: center;
@@ -525,37 +525,5 @@ h6 {
   .crevalle-name {
     height: 16px;
     width: 92px;
-  }
-}
-
-#signup-form {
-  margin-top: 2rem;
-  margin-bottom: 0;
-
-  @include display-flex;
-  position: relative;
-
-  @include media-tablet {
-    input[type='text'],
-    input[type='password'],
-    input[type='email'] {
-      width: 18em;
-    }
-
-    > * {
-      margin: 0 0 0 1em;
-    }
-
-    > :first-child {
-      margin: 0 0 0 0;
-    }
-  }
-
-  #email {
-    @include city-input();
-  }
-
-  input.button-primary {
-    @include city-button(#DA604B, white);
   }
 }
