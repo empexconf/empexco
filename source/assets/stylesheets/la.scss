@@ -1,4 +1,4 @@
-@import './2018-styles';
+@import "./2018-styles";
 
 $h3: 22px;
 $p: 16px;
@@ -27,10 +27,15 @@ h6 {
   h5,
   h6 {
     color: $color;
+
+    a {
+      // Links in text should still be highlighted.
+      color: #1eaedb;
+    }
   }
 }
 
-@mixin city-input($background: rgba(gray, 0.25),$border: gray) {
+@mixin city-input($background: rgba(gray, 0.25), $border: gray) {
   background: $background;
   padding: 2.375rem 2.875rem;
   font-size: $p;
@@ -86,7 +91,7 @@ h6 {
 
   &::after {
     @include small-section();
-    content: '';
+    content: "";
     height: 1px;
     padding: 0;
     display: block;
@@ -110,16 +115,25 @@ h6 {
 }
 
 .hero-background {
-  background-image: url('/assets/images/la-hero-short.jpeg');
+  background-image: url("/assets/images/la-hero.jpg");
   background-position: top center;
-  /* background-size: cover; */
+  background-size: cover;
+}
+
+.hero__text {
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  // Make the main text in the hero image not run over the palm tree.
+  @include tablet {
+    width: 70%;
+  }
 }
 
 .nav {
-  @include section-color(black);
+  @include section-color(white);
 
   a {
-    color: black;
+    color: white;
   }
 
   display: flex;
@@ -135,7 +149,6 @@ h6 {
     line-height: 1;
     font-size: 36px;
     text-transform: uppercase;
-    color: black;
   }
 
   &__spacer {
@@ -167,25 +180,21 @@ h6 {
 .hero {
   @include normal-section();
 
+  min-height: 82vw;
+
   &__content {
     @include section-color(black);
 
-    /* background: rgba(white, 0.5); */
+    background: rgba(white, 0.5);
     padding: 0.5rem;
     margin-top: 2rem;
 
     @include media-tablet {
-      /* background: transparent; */
+      background: transparent;
       padding: 0;
       margin-top: 12rem;
     }
-
-    h2, p {
-      color: white;
-    }
   }
-
-  padding-bottom: 20px;
 
   &__presents {
     margin-bottom: 0;
@@ -223,21 +232,9 @@ h6 {
 }
 
 .about {
-  &__content-color {
-    background: $background-black;
-    @include section-color(white);
-  }
-
-  &__content {
-    @include small-section();
-    padding-top: $section-margin;
-    padding-bottom: $section-margin;
-  }
-  /* background: $background-black; */
-  /* @include section-color(white); */
-  /* @include small-section(); */
-  /* @include section-color(white); */
-
+  @include small-section();
+  @include section-color(white);
+  overflow: auto;
 }
 
 .location {
@@ -297,22 +294,12 @@ h6 {
   @include section-color($color0);
 }
 
-.sponsors {
-  &__content-color {
-    background: $background-black;
-    @include section-color(white);
-  }
-
-  &__content {
-    @include small-section();
-    margin-top: $section-margin;
-    margin-bottom: $section-margin;
-  }
-  /* @include small-section(); */
-  /* @include section-color(white); */
-  /* background: $color0; */
-  /* margin-top: 5rem; */
-  /* margin-bottom: 5rem; */
+.sponsor-section {
+  @include small-section();
+  @include section-color(white);
+  background: $color0;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 
   a.image-link {
     &:hover {
@@ -466,13 +453,41 @@ h6 {
   }
 }
 
+#signup-form {
+  margin: 2rem 0;
+
+  @include display-flex;
+  justify-content: center;
+  position: relative;
+
+  @include media-tablet {
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+      width: 18em;
+    }
+
+    > * {
+      margin: 0 0 0 1em;
+    }
+
+    > :first-child {
+      margin: 0 0 0 0;
+    }
+  }
+
+  #email {
+    @include city-input();
+  }
+
+  input.button-primary {
+    @include city-button(#da604b, white);
+  }
+}
+
 #bottom {
   @include content-section;
   background: black;
-}
-
-#signup {
-  @include small-section;
 }
 
 #footer {
@@ -525,37 +540,5 @@ h6 {
   .crevalle-name {
     height: 16px;
     width: 92px;
-  }
-}
-
-#signup-form {
-  margin-top: 2rem;
-  margin-bottom: 0;
-
-  @include display-flex;
-  position: relative;
-
-  @include media-tablet {
-    input[type='text'],
-    input[type='password'],
-    input[type='email'] {
-      width: 18em;
-    }
-
-    > * {
-      margin: 0 0 0 1em;
-    }
-
-    > :first-child {
-      margin: 0 0 0 0;
-    }
-  }
-
-  #email {
-    @include city-input();
-  }
-
-  input.button-primary {
-    @include city-button(#DA604B, white);
   }
 }
