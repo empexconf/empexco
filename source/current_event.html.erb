@@ -2,20 +2,24 @@
 layout: layout
 ---
 
-<% content_for(:head) do %>
-  <% url = "#{host}/events/#{year}/#{slug}.html" %>
-  <link rel="canonical" href="<%= url %>">
-  <%= partial "partials/event_meta", locals: {event: event, url: url} %>
-<% end %>
+<link rel="canonical" href="/events/2020/conference.html">
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@empexco" />
+<meta name="twitter:title" content="EMPEX NYC Conference 2020" />
+<meta name="twitter:description" content="EMPEX is a sophisticated conference series for functional programming languages and ecosystems held in New York City." />
+<meta name="twitter:image" content="/assets/images/flag.jpg" />
+
+<meta property="og:url" content="http://empex.co/" />
+<meta property="og:title" content="EMPEX NYC Conference 2020" />
+<meta property="og:description" content="EMPEX is a sophisticated conference series for functional programming languages and ecosystems held in New York City." />
+<meta property="og:image" content="/assets/images/flag.jpg" />
 
 <% content_for(:bottom_of_page) do %>
   <%= javascript_include_tag "carousel" %>
   <%= javascript_include_tag "moon"%>
 <% end %>
 
-<% content_for(:title) do %>
-  <%= event.title %>
-<% end %>
+<title>EMPEX NYC 2020</title>
 
 <% content_for(:hero) do %>
   <section id="hero">
@@ -27,33 +31,33 @@ layout: layout
       </br><small>presents</small></br>
 
       <%= partial "partials/logo" %>
-      <h1 class="current-event-text"><%= event.title %></h1>
+      <h1 class="current-event-text">EMPEX NYC Conference 2020</h1>
       <p>
         A one-day conference for curious programmers.<br />
-        Saturday, May 18th<br />
+        Saturday, May 16th<br />
       </p>
 
       <p>
         Training courses to help you level up.<br />
-        Friday, May 17th<br />
+        Friday, May 15th<br />
       </p>
-      <%# <p> %>
-      <%#   <a class="button button-primary button-large current-event no-hover" %>
-      <%#      href="https://goo.gl/forms/GmxaeJxCLLchnW7F2" %>
-      <%#      target="_blank"> %>
-      <%#     Our CFP Is Open! %>
-      <%#   </a> %>
-      <%# </p> %>
       <p>
         <a class="button button-primary button-large current-event no-hover"
-           href="https://ti.to/empex-nyc/empex-nyc-2019"
+           <%# href="" %>
            target="_blank">
-          Get Your Tickets!
+          Our CFP Will Open Soon!
         </a>
+      </p>
+      <p>
+        <%# <a class="button button-primary button-large current-event no-hover" %>
+        <%#    href="" %>
+        <%#    target="_blank"> %>
+        <%#   Get Your Tickets! %>
+        <%# </a> %>
 
         <%# <a %>
         <%#   class="button button-primary button-large current-event no-hover not-mobile" %>
-        <%#   href="https://ti.to/crevalle/empex-2018" %>
+        <%#   href="" %>
         <%#   target="_blank"> %>
         <%#   We are sold out! Join the waiting list %>
         <%# </a> %>
@@ -66,7 +70,9 @@ layout: layout
 <section id="about">
   <div class="content-section container">
     <h2>About</h2>
-    <%= render_markdown(event.description) %>
+      EMPEX is a sophisticated conference series for functional programming languages and ecosystems held in New York City.
+      We present a single track of technical talks in a jazz club.
+      Our goal is to bring a sense of aesthetic and fun to the growing functional community.  We'd love for you to join us!
   </div>
 </section>
 
@@ -74,177 +80,101 @@ layout: layout
   <div class="content-section container">
     <div class="bg-wrapper">
       <h2>Location</h2>
-      <%= partial "partials/location", locals: {location: find_location(event.location.id).last, description: event.location.description } %>
+      <p>EMPEX will be held at
+        <a href="http://subculturenewyork.com/">Subculture</a>, an intimate jazz club
+        in Soho.</p>
+
+      <address>
+        Subculture<br />
+        45 Bleecker St, New York City, 10012
+      </address>
+      <a href="https://www.google.com/maps/place/45+Bleecker+St,+New+York,+NY+10012/@40.7259994,-73.9963642,17z/data=!3m1!4b1!4m2!3m1!1s0x89c259855d92fe97:0xf52b5c50ff1c04c" target="_blank">Find it on Google Maps</a>
+      <div class="gallery">
+        <div id="location-display" class="gallery-display">
+          <div><img src="/assets/images/locations/subculture/1.jpg" alt="1" /></div>
+          <div><img src="/assets/images/locations/subculture/10.jpg" alt="10" /></div>
+          <div><img src="/assets/images/locations/subculture/3.jpg" alt="3" /></div>
+          <div><img src="/assets/images/locations/subculture/6.jpg" alt="6" /></div>
+          <div><img src="/assets/images/locations/subculture/9.jpg" alt="9" /></div>
+          <div><img src="/assets/images/locations/subculture/5.jpg" alt="5" /></div>
+          <div><img src="/assets/images/locations/subculture/2.jpg" alt="2" /></div>
+        </div>
+        <div id="location-carousel" class="gallery-carousel" data-slick='{"asNavFor": "#location-display"}'>
+          <div><img src="/assets/images/locations/subculture/1.jpg" class="carousel-image" alt="1" /></div>
+          <div><img src="/assets/images/locations/subculture/10.jpg" class="carousel-image" alt="10" /></div>
+          <div><img src="/assets/images/locations/subculture/3.jpg" class="carousel-image" alt="3" /></div>
+          <div><img src="/assets/images/locations/subculture/6.jpg" class="carousel-image" alt="6" /></div>
+          <div><img src="/assets/images/locations/subculture/9.jpg" class="carousel-image" alt="9" /></div>
+          <div><img src="/assets/images/locations/subculture/5.jpg" class="carousel-image" alt="5" /></div>
+          <div><img src="/assets/images/locations/subculture/2.jpg" class="carousel-image" alt="2" /></div>
+        </div>
+      </div>
+
     </div>
-  </div>
-</section>
-
-<section id="schedule">
-  <div class="content-section container">
-    <h2>Schedule</h2>
-    <section class="schedule-table">
-      <table>
-        <tr>
-          <td class="time">8:30AM</td>
-          <td class="event">
-            <div class="title">Doors open / Registration</div>
-            <div class="desc">Breakfast &amp; Chat</div>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="time">9:15AM</td>
-          <td class="event"><div class="title">Opening Remarks</div></td>
-        </tr>
-
-        <tr>
-          <td class="time">9:30AM</td>
-          <td class="event">
-            <div class="title">Dave Thomas: Keynote</div>
-            <div class="desc">With Brian Mitchell</div>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="time">10:20AM</td>
-          <td class="event">
-            <div class="title">Zack Kayser: Demystifying Purely Functional Data Structures in Elixir</div>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="time">10:55AM</td>
-          <td class="event">
-            <div class="title">Break</div>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="time">11:15AM</td>
-          <td class="event">
-            <div class="title">Desmond Bowe: Erlang Ecosystem Foundation Presentation</div>
-          </td>
-        </tr>
-
-		<tr>
-          <td class="time">11:25AM</td>
-          <td class="event">
-            <div class="title">Vaibhav Sagar: Functional DevOps in a Dysfunctional World</div>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="time">12:05PM</td>
-          <td class="event">
-            <div class="title">Eric Meadows-Jönsson: Introducing Mint, a process-less HTTP client</div>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="time">12:40PM</td>
-          <td class="event">
-            <div class="title">Lunch</div>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="time">1:25PM</td>
-          <td class="event">
-            <div class="title">Andrew Forward: LiveView; Rich Client Side Experience Delivered From the Server</div>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="time">2:00PM</td>
-          <td class="event">
-            <div class="title">Break</div>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="time">2:20PM</td>
-          <td class="event">
-            <div class="title">Meryl Dakin: Process Potential: Multitasking and fault tolerance in Elixir</div>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="time">2:55PM</td>
-          <td class="event">
-            <div class="title">Break</div>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="time">3:15PM</td>
-          <td class="event">
-            <div class="title">Jon Carstens: Dadgineering with Elixir+Nerves</div>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="time">3:50PM</td>
-          <td class="event">
-            <div class="title">Break</div>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="time">4:10PM</td>
-          <td class="event">
-            <div class="title">Billy Ceskavich: Is Elixir Just Lisp? Demystifying Metaprogramming in Elixir and Beyond</div>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="time">5:00PM</td>
-          <td class="event">
-            <div class="title">After Party!</div>
-            <div class="desc"><p>At Swift Hibernian Lounge</p></div>
-          </td>
-        </tr>
-      </table>
-    </section>
-  </div>
-</section>
-
-<section id="presentations">
-  <div class="content-section container">
-    <%= partial "partials/presentations" %>
   </div>
 </section>
 
 <%# <section id="schedule"> %>
 <%#   <div class="content-section container"> %>
 <%#     <h2>Schedule</h2> %>
-<%#     <% if event.schedule.kind_of?(Array) %1> %>
-<%#       <%= partial "partials/schedule", locals: {schedule: event.schedule, event: event} %1> %>
-<%#     <% else %1> %>
-<%#       <%= render_markdown(event.schedule) %1> %>
-<%#     <% end %1> %>
+<%#     <section class="schedule-table"> %>
+<%#       <table> %>
+<%#         <tr> %>
+<%#           <td class="time">8:30AM</td> %>
+<%#           <td class="event"> %>
+<%#             <div class="title">Doors open / Registration</div> %>
+<%#             <div class="desc">Breakfast &amp; Chat</div> %>
+<%#           </td> %>
+<%#         </tr> %>
+
+<%#         <tr> %>
+<%#           <td class="time">9:15AM</td> %>
+<%#           <td class="event"><div class="title">Opening Remarks</div></td> %>
+<%#         </tr> %>
+
+<%#         <tr> %>
+<%#           <td class="time">10:20AM</td> %>
+<%#           <td class="event"> %>
+<%#             <div class="title">Zack Kayser: Demystifying Purely Functional Data Structures in Elixir</div> %>
+<%#           </td> %>
+<%#         </tr> %>
+
+<%#         <tr> %>
+<%#           <td class="time">5:00PM</td> %>
+<%#           <td class="event"> %>
+<%#             <div class="title">After Party!</div> %>
+<%#             <div class="desc"><p>At </p></div> %>
+<%#           </td> %>
+<%#         </tr> %>
+<%#       </table> %>
+<%#     </section> %>
 <%#   </div> %>
 <%# </section> %>
 
-<section id="training">
-  <div class="content-section container">
-    <h2>Training</h2>
-    <p>
-      Training courses will be held on May 17th, the day before the EMPEX conference.
-      The location will be announced soon.
-    </p>
-    <p>
-      <a href="https://ti.to/empex-nyc/empex-nyc-2019">Get Your Training Tickets Now!</a>
-    </p>
-    <section class="presentation-list">
-	  <%= partial "partials/courses/nerves" %>
-      <%= partial "partials/courses/haskell" %>
-	  <%= partial "partials/courses/crash-course" %>
-    </section>
-  </div>
-</section>
+<%# <section id="presentations"> %>
+<%#   <div class="content-section container"> %>
+<%#     <%= partial "partials/presentations" %1> %>
+<%#   </div> %>
+<%# </section> %>
+
+<%# <section id="training"> %>
+<%#   <div class="content-section container"> %>
+<%#     <h2>Training</h2> %>
+<%#     <p> %>
+<%#       Training courses will be held on May 15th, the day before the EMPEX conference. %>
+<%#       The location will be announced soon. %>
+<%#     </p> %>
+<%#     <p> %>
+<%#       <a href="">Get Your Training Tickets Now!</a> %>
+<%#     </p> %>
+<%#     <section class="presentation-list"> %>
+<%# 	  <%= partial "partials/courses/..." %1> %>
+<%#     </section> %>
+<%#   </div> %>
+<%# </section> %>
 
 <%# <%= partial "partials/producer" %1> %>
-<%= partial "partials/sponsors" %>
+<%# <%= partial "partials/sponsors" %1> %>
 
 <section id="organizers">
   <div class="content-section container">
