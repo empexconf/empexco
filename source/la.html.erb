@@ -148,6 +148,182 @@
     </div>
   </section>
 
+  <section id="presentations" class="presentations">
+    <section class="presentation-list">
+      <h2 class="presentations-list__title">Presentations</h2>
+      <div class="presentations-list__intro">
+        <p>
+          We're proud to announce the following presentations for EMPEX LA!
+        </p>
+      </div>
+
+      <section class="presentation" id="aaron-harpole">
+        <div class="presentation-presenter">
+          <div class="presentation-presenter__avatar-container">
+            <%= image_tag "people/presenters/aaron-harpole.jpg", class: "presentation-presenter__avatar" %>
+          </div>
+
+          <h4 class="presentation-presenter__name">
+            Aaron Harpole
+          </h4>
+
+          <div class="presentation-presenter__link">
+            <a target="_blank" href="https://twitter.com/harpaa01">@harpaa01</a>
+          </div>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            The Case Against Scale
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              Scale is a very popular topic among software engineers, and it is something many of us strive to do well, but we rarely discuss its consequences. We think of scale as an inherently good thing. After all, you can make more money, run more efficiently, and solve tough problems. But with this year's theme of building large-scale applications, I'd like to flip that sentiment on its head and make the case against scale.
+            </p>
+          </div>
+
+          <div class="presentation__bio">
+            <p>
+              <strong>About Aaron:</strong>
+              TODO
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="presentation" id="bruce-tate">
+        <div class="presentation-presenter">
+          <div class="presentation-presenter__avatar-container">
+            <%= image_tag "people/presenters/bruce-tate.jpg", class: "presentation-presenter__avatar" %>
+          </div>
+
+          <h4 class="presentation-presenter__name">
+            Bruce Tate
+          </h4>
+
+          <div class="presentation-presenter__link">
+            <a target="_blank" href="https://twitter.com/redrapids">@redrapids</a>
+          </div>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            Bring On the WorkerBees (Designing Elixir Systems with OTP)
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              "If you want to be a great Elixir developers, you need to learn to build your programs in layers, the way the experts do. In this session, we will explore the advice: 
+            </p>
+            <p>
+              Do Fun Things with Big, Loud Workerbees. 
+            </p>
+            <p>
+              This sentence, from Designing Elixir Systems with OTP, is a mental mnemonic that stands for Data, Functions, Tests; Boundaries, Lifecycles and Workers. We'll talk about each of these layers in detail focusing on the role of each independent layer in a self-healing, performant Elixir program"
+            </p>
+          </div>
+
+          <div class="presentation__bio">
+            <p>
+              <strong>About Bruce:</strong>
+              The founder of Groxio, Bruce Tate is a mountain biker, climber and father of two. He's the co-author of Programming Phoenix, Adopting Elixir and Designing Elixir Systems with OTP. He runs the Programmer Passport program, a subscription service that helps programmers advance by teaching them new programming languages.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="presentation" id="jeff-grunewald">
+        <div class="presentation-presenter">
+          <div class="presentation-presenter__avatar-container">
+            <%= image_tag "people/presenters/jeff-grunewald.jpg", class: "presentation-presenter__avatar" %>
+          </div>
+
+          <h4 class="presentation-presenter__name">
+            Jeff Grunewald
+          </h4>
+
+          <div class="presentation-presenter__link">
+            <a target="_blank" href="https://twitter.com/TODO">@TODO</a>
+          </div>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            Stream-processing connected vehicle data in Elixir
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              “Smart” and connected vehicles generate TONS of data. To make use of that data from a fleet of vehicles for analysis of V2V interactions, traffic patterns, or control flow, you have to consume as much of it as fast as possible with high fidelity. The team at SmartColumbus has spent the last year building robust data ingestion capabilities in Elixir at the speed and scale needed to support thousands of vehicles simultaneously.
+            </p>
+            <p>
+              This talk will showcase the strategies developed for concurrent processing, batching, and validating data across each of these unique streams. You’ll learn about the design decisions the team has made as well as the open source libraries we’ve developed to enable data consumption at the scale of a “Smart City”.
+            </p>
+          </div>
+
+          <div class="presentation__bio">
+            <p>
+              <strong>About Jeff:</strong>
+              Jeff has been in technology for over a decade, first as a systems and network administrator and later in the DevOps and software engineering space. He has extensive experience with Kubernetes and has been in love with the Elixir language and the Erlang Virtual Machine for the past three years, working to grow the adoption of the relatively young language. He's an avid reader, sci fi fan, and gamer often found grinding hours in the Destiny universe.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="presentation" id="geoffrey-lessel">
+        <div class="presentation-presenter">
+          <div class="presentation-presenter__avatar-container">
+            <%= image_tag "people/presenters/geoffrey-lessel.jpg", class: "presentation-presenter__avatar" %>
+          </div>
+
+          <h4 class="presentation-presenter__name">
+            Geoffrey Lessel
+          </h4>
+
+          <div class="presentation-presenter__link">
+            <a target="_blank" href="https://twitter.com/geolessel">@geolessel</a>
+          </div>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            Controlling MIDI Devices in Real Time with Elixir and Nerves
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              MIDI is a specification developed in the 80s to allow musical
+              instruments to talk to each other in near real-time. This
+              inter-instrument talk involved sending notes, changing syntesizer
+              patches, and modifying a song's BPM. Since the 80s, MIDI has continued
+              to be the go-to specification for controlling musical instruments,
+              lighting rigs, and more!
+            </p>
+            <p>
+              In this talk, I'll demonstrate how Elixir can control MIDI devices
+              (specifically, for this talk, an analog synthesizer) in
+              real-time. I'll show how OTP provides a great way to implement this
+              control and the benefits and drawbacks of using it for real-time
+              musical instrumentation.
+            </p>
+            <p>
+              Furthermore, I will demonstrate how this system is then visualized using Phoenix and LiveView.
+            </p>
+          </div>
+
+          <div class="presentation__bio">
+            <p>
+              <strong>About Geoffrey:</strong>
+              Geoffrey Lessel has been a web developer for over 15 years — first with PHP and Perl and now with Ruby on Rails and Phoenix. He has spoken at ElixirConf, blogs about Elixir and Ecto at geoffreylessel.com, and tweets from @geolessel.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </section>
+  </section>
+
   <section id="sponsors" class="sponsor-section">
     <section class="sponsor-list">
       <h2>Sponsors</h2>
