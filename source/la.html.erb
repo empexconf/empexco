@@ -93,8 +93,8 @@
       </div>
 
       <div class="hero__buttons">
-        <a class="hero__button hero__button--buy" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScZx5D1thZ_QWH4vUGjMnk7fnVxvfQYzoaIheBLCUxadS8qbQ/viewform">
-          CFP Now Open!
+        <a class="hero__button hero__button--buy" target="_blank" href="https://ti.to/empex/empex-la-2020">
+          Get your Tickets now!
         </a>
       </div>
     </section>
@@ -146,6 +146,593 @@
         </div>
       </div>
     </div>
+  </section>
+
+  <section id="presentations" class="presentations">
+
+    <section class="presentation-list">
+      <h2 class="presentations-list__title">Keynotes</h2>
+      <div class="presentations-list__intro">
+        <p>We&#39;re excited and proud to announce our keynote speakers for EMPEX LA!</p>
+      </div>
+
+      <section class="presentation" id="realtime-ux">
+        <div class="presentation-presenter">
+          <div class="presentation-panel">
+
+            <div class="presentation-panel__member">
+              <div class="presentation-presenter__avatar-container">
+                <%= image_tag "people/presenters/beau-rheubach.jpg", class: "presentation-presenter__avatar" %>
+              </div>
+
+              <h4 class="presentation-presenter__name">
+                Beau Heubach
+              </h4>
+
+              <div class="presentation-presenter__link">
+                <a target="_blank" href="https://twitter.com/rheubach">@rheubach</a>
+              </div>
+            </div>
+
+            <div class="presentation-panel__member">
+              <div class="presentation-presenter__avatar-container">
+                <%= image_tag "people/presenters/zack-kayser.jpg", class: "presentation-presenter__avatar" %>
+              </div>
+
+              <h4 class="presentation-presenter__name">
+                Zack Kayser
+              </h4>
+
+              <div class="presentation-presenter__link">
+                <a target="_blank" href="https://twitter.com/kayserzl">@kayserzl</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            Building Real Time Experiences with LiveView and UX Principles
+          </h3>
+
+          <div class="presentation__description">
+           <p>
+             The need for fast and clear real-time responses are not new to user experience and application development. Instant feedback and system status are core to building better interactive interfaces. Now, our ability to deliver real-time user experiences is becoming more straightforward with the use of LiveView. How can we ensure these features provide the feedback and updates the user is looking for? How can we ensure LiveView delivers the smooth experience we hope for? Applying several common user experience principles, we can bring a base consistency to our real time features while leveraging the power that LiveView brings us to provide live feedback and updates from client interactions AND server-side events.
+            </p>
+          </div>
+
+          <div class="presentation__bio">
+            <p>
+              <strong>About Beau:</strong>
+              Beau is a UX designer, front-end developer, and father of six with 15 years of experience working to solve complex usability problems and learning how to measure user experience. He loves working at Gaslight, a custom agile shop, where he leads projects from user research through to product delivery.
+            </p>
+
+            <p>
+              <strong>About Zack:</strong>
+              Zack is a software engineer at Gaslight in Cincinnati, Ohio, and has spent the last couple of years working on a wide variety of projects -- ranging from server-side applications, to iOS and web frontend enterprise applications, to one-day hackathon projects, all the way to game development for personal enjoyment (and pain :-D). Ever since being introduced to Elixir, Erlang, and OTP in 2016, he has been a huge proponent of functional programming and an evangelist for a movement towards more immutability and no shared state wherever possible. Prior to entering the software industry, he was a professional translator specializing in English to Japanese translation. Outside of work, Zack is an avid traveler.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </section>
+
+    <section class="presentation-list">
+      <h2 class="presentations-list__title">Presentations</h2>
+      <div class="presentations-list__intro">
+        <p>
+          We're proud to announce the following presentations for EMPEX LA!
+        </p>
+      </div>
+
+      <section class="presentation" id="aaron-harpole">
+        <div class="presentation-presenter">
+          <div class="presentation-presenter__avatar-container">
+            <%= image_tag "people/presenters/aaron-harpole.jpg", class: "presentation-presenter__avatar" %>
+          </div>
+
+          <h4 class="presentation-presenter__name">
+            Aaron Harpole
+          </h4>
+
+          <div class="presentation-presenter__link">
+            <a target="_blank" href="https://twitter.com/harpaa01">@harpaa01</a>
+          </div>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            The Case Against Scale
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              Scale is a very popular topic among software engineers, and it is something many of us strive to do well, but we rarely discuss its consequences. We think of scale as an inherently good thing. After all, you can make more money, run more efficiently, and solve tough problems. But with this year's theme of building large-scale applications, I'd like to flip that sentiment on its head and make the case against scale.
+            </p>
+          </div>
+
+          <%# <div class="presentation__bio">
+            <p>
+              <strong>About Aaron:</strong>
+              TODO
+            </p>
+          </div> %>
+        </div>
+      </section>
+
+      <section class="presentation" id="bruce-tate">
+        <div class="presentation-presenter">
+          <div class="presentation-presenter__avatar-container">
+            <%= image_tag "people/presenters/bruce-tate.jpg", class: "presentation-presenter__avatar" %>
+          </div>
+
+          <h4 class="presentation-presenter__name">
+            Bruce Tate
+          </h4>
+
+          <div class="presentation-presenter__link">
+            <a target="_blank" href="https://twitter.com/redrapids">@redrapids</a>
+          </div>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            Bring On the WorkerBees (Designing Elixir Systems with OTP)
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              "If you want to be a great Elixir developers, you need to learn to build your programs in layers, the way the experts do. In this session, we will explore the advice: 
+            </p>
+            <p>
+              Do Fun Things with Big, Loud Workerbees. 
+            </p>
+            <p>
+              This sentence, from Designing Elixir Systems with OTP, is a mental mnemonic that stands for Data, Functions, Tests; Boundaries, Lifecycles and Workers. We'll talk about each of these layers in detail focusing on the role of each independent layer in a self-healing, performant Elixir program"
+            </p>
+          </div>
+
+          <div class="presentation__bio">
+            <p>
+              <strong>About Bruce:</strong>
+              The founder of Groxio, Bruce Tate is a mountain biker, climber and father of two. He's the co-author of Programming Phoenix, Adopting Elixir and Designing Elixir Systems with OTP. He runs the Programmer Passport program, a subscription service that helps programmers advance by teaching them new programming languages.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="presentation" id="geoffrey-lessel">
+        <div class="presentation-presenter">
+          <div class="presentation-presenter__avatar-container">
+            <%= image_tag "people/presenters/geoffrey-lessel.jpg", class: "presentation-presenter__avatar" %>
+          </div>
+
+          <h4 class="presentation-presenter__name">
+            Geoffrey Lessel
+          </h4>
+
+          <div class="presentation-presenter__link">
+            <a target="_blank" href="https://twitter.com/geolessel">@geolessel</a>
+          </div>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            Controlling MIDI Devices in Real Time with Elixir and Nerves
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              MIDI is a specification developed in the 80s to allow musical
+              instruments to talk to each other in near real-time. This
+              inter-instrument talk involved sending notes, changing syntesizer
+              patches, and modifying a song's BPM. Since the 80s, MIDI has continued
+              to be the go-to specification for controlling musical instruments,
+              lighting rigs, and more!
+            </p>
+            <p>
+              In this talk, I'll demonstrate how Elixir can control MIDI devices
+              (specifically, for this talk, an analog synthesizer) in
+              real-time. I'll show how OTP provides a great way to implement this
+              control and the benefits and drawbacks of using it for real-time
+              musical instrumentation.
+            </p>
+            <p>
+              Furthermore, I will demonstrate how this system is then visualized using Phoenix and LiveView.
+            </p>
+          </div>
+
+          <div class="presentation__bio">
+            <p>
+              <strong>About Geoffrey:</strong>
+              Geoffrey Lessel has been a web developer for over 15 years—first with PHP and Perl and now with Ruby on Rails and Phoenix. He is the author of Phoenix in Action, has spoken at multiple ElixirConfs, and most importantly, is a returning Empex LA speaker. Find his blog at <a href="http://geoffreylessel.com">geoffreylessel.com</a> and tweets at @geolessel.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="presentation" id="jeff-grunewald">
+        <div class="presentation-presenter">
+          <div class="presentation-presenter__avatar-container">
+            <%= image_tag "people/presenters/jeff-grunewald.jpg", class: "presentation-presenter__avatar" %>
+          </div>
+
+          <h4 class="presentation-presenter__name">
+            Jeff Grunewald
+          </h4>
+
+          <%# <div class="presentation-presenter__link">
+            <a target="_blank" href="https://twitter.com/TODO">@TODO</a>
+          </div> %>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            Stream-processing connected vehicle data in Elixir
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              “Smart” and connected vehicles generate TONS of data. To make use of that data from a fleet of vehicles for analysis of V2V interactions, traffic patterns, or control flow, you have to consume as much of it as fast as possible with high fidelity. The team at SmartColumbus has spent the last year building robust data ingestion capabilities in Elixir at the speed and scale needed to support thousands of vehicles simultaneously.
+            </p>
+            <p>
+              This talk will showcase the strategies developed for concurrent processing, batching, and validating data across each of these unique streams. You’ll learn about the design decisions the team has made as well as the open source libraries we’ve developed to enable data consumption at the scale of a “Smart City”.
+            </p>
+          </div>
+
+          <div class="presentation__bio">
+            <p>
+              <strong>About Jeff:</strong>
+              Jeff has been in technology for over a decade, first as a systems and network administrator and later in the DevOps and software engineering space. He has extensive experience with Kubernetes and has been in love with the Elixir language and the Erlang Virtual Machine for the past three years, working to grow the adoption of the relatively young language. He's an avid reader, sci fi fan, and gamer often found grinding hours in the Destiny universe.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="presentation" id="jesse-anderson">
+        <div class="presentation-presenter">
+          <div class="presentation-presenter__avatar-container">
+            <%= image_tag "people/presenters/jesse-anderson.jpg", class: "presentation-presenter__avatar" %>
+          </div>
+
+          <h4 class="presentation-presenter__name">
+            Jesse J. Anderson
+          </h4>
+
+          <div class="presentation-presenter__link">
+            <a target="_blank" href="https://twitter.com/jessejanderson">@jessejanderson</a>
+          </div>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            Powering Pixels with Scenic
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              Scenic is a powerful new library that empowers us to build our own user interfaces from scratch that work outside of the browser. Let’s put it to the test in building our very own video game. We’ll explore a variety of techniques for basic game development such as animation, finite state machines, alternate input devices, etc. With Scenic, is Elixir now the ideal language for game development? Probably not but who cares, let’s just have some fun!
+            </p>
+          </div>
+
+          <div class="presentation__bio">
+            <p>
+              <strong>About Jeff:</strong>
+              Jeff has been in technology for over a decade, first as a systems and network administrator and later in the DevOps and software engineering space. He has extensive experience with Kubernetes and has been in love with the Elixir language and the Erlang Virtual Machine for the past three years, working to grow the adoption of the relatively young language. He's an avid reader, sci fi fan, and gamer often found grinding hours in the Destiny universe.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="presentation" id="julian-doherty">
+        <div class="presentation-presenter">
+          <div class="presentation-presenter__avatar-container">
+            <%= image_tag "people/presenters/julian-doherty.jpg", class: "presentation-presenter__avatar" %>
+          </div>
+
+          <h4 class="presentation-presenter__name">
+            Julian Doherty
+          </h4>
+
+          <div class="presentation-presenter__link">
+            <a target="_blank" href="https://twitter.com/madlep">@madlep</a>
+          </div>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            Real time strategy at light speed
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              Real time space battle multiplayer browser games are cool. But what if we want to play a real time space battle multiplayer game where the players are hundreds of millions of miles apart, and the speed of light is a factor in who sees what happening, and when?
+            </p>
+            <p>
+              Hard sci-fi like "The Expanse", or "Dread Empire's Fall" go into excruciating detail on how long it takes to even see what is happening, and how long ago it really did happen - which could be minutes or hours. Battles play out like high latency, async chess games. Warships hurl missiles at each other over enormous distances and speeds, rather than frenetic "World War 2 fighter planes in space" you get in Star Wars.
+            </p>
+            <p>
+              In a plain old Elixir realtime game, you don't have to worry about that - you just send all messages to all clients as soon as they arrive. But what if we need to delay some of those messages for an arbitrary amount of time depending on where different actors are in the virtual solar system? What design patterns and ways of thinking about how our app is built do we need to do to be able to build something like that?
+            </p>
+          </div>
+
+          <div class="presentation__bio">
+            <p>
+              <strong>About Julian:</strong>
+              Julian is a lead developer with 20 years experience, and has been hacking on Elixir for the last 5.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="presentation" id="michael-ries">
+        <div class="presentation-presenter">
+          <div class="presentation-presenter__avatar-container">
+            <%= image_tag "people/presenters/michael-ries.jpg", class: "presentation-presenter__avatar" %>
+          </div>
+
+          <h4 class="presentation-presenter__name">
+            Michael Ries
+          </h4>
+
+          <div class="presentation-presenter__link">
+            <a target="_blank" href="https://twitter.com/mmmries">@mmmries</a>
+          </div>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            Nerves Takes to the Sky
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              The problem with a paper airplane, is that it always seems to turn one way or the other. I can never get them to maintain a steady course. What if Nerves was riding along as the pilot?
+            </p>
+            <p>
+              We'll first talk about inertial measurement sensors and how they can report their position in 3-D space. Then we'll dive into how we can talk to those sensors from a Nerves project. We'll end by talking about some logistics around weight, battery, etc and with any luck a live demo of tossing a glider over the heads of the audience. I'll bring a video as backup in-case the live demo is hazardous or fails.
+            </p>
+          </div>
+
+          <div class="presentation__bio">
+            <p>
+              <strong>About Michael:</strong>
+              Michael builds systems with Elixir and Ruby in Utah. He spends most evenings reading and building Legos with his children. He organizes the Nerves Remote Meetup to discuss hardware and software with friends and hopes to one day build a robot that doesn't scare his children.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="presentation" id="peer-stritzinger">
+        <div class="presentation-presenter">
+          <div class="presentation-presenter__avatar-container">
+            <%= image_tag "people/presenters/peer-stritzinger.jpg", class: "presentation-presenter__avatar" %>
+          </div>
+
+          <h4 class="presentation-presenter__name">
+            Peer Stritzinger
+          </h4>
+
+          <div class="presentation-presenter__link">
+            <a target="_blank" href="https://twitter.com/peerstr">@peerstr</a>
+          </div>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            GRiSP Ecosystem for Real Bare Metal Erlang VM
+          </h3>
+
+          <%# <div class="presentation__description">
+            <p>
+            </p>
+            <p>
+            </p>
+          </div> %>
+
+          <div class="presentation__bio">
+            <p>
+              <strong>About Peer:</strong>
+              Originally from Wellington, New Zealand, he now calls Melbourne, Australia home, currently working at Envato. Julian also runs the [Elixir Melbourne](https://www.meetup.com/en-AU/Elixir-Melbourne/) meetup group, and tries to spend as much time as possible inflicting Elixir and functional programming paradigms on codebases he works in.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="presentation" id="ryan-trontz">
+        <div class="presentation-presenter">
+          <div class="presentation-presenter__avatar-container">
+            <%# image_tag "people/presenters/ryan-trontz.jpg", class: "presentation-presenter__avatar" %>
+          </div>
+
+          <h4 class="presentation-presenter__name">
+            Ryan Trontz
+          </h4>
+
+          <div class="presentation-presenter__link">
+            <a target="_blank" href="https://twitter.com/tr00gle">@tr00gle</a>
+          </div>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            The Messaging Metamorphosis: Using Kafka, Elixir, and GenStage to Transform Transactional Messaging @ Dollar Shave Club
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              Elixir, Apache Kafka, and Microservices have all exploded in popularity in the last few years. While their popularities have all exploded, clear understanding of their interplay has not. 
+            </p>
+            <p>
+              In this talk, we'll cover cover exactly that, and then some. As companies transition...slowly...from a single (Rails in LA) monolith to a plethora of microservices, asynchronous message passing, the foundation of both Kafka and Elixir, has become crucial to the  scalability, maintainability, and reliability of a distributed architecture. We'll use DSC's Transactional Messaging Service, an Elixir microservice, leveraging OTP, GenStage, and Kubernetes to consumes and send thousands of transactional messages (both email and SMS) per minute to members around the world as the lens through which we'll connect these tools and paradigms into a message-transforming model. 
+            </p>
+            <p>
+              First, we'll compare and contrast the following:
+              <ul>
+                <li>Kafka as a real-time microservice messaging hub, and the roles in its system (Producer > Broker > Consumer)</li>
+                <li>GenStage as a messaging pipeline, routing system, and transform stream, and the roles in its system (Producer > Producer-Consumer > Consumer)</li>
+              </ul>
+            </p>
+            <p>
+              Then, we'll explore and OTP application as more than a Kafka Consumer, but rather an extension to Kafka. We'll examine how GenStage allows us to
+              <ul>
+                <li>Manage highly variable rates of traffic using backpressure when scaling horizontally is either too slow or unavailable</li>
+                <li>Transform messages in flight</li>
+                <li>Route specific messages to new pipelines for batching and sending downstream later </li>
+                <li>Introducing fault tolerance against flaky downstream dependencies via re-publishing to kafka</li>
+              </ul>
+            </p>
+            <p>
+              Finally, we'll explore the extensibility of the system at large, covering the ease with which both upstream and downstream service dependencies can be added, subtracted, and swapped with minimal effort.
+            </p>
+          </div>
+
+          <%# <div class="presentation__bio">
+            <p>
+              <strong>About Ryan:</strong>
+            </p>
+          </div> %>
+        </div>
+      </section>
+
+      <section class="presentation" id="shanti-chellaram">
+        <div class="presentation-presenter">
+          <div class="presentation-presenter__avatar-container">
+            <%= image_tag "people/presenters/shanti-chellaram.jpg", class: "presentation-presenter__avatar" %>
+          </div>
+
+          <h4 class="presentation-presenter__name">
+            Shanti Chellaram
+          </h4>
+
+          <div class="presentation-presenter__link">
+            <a target="_blank" href="https://twitter.com/tr00gle">@theccoder</a>
+          </div>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            High Performance Data Structures in Erlang
+          </h3>
+
+          <div class="presentation__description">
+            <p>
+              Writing efficient data structures in Erlang isn't something that's normally done - but by borrowing from both Purely Functional Data Structures, some additional work on Finger Trees, and occasionally cheating with some C code, we can get performance that beats the native OTP implementations. I've written many different versions of data structures for my previous jobs and now I am in the process of bundling up the modules, polishing them up, and open sourcing them for the public's enjoyment and use. Specifically, I'll be covering implementations of mergeable / non-mergeable heaps, queues, and indexable arrays.
+            </p>
+          </div>
+          <%# <div class="presentation__bio">
+            <p>
+              <strong>About Shanti:</strong>
+              Originally from Wellington, New Zealand, he now calls Melbourne, Australia home, currently working at Envato. Julian also runs the [Elixir Melbourne](https://www.meetup.com/en-AU/Elixir-Melbourne/) meetup group, and tries to spend as much time as possible inflicting Elixir and functional programming paradigms on codebases he works in.
+            </p>
+          </div> %>
+        </div>
+      </section>
+
+    </section>
+  </section>
+
+  <section id="schedule" class="schedule">
+    <h2>Schedule</h2>
+    <table class="schedule-table">
+      <tr>
+        <td class="event">
+          <div class="title">Doors open / Registration</div>
+          Show up and hang out. Mingle!
+        </td>
+        <td class="time">
+          9:00AM
+        </td>
+      </tr>
+      <tr>
+        <td class="event">
+          <div class="title">Opening Remarks</div>
+        </td>
+        <td class="time">
+          9:30AM
+        </td>
+      </tr>
+      <tr>
+        <td class="event">
+          <div class="title">Morning Keynote</div>
+        </td>
+        <td class="time">
+          9:35AM
+        </td>
+      </tr>
+      <tr>
+        <td class="event">
+          <div class="title">
+            Talks
+          </div>
+        </td>
+        <td class="time">
+          10:20AM
+        </td>
+      </tr>
+      <tr>
+        <td class="event">
+          <div class="title">
+            Lunch
+          </div>
+          Yum yums.
+        </td>
+        <td class="time">
+          12:00PM
+        </td>
+      </tr>
+      <tr>
+        <td class="event">
+          <div class="title">
+            More Talks!
+          </div>
+        </td>
+        <td class="time">
+          12:40PM
+        </td>
+      </tr>
+      <tr>
+        <td class="event">
+          <div class="title">
+            Closing Keynote
+          </div>
+        </td>
+        <td class="time">
+          4:45PM
+        </td>
+      </tr>
+      <tr>
+        <td class="event">
+          <div class="title">
+            Closing Remarks
+          </div>
+        </td>
+        <td class="time">
+          5:25PM
+        </td>
+      </tr>
+      <tr>
+        <td class="event">
+          <div class="title">Dismiss</div>
+          Let's wrap it up!
+        </td>
+        <td class="time">
+          5:30PM
+        </td>
+      </tr>
+      <tr>
+        <td class="event">
+          <div class="title">
+            After Party
+          </div>
+        </td>
+        <td class="time">
+          6:00PM
+        </td>
+      </tr>
+    </table>
   </section>
 
   <section id="sponsors" class="sponsor-section">
