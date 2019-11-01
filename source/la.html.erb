@@ -149,6 +149,75 @@
   </section>
 
   <section id="presentations" class="presentations">
+
+    <section class="presentation-list">
+      <h2 class="presentations-list__title">Keynotes</h2>
+      <div class="presentations-list__intro">
+        <p>We&#39;re excited and proud to announce our keynote speakers for EMPEX LA!</p>
+      </div>
+
+      <section class="presentation" id="realtime-ux">
+        <div class="presentation-presenter">
+          <div class="presentation-panel">
+
+            <div class="presentation-panel__member">
+              <div class="presentation-presenter__avatar-container">
+                <%= image_tag "people/presenters/beau-rheubach.jpg", class: "presentation-presenter__avatar" %>
+              </div>
+
+              <h4 class="presentation-presenter__name">
+                Beau Heubach
+              </h4>
+
+              <div class="presentation-presenter__link">
+                <a target="_blank" href="https://twitter.com/rheubach">@rheubach</a>
+              </div>
+            </div>
+
+            <div class="presentation-panel__member">
+              <div class="presentation-presenter__avatar-container">
+                <%= image_tag "people/presenters/zack-kayser.jpg", class: "presentation-presenter__avatar" %>
+              </div>
+
+              <h4 class="presentation-presenter__name">
+                Zack Kayser
+              </h4>
+
+              <div class="presentation-presenter__link">
+                <a target="_blank" href="https://twitter.com/kayserzl">@kayserzl</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="presentation__details">
+          <h3 class="presentation__title">
+            Building Real Time Experiences with LiveView and UX Principles
+          </h3>
+
+          <div class="presentation__description">
+           <p>
+             The need for fast and clear real-time responses are not new to user experience and application development. Instant feedback and system status are core to building better interactive interfaces. Now, our ability to deliver real-time user experiences is becoming more straightforward with the use of LiveView. How can we ensure these features provide the feedback and updates the user is looking for? How can we ensure LiveView delivers the smooth experience we hope for? Applying several common user experience principles, we can bring a base consistency to our real time features while leveraging the power that LiveView brings us to provide live feedback and updates from client interactions AND server-side events.
+            </p>
+          </div>
+
+          <div class="presentation__bio">
+            <p>
+              <strong>About Beau:</strong>
+              Beau is a UX designer, front-end developer, and father of six with 15 years of experience working to solve complex usability problems and learning how to measure user experience. He loves working at Gaslight, a custom agile shop, where he leads projects from user research through to product delivery.
+            </p>
+
+            <p>
+              <strong>About Zack:</strong>
+              Zack is a software engineer at Gaslight in Cincinnati, Ohio, and has spent the last couple of years working on a wide variety of projects -- ranging from server-side applications, to iOS and web frontend enterprise applications, to one-day hackathon projects, all the way to game development for personal enjoyment (and pain :-D). Ever since being introduced to Elixir, Erlang, and OTP in 2016, he has been a huge proponent of functional programming and an evangelist for a movement towards more immutability and no shared state wherever possible. Prior to entering the software industry, he was a professional translator specializing in English to Japanese translation. Outside of work, Zack is an avid traveler.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </section>
+
     <section class="presentation-list">
       <h2 class="presentations-list__title">Presentations</h2>
       <div class="presentations-list__intro">
@@ -236,7 +305,7 @@
       <section class="presentation" id="geoffrey-lessel">
         <div class="presentation-presenter">
           <div class="presentation-presenter__avatar-container">
-            <%# image_tag "people/presenters/geoffrey-lessel.jpg", class: "presentation-presenter__avatar" %>
+            <%= image_tag "people/presenters/geoffrey-lessel.jpg", class: "presentation-presenter__avatar" %>
           </div>
 
           <h4 class="presentation-presenter__name">
@@ -325,7 +394,7 @@
       <section class="presentation" id="jesse-anderson">
         <div class="presentation-presenter">
           <div class="presentation-presenter__avatar-container">
-            <%# image_tag "people/presenters/jesse-anderson.jpg", class: "presentation-presenter__avatar" %>
+            <%= image_tag "people/presenters/jesse-anderson.jpg", class: "presentation-presenter__avatar" %>
           </div>
 
           <h4 class="presentation-presenter__name">
@@ -439,7 +508,7 @@
       <section class="presentation" id="peer-stritzinger">
         <div class="presentation-presenter">
           <div class="presentation-presenter__avatar-container">
-            <%# image_tag "people/presenters/peer-stritzinger.jpg", class: "presentation-presenter__avatar" %>
+            <%= image_tag "people/presenters/peer-stritzinger.jpg", class: "presentation-presenter__avatar" %>
           </div>
 
           <h4 class="presentation-presenter__name">
@@ -557,64 +626,6 @@
             <p>
               <strong>About Shanti:</strong>
               Originally from Wellington, New Zealand, he now calls Melbourne, Australia home, currently working at Envato. Julian also runs the [Elixir Melbourne](https://www.meetup.com/en-AU/Elixir-Melbourne/) meetup group, and tries to spend as much time as possible inflicting Elixir and functional programming paradigms on codebases he works in.
-            </p>
-          </div> %>
-        </div>
-      </section>
-
-      <section class="presentation" id="elixir-vs-go">
-        <div class="presentation-presenter">
-          <div class="presentation-panel">
-
-            <div class="presentation-panel__member">
-              <div class="presentation-presenter__avatar-container">
-                <%# image_tag "people/presenters/rheubach.jpg", class: "presentation-presenter__avatar" %>
-              </div>
-
-              <h4 class="presentation-presenter__name">
-                Beau Heubach
-              </h4>
-
-              <div class="presentation-presenter__link">
-                <a target="_blank" href="https://twitter.com/aneyzb">@rheubach</a>
-              </div>
-            </div>
-
-            <div class="presentation-panel__member">
-              <div class="presentation-presenter__avatar-container">
-                <%# image_tag "people/organizers/zack-kayser.png", class: "presentation-presenter__avatar" %>
-              </div>
-
-              <h4 class="presentation-presenter__name">
-                Zack Kayser
-              </h4>
-
-              <div class="presentation-presenter__link">
-                <a target="_blank" href="https://twitter.com/techgirlwonder">@kayserzl </a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="presentation__details">
-          <h3 class="presentation__title">
-            Building Real Time Experiences with LiveView and UX Principles
-          </h3>
-
-          <div class="presentation__description">
-            <p>
-              I will explore the stories and history of companies that have achieved incredible scale. I will discuss how scale appeared to be great for customers until it wasn't, and how it appeared to be great for the companies until it wasn’t.
-            </p>
-          </div>
-
-          <%# <div class="presentation__bio">
-            <p>
-              <strong>About Zack:</strong>
-            </p>
-
-            <p>
-              <strong>About Beau:</strong>
             </p>
           </div> %>
         </div>
