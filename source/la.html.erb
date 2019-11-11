@@ -574,42 +574,55 @@
 
         <div class="presentation__details">
           <h3 class="presentation__title">
-            The Messaging Metamorphosis: Using Kafka, Elixir, and GenStage to Transform Transactional Messaging @ Dollar Shave Club
+            Messaging Metamorphosis: Using Kafka and GenStage to Transform Transactional Messaging @ Dollar Shave Club
           </h3>
 
           <div class="presentation__description">
             <p>
-              Elixir, Apache Kafka, and Microservices have all exploded in popularity in the last few years. While their popularities have all exploded, clear understanding of their interplay has not. 
+              Elixir, Apache Kafka, and Microservices have all exploded in popularity in the last few years. While their popularities have all exploded, clear understanding of their interplay has not. In this talk, we’ll cover exactly that, and then some. As companies transition from a monolith to a plethora of microservices, asynchronous messaging, the foundation of both Kafka and Elixir, is crucial to well-architected distributed system.
             </p>
             <p>
-              In this talk, we'll cover cover exactly that, and then some. As companies transition...slowly...from a single (Rails in LA) monolith to a plethora of microservices, asynchronous message passing, the foundation of both Kafka and Elixir, has become crucial to the  scalability, maintainability, and reliability of a distributed architecture. We'll use DSC's Transactional Messaging Service, an Elixir microservice, leveraging OTP, GenStage, and Kubernetes to consumes and send thousands of transactional messages (both email and SMS) per minute to members around the world as the lens through which we'll connect these tools and paradigms into a message-transforming model. 
+              DSC’s Transactional Messaging Service (TMS) is a highly scalable and fault-tolerant
+              Elixir microservice built with Kafka and GenStage and deployed to Kubernetes. It
+              consumes from Kafka to send thousands of transactional messages per minute to
+              our members around the world. We’ll use this service as the lens through which we’ll
+              connect these tools into a truly transformative messaging pipeline.
             </p>
             <p>
-              First, we'll compare and contrast the following:
+              First, we’ll compare and contrast the following:
               <ul>
-                <li>Kafka as a real-time microservice messaging hub, and the roles in its system (Producer > Broker > Consumer)</li>
-                <li>GenStage as a messaging pipeline, routing system, and transform stream, and the roles in its system (Producer > Producer-Consumer > Consumer)</li>
+                <li>
+                  Kafka as a real-time microservice messaging hub, and the roles in its system (Producer > Broker > Consumer)
+                </li>
+                <li>
+                  GenStage as a messaging pipeline, routing system, and transform stream, and the roles in its system (Producer > Producer-Consumer > Consumer)
+                </li>
               </ul>
             </p>
             <p>
-              Then, we'll explore and OTP application as more than a Kafka Consumer, but rather an extension to Kafka. We'll examine how GenStage allows us to
+              Then, we’ll explore TMS as more than a mere Kafka Consumer. We’ll explore its use
+              as (via GenStage) as an extension of Kafka itself. We’ll examine how Genstage
+              allows us to
+
               <ul>
-                <li>Manage highly variable rates of traffic using backpressure when scaling horizontally is either too slow or unavailable</li>
-                <li>Transform messages in flight</li>
-                <li>Route specific messages to new pipelines for batching and sending downstream later </li>
-                <li>Introducing fault tolerance against flaky downstream dependencies via re-publishing to kafka</li>
+                <li>manage highly variable rates of traffic.</li>
+                <li>transform messages in flight.</li>
+                <li>route messages to new pipelines for batch processing later.</li>
+                <li>
+                  build our own fault-tolerance against flakey downstream dependencies by re- publishing to Kafka.
+                </li>
               </ul>
             </p>
             <p>
               Finally, we'll explore the extensibility of the system at large, covering the ease with which both upstream and downstream service dependencies can be added, subtracted, and swapped with minimal effort.
             </p>
           </div>
-
-          <%# <div class="presentation__bio">
+          <div class="presentation__bio">
             <p>
               <strong>About Ryan:</strong>
+              Ryan is a backend engineer at Dollar Shave Club. His favorite hobby and job are one and the same: learning. He’s been learning for a lifetime, teaching for half of one, and doing both at Dollar Shave Club since 2018. He stumbled into Alchemy (Elixir) and Metamorphosis (Kafka) around that time, catapulting his use of brutal puns to a new level. Outside of DSC, he teaches a Javascript course composed entirely of either Wu-Tang Clan or ramen themed code snippets. His superpower is wildly overestimating his on-the-couch Jeopardy skill.
             </p>
-          </div> %>
+          </div>
         </div>
       </section>
 
