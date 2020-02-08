@@ -41,7 +41,18 @@
   <body class="events events_2017 events_2017_conference">
     
     <div class="navbar-spacer"></div>
-    
+    <nav id="navbar" class="navbar">
+  <div class="container">
+    <ul class="navbar-list">
+        <li class="navbar-item"><a href="#about" class="navbar-link">About</a></li>
+        <li class="navbar-item"><a href="#location" class="navbar-link">Location</a></li>
+        <li class="navbar-item"><a href="#training" class="navbar-link">Training</a></li>
+        <li class="navbar-item"><a href="#sponsors" class="navbar-link">Sponsors</a></li>
+        <li class="navbar-item"><a href="#organizers" class="navbar-link">Organizers</a></li>
+    </ul>
+  </div>
+</nav>
+
     <main>
       
 
@@ -585,37 +596,96 @@ in Soho.</p>
 	<section class="presentation">
     <div class="presentation-presenter">
         <div class="presentation-presenter__avatar-container">
-            <img src="/assets/images/people/presenters/andrea-leopardi-9842fccc.jpg" class="presentation-presenter__avatar" alt="Andrea Leopardi" />
+          <img src="/assets/images/people/presenters/frank-hunleth-2909cadb.jpg"
+               class="presentation-presenter__avatar"
+               alt="Frank Hunleth's Headshot" />
         </div>
+        <h4 class="presentation-presenter__name">Frank Hunleth</h4>
+        <p class="presentation-presenter__link">
+          <a href="https://twitter.com/fhunleth">@fhunleth</a>
+        </p>
+        <br/>
 
-        <h4 class="presentation-presenter__name">Andrea Leopardi</h4>
-
-        <p class="presentation-presenter__link"><a href="https://twitter.com/whatyouhide">@whatyouhide</a></p>
-        </br>
         <div class="presentation-presenter__avatar-container">
-            <img src="/assets/images/people/presenters/eric-meadows-jonsson-90e77ea0.jpg" class="presentation-presenter__avatar" alt="Eric Meadows-Jönsson" />
+          <img src="/assets/images/people/presenters/justin-schneck-d41cdd4c.jpg"
+               class="presentation-presenter__avatar"
+               alt="Justin Schneck's Headshot" />
         </div>
-
-        <h4 class="presentation-presenter__name">Eric Meadows-Jönsson</h4>
-
-        <!-- <p class="presentation-presenter__link"><a href="https://twitter.com/whatyouhide">@whatyouhide</a></p> -->
+        <h4 class="presentation-presenter__name">Justin Schneck</h4>
+        <p class="presentation-presenter__link">
+          <a href="https://twitter.com/mobileoverlord">@mobileoverlord</a>
+        </p>
+        <br/>
     </div>
 
     <div class="presentation__details">
-        <h3 class="presentation__title">Parallel Computation with Elixir</h3>
-        <div class="presentation__description">
-          <p>
-          Elixir provides a few tools to parallelize computation and parallel processing of collections in particular. These tools operate at different levels of abstraction and complexity. On one end, you can manually spawn processes to do work and manually collect results; on the other end, you can use more complex tools like GenStage and Flow. The choice of tool depends on the situation at hand.
-          </p><p>
-          In this training, we want to explore the tools available for parallel computation, alongside their use cases and their strength and weaknesses. We will start from the simplest approach of manually spawning processes, move on to tasks and Task.async_stream, and finally work with GenStage and Flow.
-          </p><p>
-          This tutorial is aimed for people that are familiar with Elixir syntax and with the &quot;functional&quot; and data-related part of Elixir (data types, modules, functions). Knowledge about processes is welcome, but we are prepared to introduce concurrency in Elixir in case the audience is not strong on the area.
-          </p>
+      <h3 class="presentation__title">
+        Device to the Cloud with Nerves and NervesHub
+      </h3>
+      <div class="presentation__description">
+        <p>
+          The Elixir language and Erlang runtime provide a uniquely robust
+          and productive environment that runs well from embedded to server.
+          This class extends on previous Nerves training to the cloud for
+          device/server communications and device management with NervesHub.
+          Attendees will assemble real devices and build out the software
+          step-by-step for a simple device with the help of the authors of
+          Nerves.
+        </p>
+      </div>
+
+    </div>
+</section>
+
+	<section class="presentation">
+    <div class="presentation-presenter">
+        <div class="presentation-presenter__avatar-container">
+          <img src="/assets/images/people/presenters/julie_moronuki-aa799a1f.jpg"
+               class="presentation-presenter__avatar"
+               alt="Julie Moronuki's Headshot" />
         </div>
-        <div class="presentation__bio">
-            <p><strong>About Andrea:</strong> Andrea is a programming enthusiast with a soft spot for functional programming and beautiful code. He loves learning new stuff. He strongly believes in accessible culture and education and in open-source software. He&apos;s active in the Elixir community and uses almost exclusively Elixir for work purposes.</p>
-            <p><strong>About Eric:</strong> Eric Meadows-Jönsson is a member of the Elixir team and an active member of the Elixir community being the creator of many libraries, including Ecto and the Hex package manager. Eric works as a Software Engineer at Cabify.</p>
-        </div>
+        <h4 class="presentation-presenter__name">Julie Moronuki</h4>
+        <p class="presentation-presenter__link">
+          <a href="https://twitter.com/joyofhaskell">@joyofhaskell</a>
+        </p>
+        <p class="presentation-presenter__link">
+          <a href="https://joyofhaskell.com">The Joy Of Haskell</a>
+        </p>
+        <br/>
+
+    </div>
+
+    <div class="presentation__details">
+      <h3 class="presentation__title">
+        Thinking In Types
+      </h3>
+      <div class="presentation__description">
+        <p>
+        In this one-day workshop, we'll explore the distinguishing features
+        of Haskell's type system. Haskell has several varieties of types:
+        sum types, product types, newtypes, as well as functions over types
+        (aka "HKTs" or "type constructors"). There is no "any" type, no
+        "null" value, no "subtype" relationships.
+        </p>
+
+        <p>
+        This workshop is intended for people who do not have much experience
+        with the Haskell language, and the goal will be to give a practical
+        understanding of some of Haskell's most important features and how
+        to start thinking in types. Please come prepared to write code. It
+        is recommended that you have GHC installed before the workshop begins.
+        </p>
+      </div>
+
+      <div class="presentation__bio">
+        <p><strong>About Julie</strong></p>
+        <p>
+          Julie Moronuki is an author of books about Haskell and co-founder
+          of Type Classes, a Haskell education and consulting company.
+          Before learning Haskell, Julie had been a linguist, librarian, and
+          teacher. She lives in Montana.
+        </p>
+      </div>
     </div>
 </section>
 
