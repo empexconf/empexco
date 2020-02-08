@@ -157,21 +157,22 @@ layout: layout
 <%#   </div> %>
 <%# </section> %>
 
-<%# <section id="training"> %>
-<%#   <div class="content-section container"> %>
-<%#     <h2>Training</h2> %>
-<%#     <p> %>
-<%#       Training courses will be held on May 15th, the day before the EMPEX conference. %>
-<%#       The location will be announced soon. %>
-<%#     </p> %>
-<%#     <p> %>
-<%#       <a href="">Get Your Training Tickets Now!</a> %>
-<%#     </p> %>
-<%#     <section class="presentation-list"> %>
-<%# 	  <%= partial "partials/courses/..." %1> %>
-<%#     </section> %>
-<%#   </div> %>
-<%# </section> %>
+<section id="training">
+  <div class="content-section container">
+    <h2>Training</h2>
+    <p>
+      Training courses will be held on May 15th, the day before the EMPEX conference.
+    </p>
+    <p>
+      <a href="https://ti.to/empex-nyc/empex-nyc-2020"
+       target="_blank">Get Your Training Tickets Now!</a>
+    </p>
+
+    <section class="presentation-list">
+	  <%= partial "partials/courses" %>
+    </section>
+  </div>
+</section>
 
 <%= partial "partials/sponsors" %>
 
