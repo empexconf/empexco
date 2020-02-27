@@ -1,6 +1,6 @@
 title: Shipping a Replacement Architecture In Elixir
 conference: "LA 2018"
-youtube_id: Aa--NDjL9SI&
+youtube_id: Aa--NDjL9SI
 description: |
   This talk will be a deep dive of how we spent the last 4 months replacing our Rails API and various Node.JS microservices with a single Elixir Umbrella Application. We’ve gone from no Elixir in production to replacing all but one of our services with it and launching and running those to power our Enterprise SaaS startup with hundreds of thousands of users.
 
