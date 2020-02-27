@@ -1,5 +1,19 @@
 @import './2018-styles';
 
+
+.talk {
+  display: flex;
+}
+
+.talk-preview-image img {
+  width: 300px;
+}
+
+.talk-preview-content {
+  text-align: left;
+}
+
+
 .top {
   @include small-section();
 

@@ -34,6 +34,10 @@ data.events.each do |year, events|
   end
 end
 
+data.talks.each do |slug, talk|
+  proxy "talks/#{slug}", "talk.html", locals: { talk: talk }, ignore: true
+end
+
 page 'index.html', layout: false
 page 'la.html', layout: false
 page 'la-*.html', layout: false
@@ -69,6 +73,18 @@ end
 MarkdownRenderer = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
 
 helpers do
+  def profile_image(author)
+    "images/people/presenters/#{author.profile_url}"
+  end
+
+  def embedded_video(talk)
+    "https://www.youtube.com/embed/#{talk.youtube_id}?rel=0"
+  end
+
+  def video_preview_image(talk)
+    "https://img.youtube.com/vi/#{talk.youtube_id}/hqdefault.jpg"
+  end
+
   # Format the date like "Monday, June 7"
   def format_date(date)
     date.strftime("%A, %B %-d")
