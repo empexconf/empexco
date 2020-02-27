@@ -7,20 +7,52 @@ layout: layout
   <link rel="canonical" href="<%= url %>">
 <% end %>
 
-<h1><%= talk.title %></h1>
+<section class="presentation">
+  <div class="presentation-presenter">
+    <div class="presentation-panel">
 
-<% talk.authors.each do |a| %>
-  <%= a.name %> <%= a.twitter %>
-  <img src="<%= profile_image(a) %>">
-<% end %>
+      <% talk.authors.each do |author| %>
+        <div class="presentation-panel__member">
+          <div class="presentation-presenter__avatar-container">
+            <%= image_tag profile_image(author), class: "presentation-presenter__avatar" %>
+          </div>
 
-<%= talk.conference %>
+          <h4 class="presentation-presenter__name">
+            <%= author.name %>
+          </h4>
 
-<%= embedded_video(talk) %>
+          <div class="presentation-presenter__link">
+            <% if author.twitter %>
+              <a target="_blank" href="https://twitter.com/<%= author.twitter %>">
+                @<%= author.twitter %>
+              </a>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
 
-<%= talk.description %>
+  # TODO: YOUTUBE EMBED
 
-about the presenters:
-<% talk.authors.each do |a| %>
-  <%= a.bio %>
-<% end %>
+  <div class="presentation__details">
+    <h3 class="presentation__title">
+      <%= talk.title %>
+    </h3>
+
+    <div class="presentation__description">
+      <%= talk.description.split("\n").each do |p| %>
+        <p><%= p %></p>
+      <% end %>
+    </div>
+
+    <div class="presentation__bio">
+      <% talk.authors.each do |author| %>
+        <p>
+          <strong>About <%= author.name %>:</strong>
+          <%= author.bio %>
+        </p>
+      <% end %>
+    </div>
+  </div>
+</section>
