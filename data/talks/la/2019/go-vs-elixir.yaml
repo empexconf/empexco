@@ -1,0 +1,18 @@
+title: "Go vs Elixir: A concurrency comparison"
+conference: "LA 2019"
+youtube_id: 8Sji1c_MuUQ
+description: |
+  As software engineers we often are looking for the best tool for the job. Yet what about when languages appear similar? What then?
+
+  In this talk we will compare Go and Elixir. These languages have similar principles but make core tradeoffs that affect when one might use them. We will specifically compare their concurrency paradigms to see what tool we might use when.
+authors:
+  - name: Anna Neyzberg
+    twitter: aneyzb
+    profile_url: anna-neyzberg.jpg
+    bio: |
+      Anna is a San Francisco native who has done a lot of work in the ruby community in SF and currently sits on the board of RailsBridge. She has taken this community organizing experience and several year go co-founded ElixirBridge in SF - an organization that offers free weekend-long workshops, with the goal of creating an inclusive welcoming space for underrepresented populations in tech to learn elixir. By day she works as a Developer at Carbon Five. When not in front of a keyboard, she is trying to get better at climbing rocks.
+  - name: Hannah Howard
+    twitter: techgirlwonder
+    profile_url: hannah.png
+    bio: |
+      Hannah is a senior developer and tech generalist with over 15 years experience in programming and other technical fields. Prior to programming, Hannah worked for 10 years in the non-profit sector in Los Angeles, specializing in LGBT advocacy and community organizing. Hannah returned to coding in 2012 and brings her passion and experience from community organizing to helping new programmers get up to speed on technical topics

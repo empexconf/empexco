@@ -8,14 +8,19 @@ layout: layout
 <% end %>
 
 <h1><%= talk.title %></h1>
-<%= talk.author.name %> <%= talk.author.twitter %>
 
-<img src="<%= profile_image(talk.author) %>">
+<% talk.authors.each do |a| %>
+  <%= a.name %> <%= a.twitter %>
+  <img src="<%= profile_image(a) %>">
+<% end %>
+
 <%= talk.conference %>
 
 <%= embedded_video(talk) %>
 
 <%= talk.description %>
 
-about <%= talk.author.name %>:
-<%= talk.author.bio %>
+about the presenters:
+<% talk.authors.each do |a| %>
+  <%= a.bio %>
+<% end %>

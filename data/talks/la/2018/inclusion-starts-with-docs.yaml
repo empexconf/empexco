@@ -1,0 +1,27 @@
+title: Inclusion Starts With Docs
+conference: "LA 2018"
+youtube_id: iLooRCq9hs0
+description: |
+  Great documentation is the single most powerful tool for increasing inclusion in a project. Docs can level the playing field between beginners and experts, providing everyone a better understanding of using and contributing to a library.
+
+  The feeling of creating a project, putting it out there, and watching people contribute to it is breathtaking -- it's one of the things that gets people hooked on participating in the free software ecosystem. High-quality docs get a project, and its creator, to that point faster.
+
+  Lucky for us, Elixir has best-in-class features for authoring and generating online documentation. In this talk, we'll examine and demonstrate Elixir's doc system, covering in particular:
+
+  An introduction to ExDoc
+  Top level project docs using @moduledoc
+  Function docs using @doc
+  Executable code samples using doctests
+  Type annotations and docs using typespecs
+  Linking your docs to your source code
+  Magically auto-updating install instructions
+  Documentation techniques and tactics for other kinds of projects (e.g. HTTP APIs)
+  This talk has two goals: to show the power of Elixir's built-in docs system, and more importantly to get folks excited about how strongly fantastic docs can improve a project and its community.
+authors:
+  - name: Pete Gamache
+    twitter: gamache
+    profile_url: gamache-pete.jpg
+    bio: |
+      Pete is CTO at Appcues, where Elixir has been a boring part of the platform for two years and counting (and that's high praise). He enjoys pattern-matching, immutable data structures, and long walks on the beach. Follow him on Twitter.
+
+

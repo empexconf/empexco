@@ -34,8 +34,12 @@ data.events.each do |year, events|
   end
 end
 
-data.talks.each do |slug, talk|
-  proxy "talks/#{slug}", "talk.html", locals: { talk: talk }, ignore: true
+data.talks.each do |city, years|
+  years.each do |year, talks|
+    talks.each do |slug, talk|
+      proxy "talks/#{slug}", "talk.html", locals: { talk: talk, slug: slug }, ignore: true
+    end
+  end
 end
 
 page 'index.html', layout: false
@@ -149,6 +153,16 @@ helpers do
     # where the first element is the sponsor's slug and
     # the second element is the data for the sponsor
     data.sponsors.detect {|slug, data| data.id == sponsor_id}
+  end
+
+  def talks
+    data.talks.flat_map do |city, years|
+      years.flat_map do |year, talks|
+        talks.map do |slug, talk|
+          talk.tap {|t| t[:slug] = slug}
+        end
+      end
+    end.sort_by(&:title)
   end
 
   # Finds the producer entry in the sponsors (Crevalle)
