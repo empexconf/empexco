@@ -111,7 +111,19 @@
     </div>
   </section>
 
-  <%= partial "partials/talk_history" %>
+
+  <div class="talk-history">
+    <h2 class="talk-history__section-header">
+      All the Talks
+    </h2>
+
+    <p>
+      EMPEX has been running for <%= Date.today.year - 2015 %> years.<br/>
+      In that time, we've heard some amazing talks! Here they are in all their glory.
+    </p>
+
+    <%= partial "partials/talk_history", locals: {talks: all_talks()} %>
+  </div>
 
   <!-- JS -->
   <%= javascript_include_tag "vendor/jquery-2.2.1.min.js" %>

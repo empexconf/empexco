@@ -162,7 +162,7 @@
 
             <div class="presentation-panel__member">
               <div class="presentation-presenter__avatar-container">
-                <%= image_tag "people/presenters/beau-rheubach.jpg", class: "presentation-presenter__avatar" %>
+                <%= image_tag "people/presenters/beau-heubach.jpg", class: "presentation-presenter__avatar" %>
               </div>
 
               <h4 class="presentation-presenter__name">
@@ -588,34 +588,6 @@
               our members around the world. We’ll use this service as the lens through which we’ll
               connect these tools into a truly transformative messaging pipeline.
             </p>
-            <p>
-              First, we’ll compare and contrast the following:
-              <ul>
-                <li>
-                  Kafka as a real-time microservice messaging hub, and the roles in its system (Producer > Broker > Consumer)
-                </li>
-                <li>
-                  GenStage as a messaging pipeline, routing system, and transform stream, and the roles in its system (Producer > Producer-Consumer > Consumer)
-                </li>
-              </ul>
-            </p>
-            <p>
-              Then, we’ll explore TMS as more than a mere Kafka Consumer. We’ll explore its use
-              as (via GenStage) as an extension of Kafka itself. We’ll examine how Genstage
-              allows us to
-
-              <ul>
-                <li>manage highly variable rates of traffic.</li>
-                <li>transform messages in flight.</li>
-                <li>route messages to new pipelines for batch processing later.</li>
-                <li>
-                  build our own fault-tolerance against flakey downstream dependencies by re- publishing to Kafka.
-                </li>
-              </ul>
-            </p>
-            <p>
-              Finally, we'll explore the extensibility of the system at large, covering the ease with which both upstream and downstream service dependencies can be added, subtracted, and swapped with minimal effort.
-            </p>
           </div>
           <div class="presentation__bio">
             <p>
@@ -682,6 +654,7 @@
 
           <div class="presentation__description">
             <p>
+              As a community we have gone to incredible lengths to avoid ever writing or even looking at Erlang syntax. This has lead to a fractured community, unnecessary dependencies, and opaque code. Even worse, it has prevented us from improving the language that started our ecosystem. This talk points out some common mistakes we make, and ways to improve our code and our ecosystem.
             </p>
           </div>
           <div class="presentation__bio">

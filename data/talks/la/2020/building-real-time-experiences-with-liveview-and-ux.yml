@@ -1,0 +1,16 @@
+title: "Opening Keynote: Building Real Time Experiences with LiveView and UX Principles"
+conference: EMPEX LA 2020
+youtube_id: cMFZbYBPfqA
+description: |
+  The need for fast and clear real-time responses are not new to user experience and application development. Instant feedback and system status are core to building better interactive interfaces. Now, our ability to deliver real-time user experiences is becoming more straightforward with the use of LiveView. How can we ensure these features provide the feedback and updates the user is looking for? How can we ensure LiveView delivers the smooth experience we hope for? Applying several common user experience principles, we can bring a base consistency to our real time features while leveraging the power that LiveView brings us to provide live feedback and updates from client interactions AND server-side events.
+authors:
+  - name: Beau Heubach
+    twitter: rheubach
+    profile_url: beau-heubach.jpg
+    bio: |
+      Beau is a UX designer, front-end developer, and father of six with 15 years of experience working to solve complex usability problems and learning how to measure user experience. He loves working at Gaslight, a custom agile shop, where he leads projects from user research through to product delivery.
+  - name: Zack Kayser 
+    twitter: kayserzl
+    profile_url: zack-kayser.jpg
+    bio: |
+      Zack is a software engineer at Gaslight in Cincinnati, Ohio, and has spent the last couple of years working on a wide variety of projects -- ranging from server-side applications, to iOS and web frontend enterprise applications, to one-day hackathon projects, all the way to game development for personal enjoyment (and pain :-D). Ever since being introduced to Elixir, Erlang, and OTP in 2016, he has been a huge proponent of functional programming and an evangelist for a movement towards more immutability and no shared state wherever possible. Prior to entering the software industry, he was a professional translator specializing in English to Japanese translation. Outside of work, Zack is an avid traveler.

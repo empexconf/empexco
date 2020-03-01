@@ -1,0 +1,19 @@
+title: "Erlang Ecosystem Foundation: Hello World"
+conference: EMPEX LA 2020
+youtube_id: 48O7jZxlORM
+description: |
+  The Erlang and Elixir embedded software and hardware platform GRiSP is out over 3 years now and now covers Elixir and Erlang with mix and rebar3 tooling and is looking at further places where Erlang VM as a Unikernel might shine.
+
+  Join us for a overview of the hardware and software options, how it all works and how our plans for the future shape up.
+authors:
+  - name: Peer Stritzinger
+    twitter: peerstr
+    profile_url: peer-stritzinger.jpg
+    bio: |
+      Peer Stritzinger is the Founder and Managing Director of Peer Stritzinger Gmbh, maker of GRiSP.
+
+      Peer ported Erlang to Hard-Realtime Operating system RTEMS (www.grisp.org). He developed the Hydraprog automotive flashing device in Erlang including protocol stacks for all existing automotive protocols.
+
+      He currently serves as Board member in the Erlang Ecosystem Foundation (www.erlef.org)
+
+      Peer's previous experience ranges from low level device drivers to functional languages in industrial and automotive applications, he initially mastered in Physics at the Technical University Munich. He is currently living and working in the idyllic countryside west of Munich, Bavaria."

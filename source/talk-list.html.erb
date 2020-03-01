@@ -1,0 +1,58 @@
+---
+layout: layout
+---
+
+<% heading = "EMPEX #{city.upcase} #{year}" %>
+<% url = "/talks/#{city}/#{year}" %>
+
+<% content_for(:head) do %>
+  <link rel="canonical" href="<%= url %>">
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@empexco" />
+  <meta name="twitter:title" content="<%= heading %> Talks" />
+  <meta name="twitter:description" content="Talks from the <%= heading %> conference" />
+  <meta name="twitter:image" content="<%= asset_url :images, 'flag.jpg' %>" />
+
+  <meta property="og:url" content="<%= url %>" />
+  <meta property="og:title" content="<%= heading %> Talks" />
+  <meta property="og:description" content="Talks from the <%= heading %> conference" />
+  <meta property="og:image" content="<%= asset_url :images, 'flag.jpg' %>" />
+
+  <%= stylesheet_link_tag "talk-list" %>
+<% end %>
+
+<% content_for(:navbar) do %>
+  <div class="navbar-spacer"></div>
+  <nav id="navbar" class="navbar">
+    <div class="container">
+      <div class="talk__navbar-list">
+        <a href="/" class="talk__brand">
+          <%= image_tag "empex-logo-official-white.svg", class: "talk__nav-logo", title: "EMPEX" %>
+          <h2>EMPEX</h2>
+        </a>
+
+        <ul class="talk__navbar-list">
+          <li class="navbar-item">
+            <%= link_to "NYC", "/nyc.html", class: "navbar-link" %>
+          </li>
+          <li class="navbar-item">
+            <%= link_to "LA", "/la.html", class: "navbar-link" %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<% end %>
+
+<div class="talk-history">
+  <h2 class="talk-history__section-header">
+    <%= heading %> Talks
+  </h2>
+
+  <p>
+    All the talks from this conference, in one convenient place.
+  </p>
+
+  <%= partial "partials/talk_history" %>
+</div>

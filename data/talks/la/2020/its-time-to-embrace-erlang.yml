@@ -1,0 +1,11 @@
+title: It's Time to Embrace Erlang
+conference: EMPEX LA 2020
+youtube_id: mJb9wjUJhm4
+description: |
+  As a community we have gone to incredible lengths to avoid ever writing or even looking at Erlang syntax. This has lead to a fractured community, unnecessary dependencies, and opaque code. Even worse, it has prevented us from improving the language that started our ecosystem. This talk points out some common mistakes we make, and ways to improve our code and our ecosystem.
+authors:
+  - name: Todd Resudek
+    twitter: sprsmpl
+    profile_url: todd-resudek.jpg
+    bio: |
+      Todd is a lead software engineer at SimpleBet and member of the Hex core team. He lives in the Denver area with his family and spends his free time tinkering with Nerves projects.

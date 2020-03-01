@@ -34,6 +34,18 @@ data.events.each do |year, events|
   end
 end
 
+# Conference Lists
+data.talks.each do |city, years|
+  years.each do |year, talks|
+    conf_talks = talks.map do |slug, talk|
+      talk.tap {|t| t[:slug] = slug}
+    end
+
+    proxy "talks/#{city}/#{year}", "talk-list.html", locals: { talks: conf_talks, city: city, year: year }, ignore: true
+  end
+end
+
+# Individual Talks
 data.talks.each do |city, years|
   years.each do |year, talks|
     talks.each do |slug, talk|
@@ -166,7 +178,7 @@ helpers do
     data.sponsors.detect {|slug, data| data.id == sponsor_id}
   end
 
-  def talks
+  def all_talks
     data.talks.flat_map do |city, years|
       years.flat_map do |year, talks|
         talks.map do |slug, talk|

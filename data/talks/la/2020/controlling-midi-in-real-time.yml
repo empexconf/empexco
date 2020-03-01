@@ -1,0 +1,15 @@
+title: Controlling MIDI Devices in Real Time with Elixir and Nerves
+conference: EMPEX LA 2020
+youtube_id: 4o4FzOFL2eE
+description: |
+  MIDI is a specification developed in the 80s to allow musical instruments to talk to each other in near real-time. This inter-instrument talk involved sending notes, changing syntesizer patches, and modifying a song's BPM. Since the 80s, MIDI has continued to be the go-to specification for controlling musical instruments, lighting rigs, and more!
+
+  In this talk, I'll demonstrate how Elixir can control MIDI devices (specifically, for this talk, an analog synthesizer) in real-time. I'll show how OTP provides a great way to implement this control and the benefits and drawbacks of using it for real-time musical instrumentation.
+
+  Furthermore, I will demonstrate how this system is then visualized using Phoenix and LiveView.
+authors:
+  - name: Geoffrey Lessel 
+    twitter: geolessel
+    profile_url: geoffrey-lessel.jpg
+    bio: |
+      Geoffrey Lessel has been a web developer for over 15 years—first with PHP and Perl and now with Ruby on Rails and Phoenix. He is the author of Phoenix in Action, has spoken at multiple ElixirConfs, and most importantly, is a returning Empex LA speaker. Find his blog at geoffreylessel.com and tweets at @geolessel.

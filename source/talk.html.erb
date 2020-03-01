@@ -57,7 +57,7 @@ layout: layout
           </h4>
 
           <div class="presentation-presenter__link">
-            <% if author.twitter %>
+            <% if author.twitter != "" %>
               <a target="_blank" href="https://twitter.com/<%= author.twitter %>">
                 @<%= author.twitter %>
               </a>
