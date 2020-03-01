@@ -1,5 +1,5 @@
 title: "Opening Keynote: Distributed War Stories"
-conference: LA 2019
+conference: EMPEX LA 2019
 youtube_id: b3JQgyj17hk
 description: |
   Architecting a highly concurrent distributed system in the BEAM ecosystem is not an easy thing to do even on a perfect world of homogeneous traffic, reliable, secure and low latency networks. But real life internet applications may have millions of users and bizarre faulty scenarios that can arise hidden scaling issues.

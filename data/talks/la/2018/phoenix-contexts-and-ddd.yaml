@@ -1,5 +1,5 @@
 title: Building beautiful systems with Phoenix contexts and Domain-Driven Design
-conference: "LA 2018"
+conference: EMPEX LA 2018
 youtube_id: oJghZB9sSuU
 description: |
   Phoenix contexts are a powerful code organization tool - but without a clear idea of what business domains live under the hood of your systems, naively creating contexts leads to over-engineered, fragile systems.

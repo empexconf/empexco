@@ -20,7 +20,7 @@
         </h3>
 
         <h4 class="talk-card__author">
-          <%= talk.authors.map(&:name).join(", ")  %>
+          <%= talk.authors.map(&:name).join(", ")  %> (<%= talk.conference %>)
         </h4>
 
         <p class="talk-card__description">

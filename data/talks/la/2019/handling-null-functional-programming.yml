@@ -1,5 +1,5 @@
 title: Handling Null in Functional Programming
-conference: LA 2019
+conference: EMPEX LA 2019
 youtube_id: aZBcRsAxG-I
 description: |
   Nulls are a fact of life—sometimes a value can be absent, which is important information to have However if a variable can be null, we often have to write extra code to handle that possibility. How can we utilize functional, typed languages to only allow null where it communicates important information and eliminate it everywhere else? This talk will identify patterns to do just that and discuss how they can help shape your application’s architecture.

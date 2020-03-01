@@ -1,12 +1,11 @@
-slug: where-did-i-put-my-data
 title: Where did I put my data?
-conference: LA 2019
+conference: EMPEX LA 2019
 youtube_id: 9216dUNgKCU
 description: |
   A look at how Amnesia's Elixir wrapper over Erlang's Mnesia distributed DBMS can be used to keep your application state in a scalable resilient manner. We will start by looking at Agents and GenServers as they are primarily the first thing people reach for when storing state. From there we will show how we can gain performance, remove bottlenecks, and increase stability by using ETS. Finally we examine how a more robust Amnesia solution can help systems scale beyond a single node, allowing the system to not only support higher loads but increase resiliency.
 authors:
   - name: Alex Peachey
     twitter: alex_peachey
-    profile_url: alex-peachey.jpg
+    profile_url: alex-peachey.png
     bio: |
       Alex has been developing software for over two decades and has been focused on exploring and using Elixir for the past two years. Most recently he has worked with the rest of his great team at Versus Systems to rebuild the platform in Elixir, paving the way to making many more games more fun. When not crafting code, Alex enjoys playing games of all types.

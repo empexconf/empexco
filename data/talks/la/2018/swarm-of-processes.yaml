@@ -1,5 +1,5 @@
 title: A Swarm of Processes - Simulating Ant Foraging Behavior with OTP of Processes
-conference: "LA 2018"
+conference: EMPEX LA 2018
 youtube_id: NKJFL9LpP4M
 description: |
   In this talk, we'll see a simulation of a foraging ant colony that can efficiently solve mazes, built using a separate OTP process for each ant. Along the way we'll look at GenServers, dynamic Supervisors, Registries, and more OTP goodness. We’ll also learn a little bit about ants!
@@ -8,5 +8,5 @@ authors:
     twitter: will-wow
     profile_url: will.jpg
     bio: |
-      Will is a tech lead and software developer at AE Studio. He started his career in accounting, but found that automating his job away was more fun than the actual job, and moved over to software. He’s into typed functional programming and tiny keyboards.
+      Will is a software developer at Carbon Five. He started his career in accounting, but found that automating his job away was more fun than the actual job, and moved over to software. He’s into typed functional programming and tiny keyboards.
 

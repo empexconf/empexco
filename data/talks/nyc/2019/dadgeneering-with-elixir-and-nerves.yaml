@@ -1,6 +1,6 @@
 title: "Dadgeneering With Elixir + Nerves"
 conference: "New York 2019"
-youtube_id: 8Sji1c_MuUQ
+youtube_id: SJc4YYYloTQ
 description: |
   Are you a parent of children, pets, or just really immature roommates? Do you wish you could use Elixir to help solve household issues and annoyances? Do you frequently over-engineer side projects? Then you might be a dadgineer (or momgineer).
   This talk is compilation of fun projects using Elixir &amp; Nerves to solve silly problems around my home. Projects such as a "Picture Board Turn Selector" to programmatically answer the age old question of "Whose turn is it!?", complete with LED light show. Or hardening the security of the toy storage room with electromagnetic latching and biometric unlocking procedure.

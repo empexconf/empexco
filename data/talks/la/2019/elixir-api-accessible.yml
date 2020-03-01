@@ -1,5 +1,5 @@
 title: Making your Elixir API Accessible to non-Elixir developers
-conference: LA 2019
+conference: EMPEX LA 2019
 youtube_id: vdfmIFAKNE0
 description: |
   This talk will describe tools, application best practices, and team collaboration tips that make consuming and working with an Elixir API easier for those not familiar with Elixir. I will talk about how I went from programing in only Javascript to working full stack at Versus Systems, what things we did to inspire engineers to work full stack. Some topics I will explore are useful testing, documentation, and scripts, as well as application organization, and effective teamwork.

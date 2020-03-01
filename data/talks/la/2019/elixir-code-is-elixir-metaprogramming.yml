@@ -1,5 +1,5 @@
 title: Elixir Code is Elixir! Metaprogramming and Elixir
-conference: LA 2019
+conference: EMPEX LA 2019
 youtube_id: fHl4PWgop4g
 description: |
   Elixir is a programming language that has become dear to me as it has become my go-to choice for most of the things at work and personal projects. One thing that people notice when getting started with Elixir is that, in fact, a good chunk of it is written in Elixir. Now you might be thinking, ""Wait. What? How can that be?"". Well, the short answer is: metaprogramming.
