@@ -108,37 +108,11 @@
         <!-- EMAIL HERE -->
         <%= partial "partials/signup" %>
         <img class="spiky-circle" src="/assets/images/landing/spiky-circle.png" />
-
-        <div class="talk-history">
-
-          <% talks.each do |talk| %>
-            <div class="talk">
-              <div class="talk-preview-image">
-                <a href="/talks/<%= talk.slug %>">
-                  <img src="<%= video_preview_image(talk) %>">
-                </a>
-              </div>
-
-              <div class="talk-preview-content">
-                <h3><a href="/talks/<%= talk.slug %>"><%= talk.title %></a></h3>
-                <% talk.authors.each do |a| %>
-                  <%= a.name %>
-                <% end %>
-                <p class="talk-description">
-                  <%= talk.description %>
-                </p>
-              </div>
-
-            </div>
-
-          <% end %>
-        </div>
-
       </div>
-
     </div>
   </section>
 
+  <%= partial "partials/talk_history" %>
 
   <!-- JS -->
   <%= javascript_include_tag "vendor/jquery-2.2.1.min.js" %>

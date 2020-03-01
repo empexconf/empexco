@@ -86,12 +86,23 @@ helpers do
   end
 
   def video_preview_image(talk)
-    "https://img.youtube.com/vi/#{talk.youtube_id}/hqdefault.jpg"
+    "https://img.youtube.com/vi/#{talk.youtube_id}/mqdefault.jpg"
   end
 
   # Format the date like "Monday, June 7"
   def format_date(date)
     date.strftime("%A, %B %-d")
+  end
+
+  def truncate_text(text, max)
+    if !text 
+      return ""
+    end
+    if text.length > max - 3 
+      "#{text[0..max-3]}..."
+    else
+      text
+    end
   end
 
   # Links to the tweet creation form on Twitter with custom tweet text
