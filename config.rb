@@ -78,7 +78,7 @@ MarkdownRenderer = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
 
 helpers do
   def profile_image(author)
-    "images/people/presenters/#{author.profile_url}"
+    "people/presenters/#{author.profile_url}"
   end
 
   def embedded_video(talk)

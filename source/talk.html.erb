@@ -2,9 +2,44 @@
 layout: layout
 ---
 
+<% url = "/talks/#{talk.slug}" %>
+
 <% content_for(:head) do %>
-  <% url = "/talks/#{talk.slug}" %>
   <link rel="canonical" href="<%= url %>">
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@empexco" />
+  <meta name="twitter:title" content="EMPEX Talk: <%= talk.title %>" />
+  <meta name="twitter:description" content="<%= talk.description %>" />
+  <meta name="twitter:image" content="<%= video_preview_image(talk) %>" />
+
+  <meta property="og:url" content="<%= url %>" />
+  <meta property="og:title" content="EMPEX Talk: <%= talk.title %>" />
+  <meta property="og:description" content="<%= talk.description %>" />
+  <meta property="og:image" content="<%= video_preview_image(talk) %>" />
+<% end %>
+
+<% content_for(:navbar) do %>
+  <div class="navbar-spacer"></div>
+  <nav id="navbar" class="navbar">
+    <div class="container">
+      <div class="talk__navbar-list">
+        <a href="/" class="talk__brand">
+          <%= image_tag "empex-logo-official-white.svg", class: "talk__nav-logo", title: "EMPEX" %>
+          <h2>EMPEX</h2>
+        </a>
+
+        <ul class="talk__navbar-list">
+          <li class="navbar-item">
+            <%= link_to "NYC", "/nyc.html", class: "navbar-link" %>
+          </li>
+          <li class="navbar-item">
+            <%= link_to "LA", "/la.html", class: "navbar-link" %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 <% end %>
 
 <section class="presentation">
@@ -33,15 +68,23 @@ layout: layout
     </div>
   </div>
 
-  # TODO: YOUTUBE EMBED
-
   <div class="presentation__details">
     <h3 class="presentation__title">
       <%= talk.title %>
     </h3>
 
+    <% if talk.youtube_id != "" %>
+      <iframe 
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/<%= talk.youtube_id %>?rel=0"
+        frameborder="0"
+        allow="autoplay; encrypted-media" allowfullscreen>
+      </iframe>
+    <% end %>
+
     <div class="presentation__description">
-      <%= talk.description.split("\n").each do |p| %>
+      <% talk.description.split("\n").each do |p| %>
         <p><%= p %></p>
       <% end %>
     </div>
