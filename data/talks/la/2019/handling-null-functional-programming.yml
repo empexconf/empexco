@@ -1,0 +1,11 @@
+title: Handling Null in Functional Programming
+conference: LA 2019
+youtube_id: aZBcRsAxG-I
+description: |
+  Nulls are a fact of life—sometimes a value can be absent, which is important information to have However if a variable can be null, we often have to write extra code to handle that possibility. How can we utilize functional, typed languages to only allow null where it communicates important information and eliminate it everywhere else? This talk will identify patterns to do just that and discuss how they can help shape your application’s architecture.
+authors:
+  - name: Evelyn Masso
+    twitter: outofambit
+    profile_url: evelyn-masso.jpg
+    bio: |
+      Evelyn Masso is a person (all the time), a developer+designer (on weekdays), and a poet (on weekends). She currently works as an Application Engineer on the GitHub Desktop Client and contributes to p5js. 

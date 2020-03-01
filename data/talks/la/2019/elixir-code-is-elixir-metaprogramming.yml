@@ -1,0 +1,13 @@
+title: Elixir Code is Elixir! Metaprogramming and Elixir
+conference: LA 2019
+youtube_id: fHl4PWgop4g
+description: |
+  Elixir is a programming language that has become dear to me as it has become my go-to choice for most of the things at work and personal projects. One thing that people notice when getting started with Elixir is that, in fact, a good chunk of it is written in Elixir. Now you might be thinking, ""Wait. What? How can that be?"". Well, the short answer is: metaprogramming.
+
+  Metaprogramming doesn’t have to be too scary to think about and it’s not so bad at all. I’ll show examples of the standard library where functionality is written in Elixir and I will also dive into extending Elixir by writing our own macros. But by also diving into the Elixir-lang code base we can explore the bootstrap process and see how you can start implementing Elixir in Elixir.
+authors:
+  - name: Adrian Cruz
+    twitter: drincruz
+    profile_url: adrian-cruz.jpg
+    bio: |
+      Adrian is a senior software engineer, runner, and sometimes a speaker. Adrian works on search, product discovery, and growth. He is an Elixir enthusiast and has contributed to Elixir-lang and its ecosystem. Outside of coding, he can be found running the streets of New York. 
