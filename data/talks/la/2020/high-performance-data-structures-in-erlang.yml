@@ -1,0 +1,11 @@
+title: High Performance Data Structures in Erlang
+conference: EMPEX LA 2020
+youtube_id: fdxhxAqxR94
+description: |
+  Writing efficient data structures in Erlang isn't something that's normally done - but by borrowing from both Purely Functional Data Structures, some additional work on Finger Trees, and occasionally cheating with some C code, we can get performance that beats the native OTP implementations. I've written many different versions of data structures for my previous jobs and now I am in the process of bundling up the modules, polishing them up, and open sourcing them for the public's enjoyment and use. Specifically, I'll be covering implementations of mergeable / non-mergeable heaps, queues, and indexable arrays.
+authors:
+  - name: Shanti Chellaram
+    twitter: theccoder
+    profile_url: shanti-chellaram.jpg
+    bio: |
+      Shanti is a senior engineer. If she's not at a computer, she's trekking through the hills and mountains of New England.

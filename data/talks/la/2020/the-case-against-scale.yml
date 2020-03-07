@@ -1,0 +1,11 @@
+title: "Closing Keynote: The Case Against Scale"
+conference: EMPEX LA 2020
+youtube_id: 7VnuaTV4BCU
+description: |
+  Scale is a very popular topic among software engineers, and it is something many of us strive to do well, but we rarely discuss its consequences. We think of scale as an inherently good thing. After all, you can make more money, run more efficiently, and solve tough problems. But with this year's theme of building large-scale applications, I'd like to flip that sentiment on its head and make the case against scale.
+authors:
+  - name: Aaron Harpole
+    twitter: harpaa01
+    profile_url: aaron-harpole.jpg
+    bio: |
+      Aaron loves to build software that makes people’s lives better. When not at a computer, he might be found hiking, making a paella, building another clicky keyboard, or quoting an old episode of The Simpsons. He works as an engineer at GitHub.

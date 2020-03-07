@@ -1,0 +1,17 @@
+title: Lessons From Our First Trillion Messages with Flow
+conference: EMPEX LA 2019
+youtube_id: b342YwOzIjI
+description: |
+  For many of us recent Elixir converts, our initial attraction to Elixir was rooted in the promise of access to the BEAM concurrency model.
+
+  While this has been possible in Elixir from day one, Flow has made it incredibly easy to build highly concurrent and parallel data pipelines utilizing the BEAM. The problem is that while the docs are great, there aren't many resources about running Flow-based systems in production.
+
+  In this talk I'll share some of the lessons my team has learned from processing our first trillion messages through Flow. You'll leave with practical knowledge you can directly apply to your applications.
+
+  For the last year, my team & I have been using Flow to power a reactive, high volume and mission-critical data processing pipeline. In that time we've recognized some patterns and techniques to keep our system easy to reason about while also being flexible to handle a variety of requirements.
+authors:
+  - name: John Mertens
+    twitter: mertonium
+    profile_url: john-mertens.jpg
+    bio: |
+      John is a problem solver who has spent the majority of his career using his technical skills to have a positive impact on the world around him. A former Code for America fellow and civic tech startup co-founder, he currently uses Elixir to empower social action at Change.org.

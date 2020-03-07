@@ -37,8 +37,14 @@
 
   <body class="<%= page_classes %>">
     <%= yield_content :hero %>
-    <div class="navbar-spacer"></div>
-    <%= partial "partials/navbar" %>
+
+    <% if content_for?(:navbar) %>
+      <%= yield_content :navbar %>
+    <% else %>
+      <div class="navbar-spacer"></div>
+      <%= partial "partials/navbar" %>
+    <% end %>
+
     <main>
       <%= yield %>
     </main>

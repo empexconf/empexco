@@ -1,0 +1,13 @@
+title: "Opening Keynote: Distributed War Stories"
+conference: EMPEX LA 2019
+youtube_id: b3JQgyj17hk
+description: |
+  Architecting a highly concurrent distributed system in the BEAM ecosystem is not an easy thing to do even on a perfect world of homogeneous traffic, reliable, secure and low latency networks. But real life internet applications may have millions of users and bizarre faulty scenarios that can arise hidden scaling issues.
+
+  In this talk, I'll describe how the distribution model works in Erlang, and when/how you should take advantage of it –or not! Spiced up with real-life war stories from architectures running in production. Hopefully, you can learn from our mistakes!
+authors:
+  - name: Miriam Pena
+    twitter: miriampena
+    profile_url: miriam-pena.jpg
+    bio: |
+      Miriam loves to architect distributed, scalable, high performance, high concurrency, and high availability systems. Bonus point if they are written in Erlang/Elixir. She is a Staff Engineer at AdRoll, designing critical parts of their AdServers/RTB infrastructure and organizer of the Erlang and Elixir meetup in San Francisco. Prior to AdRoll, she provided Erlang specialized consultancy and studied Computer Science Engineering from La Coruña University in Spain. Voted one of the women to watch in 2018 by Women 2.0 here. She published some open source libraries such as mero, a scalable and lightweight client for Memcached and Spillway for load shedding.

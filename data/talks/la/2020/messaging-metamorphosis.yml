@@ -1,0 +1,13 @@
+title: "The Messaging Metamorphosis: Using Kafka, Elixir, and GenStage to Transform Transactional Messaging @ Dollar Shave Club"
+conference: EMPEX LA 2020
+youtube_id: xWItOcqxCE0
+description: |
+  Elixir, Apache Kafka, and Microservices have all exploded in popularity in the last few years. While their popularities have all exploded, clear understanding of their interplay has not. In this talk, we’ll cover exactly that, and then some. As companies transition from a monolith to a plethora of microservices, asynchronous messaging, the foundation of both Kafka and Elixir, is crucial to well-architected distributed system.
+
+  DSC’s Transactional Messaging Service (TMS) is a highly scalable and fault-tolerant Elixir microservice built with Kafka and GenStage and deployed to Kubernetes. It consumes from Kafka to send thousands of transactional messages per minute to our members around the world. We’ll use this service as the lens through which we’ll connect these tools into a truly transformative messaging pipeline.
+authors:
+  - name: Ryan Trontz
+    twitter: tr00gle
+    profile_url: ryan-trontz.jpg
+    bio: |
+      Ryan is a backend engineer at Dollar Shave Club. His favorite hobby and job are one and the same: learning. He’s been learning for a lifetime, teaching for half of one, and doing both at Dollar Shave Club since 2018. He stumbled into Alchemy (Elixir) and Metamorphosis (Kafka) around that time, catapulting his use of brutal puns to a new level. Outside of DSC, he teaches a Javascript course composed entirely of either Wu-Tang Clan or ramen themed code snippets. His superpower is wildly overestimating his on-the-couch Jeopardy skill. 

@@ -1,0 +1,13 @@
+title: Nerves Takes to the Sky
+conference: EMPEX LA 2020
+youtube_id: 9V30iMUqQJ8
+description: |
+  The problem with a paper airplane, is that it always seems to turn one way or the other. I can never get them to maintain a steady course. What if Nerves was riding along as the pilot?
+
+  We'll first talk about inertial measurement sensors and how they can report their position in 3-D space. Then we'll dive into how we can talk to those sensors from a Nerves project. We'll end by talking about some logistics around weight, battery, etc and with any luck a live demo of tossing a glider over the heads of the audience. I'll bring a video as backup in-case the live demo is hazardous or fails.
+authors:
+  - name: Michael Ries
+    twitter: mmmries
+    profile_url: michael-ries.jpg
+    bio: |
+      Michael builds systems with Elixir and Ruby in Utah. He spends most evenings reading and building Legos with his children. He organizes the Nerves Remote Meetup to discuss hardware and software with friends and hopes to one day build a robot that doesn't scare his 

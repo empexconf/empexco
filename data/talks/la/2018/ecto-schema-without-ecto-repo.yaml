@@ -1,0 +1,18 @@
+title: Ecto.Schema without Ecto.Repo
+conference: EMPEX LA 2018
+youtube_id: BP-f3Kcqb1A
+description: |
+  With newer versions of Ecto you can use Ecto.Schema without even importing Ecto.Repo or setting up a traditional database.  Why would you wish to?
+
+  Your microservice or other lightweight app may not use a database but you'll probably still need to wrangle some serious data: complex params, JSON request/response bodies, RabbitMQ payloads, etc.  That's data that you'll need to parse, cast, and validate.
+
+  I'll step you through how to use Ecto.Schema on its own to cast and validate various kinds of data, and how to extract the final results whether the data is valid or invalid.
+
+  I'll also discuss some of the stumbling blocks and limitations I've encountered while leveraging Ecto.Schema in this way.
+authors:
+  - name: Rosemary Ledesma
+    twitter: rosemledesma
+    profile_url: rosemary.jpg
+    bio: |
+      Rosemary is passionate about writing software with Elixir and Phoenix, and works as a back-end software engineer for RentPath LLC. In her spare time she enjoys hiking, swing-dancing, and rowing (crew).
+

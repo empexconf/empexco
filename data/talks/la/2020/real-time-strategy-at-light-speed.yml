@@ -1,0 +1,17 @@
+title: Real time strategy at light speed
+conference: EMPEX LA 2020
+youtube_id: "_-J09mr9AEQ"
+description: |
+  Real time space battle multiplayer browser games are cool. But what if we want to play a real time space battle multiplayer game where the players are hundreds of millions of miles apart, and the speed of light is a factor in who sees what happening, and when?
+
+  Hard sci-fi like ""The Expanse"", or ""Dread Empire's Fall"" go into excruciating detail on how long it takes to even see what is happening, and how long ago it really did happen - which could be minutes or hours. Battles play out like high latency, async chess games. Warships hurl missiles at each other over enormous distances and speeds, rather than frenetic ""world war 2 fighter planes in space"" you get in Star Wars.
+
+  In a plain old Elixir realtime game, you don't have to worry about that - you just send all messages to all clients as soon as they arrive. But what if we need to delay some of those messages for an arbitrary amount of time depending on where different actors are in the virtual solar system? What design patterns and ways of thinking about how our app is built do we need to do to be able to build something like that?
+authors:
+  - name: Julian Doherty
+    twitter: madlep
+    profile_url: julian-doherty.jpg
+    bio: |
+      Julian is a lead developer with 20 years experience, and has been hacking on Elixir for the last 5.
+
+      Originally from Wellington, New Zealand, he now calls Melbourne, Australia home, currently working at Envato. Julian also runs the Elixir Melbourne meetup group, and tries to spend as much time as possible inflicting Elixir and functional programming paradigms on codebases he works in.

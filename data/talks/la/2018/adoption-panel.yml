@@ -1,0 +1,16 @@
+title: Adoption Panel
+conference: EMPEX LA 2018
+youtube_id: 2TZOtdX1IAI
+description: |
+  This panel will discuss strategies for increasing Elixir adoption in your organization, and then take questions.
+authors:
+  - name: Shanti Chellaram
+    twitter: theccoder
+    profile_url: shanti-chellaram.jpg
+    bio: |
+      Shanti Chellaram is currently a senior engineer at Teachers Pay Teachers, with a year and a half of experience migrating a legacy PHP stack to Elixir. If she's not at a computer, she's trekking through the hills and mountains of New England.
+  - name: Brandon Richey
+    twitter: diamondgfx
+    profile_url: brandon-richey.jpg
+    bio: |
+      Brandon Richey is an Engineering Manager at Greenhouse and a long-time web developer. He's been working in Elixir for over two years now, and has successfully adopted Elixir at four companies! When not working on building an amazing recruiting product at Greenhouse, he also is spending time working on the technical side of the Cured Foundation, programming hobby projects, and working on his art. He has a book on Elixir and Phoenix development currently in progress, slated for release later this year

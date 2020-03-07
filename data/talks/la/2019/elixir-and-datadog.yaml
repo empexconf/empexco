@@ -1,0 +1,16 @@
+title: Elixir and Datadog
+conference: EMPEX LA 2019
+youtube_id: OVAe7vjlVVY
+description: |
+  Having an Elixir application deployed it's crucial to have good insight into your architecture for multiple reasons. High level of observability helps you scale, improve your system's performance, optimise, debug and decide how to develop your product further.Good understanding of what your system is doing is even more important when it grows in time and uses more and more third party components that you don't have much influence over.
+
+  In my presentation I'm going to share my experience with integrating a significantly large Elixir system, with a state of the art monitoring service - Datadog. I'm going to explain how various features it offers, like metrics, live tracing, logging and analysis tools helped find number of non-obvious bottlenecks in the code.
+authors:
+  - name: Ludwik Bukowski
+    twitter: ludwikbukowski
+    profile_url: ludwik-bukowski.jpg
+    bio: |
+      Ludwik is a functional programming enthusiast who to move with the times has been recently converted from Erlang to Elixir.
+
+      He works as Software Engineer in Erlang Solutions in Kraków, and likes to travel and play squash.
+  

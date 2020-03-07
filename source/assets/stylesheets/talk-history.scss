@@ -1,0 +1,53 @@
+.talk-history {
+  @include normal-section();
+  color: black;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a,
+  p {
+    color: black;
+  }
+}
+
+.talk-history__section-header {
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.talk-history__header {
+  margin-bottom: 0.5rem;
+}
+
+.talk-card__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;;
+}
+
+.talk-card {
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 100%;
+
+  @include media-tablet() {
+    width: calc(50% - 1rem);
+  }
+}
+
+.talk-card__media {
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.talk-card__title {
+  color: black;
+  margin-bottom: 0;
+}

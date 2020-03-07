@@ -1,0 +1,13 @@
+title: Stream-processing connected vehicle data in Elixir
+conference: EMPEX LA 2020
+youtube_id: OKnY2hO2JdA
+description: |
+  “Smart” and connected vehicles generate TONS of data. To make use of that data from a fleet of vehicles for analysis of V2V interactions, traffic patterns, or control flow, you have to consume as much of it as fast as possible with high fidelity. The team at SmartColumbus has spent the last year building robust data ingestion capabilities in Elixir at the speed and scale needed to support thousands of vehicles simultaneously.
+
+  This talk will showcase the strategies developed for concurrent processing, batching, and validating data across each of these unique streams. You’ll learn about the design decisions the team has made as well as the open source libraries we’ve developed to enable data consumption at the scale of a “Smart City”.
+authors:
+  - name: Jeff Grunewald
+    twitter: ""
+    profile_url: jeff-grunewald.jpg
+    bio: |
+      Jeff has been in technology for over a decade, first as a systems and network administrator and later in the DevOps and software engineering space. He has extensive experience with Kubernetes and has been in love with the Elixir language and the Erlang Virtual Machine for the past three years, working to grow the adoption of the relatively young language. He's an avid reader, sci fi fan, and gamer often found grinding hours in the Destiny universe.

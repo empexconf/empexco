@@ -1,0 +1,13 @@
+title: Life is but a Stream
+conference: EMPEX LA 2018
+youtube_id: Bnqvz5W87Yo
+description: |
+  A overview and dive into the Stream module. When should you use it over Enum? What are the pros
+  and cons of using Stream for your day-to-day tasks? How are some of the functions implemented?
+  We'll go into those questions and find some answers together.
+authors:
+  - name: Geoffrey Lessel
+    twitter: geolessel
+    profile_url: geoffrey-lessel.jpg
+    bio: |
+      Geoffrey Lessel has been a web developer for over 15 years—first with PHP and Perl and now with Ruby on Rails and Phoenix. He is the author of Phoenix in Action, has spoken at multiple ElixirConfs, and most importantly, is a returning Empex LA speaker. Find his blog at geoffreylessel.com and tweets at @geolessel.

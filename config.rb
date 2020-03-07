@@ -34,6 +34,26 @@ data.events.each do |year, events|
   end
 end
 
+# Conference Lists
+data.talks.each do |city, years|
+  years.each do |year, talks|
+    conf_talks = talks.map do |slug, talk|
+      talk.tap {|t| t[:slug] = slug}
+    end
+
+    proxy "talks/#{city}/#{year}", "talk-list.html", locals: { talks: conf_talks, city: city, year: year }, ignore: true
+  end
+end
+
+# Individual Talks
+data.talks.each do |city, years|
+  years.each do |year, talks|
+    talks.each do |slug, talk|
+      proxy "talks/#{slug}", "talk.html", locals: { talk: talk, slug: slug }, ignore: true
+    end
+  end
+end
+
 page 'index.html', layout: false
 page 'la.html', layout: false
 page 'la-*.html', layout: false
@@ -69,9 +89,32 @@ end
 MarkdownRenderer = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
 
 helpers do
+  def profile_image(author)
+    "people/presenters/#{author.profile_url}"
+  end
+
+  def embedded_video(talk)
+    "https://www.youtube.com/embed/#{talk.youtube_id}?rel=0"
+  end
+
+  def video_preview_image(talk)
+    "https://img.youtube.com/vi/#{talk.youtube_id}/mqdefault.jpg"
+  end
+
   # Format the date like "Monday, June 7"
   def format_date(date)
     date.strftime("%A, %B %-d")
+  end
+
+  def truncate_text(text, max)
+    if !text 
+      return ""
+    end
+    if text.length > max - 3 
+      "#{text[0..max-3]}..."
+    else
+      text
+    end
   end
 
   # Links to the tweet creation form on Twitter with custom tweet text
@@ -133,6 +176,16 @@ helpers do
     # where the first element is the sponsor's slug and
     # the second element is the data for the sponsor
     data.sponsors.detect {|slug, data| data.id == sponsor_id}
+  end
+
+  def all_talks
+    data.talks.flat_map do |city, years|
+      years.flat_map do |year, talks|
+        talks.map do |slug, talk|
+          talk.tap {|t| t[:slug] = slug}
+        end
+      end
+    end.sort_by(&:title)
   end
 
   # Finds the producer entry in the sponsors (Crevalle)

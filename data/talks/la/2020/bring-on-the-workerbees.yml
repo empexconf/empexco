@@ -1,0 +1,15 @@
+title: Bring On the WorkerBees (Designing Elixir Systems with OTP)
+conference: EMPEX LA 2020
+youtube_id: CsmJ_xfzKxw
+description: |
+  If you want to be a great Elixir developers, you need to learn to build your programs in layers, the way the experts do. In this session, we will explore the advice:
+
+  Do Fun Things with Big, Loud Workerbees.
+
+  This sentence, from Designing Elixir Systems with OTP, is a mental mnemonic that stands for Data, Functions, Tests; Boundaries, Lifecycles and Workers. We'll talk about each of these layers in detail focusing on the role of each independent layer in a self-healing, performant Elixir program.
+authors:
+  - name: Bruce Tate
+    twitter: redrapids
+    profile_url: bruce-tate.jpg
+    bio: |
+      The founder of Groxio, Bruce Tate is a mountain biker, climber and father of two. He's the co-author of Programming Phoenix, Adopting Elixir and Designing Elixir Systems with OTP. He runs the Programmer Passport program, a subscription service that helps programmers advance by teaching them new programming languages.

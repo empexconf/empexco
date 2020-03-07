@@ -1,0 +1,11 @@
+title: Making your Elixir API Accessible to non-Elixir developers
+conference: EMPEX LA 2019
+youtube_id: vdfmIFAKNE0
+description: |
+  This talk will describe tools, application best practices, and team collaboration tips that make consuming and working with an Elixir API easier for those not familiar with Elixir. I will talk about how I went from programing in only Javascript to working full stack at Versus Systems, what things we did to inspire engineers to work full stack. Some topics I will explore are useful testing, documentation, and scripts, as well as application organization, and effective teamwork.
+authors:
+  - name: Kalisa Falzone
+    twitter: KalisaFalzone
+    profile_url: kalisa-falzone.jpg
+    bio: |
+      Kalisa Falzone is a Software Engineer at Versus Systems. She specializes in Javascript and React, but has been working with Elixir and full stack more recently. She has an educational background in Mathematics, loves board games and music.

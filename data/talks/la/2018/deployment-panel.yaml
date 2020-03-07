@@ -1,0 +1,21 @@
+title: Deployment Panel
+conference: EMPEX LA 2018
+youtube_id: PyZ_LD440vM
+description: |
+  This panel will discuss their elixir deployment strategies, and then take questions.
+authors:
+  - name: Desmond Bowe
+    twitter: desmondmonster
+    profile_url: bowe-desmond.png
+    bio: |
+      Desmond is the founder of EMPEX and a cohost of the popular ElixirTalk podcast. He currently works as CTO of Payitoff helping folks pay off their student loans. In his free time he grows his mustache and plays pinball.
+  - name: Benjamin Brodie
+    twitter: blbrodie
+    profile_url: brodie-benjamin.jpg
+    bio: |
+      A reformed java engineer from the advertisement space, Ben has embraced Elixir since joining Grindr's chat team. The chat team has embraced extreme programming with continuous deployment and pairing. Convinced by Elixir's performance and simplicity, Grindr has been adopting Elixir over Java in other other areas as well. Grindr now has the largest known Phoenix pubsub installation in the world
+  - name: Scott Taylor
+    twitter: staylorwr
+    profile_url: taylor-scott.jpg
+    bio: |
+      Scott is a polygot engineer who writes Elixir as the lead engineer at Motel. At Motel, Scott crafts Elixir and mentors others. He also holds the record for most countries traveled to, most miles ran, and most slack emojis made of his face.

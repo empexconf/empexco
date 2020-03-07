@@ -1,0 +1,11 @@
+title: Powering Pixels with Scenic
+conference: EMPEX LA 2020
+youtube_id: w3L-VZtP_dY
+description: |
+  Scenic is a powerful new library that empowers us to build our own user interfaces from scratch that work outside of the browser. Let’s put it to the test in building our very own video game. We’ll explore a variety of techniques for basic game development such as animation, finite state machines, alternate input devices, etc. With Scenic, is Elixir now the ideal language for game development? Probably not but who cares, let’s just have some fun!
+authors:
+  - name: Jesse J. Anderson
+    twitter: jessejanderson
+    profile_url: jesse-anderson.jpg
+    bio: |
+      Jesse J. Anderson has been creating things for the web since before comic book movies were cool—first as a designer and more recently as a developer. He prefers ortholinear keyboards, Oxford commas, and spaces over tabs. While known as an Elixir evangelist, he gets paid to write mostly in React as a front-end designer for Planning Center. Jesse currently lives near Seattle with his wife and 3 children.

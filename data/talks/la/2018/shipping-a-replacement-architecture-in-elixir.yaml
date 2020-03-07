@@ -1,0 +1,24 @@
+title: Shipping a Replacement Architecture In Elixir
+conference: EMPEX LA 2018
+youtube_id: Aa--NDjL9SI
+description: |
+  This talk will be a deep dive of how we spent the last 4 months replacing our Rails API and various Node.JS microservices with a single Elixir Umbrella Application. We’ve gone from no Elixir in production to replacing all but one of our services with it and launching and running those to power our Enterprise SaaS startup with hundreds of thousands of users.
+
+  During this talk we’ll walk through:
+
+  * Application structure inside of the Umbrella (includes 3 separate Phoenix applications inside of it).
+  * How we modeled our async event bus powered by GenStage
+  * How we leveraged Flow to parallelize the syncing of millions of database records in record time
+  * Deploying our various services to ECS via Docker
+  * Monitoring and stat-ing our services
+  * Problems we encountered during the road to production
+  * The huge wins we got!
+
+  We’ll really dig into the real-world requirements of shipping and running a complex Elixir application with many moving parts; we'll be concentrated on the high level, with a few little dips into some specific parts of the app.
+authors:
+  - name: Chris Bell
+    twitter: cjbell_
+    profile_url: bell-chris.jpg
+    bio: |
+      Chris is an Englishman in New York, where he works as the CTO of Murumed, a startup that helps EMTs get the data they need. He’s an avid alchemist and helps organize the NYC branch of EMPEX as well as co-hosting the popular ElixirTalk podcast.
+

@@ -1,0 +1,19 @@
+title: Fake It 'Til You Make It (where it = Haskell expertise)
+conference: EMPEX LA 2019
+youtube_id: 9MmIzrDmBO0
+description: |
+  In 2016, Magazine X asked Position Development to expand their existing Haskell app. Instead of only serving ecommerce forms via iframes in their WordPress website, their Haskell app would serve everything, including every article from the magazine and blog. Magazine X editors would continue to use WordPress to write and edit articles, but the Haskell server would request content through the WordPress JSON API and render templates. The magazine also wanted several new subscription, mailing list, and donation features. Early into the project, the original creator of the app left Position to begin a career in research. I was suddenly the most experienced Haskell developer on my team, while I still had less than a year of professional experience in tech. In this talk, I'll discuss both a) the technical aspects of the work and b) what it was like to try to make it all happen as part of a very small team of non-expert Haskellers. Some of the topics I'll touch on include:
+
+  - Larceny, our HTML templating language
+  - Offset, our library for rendering content from JSON APIs
+  - Position's workflow for developing, testing, and deploying Haskell apps
+  - Feeling disconnected from the larger language community, struggling with imposter syndrome, and continuing to learn and grow as a functional programmer 
+
+  In 2017, Magazine X relaunched with a bold new website. Getting to launch was a bit rocky, but for the past year we've been able to continue integrating more new features and designs into a fast, secure, and mobile-friendly Haskell app.
+authors:
+  - name: Libby Horacek
+    twitter: horrorcheck
+    profile_url: libby-horacek.jpg
+    bio: |
+      Libby is a software developer with an interest building excellent, sustainable technical infrastructure for growing organizations. In 2014, she received a grant to study at the Recurse Center, which allowed her to move from her home state of West Virginia to NYC. After studying functional programming at RC, she joined The Learning Collective, a group of activists teaching each other to create software for power-distant publics. There she met Daniel Patterson, then a worker-owner at Position, who encouraged her to apply to work with Position. Libby has also spoken at conferences and technical meetups including Allied Media Conference, !!Con, AlterConf DC, and Haskell Users Group.
+  

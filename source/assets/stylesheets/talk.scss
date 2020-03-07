@@ -1,0 +1,19 @@
+.talk__brand {
+  display: flex;
+  align-items: center;
+
+  * {
+    margin-bottom: 0;
+  }
+}
+
+.talk__nav-logo {
+  height: 100%;
+}
+
+.talk__navbar-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-bottom: 0;
+}

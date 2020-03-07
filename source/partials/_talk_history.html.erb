@@ -1,0 +1,21 @@
+<div class="talk-card__list">
+  <% talks.each do |talk| %>
+    <div class="talk-card">
+      <a class="talk-card__media" href="/talks/<%= talk.slug %>">
+        <img src="<%= video_preview_image(talk) %>">
+      </a>
+    
+      <h3 class="talk-card__title">
+        <a href="/talks/<%= talk.slug %>"><%= talk.title %></a>
+      </h3>
+
+      <h4 class="talk-card__author">
+        <%= talk.authors.map(&:name).join(", ")  %> (<%= talk.conference %>)
+      </h4>
+
+      <p class="talk-card__description">
+        <%= truncate_text(talk.description, 200) %>
+      </p>
+    </div>
+  <% end %>
+</div>

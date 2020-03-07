@@ -1,0 +1,17 @@
+title: "Rebuilding a BDD Testing Framework (ESpec): Foundations in Metaprogramming"
+conference: EMPEX LA 2019
+youtube_id: uah3b4IVRDA
+description: |
+  You're a Test-Driven Development disciple, but you're a little iffy on this whole metaprogramming thing and it's something you don't feel comfortable using in your day to day programming.
+
+  If you've looked through the ExUnit codebase, or its RSpec-inspired cousin, ESpec (RSpec is a Ruby on Rails testing framework), you've probably noticed the defmacro keyword. That's because these test frameworks make use of metaprogramming to give you those lovely DSL's.
+
+  Don't know what the defmacro keyword does? Don't worry.
+
+  Even if you've never used Elixir's metaprogramming features before, come learn how to do it by seeing a real-life application of them. During this talk, we will rebuild a small part of our own version of ESpec. We'll duck and weave through Elixir's basic metaprogramming features all while building out test assertions and error messages, and you'll gain a whole new appreciation for metaprogramming.
+authors:
+  - name: Bruce Park
+    twitter: bpark0
+    profile_url: bruce-park.jpg
+    bio: |
+      Bruce currently works as a developer at a company called Versus Systems based in Los Angeles, California. He occasionally contributes to Elixir open source libraries such as ESpec, a popular testing framework. In his spare time, he likes reading Tom Clancy novels and swimming along with a cup of coffee.

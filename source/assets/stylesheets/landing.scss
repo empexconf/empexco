@@ -1,4 +1,5 @@
-@import './2018-styles';
+@import "./2018-styles";
+@import "./talk-history";
 
 .top {
   @include small-section();
@@ -11,8 +12,6 @@
   margin-bottom: 37px;
 
   @media screen and (min-height: 775px) and (min-width: $tablet-width) {
-    margin-top: 0;
-    margin-bottom: 0;
     height: calc(100vh - 200px - 250px - 20px - 32px - 72px - 31px - 25px);
   }
 
@@ -44,7 +43,7 @@
   margin-bottom: 10rem;
   padding: 0 $page-padding;
 
-  background-image: url('/assets/images/landing/landing-background.png');
+  background-image: url("/assets/images/landing/landing-background.png");
   background-position: bottom center;
   background-size: auto;
   background-repeat: no-repeat;
@@ -108,11 +107,11 @@
   border-radius: 10px;
 
   &--la {
-    background-image: url('/assets/images/landing/landing-background-la.jpg');
+    background-image: url("/assets/images/landing/landing-background-la.jpg");
   }
 
   &--nyc {
-    background-image: url('/assets/images/landing/landing-background-nyc.jpg');
+    background-image: url("/assets/images/landing/landing-background-nyc.jpg");
   }
 
   &__logo {
