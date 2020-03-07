@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+
+    <link href="/assets/stylesheets/all-28005a22.css" rel="stylesheet" />
+    <link href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css" rel="stylesheet" />
+    <link href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css" rel="stylesheet" />
+
+    <link href="/assets/images/favicon.ico" rel="icon" type="image/ico" />
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-73059900-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-73059900-1');
+    </script>
+
+      <link rel="canonical" href="/talks/nyc/2019">
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@empexco" />
+  <meta name="twitter:title" content="EMPEX NYC 2019 Talks" />
+  <meta name="twitter:description" content="Talks from the EMPEX NYC 2019 conference" />
+  <meta name="twitter:image" content="http://empex.co/assets/images/flag-577c45fc.jpg" />
+
+  <meta property="og:url" content="/talks/nyc/2019" />
+  <meta property="og:title" content="EMPEX NYC 2019 Talks" />
+  <meta property="og:description" content="Talks from the EMPEX NYC 2019 conference" />
+  <meta property="og:image" content="http://empex.co/assets/images/flag-577c45fc.jpg" />
+
+  <link href="/assets/stylesheets/talk-list-89e9d608.css" rel="stylesheet" />
+
+  </head>
+
+  <body class="talks talks_nyc talks_nyc_2019">
+    
+
+        <div class="navbar-spacer"></div>
+  <nav id="navbar" class="navbar">
+    <div class="container">
+      <div class="talk__navbar-list">
+        <a href="/" class="talk__brand">
+          <img src="/assets/images/empex-logo-official-white-80b0e29c.svg" class="talk__nav-logo" title="EMPEX" alt="Empex logo official white" />
+          <h2>EMPEX</h2>
+        </a>
+
+        <ul class="talk__navbar-list">
+          <li class="navbar-item">
+            <a href="/nyc.html" class="navbar-link">NYC</a>
+          </li>
+          <li class="navbar-item">
+            <a href="/la.html" class="navbar-link">LA</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <main>
+      
+
+
+<div class="talk-history">
+  <h2 class="talk-history__section-header">
+    EMPEX NYC 2019 Talks
+  </h2>
+
+  <p>
+    All the talks from this conference, in one convenient place.
+  </p>
+
+  <div class="talk-card__list">
+    <div class="talk-card">
+      <a class="talk-card__media" href="/talks/dadgeneering-with-elixir-and-nerves">
+        <img src="https://img.youtube.com/vi/SJc4YYYloTQ/mqdefault.jpg">
+      </a>
+    
+      <h3 class="talk-card__title">
+        <a href="/talks/dadgeneering-with-elixir-and-nerves">Dadgeneering With Elixir + Nerves</a>
+      </h3>
+
+      <h4 class="talk-card__author">
+        Jon Carstens (New York 2019)
+      </h4>
+
+      <p class="talk-card__description">
+        Are you a parent of children, pets, or just really immature roommates? Do you wish you could use Elixir to help solve household issues and annoyances? Do you frequently over-engineer side projects? ...
+      </p>
+    </div>
+</div>
+
+</div>
+
+    </main>
+    <section id="bottom">
+  <section class="container content-section">
+    <h2>Updates</h2>
+    <form id="signup-form" accept-charset="UTF-8" action="https://empex.us12.list-manage.com/subscribe/post" method="POST">
+  <input type="hidden" name="u" value="9d40dbb0479340efa12eb81d5">
+  <input type="hidden" name="id" value="0869b35918">
+
+  <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" placeholder="Email Address">
+
+  <input type="submit" name="submit" value="Send Me Updates" class="button-primary halloween" />
+</form>
+
+    <!-- Footer -->
+<footer id="footer">
+  <ul class="icons">
+    <li><a href="https://twitter.com/empexco" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+    <li><a href="https://instagram.com/empirecityelixir" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+    <li><a href="https://github.com/empirecityelixir" class="icon fa-github"><span class="label">GitHub</span></a></li>
+    <li><a href="mailto:info@empex.co" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+  </ul>
+  <ul class="links">
+    <li>&copy; <a href="#" target="_blank" class="no-hover">
+        <img src="/assets/images/sponsors/crevalle-footer-1afc54fb.png" alt="Crevalle" title="Crevalle" class="crevalle-name" />
+</a>    </li>
+    <li><a href="../../code-of-conduct.html">Code of Conduct</a></li>
+    <li>Design by <a href="http://thoughtmerchants.com">Thought Merchants</a></li>
+  </ul>
+</footer>
+
+  </section>
+</section>
+
+    <script src="/assets/javascripts/vendor/jquery-2.2.1.min-7cb05e3d.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+    <script src="/assets/javascripts/nav-e89d8ad7.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,349 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+
+    <link href="/assets/stylesheets/all-28005a22.css" rel="stylesheet" />
+    <link href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css" rel="stylesheet" />
+    <link href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css" rel="stylesheet" />
+
+    <link href="/assets/images/favicon.ico" rel="icon" type="image/ico" />
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-73059900-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-73059900-1');
+    </script>
+
+      <link rel="canonical" href="/talks/la/2020">
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@empexco" />
+  <meta name="twitter:title" content="EMPEX LA 2020 Talks" />
+  <meta name="twitter:description" content="Talks from the EMPEX LA 2020 conference" />
+  <meta name="twitter:image" content="http://empex.co/assets/images/flag-577c45fc.jpg" />
+
+  <meta property="og:url" content="/talks/la/2020" />
+  <meta property="og:title" content="EMPEX LA 2020 Talks" />
+  <meta property="og:description" content="Talks from the EMPEX LA 2020 conference" />
+  <meta property="og:image" content="http://empex.co/assets/images/flag-577c45fc.jpg" />
+
+  <link href="/assets/stylesheets/talk-list-89e9d608.css" rel="stylesheet" />
+
+  </head>
+
+  <body class="talks talks_la talks_la_2020">
+    
+
+        <div class="navbar-spacer"></div>
+  <nav id="navbar" class="navbar">
+    <div class="container">
+      <div class="talk__navbar-list">
+        <a href="/" class="talk__brand">
+          <img src="/assets/images/empex-logo-official-white-80b0e29c.svg" class="talk__nav-logo" title="EMPEX" alt="Empex logo official white" />
+          <h2>EMPEX</h2>
+        </a>
+
+        <ul class="talk__navbar-list">
+          <li class="navbar-item">
+            <a href="/nyc.html" class="navbar-link">NYC</a>
+          </li>
+          <li class="navbar-item">
+            <a href="/la.html" class="navbar-link">LA</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <main>
+      
+
+
+<div class="talk-history">
+  <h2 class="talk-history__section-header">
+    EMPEX LA 2020 Talks
+  </h2>
+
+  <p>
+    All the talks from this conference, in one convenient place.
+  </p>
+
+  <div class="talk-card__list">
+    <div class="talk-card">
+      <a class="talk-card__media" href="/talks/grisp-ecosystem-for-real-bare-metal-erlang">
+        <img src="https://img.youtube.com/vi/OE9iVWOQ98w/mqdefault.jpg">
+      </a>
+    
+      <h3 class="talk-card__title">
+        <a href="/talks/grisp-ecosystem-for-real-bare-metal-erlang">GRiSP Ecosystem for Real Bare Metal Erlang VM</a>
+      </h3>
+
+      <h4 class="talk-card__author">
+        Peer Stritzinger (EMPEX LA 2020)
+      </h4>
+
+      <p class="talk-card__description">
+        The Erlang and Elixir embedded software and hardware platform GRiSP is out over 3 years now and now covers Elixir and Erlang with mix and rebar3 tooling and is looking at further places where Erlang...
+      </p>
+    </div>
+    <div class="talk-card">
+      <a class="talk-card__media" href="/talks/building-real-time-experiences-with-liveview-and-ux">
+        <img src="https://img.youtube.com/vi/cMFZbYBPfqA/mqdefault.jpg">
+      </a>
+    
+      <h3 class="talk-card__title">
+        <a href="/talks/building-real-time-experiences-with-liveview-and-ux">Opening Keynote: Building Real Time Experiences with LiveView and UX Principles</a>
+      </h3>
+
+      <h4 class="talk-card__author">
+        Beau Heubach, Zack Kayser (EMPEX LA 2020)
+      </h4>
+
+      <p class="talk-card__description">
+        The need for fast and clear real-time responses are not new to user experience and application development. Instant feedback and system status are core to building better interactive interfaces. Now...
+      </p>
+    </div>
+    <div class="talk-card">
+      <a class="talk-card__media" href="/talks/the-case-against-scale">
+        <img src="https://img.youtube.com/vi/7VnuaTV4BCU/mqdefault.jpg">
+      </a>
+    
+      <h3 class="talk-card__title">
+        <a href="/talks/the-case-against-scale">Closing Keynote: The Case Against Scale</a>
+      </h3>
+
+      <h4 class="talk-card__author">
+        Aaron Harpole (EMPEX LA 2020)
+      </h4>
+
+      <p class="talk-card__description">
+        Scale is a very popular topic among software engineers, and it is something many of us strive to do well, but we rarely discuss its consequences. We think of scale as an inherently good thing. After...
+      </p>
+    </div>
+    <div class="talk-card">
+      <a class="talk-card__media" href="/talks/high-performance-data-structures-in-erlang">
+        <img src="https://img.youtube.com/vi/fdxhxAqxR94/mqdefault.jpg">
+      </a>
+    
+      <h3 class="talk-card__title">
+        <a href="/talks/high-performance-data-structures-in-erlang">High Performance Data Structures in Erlang</a>
+      </h3>
+
+      <h4 class="talk-card__author">
+        Shanti Chellaram (EMPEX LA 2020)
+      </h4>
+
+      <p class="talk-card__description">
+        Writing efficient data structures in Erlang isn't something that's normally done - but by borrowing from both Purely Functional Data Structures, some additional work on Finger Trees, and occasionall...
+      </p>
+    </div>
+    <div class="talk-card">
+      <a class="talk-card__media" href="/talks/controlling-midi-in-real-time">
+        <img src="https://img.youtube.com/vi/4o4FzOFL2eE/mqdefault.jpg">
+      </a>
+    
+      <h3 class="talk-card__title">
+        <a href="/talks/controlling-midi-in-real-time">Controlling MIDI Devices in Real Time with Elixir and Nerves</a>
+      </h3>
+
+      <h4 class="talk-card__author">
+        Geoffrey Lessel (EMPEX LA 2020)
+      </h4>
+
+      <p class="talk-card__description">
+        MIDI is a specification developed in the 80s to allow musical instruments to talk to each other in near real-time. This inter-instrument talk involved sending notes, changing syntesizer patches, and...
+      </p>
+    </div>
+    <div class="talk-card">
+      <a class="talk-card__media" href="/talks/stream-processing-connected-vehicle-data">
+        <img src="https://img.youtube.com/vi/OKnY2hO2JdA/mqdefault.jpg">
+      </a>
+    
+      <h3 class="talk-card__title">
+        <a href="/talks/stream-processing-connected-vehicle-data">Stream-processing connected vehicle data in Elixir</a>
+      </h3>
+
+      <h4 class="talk-card__author">
+        Jeff Grunewald (EMPEX LA 2020)
+      </h4>
+
+      <p class="talk-card__description">
+        “Smart” and connected vehicles generate TONS of data. To make use of that data from a fleet of vehicles for analysis of V2V interactions, traffic patterns, or control flow, you have to consume as mu...
+      </p>
+    </div>
+    <div class="talk-card">
+      <a class="talk-card__media" href="/talks/messaging-metamorphosis">
+        <img src="https://img.youtube.com/vi/xWItOcqxCE0/mqdefault.jpg">
+      </a>
+    
+      <h3 class="talk-card__title">
+        <a href="/talks/messaging-metamorphosis">The Messaging Metamorphosis: Using Kafka, Elixir, and GenStage to Transform Transactional Messaging @ Dollar Shave Club</a>
+      </h3>
+
+      <h4 class="talk-card__author">
+        Ryan Trontz (EMPEX LA 2020)
+      </h4>
+
+      <p class="talk-card__description">
+        Elixir, Apache Kafka, and Microservices have all exploded in popularity in the last few years. While their popularities have all exploded, clear understanding of their interplay has not. In this tal...
+      </p>
+    </div>
+    <div class="talk-card">
+      <a class="talk-card__media" href="/talks/nerves-takes-to-the-sky">
+        <img src="https://img.youtube.com/vi/9V30iMUqQJ8/mqdefault.jpg">
+      </a>
+    
+      <h3 class="talk-card__title">
+        <a href="/talks/nerves-takes-to-the-sky">Nerves Takes to the Sky</a>
+      </h3>
+
+      <h4 class="talk-card__author">
+        Michael Ries (EMPEX LA 2020)
+      </h4>
+
+      <p class="talk-card__description">
+        The problem with a paper airplane, is that it always seems to turn one way or the other. I can never get them to maintain a steady course. What if Nerves was riding along as the pilot?
+
+We'll first ...
+      </p>
+    </div>
+    <div class="talk-card">
+      <a class="talk-card__media" href="/talks/real-time-strategy-at-light-speed">
+        <img src="https://img.youtube.com/vi/_-J09mr9AEQ/mqdefault.jpg">
+      </a>
+    
+      <h3 class="talk-card__title">
+        <a href="/talks/real-time-strategy-at-light-speed">Real time strategy at light speed</a>
+      </h3>
+
+      <h4 class="talk-card__author">
+        Julian Doherty (EMPEX LA 2020)
+      </h4>
+
+      <p class="talk-card__description">
+        Real time space battle multiplayer browser games are cool. But what if we want to play a real time space battle multiplayer game where the players are hundreds of millions of miles apart, and the sp...
+      </p>
+    </div>
+    <div class="talk-card">
+      <a class="talk-card__media" href="/talks/its-time-to-embrace-erlang">
+        <img src="https://img.youtube.com/vi/mJb9wjUJhm4/mqdefault.jpg">
+      </a>
+    
+      <h3 class="talk-card__title">
+        <a href="/talks/its-time-to-embrace-erlang">It's Time to Embrace Erlang</a>
+      </h3>
+
+      <h4 class="talk-card__author">
+        Todd Resudek (EMPEX LA 2020)
+      </h4>
+
+      <p class="talk-card__description">
+        As a community we have gone to incredible lengths to avoid ever writing or even looking at Erlang syntax. This has lead to a fractured community, unnecessary dependencies, and opaque code. Even wors...
+      </p>
+    </div>
+    <div class="talk-card">
+      <a class="talk-card__media" href="/talks/erlang-ecosystem-foundation-hello-world">
+        <img src="https://img.youtube.com/vi/48O7jZxlORM/mqdefault.jpg">
+      </a>
+    
+      <h3 class="talk-card__title">
+        <a href="/talks/erlang-ecosystem-foundation-hello-world">Erlang Ecosystem Foundation: Hello World</a>
+      </h3>
+
+      <h4 class="talk-card__author">
+        Peer Stritzinger (EMPEX LA 2020)
+      </h4>
+
+      <p class="talk-card__description">
+        The Erlang and Elixir embedded software and hardware platform GRiSP is out over 3 years now and now covers Elixir and Erlang with mix and rebar3 tooling and is looking at further places where Erlang...
+      </p>
+    </div>
+    <div class="talk-card">
+      <a class="talk-card__media" href="/talks/powering-pixels-with-scenic">
+        <img src="https://img.youtube.com/vi/w3L-VZtP_dY/mqdefault.jpg">
+      </a>
+    
+      <h3 class="talk-card__title">
+        <a href="/talks/powering-pixels-with-scenic">Powering Pixels with Scenic</a>
+      </h3>
+
+      <h4 class="talk-card__author">
+        Jesse J. Anderson (EMPEX LA 2020)
+      </h4>
+
+      <p class="talk-card__description">
+        Scenic is a powerful new library that empowers us to build our own user interfaces from scratch that work outside of the browser. Let’s put it to the test in building our very own video game. We’ll ...
+      </p>
+    </div>
+    <div class="talk-card">
+      <a class="talk-card__media" href="/talks/bring-on-the-workerbees">
+        <img src="https://img.youtube.com/vi/CsmJ_xfzKxw/mqdefault.jpg">
+      </a>
+    
+      <h3 class="talk-card__title">
+        <a href="/talks/bring-on-the-workerbees">Bring On the WorkerBees (Designing Elixir Systems with OTP)</a>
+      </h3>
+
+      <h4 class="talk-card__author">
+        Bruce Tate (EMPEX LA 2020)
+      </h4>
+
+      <p class="talk-card__description">
+        If you want to be a great Elixir developers, you need to learn to build your programs in layers, the way the experts do. In this session, we will explore the advice:
+
+Do Fun Things with Big, Loud Wo...
+      </p>
+    </div>
+</div>
+
+</div>
+
+    </main>
+    <section id="bottom">
+  <section class="container content-section">
+    <h2>Updates</h2>
+    <form id="signup-form" accept-charset="UTF-8" action="https://empex.us12.list-manage.com/subscribe/post" method="POST">
+  <input type="hidden" name="u" value="9d40dbb0479340efa12eb81d5">
+  <input type="hidden" name="id" value="0869b35918">
+
+  <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" placeholder="Email Address">
+
+  <input type="submit" name="submit" value="Send Me Updates" class="button-primary halloween" />
+</form>
+
+    <!-- Footer -->
+<footer id="footer">
+  <ul class="icons">
+    <li><a href="https://twitter.com/empexco" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+    <li><a href="https://instagram.com/empirecityelixir" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+    <li><a href="https://github.com/empirecityelixir" class="icon fa-github"><span class="label">GitHub</span></a></li>
+    <li><a href="mailto:info@empex.co" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+  </ul>
+  <ul class="links">
+    <li>&copy; <a href="#" target="_blank" class="no-hover">
+        <img src="/assets/images/sponsors/crevalle-footer-1afc54fb.png" alt="Crevalle" title="Crevalle" class="crevalle-name" />
+</a>    </li>
+    <li><a href="../../code-of-conduct.html">Code of Conduct</a></li>
+    <li>Design by <a href="http://thoughtmerchants.com">Thought Merchants</a></li>
+  </ul>
+</footer>
+
+  </section>
+</section>
+
+    <script src="/assets/javascripts/vendor/jquery-2.2.1.min-7cb05e3d.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+    <script src="/assets/javascripts/nav-e89d8ad7.js"></script>
+    
+  </body>
+</html>

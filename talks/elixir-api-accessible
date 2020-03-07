@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+
+    <link href="/assets/stylesheets/all-28005a22.css" rel="stylesheet" />
+    <link href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css" rel="stylesheet" />
+    <link href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css" rel="stylesheet" />
+
+    <link href="/assets/images/favicon.ico" rel="icon" type="image/ico" />
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-73059900-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-73059900-1');
+    </script>
+
+      <link rel="canonical" href="/talks/elixir-api-accessible">
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@empexco" />
+  <meta name="twitter:title" content="EMPEX Talk: Making your Elixir API Accessible to non-Elixir developers" />
+  <meta name="twitter:description" content="This talk will describe tools, application best practices, and team collaboration tips that make consuming and working with an Elixir API easier for those not familiar with Elixir. I will talk about how I went from programing in only Javascript to working full stack at Versus Systems, what things we did to inspire engineers to work full stack. Some topics I will explore are useful testing, documentation, and scripts, as well as application organization, and effective teamwork.
+" />
+  <meta name="twitter:image" content="https://img.youtube.com/vi/vdfmIFAKNE0/mqdefault.jpg" />
+
+  <meta property="og:url" content="/talks/elixir-api-accessible" />
+  <meta property="og:title" content="EMPEX Talk: Making your Elixir API Accessible to non-Elixir developers" />
+  <meta property="og:description" content="This talk will describe tools, application best practices, and team collaboration tips that make consuming and working with an Elixir API easier for those not familiar with Elixir. I will talk about how I went from programing in only Javascript to working full stack at Versus Systems, what things we did to inspire engineers to work full stack. Some topics I will explore are useful testing, documentation, and scripts, as well as application organization, and effective teamwork.
+" />
+  <meta property="og:image" content="https://img.youtube.com/vi/vdfmIFAKNE0/mqdefault.jpg" />
+
+  </head>
+
+  <body class="talks talks_elixir-api-accessible">
+    
+
+        <div class="navbar-spacer"></div>
+  <nav id="navbar" class="navbar">
+    <div class="container">
+      <div class="talk__navbar-list">
+        <a href="/" class="talk__brand">
+          <img src="/assets/images/empex-logo-official-white-80b0e29c.svg" class="talk__nav-logo" title="EMPEX" alt="Empex logo official white" />
+          <h2>EMPEX</h2>
+        </a>
+
+        <ul class="talk__navbar-list">
+          <li class="navbar-item">
+            <a href="/nyc.html" class="navbar-link">NYC</a>
+          </li>
+          <li class="navbar-item">
+            <a href="/la.html" class="navbar-link">LA</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <main>
+      
+
+
+<section class="presentation">
+  <div class="presentation-presenter">
+    <div class="presentation-panel">
+
+        <div class="presentation-panel__member">
+          <div class="presentation-presenter__avatar-container">
+            <img src="/assets/images/people/presenters/kalisa-falzone-f51bc399.jpg" class="presentation-presenter__avatar" alt="Kalisa falzone" />
+          </div>
+
+          <h4 class="presentation-presenter__name">
+            Kalisa Falzone
+          </h4>
+
+          <div class="presentation-presenter__link">
+              <a target="_blank" href="https://twitter.com/KalisaFalzone">
+                @KalisaFalzone
+              </a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="presentation__details">
+    <h3 class="presentation__title">
+      Making your Elixir API Accessible to non-Elixir developers
+    </h3>
+
+      <iframe 
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/vdfmIFAKNE0?rel=0"
+        frameborder="0"
+        allow="autoplay; encrypted-media" allowfullscreen>
+      </iframe>
+
+    <div class="presentation__description">
+        <p>This talk will describe tools, application best practices, and team collaboration tips that make consuming and working with an Elixir API easier for those not familiar with Elixir. I will talk about how I went from programing in only Javascript to working full stack at Versus Systems, what things we did to inspire engineers to work full stack. Some topics I will explore are useful testing, documentation, and scripts, as well as application organization, and effective teamwork.</p>
+    </div>
+
+    <div class="presentation__bio">
+        <p>
+          <strong>About Kalisa Falzone:</strong>
+          Kalisa Falzone is a Software Engineer at Versus Systems. She specializes in Javascript and React, but has been working with Elixir and full stack more recently. She has an educational background in Mathematics, loves board games and music.
+
+        </p>
+    </div>
+  </div>
+</section>
+    </main>
+    <section id="bottom">
+  <section class="container content-section">
+    <h2>Updates</h2>
+    <form id="signup-form" accept-charset="UTF-8" action="https://empex.us12.list-manage.com/subscribe/post" method="POST">
+  <input type="hidden" name="u" value="9d40dbb0479340efa12eb81d5">
+  <input type="hidden" name="id" value="0869b35918">
+
+  <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" placeholder="Email Address">
+
+  <input type="submit" name="submit" value="Send Me Updates" class="button-primary halloween" />
+</form>
+
+    <!-- Footer -->
+<footer id="footer">
+  <ul class="icons">
+    <li><a href="https://twitter.com/empexco" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+    <li><a href="https://instagram.com/empirecityelixir" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+    <li><a href="https://github.com/empirecityelixir" class="icon fa-github"><span class="label">GitHub</span></a></li>
+    <li><a href="mailto:info@empex.co" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+  </ul>
+  <ul class="links">
+    <li>&copy; <a href="#" target="_blank" class="no-hover">
+        <img src="/assets/images/sponsors/crevalle-footer-1afc54fb.png" alt="Crevalle" title="Crevalle" class="crevalle-name" />
+</a>    </li>
+    <li><a href="../code-of-conduct.html">Code of Conduct</a></li>
+    <li>Design by <a href="http://thoughtmerchants.com">Thought Merchants</a></li>
+  </ul>
+</footer>
+
+  </section>
+</section>
+
+    <script src="/assets/javascripts/vendor/jquery-2.2.1.min-7cb05e3d.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+    <script src="/assets/javascripts/nav-e89d8ad7.js"></script>
+    
+  </body>
+</html>

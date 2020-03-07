@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+
+    <link href="/assets/stylesheets/all-28005a22.css" rel="stylesheet" />
+    <link href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css" rel="stylesheet" />
+    <link href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css" rel="stylesheet" />
+
+    <link href="/assets/images/favicon.ico" rel="icon" type="image/ico" />
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-73059900-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-73059900-1');
+    </script>
+
+      <link rel="canonical" href="/talks/distributed-war-stories">
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@empexco" />
+  <meta name="twitter:title" content="EMPEX Talk: Opening Keynote: Distributed War Stories" />
+  <meta name="twitter:description" content="Architecting a highly concurrent distributed system in the BEAM ecosystem is not an easy thing to do even on a perfect world of homogeneous traffic, reliable, secure and low latency networks. But real life internet applications may have millions of users and bizarre faulty scenarios that can arise hidden scaling issues.
+
+In this talk, I'll describe how the distribution model works in Erlang, and when/how you should take advantage of it –or not! Spiced up with real-life war stories from architectures running in production. Hopefully, you can learn from our mistakes!
+" />
+  <meta name="twitter:image" content="https://img.youtube.com/vi/b3JQgyj17hk/mqdefault.jpg" />
+
+  <meta property="og:url" content="/talks/distributed-war-stories" />
+  <meta property="og:title" content="EMPEX Talk: Opening Keynote: Distributed War Stories" />
+  <meta property="og:description" content="Architecting a highly concurrent distributed system in the BEAM ecosystem is not an easy thing to do even on a perfect world of homogeneous traffic, reliable, secure and low latency networks. But real life internet applications may have millions of users and bizarre faulty scenarios that can arise hidden scaling issues.
+
+In this talk, I'll describe how the distribution model works in Erlang, and when/how you should take advantage of it –or not! Spiced up with real-life war stories from architectures running in production. Hopefully, you can learn from our mistakes!
+" />
+  <meta property="og:image" content="https://img.youtube.com/vi/b3JQgyj17hk/mqdefault.jpg" />
+
+  </head>
+
+  <body class="talks talks_distributed-war-stories">
+    
+
+        <div class="navbar-spacer"></div>
+  <nav id="navbar" class="navbar">
+    <div class="container">
+      <div class="talk__navbar-list">
+        <a href="/" class="talk__brand">
+          <img src="/assets/images/empex-logo-official-white-80b0e29c.svg" class="talk__nav-logo" title="EMPEX" alt="Empex logo official white" />
+          <h2>EMPEX</h2>
+        </a>
+
+        <ul class="talk__navbar-list">
+          <li class="navbar-item">
+            <a href="/nyc.html" class="navbar-link">NYC</a>
+          </li>
+          <li class="navbar-item">
+            <a href="/la.html" class="navbar-link">LA</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <main>
+      
+
+
+<section class="presentation">
+  <div class="presentation-presenter">
+    <div class="presentation-panel">
+
+        <div class="presentation-panel__member">
+          <div class="presentation-presenter__avatar-container">
+            <img src="/assets/images/people/presenters/miriam-pena-23cf1191.jpg" class="presentation-presenter__avatar" alt="Miriam pena" />
+          </div>
+
+          <h4 class="presentation-presenter__name">
+            Miriam Pena
+          </h4>
+
+          <div class="presentation-presenter__link">
+              <a target="_blank" href="https://twitter.com/miriampena">
+                @miriampena
+              </a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="presentation__details">
+    <h3 class="presentation__title">
+      Opening Keynote: Distributed War Stories
+    </h3>
+
+      <iframe 
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/b3JQgyj17hk?rel=0"
+        frameborder="0"
+        allow="autoplay; encrypted-media" allowfullscreen>
+      </iframe>
+
+    <div class="presentation__description">
+        <p>Architecting a highly concurrent distributed system in the BEAM ecosystem is not an easy thing to do even on a perfect world of homogeneous traffic, reliable, secure and low latency networks. But real life internet applications may have millions of users and bizarre faulty scenarios that can arise hidden scaling issues.</p>
+        <p></p>
+        <p>In this talk, I'll describe how the distribution model works in Erlang, and when/how you should take advantage of it –or not! Spiced up with real-life war stories from architectures running in production. Hopefully, you can learn from our mistakes!</p>
+    </div>
+
+    <div class="presentation__bio">
+        <p>
+          <strong>About Miriam Pena:</strong>
+          Miriam loves to architect distributed, scalable, high performance, high concurrency, and high availability systems. Bonus point if they are written in Erlang/Elixir. She is a Staff Engineer at AdRoll, designing critical parts of their AdServers/RTB infrastructure and organizer of the Erlang and Elixir meetup in San Francisco. Prior to AdRoll, she provided Erlang specialized consultancy and studied Computer Science Engineering from La Coruña University in Spain. Voted one of the women to watch in 2018 by Women 2.0 here. She published some open source libraries such as mero, a scalable and lightweight client for Memcached and Spillway for load shedding.
+
+        </p>
+    </div>
+  </div>
+</section>
+    </main>
+    <section id="bottom">
+  <section class="container content-section">
+    <h2>Updates</h2>
+    <form id="signup-form" accept-charset="UTF-8" action="https://empex.us12.list-manage.com/subscribe/post" method="POST">
+  <input type="hidden" name="u" value="9d40dbb0479340efa12eb81d5">
+  <input type="hidden" name="id" value="0869b35918">
+
+  <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" placeholder="Email Address">
+
+  <input type="submit" name="submit" value="Send Me Updates" class="button-primary halloween" />
+</form>
+
+    <!-- Footer -->
+<footer id="footer">
+  <ul class="icons">
+    <li><a href="https://twitter.com/empexco" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+    <li><a href="https://instagram.com/empirecityelixir" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+    <li><a href="https://github.com/empirecityelixir" class="icon fa-github"><span class="label">GitHub</span></a></li>
+    <li><a href="mailto:info@empex.co" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+  </ul>
+  <ul class="links">
+    <li>&copy; <a href="#" target="_blank" class="no-hover">
+        <img src="/assets/images/sponsors/crevalle-footer-1afc54fb.png" alt="Crevalle" title="Crevalle" class="crevalle-name" />
+</a>    </li>
+    <li><a href="../code-of-conduct.html">Code of Conduct</a></li>
+    <li>Design by <a href="http://thoughtmerchants.com">Thought Merchants</a></li>
+  </ul>
+</footer>
+
+  </section>
+</section>
+
+    <script src="/assets/javascripts/vendor/jquery-2.2.1.min-7cb05e3d.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+    <script src="/assets/javascripts/nav-e89d8ad7.js"></script>
+    
+  </body>
+</html>

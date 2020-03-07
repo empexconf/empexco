@@ -1,0 +1,18 @@
+/* line 1, talk.scss */
+.talk__brand {
+  display: flex;
+  align-items: center; }
+  /* line 5, talk.scss */
+  .talk__brand * {
+    margin-bottom: 0; }
+
+/* line 10, talk.scss */
+.talk__nav-logo {
+  height: 100%; }
+
+/* line 14, talk.scss */
+.talk__navbar-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-bottom: 0; }

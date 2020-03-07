@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+
+    <link href="/assets/stylesheets/all-28005a22.css" rel="stylesheet" />
+    <link href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css" rel="stylesheet" />
+    <link href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css" rel="stylesheet" />
+
+    <link href="/assets/images/favicon.ico" rel="icon" type="image/ico" />
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-73059900-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-73059900-1');
+    </script>
+
+      <link rel="canonical" href="/talks/dadgeneering-with-elixir-and-nerves">
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@empexco" />
+  <meta name="twitter:title" content="EMPEX Talk: Dadgeneering With Elixir + Nerves" />
+  <meta name="twitter:description" content="Are you a parent of children, pets, or just really immature roommates? Do you wish you could use Elixir to help solve household issues and annoyances? Do you frequently over-engineer side projects? Then you might be a dadgineer (or momgineer).
+This talk is compilation of fun projects using Elixir &amp; Nerves to solve silly problems around my home. Projects such as a "Picture Board Turn Selector" to programmatically answer the age old question of "Whose turn is it!?", complete with LED light show. Or hardening the security of the toy storage room with electromagnetic latching and biometric unlocking procedure.
+The projects are overly complex for the problems they are solving, but my hope is that it helps inspire others to break into the world of hardware. To provide yet another set of wild examples to show how fun and sometimes surprisingly easy it is to create your own customizations in the physical world.
+" />
+  <meta name="twitter:image" content="https://img.youtube.com/vi/SJc4YYYloTQ/mqdefault.jpg" />
+
+  <meta property="og:url" content="/talks/dadgeneering-with-elixir-and-nerves" />
+  <meta property="og:title" content="EMPEX Talk: Dadgeneering With Elixir + Nerves" />
+  <meta property="og:description" content="Are you a parent of children, pets, or just really immature roommates? Do you wish you could use Elixir to help solve household issues and annoyances? Do you frequently over-engineer side projects? Then you might be a dadgineer (or momgineer).
+This talk is compilation of fun projects using Elixir &amp; Nerves to solve silly problems around my home. Projects such as a "Picture Board Turn Selector" to programmatically answer the age old question of "Whose turn is it!?", complete with LED light show. Or hardening the security of the toy storage room with electromagnetic latching and biometric unlocking procedure.
+The projects are overly complex for the problems they are solving, but my hope is that it helps inspire others to break into the world of hardware. To provide yet another set of wild examples to show how fun and sometimes surprisingly easy it is to create your own customizations in the physical world.
+" />
+  <meta property="og:image" content="https://img.youtube.com/vi/SJc4YYYloTQ/mqdefault.jpg" />
+
+  </head>
+
+  <body class="talks talks_dadgeneering-with-elixir-and-nerves">
+    
+
+        <div class="navbar-spacer"></div>
+  <nav id="navbar" class="navbar">
+    <div class="container">
+      <div class="talk__navbar-list">
+        <a href="/" class="talk__brand">
+          <img src="/assets/images/empex-logo-official-white-80b0e29c.svg" class="talk__nav-logo" title="EMPEX" alt="Empex logo official white" />
+          <h2>EMPEX</h2>
+        </a>
+
+        <ul class="talk__navbar-list">
+          <li class="navbar-item">
+            <a href="/nyc.html" class="navbar-link">NYC</a>
+          </li>
+          <li class="navbar-item">
+            <a href="/la.html" class="navbar-link">LA</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <main>
+      
+
+
+<section class="presentation">
+  <div class="presentation-presenter">
+    <div class="presentation-panel">
+
+        <div class="presentation-panel__member">
+          <div class="presentation-presenter__avatar-container">
+            <img src="/assets/images/people/presenters/jon-carstens-607c1717.jpg" class="presentation-presenter__avatar" alt="Jon carstens" />
+          </div>
+
+          <h4 class="presentation-presenter__name">
+            Jon Carstens
+          </h4>
+
+          <div class="presentation-presenter__link">
+              <a target="_blank" href="https://twitter.com/joncarstens">
+                @joncarstens
+              </a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="presentation__details">
+    <h3 class="presentation__title">
+      Dadgeneering With Elixir + Nerves
+    </h3>
+
+      <iframe 
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/SJc4YYYloTQ?rel=0"
+        frameborder="0"
+        allow="autoplay; encrypted-media" allowfullscreen>
+      </iframe>
+
+    <div class="presentation__description">
+        <p>Are you a parent of children, pets, or just really immature roommates? Do you wish you could use Elixir to help solve household issues and annoyances? Do you frequently over-engineer side projects? Then you might be a dadgineer (or momgineer).</p>
+        <p>This talk is compilation of fun projects using Elixir &amp; Nerves to solve silly problems around my home. Projects such as a "Picture Board Turn Selector" to programmatically answer the age old question of "Whose turn is it!?", complete with LED light show. Or hardening the security of the toy storage room with electromagnetic latching and biometric unlocking procedure.</p>
+        <p>The projects are overly complex for the problems they are solving, but my hope is that it helps inspire others to break into the world of hardware. To provide yet another set of wild examples to show how fun and sometimes surprisingly easy it is to create your own customizations in the physical world.</p>
+    </div>
+
+    <div class="presentation__bio">
+        <p>
+          <strong>About Jon Carstens:</strong>
+          Happily married father of four young kids. Wannabe woodworker. Avid bike rider. Hardware fanatic. Lover of good BBQ, chocolate chip cookies, and swimming.
+
+        </p>
+    </div>
+  </div>
+</section>
+    </main>
+    <section id="bottom">
+  <section class="container content-section">
+    <h2>Updates</h2>
+    <form id="signup-form" accept-charset="UTF-8" action="https://empex.us12.list-manage.com/subscribe/post" method="POST">
+  <input type="hidden" name="u" value="9d40dbb0479340efa12eb81d5">
+  <input type="hidden" name="id" value="0869b35918">
+
+  <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" placeholder="Email Address">
+
+  <input type="submit" name="submit" value="Send Me Updates" class="button-primary halloween" />
+</form>
+
+    <!-- Footer -->
+<footer id="footer">
+  <ul class="icons">
+    <li><a href="https://twitter.com/empexco" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+    <li><a href="https://instagram.com/empirecityelixir" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+    <li><a href="https://github.com/empirecityelixir" class="icon fa-github"><span class="label">GitHub</span></a></li>
+    <li><a href="mailto:info@empex.co" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+  </ul>
+  <ul class="links">
+    <li>&copy; <a href="#" target="_blank" class="no-hover">
+        <img src="/assets/images/sponsors/crevalle-footer-1afc54fb.png" alt="Crevalle" title="Crevalle" class="crevalle-name" />
+</a>    </li>
+    <li><a href="../code-of-conduct.html">Code of Conduct</a></li>
+    <li>Design by <a href="http://thoughtmerchants.com">Thought Merchants</a></li>
+  </ul>
+</footer>
+
+  </section>
+</section>
+
+    <script src="/assets/javascripts/vendor/jquery-2.2.1.min-7cb05e3d.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+    <script src="/assets/javascripts/nav-e89d8ad7.js"></script>
+    
+  </body>
+</html>

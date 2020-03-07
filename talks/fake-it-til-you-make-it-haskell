@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+
+    <link href="/assets/stylesheets/all-28005a22.css" rel="stylesheet" />
+    <link href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css" rel="stylesheet" />
+    <link href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css" rel="stylesheet" />
+
+    <link href="/assets/images/favicon.ico" rel="icon" type="image/ico" />
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-73059900-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-73059900-1');
+    </script>
+
+      <link rel="canonical" href="/talks/fake-it-til-you-make-it-haskell">
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@empexco" />
+  <meta name="twitter:title" content="EMPEX Talk: Fake It 'Til You Make It (where it = Haskell expertise)" />
+  <meta name="twitter:description" content="In 2016, Magazine X asked Position Development to expand their existing Haskell app. Instead of only serving ecommerce forms via iframes in their WordPress website, their Haskell app would serve everything, including every article from the magazine and blog. Magazine X editors would continue to use WordPress to write and edit articles, but the Haskell server would request content through the WordPress JSON API and render templates. The magazine also wanted several new subscription, mailing list, and donation features. Early into the project, the original creator of the app left Position to begin a career in research. I was suddenly the most experienced Haskell developer on my team, while I still had less than a year of professional experience in tech. In this talk, I'll discuss both a) the technical aspects of the work and b) what it was like to try to make it all happen as part of a very small team of non-expert Haskellers. Some of the topics I'll touch on include:
+
+- Larceny, our HTML templating language
+- Offset, our library for rendering content from JSON APIs
+- Position's workflow for developing, testing, and deploying Haskell apps
+- Feeling disconnected from the larger language community, struggling with imposter syndrome, and continuing to learn and grow as a functional programmer 
+
+In 2017, Magazine X relaunched with a bold new website. Getting to launch was a bit rocky, but for the past year we've been able to continue integrating more new features and designs into a fast, secure, and mobile-friendly Haskell app.
+" />
+  <meta name="twitter:image" content="https://img.youtube.com/vi/9MmIzrDmBO0/mqdefault.jpg" />
+
+  <meta property="og:url" content="/talks/fake-it-til-you-make-it-haskell" />
+  <meta property="og:title" content="EMPEX Talk: Fake It 'Til You Make It (where it = Haskell expertise)" />
+  <meta property="og:description" content="In 2016, Magazine X asked Position Development to expand their existing Haskell app. Instead of only serving ecommerce forms via iframes in their WordPress website, their Haskell app would serve everything, including every article from the magazine and blog. Magazine X editors would continue to use WordPress to write and edit articles, but the Haskell server would request content through the WordPress JSON API and render templates. The magazine also wanted several new subscription, mailing list, and donation features. Early into the project, the original creator of the app left Position to begin a career in research. I was suddenly the most experienced Haskell developer on my team, while I still had less than a year of professional experience in tech. In this talk, I'll discuss both a) the technical aspects of the work and b) what it was like to try to make it all happen as part of a very small team of non-expert Haskellers. Some of the topics I'll touch on include:
+
+- Larceny, our HTML templating language
+- Offset, our library for rendering content from JSON APIs
+- Position's workflow for developing, testing, and deploying Haskell apps
+- Feeling disconnected from the larger language community, struggling with imposter syndrome, and continuing to learn and grow as a functional programmer 
+
+In 2017, Magazine X relaunched with a bold new website. Getting to launch was a bit rocky, but for the past year we've been able to continue integrating more new features and designs into a fast, secure, and mobile-friendly Haskell app.
+" />
+  <meta property="og:image" content="https://img.youtube.com/vi/9MmIzrDmBO0/mqdefault.jpg" />
+
+  </head>
+
+  <body class="talks talks_fake-it-til-you-make-it-haskell">
+    
+
+        <div class="navbar-spacer"></div>
+  <nav id="navbar" class="navbar">
+    <div class="container">
+      <div class="talk__navbar-list">
+        <a href="/" class="talk__brand">
+          <img src="/assets/images/empex-logo-official-white-80b0e29c.svg" class="talk__nav-logo" title="EMPEX" alt="Empex logo official white" />
+          <h2>EMPEX</h2>
+        </a>
+
+        <ul class="talk__navbar-list">
+          <li class="navbar-item">
+            <a href="/nyc.html" class="navbar-link">NYC</a>
+          </li>
+          <li class="navbar-item">
+            <a href="/la.html" class="navbar-link">LA</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <main>
+      
+
+
+<section class="presentation">
+  <div class="presentation-presenter">
+    <div class="presentation-panel">
+
+        <div class="presentation-panel__member">
+          <div class="presentation-presenter__avatar-container">
+            <img src="/assets/images/people/presenters/libby-horacek-5d2d080d.jpg" class="presentation-presenter__avatar" alt="Libby horacek" />
+          </div>
+
+          <h4 class="presentation-presenter__name">
+            Libby Horacek
+          </h4>
+
+          <div class="presentation-presenter__link">
+              <a target="_blank" href="https://twitter.com/horrorcheck">
+                @horrorcheck
+              </a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="presentation__details">
+    <h3 class="presentation__title">
+      Fake It 'Til You Make It (where it = Haskell expertise)
+    </h3>
+
+      <iframe 
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/9MmIzrDmBO0?rel=0"
+        frameborder="0"
+        allow="autoplay; encrypted-media" allowfullscreen>
+      </iframe>
+
+    <div class="presentation__description">
+        <p>In 2016, Magazine X asked Position Development to expand their existing Haskell app. Instead of only serving ecommerce forms via iframes in their WordPress website, their Haskell app would serve everything, including every article from the magazine and blog. Magazine X editors would continue to use WordPress to write and edit articles, but the Haskell server would request content through the WordPress JSON API and render templates. The magazine also wanted several new subscription, mailing list, and donation features. Early into the project, the original creator of the app left Position to begin a career in research. I was suddenly the most experienced Haskell developer on my team, while I still had less than a year of professional experience in tech. In this talk, I'll discuss both a) the technical aspects of the work and b) what it was like to try to make it all happen as part of a very small team of non-expert Haskellers. Some of the topics I'll touch on include:</p>
+        <p></p>
+        <p>- Larceny, our HTML templating language</p>
+        <p>- Offset, our library for rendering content from JSON APIs</p>
+        <p>- Position's workflow for developing, testing, and deploying Haskell apps</p>
+        <p>- Feeling disconnected from the larger language community, struggling with imposter syndrome, and continuing to learn and grow as a functional programmer </p>
+        <p></p>
+        <p>In 2017, Magazine X relaunched with a bold new website. Getting to launch was a bit rocky, but for the past year we've been able to continue integrating more new features and designs into a fast, secure, and mobile-friendly Haskell app.</p>
+    </div>
+
+    <div class="presentation__bio">
+        <p>
+          <strong>About Libby Horacek:</strong>
+          Libby is a software developer with an interest building excellent, sustainable technical infrastructure for growing organizations. In 2014, she received a grant to study at the Recurse Center, which allowed her to move from her home state of West Virginia to NYC. After studying functional programming at RC, she joined The Learning Collective, a group of activists teaching each other to create software for power-distant publics. There she met Daniel Patterson, then a worker-owner at Position, who encouraged her to apply to work with Position. Libby has also spoken at conferences and technical meetups including Allied Media Conference, !!Con, AlterConf DC, and Haskell Users Group.
+
+        </p>
+    </div>
+  </div>
+</section>
+    </main>
+    <section id="bottom">
+  <section class="container content-section">
+    <h2>Updates</h2>
+    <form id="signup-form" accept-charset="UTF-8" action="https://empex.us12.list-manage.com/subscribe/post" method="POST">
+  <input type="hidden" name="u" value="9d40dbb0479340efa12eb81d5">
+  <input type="hidden" name="id" value="0869b35918">
+
+  <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" placeholder="Email Address">
+
+  <input type="submit" name="submit" value="Send Me Updates" class="button-primary halloween" />
+</form>
+
+    <!-- Footer -->
+<footer id="footer">
+  <ul class="icons">
+    <li><a href="https://twitter.com/empexco" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+    <li><a href="https://instagram.com/empirecityelixir" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+    <li><a href="https://github.com/empirecityelixir" class="icon fa-github"><span class="label">GitHub</span></a></li>
+    <li><a href="mailto:info@empex.co" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+  </ul>
+  <ul class="links">
+    <li>&copy; <a href="#" target="_blank" class="no-hover">
+        <img src="/assets/images/sponsors/crevalle-footer-1afc54fb.png" alt="Crevalle" title="Crevalle" class="crevalle-name" />
+</a>    </li>
+    <li><a href="../code-of-conduct.html">Code of Conduct</a></li>
+    <li>Design by <a href="http://thoughtmerchants.com">Thought Merchants</a></li>
+  </ul>
+</footer>
+
+  </section>
+</section>
+
+    <script src="/assets/javascripts/vendor/jquery-2.2.1.min-7cb05e3d.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+    <script src="/assets/javascripts/nav-e89d8ad7.js"></script>
+    
+  </body>
+</html>

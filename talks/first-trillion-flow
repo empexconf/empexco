@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+
+    <link href="/assets/stylesheets/all-28005a22.css" rel="stylesheet" />
+    <link href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css" rel="stylesheet" />
+    <link href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css" rel="stylesheet" />
+
+    <link href="/assets/images/favicon.ico" rel="icon" type="image/ico" />
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-73059900-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-73059900-1');
+    </script>
+
+      <link rel="canonical" href="/talks/first-trillion-flow">
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@empexco" />
+  <meta name="twitter:title" content="EMPEX Talk: Lessons From Our First Trillion Messages with Flow" />
+  <meta name="twitter:description" content="For many of us recent Elixir converts, our initial attraction to Elixir was rooted in the promise of access to the BEAM concurrency model.
+
+While this has been possible in Elixir from day one, Flow has made it incredibly easy to build highly concurrent and parallel data pipelines utilizing the BEAM. The problem is that while the docs are great, there aren't many resources about running Flow-based systems in production.
+
+In this talk I'll share some of the lessons my team has learned from processing our first trillion messages through Flow. You'll leave with practical knowledge you can directly apply to your applications.
+
+For the last year, my team & I have been using Flow to power a reactive, high volume and mission-critical data processing pipeline. In that time we've recognized some patterns and techniques to keep our system easy to reason about while also being flexible to handle a variety of requirements.
+" />
+  <meta name="twitter:image" content="https://img.youtube.com/vi/b342YwOzIjI/mqdefault.jpg" />
+
+  <meta property="og:url" content="/talks/first-trillion-flow" />
+  <meta property="og:title" content="EMPEX Talk: Lessons From Our First Trillion Messages with Flow" />
+  <meta property="og:description" content="For many of us recent Elixir converts, our initial attraction to Elixir was rooted in the promise of access to the BEAM concurrency model.
+
+While this has been possible in Elixir from day one, Flow has made it incredibly easy to build highly concurrent and parallel data pipelines utilizing the BEAM. The problem is that while the docs are great, there aren't many resources about running Flow-based systems in production.
+
+In this talk I'll share some of the lessons my team has learned from processing our first trillion messages through Flow. You'll leave with practical knowledge you can directly apply to your applications.
+
+For the last year, my team & I have been using Flow to power a reactive, high volume and mission-critical data processing pipeline. In that time we've recognized some patterns and techniques to keep our system easy to reason about while also being flexible to handle a variety of requirements.
+" />
+  <meta property="og:image" content="https://img.youtube.com/vi/b342YwOzIjI/mqdefault.jpg" />
+
+  </head>
+
+  <body class="talks talks_first-trillion-flow">
+    
+
+        <div class="navbar-spacer"></div>
+  <nav id="navbar" class="navbar">
+    <div class="container">
+      <div class="talk__navbar-list">
+        <a href="/" class="talk__brand">
+          <img src="/assets/images/empex-logo-official-white-80b0e29c.svg" class="talk__nav-logo" title="EMPEX" alt="Empex logo official white" />
+          <h2>EMPEX</h2>
+        </a>
+
+        <ul class="talk__navbar-list">
+          <li class="navbar-item">
+            <a href="/nyc.html" class="navbar-link">NYC</a>
+          </li>
+          <li class="navbar-item">
+            <a href="/la.html" class="navbar-link">LA</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <main>
+      
+
+
+<section class="presentation">
+  <div class="presentation-presenter">
+    <div class="presentation-panel">
+
+        <div class="presentation-panel__member">
+          <div class="presentation-presenter__avatar-container">
+            <img src="/assets/images/people/presenters/john-mertens-ba255c91.jpg" class="presentation-presenter__avatar" alt="John mertens" />
+          </div>
+
+          <h4 class="presentation-presenter__name">
+            John Mertens
+          </h4>
+
+          <div class="presentation-presenter__link">
+              <a target="_blank" href="https://twitter.com/mertonium">
+                @mertonium
+              </a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="presentation__details">
+    <h3 class="presentation__title">
+      Lessons From Our First Trillion Messages with Flow
+    </h3>
+
+      <iframe 
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/b342YwOzIjI?rel=0"
+        frameborder="0"
+        allow="autoplay; encrypted-media" allowfullscreen>
+      </iframe>
+
+    <div class="presentation__description">
+        <p>For many of us recent Elixir converts, our initial attraction to Elixir was rooted in the promise of access to the BEAM concurrency model.</p>
+        <p></p>
+        <p>While this has been possible in Elixir from day one, Flow has made it incredibly easy to build highly concurrent and parallel data pipelines utilizing the BEAM. The problem is that while the docs are great, there aren't many resources about running Flow-based systems in production.</p>
+        <p></p>
+        <p>In this talk I'll share some of the lessons my team has learned from processing our first trillion messages through Flow. You'll leave with practical knowledge you can directly apply to your applications.</p>
+        <p></p>
+        <p>For the last year, my team & I have been using Flow to power a reactive, high volume and mission-critical data processing pipeline. In that time we've recognized some patterns and techniques to keep our system easy to reason about while also being flexible to handle a variety of requirements.</p>
+    </div>
+
+    <div class="presentation__bio">
+        <p>
+          <strong>About John Mertens:</strong>
+          John is a problem solver who has spent the majority of his career using his technical skills to have a positive impact on the world around him. A former Code for America fellow and civic tech startup co-founder, he currently uses Elixir to empower social action at Change.org.
+        </p>
+    </div>
+  </div>
+</section>
+    </main>
+    <section id="bottom">
+  <section class="container content-section">
+    <h2>Updates</h2>
+    <form id="signup-form" accept-charset="UTF-8" action="https://empex.us12.list-manage.com/subscribe/post" method="POST">
+  <input type="hidden" name="u" value="9d40dbb0479340efa12eb81d5">
+  <input type="hidden" name="id" value="0869b35918">
+
+  <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" placeholder="Email Address">
+
+  <input type="submit" name="submit" value="Send Me Updates" class="button-primary halloween" />
+</form>
+
+    <!-- Footer -->
+<footer id="footer">
+  <ul class="icons">
+    <li><a href="https://twitter.com/empexco" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+    <li><a href="https://instagram.com/empirecityelixir" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+    <li><a href="https://github.com/empirecityelixir" class="icon fa-github"><span class="label">GitHub</span></a></li>
+    <li><a href="mailto:info@empex.co" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+  </ul>
+  <ul class="links">
+    <li>&copy; <a href="#" target="_blank" class="no-hover">
+        <img src="/assets/images/sponsors/crevalle-footer-1afc54fb.png" alt="Crevalle" title="Crevalle" class="crevalle-name" />
+</a>    </li>
+    <li><a href="../code-of-conduct.html">Code of Conduct</a></li>
+    <li>Design by <a href="http://thoughtmerchants.com">Thought Merchants</a></li>
+  </ul>
+</footer>
+
+  </section>
+</section>
+
+    <script src="/assets/javascripts/vendor/jquery-2.2.1.min-7cb05e3d.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+    <script src="/assets/javascripts/nav-e89d8ad7.js"></script>
+    
+  </body>
+</html>

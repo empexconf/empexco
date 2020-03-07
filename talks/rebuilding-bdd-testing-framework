@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+
+    <link href="/assets/stylesheets/all-28005a22.css" rel="stylesheet" />
+    <link href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css" rel="stylesheet" />
+    <link href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css" rel="stylesheet" />
+
+    <link href="/assets/images/favicon.ico" rel="icon" type="image/ico" />
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-73059900-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-73059900-1');
+    </script>
+
+      <link rel="canonical" href="/talks/rebuilding-bdd-testing-framework">
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@empexco" />
+  <meta name="twitter:title" content="EMPEX Talk: Rebuilding a BDD Testing Framework (ESpec): Foundations in Metaprogramming" />
+  <meta name="twitter:description" content="You're a Test-Driven Development disciple, but you're a little iffy on this whole metaprogramming thing and it's something you don't feel comfortable using in your day to day programming.
+
+If you've looked through the ExUnit codebase, or its RSpec-inspired cousin, ESpec (RSpec is a Ruby on Rails testing framework), you've probably noticed the defmacro keyword. That's because these test frameworks make use of metaprogramming to give you those lovely DSL's.
+
+Don't know what the defmacro keyword does? Don't worry.
+
+Even if you've never used Elixir's metaprogramming features before, come learn how to do it by seeing a real-life application of them. During this talk, we will rebuild a small part of our own version of ESpec. We'll duck and weave through Elixir's basic metaprogramming features all while building out test assertions and error messages, and you'll gain a whole new appreciation for metaprogramming.
+" />
+  <meta name="twitter:image" content="https://img.youtube.com/vi/uah3b4IVRDA/mqdefault.jpg" />
+
+  <meta property="og:url" content="/talks/rebuilding-bdd-testing-framework" />
+  <meta property="og:title" content="EMPEX Talk: Rebuilding a BDD Testing Framework (ESpec): Foundations in Metaprogramming" />
+  <meta property="og:description" content="You're a Test-Driven Development disciple, but you're a little iffy on this whole metaprogramming thing and it's something you don't feel comfortable using in your day to day programming.
+
+If you've looked through the ExUnit codebase, or its RSpec-inspired cousin, ESpec (RSpec is a Ruby on Rails testing framework), you've probably noticed the defmacro keyword. That's because these test frameworks make use of metaprogramming to give you those lovely DSL's.
+
+Don't know what the defmacro keyword does? Don't worry.
+
+Even if you've never used Elixir's metaprogramming features before, come learn how to do it by seeing a real-life application of them. During this talk, we will rebuild a small part of our own version of ESpec. We'll duck and weave through Elixir's basic metaprogramming features all while building out test assertions and error messages, and you'll gain a whole new appreciation for metaprogramming.
+" />
+  <meta property="og:image" content="https://img.youtube.com/vi/uah3b4IVRDA/mqdefault.jpg" />
+
+  </head>
+
+  <body class="talks talks_rebuilding-bdd-testing-framework">
+    
+
+        <div class="navbar-spacer"></div>
+  <nav id="navbar" class="navbar">
+    <div class="container">
+      <div class="talk__navbar-list">
+        <a href="/" class="talk__brand">
+          <img src="/assets/images/empex-logo-official-white-80b0e29c.svg" class="talk__nav-logo" title="EMPEX" alt="Empex logo official white" />
+          <h2>EMPEX</h2>
+        </a>
+
+        <ul class="talk__navbar-list">
+          <li class="navbar-item">
+            <a href="/nyc.html" class="navbar-link">NYC</a>
+          </li>
+          <li class="navbar-item">
+            <a href="/la.html" class="navbar-link">LA</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <main>
+      
+
+
+<section class="presentation">
+  <div class="presentation-presenter">
+    <div class="presentation-panel">
+
+        <div class="presentation-panel__member">
+          <div class="presentation-presenter__avatar-container">
+            <img src="/assets/images/people/presenters/bruce-park-a9673ddd.jpg" class="presentation-presenter__avatar" alt="Bruce park" />
+          </div>
+
+          <h4 class="presentation-presenter__name">
+            Bruce Park
+          </h4>
+
+          <div class="presentation-presenter__link">
+              <a target="_blank" href="https://twitter.com/bpark0">
+                @bpark0
+              </a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="presentation__details">
+    <h3 class="presentation__title">
+      Rebuilding a BDD Testing Framework (ESpec): Foundations in Metaprogramming
+    </h3>
+
+      <iframe 
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/uah3b4IVRDA?rel=0"
+        frameborder="0"
+        allow="autoplay; encrypted-media" allowfullscreen>
+      </iframe>
+
+    <div class="presentation__description">
+        <p>You're a Test-Driven Development disciple, but you're a little iffy on this whole metaprogramming thing and it's something you don't feel comfortable using in your day to day programming.</p>
+        <p></p>
+        <p>If you've looked through the ExUnit codebase, or its RSpec-inspired cousin, ESpec (RSpec is a Ruby on Rails testing framework), you've probably noticed the defmacro keyword. That's because these test frameworks make use of metaprogramming to give you those lovely DSL's.</p>
+        <p></p>
+        <p>Don't know what the defmacro keyword does? Don't worry.</p>
+        <p></p>
+        <p>Even if you've never used Elixir's metaprogramming features before, come learn how to do it by seeing a real-life application of them. During this talk, we will rebuild a small part of our own version of ESpec. We'll duck and weave through Elixir's basic metaprogramming features all while building out test assertions and error messages, and you'll gain a whole new appreciation for metaprogramming.</p>
+    </div>
+
+    <div class="presentation__bio">
+        <p>
+          <strong>About Bruce Park:</strong>
+          Bruce currently works as a developer at a company called Versus Systems based in Los Angeles, California. He occasionally contributes to Elixir open source libraries such as ESpec, a popular testing framework. In his spare time, he likes reading Tom Clancy novels and swimming along with a cup of coffee.
+        </p>
+    </div>
+  </div>
+</section>
+    </main>
+    <section id="bottom">
+  <section class="container content-section">
+    <h2>Updates</h2>
+    <form id="signup-form" accept-charset="UTF-8" action="https://empex.us12.list-manage.com/subscribe/post" method="POST">
+  <input type="hidden" name="u" value="9d40dbb0479340efa12eb81d5">
+  <input type="hidden" name="id" value="0869b35918">
+
+  <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" placeholder="Email Address">
+
+  <input type="submit" name="submit" value="Send Me Updates" class="button-primary halloween" />
+</form>
+
+    <!-- Footer -->
+<footer id="footer">
+  <ul class="icons">
+    <li><a href="https://twitter.com/empexco" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+    <li><a href="https://instagram.com/empirecityelixir" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+    <li><a href="https://github.com/empirecityelixir" class="icon fa-github"><span class="label">GitHub</span></a></li>
+    <li><a href="mailto:info@empex.co" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+  </ul>
+  <ul class="links">
+    <li>&copy; <a href="#" target="_blank" class="no-hover">
+        <img src="/assets/images/sponsors/crevalle-footer-1afc54fb.png" alt="Crevalle" title="Crevalle" class="crevalle-name" />
+</a>    </li>
+    <li><a href="../code-of-conduct.html">Code of Conduct</a></li>
+    <li>Design by <a href="http://thoughtmerchants.com">Thought Merchants</a></li>
+  </ul>
+</footer>
+
+  </section>
+</section>
+
+    <script src="/assets/javascripts/vendor/jquery-2.2.1.min-7cb05e3d.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+    <script src="/assets/javascripts/nav-e89d8ad7.js"></script>
+    
+  </body>
+</html>

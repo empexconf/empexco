@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+
+    <link href="/assets/stylesheets/all-28005a22.css" rel="stylesheet" />
+    <link href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css" rel="stylesheet" />
+    <link href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css" rel="stylesheet" />
+
+    <link href="/assets/images/favicon.ico" rel="icon" type="image/ico" />
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-73059900-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-73059900-1');
+    </script>
+
+      <link rel="canonical" href="/talks/stream-processing-connected-vehicle-data">
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@empexco" />
+  <meta name="twitter:title" content="EMPEX Talk: Stream-processing connected vehicle data in Elixir" />
+  <meta name="twitter:description" content="“Smart” and connected vehicles generate TONS of data. To make use of that data from a fleet of vehicles for analysis of V2V interactions, traffic patterns, or control flow, you have to consume as much of it as fast as possible with high fidelity. The team at SmartColumbus has spent the last year building robust data ingestion capabilities in Elixir at the speed and scale needed to support thousands of vehicles simultaneously.
+
+This talk will showcase the strategies developed for concurrent processing, batching, and validating data across each of these unique streams. You’ll learn about the design decisions the team has made as well as the open source libraries we’ve developed to enable data consumption at the scale of a “Smart City”.
+" />
+  <meta name="twitter:image" content="https://img.youtube.com/vi/OKnY2hO2JdA/mqdefault.jpg" />
+
+  <meta property="og:url" content="/talks/stream-processing-connected-vehicle-data" />
+  <meta property="og:title" content="EMPEX Talk: Stream-processing connected vehicle data in Elixir" />
+  <meta property="og:description" content="“Smart” and connected vehicles generate TONS of data. To make use of that data from a fleet of vehicles for analysis of V2V interactions, traffic patterns, or control flow, you have to consume as much of it as fast as possible with high fidelity. The team at SmartColumbus has spent the last year building robust data ingestion capabilities in Elixir at the speed and scale needed to support thousands of vehicles simultaneously.
+
+This talk will showcase the strategies developed for concurrent processing, batching, and validating data across each of these unique streams. You’ll learn about the design decisions the team has made as well as the open source libraries we’ve developed to enable data consumption at the scale of a “Smart City”.
+" />
+  <meta property="og:image" content="https://img.youtube.com/vi/OKnY2hO2JdA/mqdefault.jpg" />
+
+  </head>
+
+  <body class="talks talks_stream-processing-connected-vehicle-data">
+    
+
+        <div class="navbar-spacer"></div>
+  <nav id="navbar" class="navbar">
+    <div class="container">
+      <div class="talk__navbar-list">
+        <a href="/" class="talk__brand">
+          <img src="/assets/images/empex-logo-official-white-80b0e29c.svg" class="talk__nav-logo" title="EMPEX" alt="Empex logo official white" />
+          <h2>EMPEX</h2>
+        </a>
+
+        <ul class="talk__navbar-list">
+          <li class="navbar-item">
+            <a href="/nyc.html" class="navbar-link">NYC</a>
+          </li>
+          <li class="navbar-item">
+            <a href="/la.html" class="navbar-link">LA</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <main>
+      
+
+
+<section class="presentation">
+  <div class="presentation-presenter">
+    <div class="presentation-panel">
+
+        <div class="presentation-panel__member">
+          <div class="presentation-presenter__avatar-container">
+            <img src="/assets/images/people/presenters/jeff-grunewald-955f0c5f.jpg" class="presentation-presenter__avatar" alt="Jeff grunewald" />
+          </div>
+
+          <h4 class="presentation-presenter__name">
+            Jeff Grunewald
+          </h4>
+
+          <div class="presentation-presenter__link">
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="presentation__details">
+    <h3 class="presentation__title">
+      Stream-processing connected vehicle data in Elixir
+    </h3>
+
+      <iframe 
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/OKnY2hO2JdA?rel=0"
+        frameborder="0"
+        allow="autoplay; encrypted-media" allowfullscreen>
+      </iframe>
+
+    <div class="presentation__description">
+        <p>“Smart” and connected vehicles generate TONS of data. To make use of that data from a fleet of vehicles for analysis of V2V interactions, traffic patterns, or control flow, you have to consume as much of it as fast as possible with high fidelity. The team at SmartColumbus has spent the last year building robust data ingestion capabilities in Elixir at the speed and scale needed to support thousands of vehicles simultaneously.</p>
+        <p></p>
+        <p>This talk will showcase the strategies developed for concurrent processing, batching, and validating data across each of these unique streams. You’ll learn about the design decisions the team has made as well as the open source libraries we’ve developed to enable data consumption at the scale of a “Smart City”.</p>
+    </div>
+
+    <div class="presentation__bio">
+        <p>
+          <strong>About Jeff Grunewald:</strong>
+          Jeff has been in technology for over a decade, first as a systems and network administrator and later in the DevOps and software engineering space. He has extensive experience with Kubernetes and has been in love with the Elixir language and the Erlang Virtual Machine for the past three years, working to grow the adoption of the relatively young language. He's an avid reader, sci fi fan, and gamer often found grinding hours in the Destiny universe.
+        </p>
+    </div>
+  </div>
+</section>
+    </main>
+    <section id="bottom">
+  <section class="container content-section">
+    <h2>Updates</h2>
+    <form id="signup-form" accept-charset="UTF-8" action="https://empex.us12.list-manage.com/subscribe/post" method="POST">
+  <input type="hidden" name="u" value="9d40dbb0479340efa12eb81d5">
+  <input type="hidden" name="id" value="0869b35918">
+
+  <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" placeholder="Email Address">
+
+  <input type="submit" name="submit" value="Send Me Updates" class="button-primary halloween" />
+</form>
+
+    <!-- Footer -->
+<footer id="footer">
+  <ul class="icons">
+    <li><a href="https://twitter.com/empexco" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+    <li><a href="https://instagram.com/empirecityelixir" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+    <li><a href="https://github.com/empirecityelixir" class="icon fa-github"><span class="label">GitHub</span></a></li>
+    <li><a href="mailto:info@empex.co" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+  </ul>
+  <ul class="links">
+    <li>&copy; <a href="#" target="_blank" class="no-hover">
+        <img src="/assets/images/sponsors/crevalle-footer-1afc54fb.png" alt="Crevalle" title="Crevalle" class="crevalle-name" />
+</a>    </li>
+    <li><a href="../code-of-conduct.html">Code of Conduct</a></li>
+    <li>Design by <a href="http://thoughtmerchants.com">Thought Merchants</a></li>
+  </ul>
+</footer>
+
+  </section>
+</section>
+
+    <script src="/assets/javascripts/vendor/jquery-2.2.1.min-7cb05e3d.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+    <script src="/assets/javascripts/nav-e89d8ad7.js"></script>
+    
+  </body>
+</html>

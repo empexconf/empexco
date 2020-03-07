@@ -1,0 +1,352 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+
+    <link href="/assets/stylesheets/all-28005a22.css" rel="stylesheet" />
+    <link href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css" rel="stylesheet" />
+    <link href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css" rel="stylesheet" />
+
+    <link href="/assets/images/favicon.ico" rel="icon" type="image/ico" />
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-73059900-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-73059900-1');
+    </script>
+
+      <link rel="canonical" href="/talks/la/2019">
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@empexco" />
+  <meta name="twitter:title" content="EMPEX LA 2019 Talks" />
+  <meta name="twitter:description" content="Talks from the EMPEX LA 2019 conference" />
+  <meta name="twitter:image" content="http://empex.co/assets/images/flag-577c45fc.jpg" />
+
+  <meta property="og:url" content="/talks/la/2019" />
+  <meta property="og:title" content="EMPEX LA 2019 Talks" />
+  <meta property="og:description" content="Talks from the EMPEX LA 2019 conference" />
+  <meta property="og:image" content="http://empex.co/assets/images/flag-577c45fc.jpg" />
+
+  <link href="/assets/stylesheets/talk-list-89e9d608.css" rel="stylesheet" />
+
+  </head>
+
+  <body class="talks talks_la talks_la_2019">
+    
+
+        <div class="navbar-spacer"></div>
+  <nav id="navbar" class="navbar">
+    <div class="container">
+      <div class="talk__navbar-list">
+        <a href="/" class="talk__brand">
+          <img src="/assets/images/empex-logo-official-white-80b0e29c.svg" class="talk__nav-logo" title="EMPEX" alt="Empex logo official white" />
+          <h2>EMPEX</h2>
+        </a>
+
+        <ul class="talk__navbar-list">
+          <li class="navbar-item">
+            <a href="/nyc.html" class="navbar-link">NYC</a>
+          </li>
+          <li class="navbar-item">
+            <a href="/la.html" class="navbar-link">LA</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <main>
+      
+
+
+<div class="talk-history">
+  <h2 class="talk-history__section-header">
+    EMPEX LA 2019 Talks
+  </h2>
+
+  <p>
+    All the talks from this conference, in one convenient place.
+  </p>
+
+  <div class="talk-card__list">
+    <div class="talk-card">
+      <a class="talk-card__media" href="/talks/first-trillion-flow">
+        <img src="https://img.youtube.com/vi/b342YwOzIjI/mqdefault.jpg">
+      </a>
+    
+      <h3 class="talk-card__title">
+        <a href="/talks/first-trillion-flow">Lessons From Our First Trillion Messages with Flow</a>
+      </h3>
+
+      <h4 class="talk-card__author">
+        John Mertens (EMPEX LA 2019)
+      </h4>
+
+      <p class="talk-card__description">
+        For many of us recent Elixir converts, our initial attraction to Elixir was rooted in the promise of access to the BEAM concurrency model.
+
+While this has been possible in Elixir from day one, Flow ...
+      </p>
+    </div>
+    <div class="talk-card">
+      <a class="talk-card__media" href="/talks/elixir-api-accessible">
+        <img src="https://img.youtube.com/vi/vdfmIFAKNE0/mqdefault.jpg">
+      </a>
+    
+      <h3 class="talk-card__title">
+        <a href="/talks/elixir-api-accessible">Making your Elixir API Accessible to non-Elixir developers</a>
+      </h3>
+
+      <h4 class="talk-card__author">
+        Kalisa Falzone (EMPEX LA 2019)
+      </h4>
+
+      <p class="talk-card__description">
+        This talk will describe tools, application best practices, and team collaboration tips that make consuming and working with an Elixir API easier for those not familiar with Elixir. I will talk about...
+      </p>
+    </div>
+    <div class="talk-card">
+      <a class="talk-card__media" href="/talks/fake-it-til-you-make-it-haskell">
+        <img src="https://img.youtube.com/vi/9MmIzrDmBO0/mqdefault.jpg">
+      </a>
+    
+      <h3 class="talk-card__title">
+        <a href="/talks/fake-it-til-you-make-it-haskell">Fake It 'Til You Make It (where it = Haskell expertise)</a>
+      </h3>
+
+      <h4 class="talk-card__author">
+        Libby Horacek (EMPEX LA 2019)
+      </h4>
+
+      <p class="talk-card__description">
+        In 2016, Magazine X asked Position Development to expand their existing Haskell app. Instead of only serving ecommerce forms via iframes in their WordPress website, their Haskell app would serve eve...
+      </p>
+    </div>
+    <div class="talk-card">
+      <a class="talk-card__media" href="/talks/distributed-war-stories">
+        <img src="https://img.youtube.com/vi/b3JQgyj17hk/mqdefault.jpg">
+      </a>
+    
+      <h3 class="talk-card__title">
+        <a href="/talks/distributed-war-stories">Opening Keynote: Distributed War Stories</a>
+      </h3>
+
+      <h4 class="talk-card__author">
+        Miriam Pena (EMPEX LA 2019)
+      </h4>
+
+      <p class="talk-card__description">
+        Architecting a highly concurrent distributed system in the BEAM ecosystem is not an easy thing to do even on a perfect world of homogeneous traffic, reliable, secure and low latency networks. But re...
+      </p>
+    </div>
+    <div class="talk-card">
+      <a class="talk-card__media" href="/talks/handling-null-functional-programming">
+        <img src="https://img.youtube.com/vi/aZBcRsAxG-I/mqdefault.jpg">
+      </a>
+    
+      <h3 class="talk-card__title">
+        <a href="/talks/handling-null-functional-programming">Handling Null in Functional Programming</a>
+      </h3>
+
+      <h4 class="talk-card__author">
+        Evelyn Masso (EMPEX LA 2019)
+      </h4>
+
+      <p class="talk-card__description">
+        Nulls are a fact of life—sometimes a value can be absent, which is important information to have However if a variable can be null, we often have to write extra code to handle that possibility. How ...
+      </p>
+    </div>
+    <div class="talk-card">
+      <a class="talk-card__media" href="/talks/five-easy-ways-nerves">
+        <img src="https://img.youtube.com/vi/BfWac2y7cJM/mqdefault.jpg">
+      </a>
+    
+      <h3 class="talk-card__title">
+        <a href="/talks/five-easy-ways-nerves">Five Easy Ways To Start With Nerves</a>
+      </h3>
+
+      <h4 class="talk-card__author">
+        Michael Ries (EMPEX LA 2019)
+      </h4>
+
+      <p class="talk-card__description">
+        Writing code that touches the real world is a magical experience. Nerves makes the software more approachable and much more powerful. Come see five fun projects that you can build from beginning to ...
+      </p>
+    </div>
+    <div class="talk-card">
+      <a class="talk-card__media" href="/talks/mix-feelings">
+        <img src="https://img.youtube.com/vi/3c7ekyNUAx8/mqdefault.jpg">
+      </a>
+    
+      <h3 class="talk-card__title">
+        <a href="/talks/mix-feelings">You might say I have 🕶 mix feelings</a>
+      </h3>
+
+      <h4 class="talk-card__author">
+        Aaron Harpole (EMPEX LA 2019)
+      </h4>
+
+      <p class="talk-card__description">
+        Yes, Elixir’s great, it’s based on Erlang, making it fault tolerant and scalable. But a few months with it day-to day, am I still singing its praises?
+
+      </p>
+    </div>
+    <div class="talk-card">
+      <a class="talk-card__media" href="/talks/living-things">
+        <img src="https://img.youtube.com/vi/5LlpbWuB9Hc/mqdefault.jpg">
+      </a>
+    
+      <h3 class="talk-card__title">
+        <a href="/talks/living-things">Closing Keynote: Living Things</a>
+      </h3>
+
+      <h4 class="talk-card__author">
+        Ashi Krishnan (EMPEX LA 2019)
+      </h4>
+
+      <p class="talk-card__description">
+        
+      </p>
+    </div>
+    <div class="talk-card">
+      <a class="talk-card__media" href="/talks/elixir-code-is-elixir-metaprogramming">
+        <img src="https://img.youtube.com/vi/fHl4PWgop4g/mqdefault.jpg">
+      </a>
+    
+      <h3 class="talk-card__title">
+        <a href="/talks/elixir-code-is-elixir-metaprogramming">Elixir Code is Elixir! Metaprogramming and Elixir</a>
+      </h3>
+
+      <h4 class="talk-card__author">
+        Adrian Cruz (EMPEX LA 2019)
+      </h4>
+
+      <p class="talk-card__description">
+        Elixir is a programming language that has become dear to me as it has become my go-to choice for most of the things at work and personal projects. One thing that people notice when getting started w...
+      </p>
+    </div>
+    <div class="talk-card">
+      <a class="talk-card__media" href="/talks/where-do-i-put-my-data">
+        <img src="https://img.youtube.com/vi/9216dUNgKCU/mqdefault.jpg">
+      </a>
+    
+      <h3 class="talk-card__title">
+        <a href="/talks/where-do-i-put-my-data">Where did I put my data?</a>
+      </h3>
+
+      <h4 class="talk-card__author">
+        Alex Peachey (EMPEX LA 2019)
+      </h4>
+
+      <p class="talk-card__description">
+        A look at how Amnesia's Elixir wrapper over Erlang's Mnesia distributed DBMS can be used to keep your application state in a scalable resilient manner. We will start by looking at Agents and GenServ...
+      </p>
+    </div>
+    <div class="talk-card">
+      <a class="talk-card__media" href="/talks/rebuilding-bdd-testing-framework">
+        <img src="https://img.youtube.com/vi/uah3b4IVRDA/mqdefault.jpg">
+      </a>
+    
+      <h3 class="talk-card__title">
+        <a href="/talks/rebuilding-bdd-testing-framework">Rebuilding a BDD Testing Framework (ESpec): Foundations in Metaprogramming</a>
+      </h3>
+
+      <h4 class="talk-card__author">
+        Bruce Park (EMPEX LA 2019)
+      </h4>
+
+      <p class="talk-card__description">
+        You're a Test-Driven Development disciple, but you're a little iffy on this whole metaprogramming thing and it's something you don't feel comfortable using in your day to day programming.
+
+If you've...
+      </p>
+    </div>
+    <div class="talk-card">
+      <a class="talk-card__media" href="/talks/go-vs-elixir">
+        <img src="https://img.youtube.com/vi/8Sji1c_MuUQ/mqdefault.jpg">
+      </a>
+    
+      <h3 class="talk-card__title">
+        <a href="/talks/go-vs-elixir">Go vs Elixir: A concurrency comparison</a>
+      </h3>
+
+      <h4 class="talk-card__author">
+        Anna Neyzberg, Hannah Howard (EMPEX LA 2019)
+      </h4>
+
+      <p class="talk-card__description">
+        As software engineers we often are looking for the best tool for the job. Yet what about when languages appear similar? What then?
+
+In this talk we will compare Go and Elixir. These languages have s...
+      </p>
+    </div>
+    <div class="talk-card">
+      <a class="talk-card__media" href="/talks/elixir-and-datadog">
+        <img src="https://img.youtube.com/vi/OVAe7vjlVVY/mqdefault.jpg">
+      </a>
+    
+      <h3 class="talk-card__title">
+        <a href="/talks/elixir-and-datadog">Elixir and Datadog</a>
+      </h3>
+
+      <h4 class="talk-card__author">
+        Ludwik Bukowski (EMPEX LA 2019)
+      </h4>
+
+      <p class="talk-card__description">
+        Having an Elixir application deployed it's crucial to have good insight into your architecture for multiple reasons. High level of observability helps you scale, improve your system's performance, o...
+      </p>
+    </div>
+</div>
+
+</div>
+
+    </main>
+    <section id="bottom">
+  <section class="container content-section">
+    <h2>Updates</h2>
+    <form id="signup-form" accept-charset="UTF-8" action="https://empex.us12.list-manage.com/subscribe/post" method="POST">
+  <input type="hidden" name="u" value="9d40dbb0479340efa12eb81d5">
+  <input type="hidden" name="id" value="0869b35918">
+
+  <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" placeholder="Email Address">
+
+  <input type="submit" name="submit" value="Send Me Updates" class="button-primary halloween" />
+</form>
+
+    <!-- Footer -->
+<footer id="footer">
+  <ul class="icons">
+    <li><a href="https://twitter.com/empexco" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+    <li><a href="https://instagram.com/empirecityelixir" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+    <li><a href="https://github.com/empirecityelixir" class="icon fa-github"><span class="label">GitHub</span></a></li>
+    <li><a href="mailto:info@empex.co" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+  </ul>
+  <ul class="links">
+    <li>&copy; <a href="#" target="_blank" class="no-hover">
+        <img src="/assets/images/sponsors/crevalle-footer-1afc54fb.png" alt="Crevalle" title="Crevalle" class="crevalle-name" />
+</a>    </li>
+    <li><a href="../../code-of-conduct.html">Code of Conduct</a></li>
+    <li>Design by <a href="http://thoughtmerchants.com">Thought Merchants</a></li>
+  </ul>
+</footer>
+
+  </section>
+</section>
+
+    <script src="/assets/javascripts/vendor/jquery-2.2.1.min-7cb05e3d.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+    <script src="/assets/javascripts/nav-e89d8ad7.js"></script>
+    
+  </body>
+</html>

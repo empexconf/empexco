@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+
+    <link href="/assets/stylesheets/all-28005a22.css" rel="stylesheet" />
+    <link href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css" rel="stylesheet" />
+    <link href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css" rel="stylesheet" />
+
+    <link href="/assets/images/favicon.ico" rel="icon" type="image/ico" />
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-73059900-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-73059900-1');
+    </script>
+
+      <link rel="canonical" href="/talks/inclusion-starts-with-docs">
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@empexco" />
+  <meta name="twitter:title" content="EMPEX Talk: Inclusion Starts With Docs" />
+  <meta name="twitter:description" content="Great documentation is the single most powerful tool for increasing inclusion in a project. Docs can level the playing field between beginners and experts, providing everyone a better understanding of using and contributing to a library.
+
+The feeling of creating a project, putting it out there, and watching people contribute to it is breathtaking -- it's one of the things that gets people hooked on participating in the free software ecosystem. High-quality docs get a project, and its creator, to that point faster.
+
+Lucky for us, Elixir has best-in-class features for authoring and generating online documentation. In this talk, we'll examine and demonstrate Elixir's doc system, covering in particular:
+
+An introduction to ExDoc
+Top level project docs using @moduledoc
+Function docs using @doc
+Executable code samples using doctests
+Type annotations and docs using typespecs
+Linking your docs to your source code
+Magically auto-updating install instructions
+Documentation techniques and tactics for other kinds of projects (e.g. HTTP APIs)
+This talk has two goals: to show the power of Elixir's built-in docs system, and more importantly to get folks excited about how strongly fantastic docs can improve a project and its community.
+" />
+  <meta name="twitter:image" content="https://img.youtube.com/vi/iLooRCq9hs0/mqdefault.jpg" />
+
+  <meta property="og:url" content="/talks/inclusion-starts-with-docs" />
+  <meta property="og:title" content="EMPEX Talk: Inclusion Starts With Docs" />
+  <meta property="og:description" content="Great documentation is the single most powerful tool for increasing inclusion in a project. Docs can level the playing field between beginners and experts, providing everyone a better understanding of using and contributing to a library.
+
+The feeling of creating a project, putting it out there, and watching people contribute to it is breathtaking -- it's one of the things that gets people hooked on participating in the free software ecosystem. High-quality docs get a project, and its creator, to that point faster.
+
+Lucky for us, Elixir has best-in-class features for authoring and generating online documentation. In this talk, we'll examine and demonstrate Elixir's doc system, covering in particular:
+
+An introduction to ExDoc
+Top level project docs using @moduledoc
+Function docs using @doc
+Executable code samples using doctests
+Type annotations and docs using typespecs
+Linking your docs to your source code
+Magically auto-updating install instructions
+Documentation techniques and tactics for other kinds of projects (e.g. HTTP APIs)
+This talk has two goals: to show the power of Elixir's built-in docs system, and more importantly to get folks excited about how strongly fantastic docs can improve a project and its community.
+" />
+  <meta property="og:image" content="https://img.youtube.com/vi/iLooRCq9hs0/mqdefault.jpg" />
+
+  </head>
+
+  <body class="talks talks_inclusion-starts-with-docs">
+    
+
+        <div class="navbar-spacer"></div>
+  <nav id="navbar" class="navbar">
+    <div class="container">
+      <div class="talk__navbar-list">
+        <a href="/" class="talk__brand">
+          <img src="/assets/images/empex-logo-official-white-80b0e29c.svg" class="talk__nav-logo" title="EMPEX" alt="Empex logo official white" />
+          <h2>EMPEX</h2>
+        </a>
+
+        <ul class="talk__navbar-list">
+          <li class="navbar-item">
+            <a href="/nyc.html" class="navbar-link">NYC</a>
+          </li>
+          <li class="navbar-item">
+            <a href="/la.html" class="navbar-link">LA</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <main>
+      
+
+
+<section class="presentation">
+  <div class="presentation-presenter">
+    <div class="presentation-panel">
+
+        <div class="presentation-panel__member">
+          <div class="presentation-presenter__avatar-container">
+            <img src="/assets/images/people/presenters/gamache-pete-3f830ec4.jpg" class="presentation-presenter__avatar" alt="Gamache pete" />
+          </div>
+
+          <h4 class="presentation-presenter__name">
+            Pete Gamache
+          </h4>
+
+          <div class="presentation-presenter__link">
+              <a target="_blank" href="https://twitter.com/gamache">
+                @gamache
+              </a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="presentation__details">
+    <h3 class="presentation__title">
+      Inclusion Starts With Docs
+    </h3>
+
+      <iframe 
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/iLooRCq9hs0?rel=0"
+        frameborder="0"
+        allow="autoplay; encrypted-media" allowfullscreen>
+      </iframe>
+
+    <div class="presentation__description">
+        <p>Great documentation is the single most powerful tool for increasing inclusion in a project. Docs can level the playing field between beginners and experts, providing everyone a better understanding of using and contributing to a library.</p>
+        <p></p>
+        <p>The feeling of creating a project, putting it out there, and watching people contribute to it is breathtaking -- it's one of the things that gets people hooked on participating in the free software ecosystem. High-quality docs get a project, and its creator, to that point faster.</p>
+        <p></p>
+        <p>Lucky for us, Elixir has best-in-class features for authoring and generating online documentation. In this talk, we'll examine and demonstrate Elixir's doc system, covering in particular:</p>
+        <p></p>
+        <p>An introduction to ExDoc</p>
+        <p>Top level project docs using @moduledoc</p>
+        <p>Function docs using @doc</p>
+        <p>Executable code samples using doctests</p>
+        <p>Type annotations and docs using typespecs</p>
+        <p>Linking your docs to your source code</p>
+        <p>Magically auto-updating install instructions</p>
+        <p>Documentation techniques and tactics for other kinds of projects (e.g. HTTP APIs)</p>
+        <p>This talk has two goals: to show the power of Elixir's built-in docs system, and more importantly to get folks excited about how strongly fantastic docs can improve a project and its community.</p>
+    </div>
+
+    <div class="presentation__bio">
+        <p>
+          <strong>About Pete Gamache:</strong>
+          Pete is CTO at Appcues, where Elixir has been a boring part of the platform for two years and counting (and that's high praise). He enjoys pattern-matching, immutable data structures, and long walks on the beach. Follow him on Twitter.
+
+        </p>
+    </div>
+  </div>
+</section>
+    </main>
+    <section id="bottom">
+  <section class="container content-section">
+    <h2>Updates</h2>
+    <form id="signup-form" accept-charset="UTF-8" action="https://empex.us12.list-manage.com/subscribe/post" method="POST">
+  <input type="hidden" name="u" value="9d40dbb0479340efa12eb81d5">
+  <input type="hidden" name="id" value="0869b35918">
+
+  <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" placeholder="Email Address">
+
+  <input type="submit" name="submit" value="Send Me Updates" class="button-primary halloween" />
+</form>
+
+    <!-- Footer -->
+<footer id="footer">
+  <ul class="icons">
+    <li><a href="https://twitter.com/empexco" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+    <li><a href="https://instagram.com/empirecityelixir" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+    <li><a href="https://github.com/empirecityelixir" class="icon fa-github"><span class="label">GitHub</span></a></li>
+    <li><a href="mailto:info@empex.co" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+  </ul>
+  <ul class="links">
+    <li>&copy; <a href="#" target="_blank" class="no-hover">
+        <img src="/assets/images/sponsors/crevalle-footer-1afc54fb.png" alt="Crevalle" title="Crevalle" class="crevalle-name" />
+</a>    </li>
+    <li><a href="../code-of-conduct.html">Code of Conduct</a></li>
+    <li>Design by <a href="http://thoughtmerchants.com">Thought Merchants</a></li>
+  </ul>
+</footer>
+
+  </section>
+</section>
+
+    <script src="/assets/javascripts/vendor/jquery-2.2.1.min-7cb05e3d.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+    <script src="/assets/javascripts/nav-e89d8ad7.js"></script>
+    
+  </body>
+</html>

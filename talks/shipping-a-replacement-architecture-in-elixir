@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+
+    <link href="/assets/stylesheets/all-28005a22.css" rel="stylesheet" />
+    <link href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css" rel="stylesheet" />
+    <link href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css" rel="stylesheet" />
+
+    <link href="/assets/images/favicon.ico" rel="icon" type="image/ico" />
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-73059900-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-73059900-1');
+    </script>
+
+      <link rel="canonical" href="/talks/shipping-a-replacement-architecture-in-elixir">
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@empexco" />
+  <meta name="twitter:title" content="EMPEX Talk: Shipping a Replacement Architecture In Elixir" />
+  <meta name="twitter:description" content="This talk will be a deep dive of how we spent the last 4 months replacing our Rails API and various Node.JS microservices with a single Elixir Umbrella Application. We’ve gone from no Elixir in production to replacing all but one of our services with it and launching and running those to power our Enterprise SaaS startup with hundreds of thousands of users.
+
+During this talk we’ll walk through:
+
+* Application structure inside of the Umbrella (includes 3 separate Phoenix applications inside of it).
+* How we modeled our async event bus powered by GenStage
+* How we leveraged Flow to parallelize the syncing of millions of database records in record time
+* Deploying our various services to ECS via Docker
+* Monitoring and stat-ing our services
+* Problems we encountered during the road to production
+* The huge wins we got!
+
+We’ll really dig into the real-world requirements of shipping and running a complex Elixir application with many moving parts; we'll be concentrated on the high level, with a few little dips into some specific parts of the app.
+" />
+  <meta name="twitter:image" content="https://img.youtube.com/vi/Aa--NDjL9SI/mqdefault.jpg" />
+
+  <meta property="og:url" content="/talks/shipping-a-replacement-architecture-in-elixir" />
+  <meta property="og:title" content="EMPEX Talk: Shipping a Replacement Architecture In Elixir" />
+  <meta property="og:description" content="This talk will be a deep dive of how we spent the last 4 months replacing our Rails API and various Node.JS microservices with a single Elixir Umbrella Application. We’ve gone from no Elixir in production to replacing all but one of our services with it and launching and running those to power our Enterprise SaaS startup with hundreds of thousands of users.
+
+During this talk we’ll walk through:
+
+* Application structure inside of the Umbrella (includes 3 separate Phoenix applications inside of it).
+* How we modeled our async event bus powered by GenStage
+* How we leveraged Flow to parallelize the syncing of millions of database records in record time
+* Deploying our various services to ECS via Docker
+* Monitoring and stat-ing our services
+* Problems we encountered during the road to production
+* The huge wins we got!
+
+We’ll really dig into the real-world requirements of shipping and running a complex Elixir application with many moving parts; we'll be concentrated on the high level, with a few little dips into some specific parts of the app.
+" />
+  <meta property="og:image" content="https://img.youtube.com/vi/Aa--NDjL9SI/mqdefault.jpg" />
+
+  </head>
+
+  <body class="talks talks_shipping-a-replacement-architecture-in-elixir">
+    
+
+        <div class="navbar-spacer"></div>
+  <nav id="navbar" class="navbar">
+    <div class="container">
+      <div class="talk__navbar-list">
+        <a href="/" class="talk__brand">
+          <img src="/assets/images/empex-logo-official-white-80b0e29c.svg" class="talk__nav-logo" title="EMPEX" alt="Empex logo official white" />
+          <h2>EMPEX</h2>
+        </a>
+
+        <ul class="talk__navbar-list">
+          <li class="navbar-item">
+            <a href="/nyc.html" class="navbar-link">NYC</a>
+          </li>
+          <li class="navbar-item">
+            <a href="/la.html" class="navbar-link">LA</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <main>
+      
+
+
+<section class="presentation">
+  <div class="presentation-presenter">
+    <div class="presentation-panel">
+
+        <div class="presentation-panel__member">
+          <div class="presentation-presenter__avatar-container">
+            <img src="/assets/images/people/presenters/bell-chris-83b3f747.jpg" class="presentation-presenter__avatar" alt="Bell chris" />
+          </div>
+
+          <h4 class="presentation-presenter__name">
+            Chris Bell
+          </h4>
+
+          <div class="presentation-presenter__link">
+              <a target="_blank" href="https://twitter.com/cjbell_">
+                @cjbell_
+              </a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="presentation__details">
+    <h3 class="presentation__title">
+      Shipping a Replacement Architecture In Elixir
+    </h3>
+
+      <iframe 
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/Aa--NDjL9SI?rel=0"
+        frameborder="0"
+        allow="autoplay; encrypted-media" allowfullscreen>
+      </iframe>
+
+    <div class="presentation__description">
+        <p>This talk will be a deep dive of how we spent the last 4 months replacing our Rails API and various Node.JS microservices with a single Elixir Umbrella Application. We’ve gone from no Elixir in production to replacing all but one of our services with it and launching and running those to power our Enterprise SaaS startup with hundreds of thousands of users.</p>
+        <p></p>
+        <p>During this talk we’ll walk through:</p>
+        <p></p>
+        <p>* Application structure inside of the Umbrella (includes 3 separate Phoenix applications inside of it).</p>
+        <p>* How we modeled our async event bus powered by GenStage</p>
+        <p>* How we leveraged Flow to parallelize the syncing of millions of database records in record time</p>
+        <p>* Deploying our various services to ECS via Docker</p>
+        <p>* Monitoring and stat-ing our services</p>
+        <p>* Problems we encountered during the road to production</p>
+        <p>* The huge wins we got!</p>
+        <p></p>
+        <p>We’ll really dig into the real-world requirements of shipping and running a complex Elixir application with many moving parts; we'll be concentrated on the high level, with a few little dips into some specific parts of the app.</p>
+    </div>
+
+    <div class="presentation__bio">
+        <p>
+          <strong>About Chris Bell:</strong>
+          Chris is an Englishman in New York, where he works as the CTO of Murumed, a startup that helps EMTs get the data they need. He’s an avid alchemist and helps organize the NYC branch of EMPEX as well as co-hosting the popular ElixirTalk podcast.
+
+        </p>
+    </div>
+  </div>
+</section>
+    </main>
+    <section id="bottom">
+  <section class="container content-section">
+    <h2>Updates</h2>
+    <form id="signup-form" accept-charset="UTF-8" action="https://empex.us12.list-manage.com/subscribe/post" method="POST">
+  <input type="hidden" name="u" value="9d40dbb0479340efa12eb81d5">
+  <input type="hidden" name="id" value="0869b35918">
+
+  <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" placeholder="Email Address">
+
+  <input type="submit" name="submit" value="Send Me Updates" class="button-primary halloween" />
+</form>
+
+    <!-- Footer -->
+<footer id="footer">
+  <ul class="icons">
+    <li><a href="https://twitter.com/empexco" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+    <li><a href="https://instagram.com/empirecityelixir" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+    <li><a href="https://github.com/empirecityelixir" class="icon fa-github"><span class="label">GitHub</span></a></li>
+    <li><a href="mailto:info@empex.co" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+  </ul>
+  <ul class="links">
+    <li>&copy; <a href="#" target="_blank" class="no-hover">
+        <img src="/assets/images/sponsors/crevalle-footer-1afc54fb.png" alt="Crevalle" title="Crevalle" class="crevalle-name" />
+</a>    </li>
+    <li><a href="../code-of-conduct.html">Code of Conduct</a></li>
+    <li>Design by <a href="http://thoughtmerchants.com">Thought Merchants</a></li>
+  </ul>
+</footer>
+
+  </section>
+</section>
+
+    <script src="/assets/javascripts/vendor/jquery-2.2.1.min-7cb05e3d.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+    <script src="/assets/javascripts/nav-e89d8ad7.js"></script>
+    
+  </body>
+</html>

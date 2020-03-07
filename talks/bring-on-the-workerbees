@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+
+    <link href="/assets/stylesheets/all-28005a22.css" rel="stylesheet" />
+    <link href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css" rel="stylesheet" />
+    <link href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css" rel="stylesheet" />
+
+    <link href="/assets/images/favicon.ico" rel="icon" type="image/ico" />
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-73059900-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-73059900-1');
+    </script>
+
+      <link rel="canonical" href="/talks/bring-on-the-workerbees">
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@empexco" />
+  <meta name="twitter:title" content="EMPEX Talk: Bring On the WorkerBees (Designing Elixir Systems with OTP)" />
+  <meta name="twitter:description" content="If you want to be a great Elixir developers, you need to learn to build your programs in layers, the way the experts do. In this session, we will explore the advice:
+
+Do Fun Things with Big, Loud Workerbees.
+
+This sentence, from Designing Elixir Systems with OTP, is a mental mnemonic that stands for Data, Functions, Tests; Boundaries, Lifecycles and Workers. We'll talk about each of these layers in detail focusing on the role of each independent layer in a self-healing, performant Elixir program.
+" />
+  <meta name="twitter:image" content="https://img.youtube.com/vi/CsmJ_xfzKxw/mqdefault.jpg" />
+
+  <meta property="og:url" content="/talks/bring-on-the-workerbees" />
+  <meta property="og:title" content="EMPEX Talk: Bring On the WorkerBees (Designing Elixir Systems with OTP)" />
+  <meta property="og:description" content="If you want to be a great Elixir developers, you need to learn to build your programs in layers, the way the experts do. In this session, we will explore the advice:
+
+Do Fun Things with Big, Loud Workerbees.
+
+This sentence, from Designing Elixir Systems with OTP, is a mental mnemonic that stands for Data, Functions, Tests; Boundaries, Lifecycles and Workers. We'll talk about each of these layers in detail focusing on the role of each independent layer in a self-healing, performant Elixir program.
+" />
+  <meta property="og:image" content="https://img.youtube.com/vi/CsmJ_xfzKxw/mqdefault.jpg" />
+
+  </head>
+
+  <body class="talks talks_bring-on-the-workerbees">
+    
+
+        <div class="navbar-spacer"></div>
+  <nav id="navbar" class="navbar">
+    <div class="container">
+      <div class="talk__navbar-list">
+        <a href="/" class="talk__brand">
+          <img src="/assets/images/empex-logo-official-white-80b0e29c.svg" class="talk__nav-logo" title="EMPEX" alt="Empex logo official white" />
+          <h2>EMPEX</h2>
+        </a>
+
+        <ul class="talk__navbar-list">
+          <li class="navbar-item">
+            <a href="/nyc.html" class="navbar-link">NYC</a>
+          </li>
+          <li class="navbar-item">
+            <a href="/la.html" class="navbar-link">LA</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <main>
+      
+
+
+<section class="presentation">
+  <div class="presentation-presenter">
+    <div class="presentation-panel">
+
+        <div class="presentation-panel__member">
+          <div class="presentation-presenter__avatar-container">
+            <img src="/assets/images/people/presenters/bruce-tate-235f21ce.jpg" class="presentation-presenter__avatar" alt="Bruce tate" />
+          </div>
+
+          <h4 class="presentation-presenter__name">
+            Bruce Tate
+          </h4>
+
+          <div class="presentation-presenter__link">
+              <a target="_blank" href="https://twitter.com/redrapids">
+                @redrapids
+              </a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="presentation__details">
+    <h3 class="presentation__title">
+      Bring On the WorkerBees (Designing Elixir Systems with OTP)
+    </h3>
+
+      <iframe 
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/CsmJ_xfzKxw?rel=0"
+        frameborder="0"
+        allow="autoplay; encrypted-media" allowfullscreen>
+      </iframe>
+
+    <div class="presentation__description">
+        <p>If you want to be a great Elixir developers, you need to learn to build your programs in layers, the way the experts do. In this session, we will explore the advice:</p>
+        <p></p>
+        <p>Do Fun Things with Big, Loud Workerbees.</p>
+        <p></p>
+        <p>This sentence, from Designing Elixir Systems with OTP, is a mental mnemonic that stands for Data, Functions, Tests; Boundaries, Lifecycles and Workers. We'll talk about each of these layers in detail focusing on the role of each independent layer in a self-healing, performant Elixir program.</p>
+    </div>
+
+    <div class="presentation__bio">
+        <p>
+          <strong>About Bruce Tate:</strong>
+          The founder of Groxio, Bruce Tate is a mountain biker, climber and father of two. He's the co-author of Programming Phoenix, Adopting Elixir and Designing Elixir Systems with OTP. He runs the Programmer Passport program, a subscription service that helps programmers advance by teaching them new programming languages.
+        </p>
+    </div>
+  </div>
+</section>
+    </main>
+    <section id="bottom">
+  <section class="container content-section">
+    <h2>Updates</h2>
+    <form id="signup-form" accept-charset="UTF-8" action="https://empex.us12.list-manage.com/subscribe/post" method="POST">
+  <input type="hidden" name="u" value="9d40dbb0479340efa12eb81d5">
+  <input type="hidden" name="id" value="0869b35918">
+
+  <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" placeholder="Email Address">
+
+  <input type="submit" name="submit" value="Send Me Updates" class="button-primary halloween" />
+</form>
+
+    <!-- Footer -->
+<footer id="footer">
+  <ul class="icons">
+    <li><a href="https://twitter.com/empexco" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+    <li><a href="https://instagram.com/empirecityelixir" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+    <li><a href="https://github.com/empirecityelixir" class="icon fa-github"><span class="label">GitHub</span></a></li>
+    <li><a href="mailto:info@empex.co" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+  </ul>
+  <ul class="links">
+    <li>&copy; <a href="#" target="_blank" class="no-hover">
+        <img src="/assets/images/sponsors/crevalle-footer-1afc54fb.png" alt="Crevalle" title="Crevalle" class="crevalle-name" />
+</a>    </li>
+    <li><a href="../code-of-conduct.html">Code of Conduct</a></li>
+    <li>Design by <a href="http://thoughtmerchants.com">Thought Merchants</a></li>
+  </ul>
+</footer>
+
+  </section>
+</section>
+
+    <script src="/assets/javascripts/vendor/jquery-2.2.1.min-7cb05e3d.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+    <script src="/assets/javascripts/nav-e89d8ad7.js"></script>
+    
+  </body>
+</html>
