@@ -1,8 +1,8 @@
 GIT
-  remote: git://github.com/tiste/middleman-meta-tags.git
-  revision: 070283fbf19ad6ff39a40cc9cd9b740a0282a5d4
+  remote: https://github.com/tiste/middleman-meta-tags.git
+  revision: caf9b5006292a0230ff1481577109fa426e546e7
   specs:
-    middleman-meta-tags (0.3.0)
+    middleman-meta-tags (0.7.0)
       middleman-core (>= 3.0.0)
 
 GEM
@@ -133,7 +133,7 @@ GEM
     thor (0.20.0)
     thread_safe (0.3.6)
     tilt (2.0.8)
-    tzinfo (1.2.4)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
